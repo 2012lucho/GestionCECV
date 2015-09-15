@@ -15,4 +15,14 @@
 	color: #eee;
 	font-weight: bold;
 	font-size: 125%;
+	text-align: center;
+}
+
+.enlaceLib {
+	color: #DDD;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.buscalib{
 }

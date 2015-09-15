@@ -11,6 +11,8 @@ use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
 AppAsset::register($this);
+
+Yii::$app->homeUrl="index.php/catalogo";
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -29,7 +31,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => 'Centro de Estudiantes de Ciencias Veterinarias',
-        'brandUrl' => Yii::$app->homeUrl,
+        //'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
@@ -61,7 +63,6 @@ AppAsset::register($this);
 <footer class="footer">
     <div class="container">
         <p class="pull-left">Desarrollado por <a href="http://www.coodesoft.com.ar">Coodesoft</a> </p>
-
     </div>
 </footer>
 

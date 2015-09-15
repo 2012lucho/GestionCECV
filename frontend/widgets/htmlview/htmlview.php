@@ -5,6 +5,7 @@ use yii\base\Widget;
 use yii;
 use yii\db\Query;
 use yii\helpers\Url;
+use app\widgets\htmlvbusca;
 
 class HtmlView extends Widget {
 //atributos de seleccion de la informacion
@@ -100,11 +101,12 @@ class HtmlView extends Widget {
 	private function Encabezado(){
 		$salida='
 			<div class="panel panel-gral">
-  				<div class="panel-heading">
-    				<'.$this->EtiquetaTitulo.' class="'.
+  				<div class="panel-heading row">
+    				<'.$this->EtiquetaTitulo.' class="col-xs-8 '.
 						$this->ClaseTitulo.'">'.$this->TituloSeccion.'</'.$this->EtiquetaTitulo.'>'.
-				'</div>
-  				<div class="panel-body">';
+				'<div class="buscalib col-xs-4"> <p>Buscar: </p> </div>
+				</div>
+    		<div class="panel-body">';
   		return $salida;
 	}
 
@@ -133,9 +135,9 @@ class HtmlView extends Widget {
 				<div class="panel-footer"> 
 					<div class="row"> 
 						<div class="col-md-8 col-lg-8"> 
-							<h5>Pagina actual: '.$this->PaginaActual.' / '.($this->LimitePaginas+1).'</h5> 
-							<a href="'.$this->PrePag().'"> Anterior </a> 
-							<a href="'.$this->SigPag().'"> Siguiente </a> 
+							Pagina actual: '.$this->PaginaActual.' / '.($this->LimitePaginas+1).' 
+							<a class="enlaceLib" href="'.$this->PrePag().'"> Anterior </a> 
+							<a class="enlaceLib" href="'.$this->SigPag().'"> Siguiente </a> 
 						</div> 
 					<div class="col-md-4 col-lg-4"> 
 					

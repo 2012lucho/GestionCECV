@@ -12,7 +12,7 @@
 	'ClaseTitulo' => 'TitCat',
 	'PaginaActual' => $pagina,
 	'tabla' => 'Stock',
-	'Urlpag' => $rutaweb.'/index.php/novedades',
+	'Urlpag' => $rutaweb.'/index.php/catalogo',
 	'registro' => 'todos',
 	'CampoTitulo' => 'Nombre',
 	'CampoCuerpo' => 'Descripcion',

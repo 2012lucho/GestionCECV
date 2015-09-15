@@ -6,12 +6,11 @@ body {
 
 .panel-gral{margin-top: 40px;
 /*box-shadow: -8px 8px 15px rgba(45,45,45,0.8)*/}
-.panel-gral .panel-footer{background:rgba(85,85,85,0.8);}
+.panel-gral .panel-footer{background:rgba(85,85,85,0.8); color:#fff;}
 .panel-gral .panel-heading{background:rgba(85,85,85,0.8);}
 .panel-gral .panel-body{overflow:hidden;}
 
 /* Colocar en otro lado más adelante*/
-h3 {font-size: 18px;margin-top: 0px;margin-bottom: 0px;}
 
 .wrap {
     min-height: 100%;

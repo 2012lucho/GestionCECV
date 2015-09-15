@@ -35,15 +35,17 @@ AppAsset::register($this);
         ],
     ]);
     $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
+        //['label' => 'Home', 'url' => ['/site/index']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Ingresar', 'url' => ['/site/login']];
     } else {
-        $menuItems[] = [
-            'label' => 'Salir (' . Yii::$app->user->identity->username . ')',
-            'url' => ['/site/logout'],
-            'linkOptions' => ['data-method' => 'post']
+        $menuItems[] = ['label' => 'Administración', 'items' => [
+					['label' => 'Estudiantes'],					
+					['label' => 'Libros'],    					
+					['label' => 'Cuentas de Usuario'],        			
+        			['label' => 'Salir (' . Yii::$app->user->identity->username . ')','url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']],
+        		],
         ];
     }
     echo Nav::widget([
@@ -64,9 +66,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">Desarrollado por <a href="http://www.coodesoft.com.ar">Coodesoft</a> </p>
     </div>
 </footer>
 
