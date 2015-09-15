@@ -1,5 +1,5 @@
 <?php
-namespace common\widgets\htmlview;
+namespace app\widgets\htmlview;
 
 use yii\base\Widget;
 use yii;
@@ -18,6 +18,7 @@ class HtmlView extends Widget {
 	public $tabla;
 	public $registro;
 	public $RegAbierto;
+	public $CampoIndice = 'id';
 	
 //atributos de formato salida
 	public $FPagina1="<div class='panel panel-gral'><div class='panel-heading'><";
@@ -27,7 +28,7 @@ class HtmlView extends Widget {
 	public $FPagina3="</p></div></div>";
 	
 	public $DesabilitarEncabezado='0';
-	public $MostrarFecha = '1';
+	//public $MostrarFecha = '1';
 	public $ContExtraBody = '';
 	public $RedirigePag = '0';
 	public $SoloTitulo = '0';
@@ -44,7 +45,7 @@ class HtmlView extends Widget {
 
 	private function CantidadTotalRegistros(){
 		$consulta = new Query;
-		$consulta->select('id')->from($this->tabla);
+		$consulta->select($this->CampoIndice)->from($this->tabla);
 		$consulta = $consulta->all();		
 		return count($consulta);	
 	}
@@ -64,8 +65,8 @@ class HtmlView extends Widget {
 			//se seleccionan las publicaciones
 			$this->consulta = (new \yii\db\Query())
 							->select('*')
-							->from('novedades')
-							->orderBy(['id'=> SORT_DESC])
+							->from($this->tabla)
+							->orderBy([$this->CampoIndice=> SORT_DESC])
 							->limit($this->RegistrosPagina)
 							->offset(($this->PaginaActual-1)*$this->RegistrosPagina)
 							->all();
@@ -75,7 +76,7 @@ class HtmlView extends Widget {
 	}
 
 	//funcion que crea el un "nuevo articulo" de la pagina
-	private function MostrarRegistro($id,$titulo,$cuerpo,$fecha){
+	private function MostrarRegistro($id,$titulo,$cuerpo){
 		$salida = '<div id="s'.$id.'" class="spoiler">';
 			if ($this->SoloTitulo=='0')
 			{
@@ -91,9 +92,6 @@ class HtmlView extends Widget {
 				$salida.= '<a href="'.$this->Urlpag.'/1/'.$this->RegistrosPagina.'/'.$id.'">
 						<div class="btn btn-default botAmpliarNot" title="Ver artículo">Ver
 						</div></a>';
-			}
-			if ($this->MostrarFecha=='1') {
-				$salida.= '<div class="contFecha">'.$fecha.'</div>';
 			}	
 		$salida.= '</div></div>';
 		return $salida;
@@ -141,10 +139,7 @@ class HtmlView extends Widget {
 							<a href="'.$this->SigPag().'"> Siguiente </a> 
 						</div> 
 					<div class="col-md-4 col-lg-4"> 
-					<div class="suscribe" >
-						<a href="'.Url::to(['/suscriptor/suscribe'], true).'">Suscribite vía mail y recibí nuestras novedades!</a>
-						</div> 
-					</div> 
+					
 				</div> 
 				</div> 
 				</div>'; 
@@ -161,7 +156,7 @@ class HtmlView extends Widget {
 			$mostrar.= $this->Encabezado();
 		}
 		foreach ($datos as $data){
-			$mostrar.= $this->MostrarRegistro($data['id'],$data[$this->CampoTitulo],$data[$this->CampoCuerpo],$data['fecha']);
+			$mostrar.= $this->MostrarRegistro($data[$this->CampoIndice],$data[$this->CampoTitulo],$data[$this->CampoCuerpo]);
     	}
 		unset($data);
 		if ($this->DesabilitarEncabezado=="0")

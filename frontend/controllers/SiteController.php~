@@ -81,7 +81,14 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('catalogo');
+    		$p=10;
+    		$r=0;
+    		$h=1;
+        return $this->render('catalogo',[
+         'pagina' => $h,
+			'paginacion' => $p,
+        	'RegAbierto' => $r,
+			'rutaweb' => 'http://localhost/cecv']);
     }
     
     /**

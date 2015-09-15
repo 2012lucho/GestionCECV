@@ -1,6 +1,6 @@
 <?php
 
-namespace common\widgets\htmlview;
+namespace app\widgets\htmlview;
 
 use yii\web\AssetBundle;
 
@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
  */
 class htmlviewAssets extends AssetBundle
 {
-    public $sourcePath = 'common\widgets\htmlview';
+    public $sourcePath = '@app\widgets\htmlview';
     public $css = [
     	'css/htmlview.css',
     ];
@@ -18,6 +18,6 @@ class htmlviewAssets extends AssetBundle
 		'js/htmlview.js',
 	];
     public $depends = [
-        'app\assets\AppAsset',
+        'frontend\assets\AppAsset',
     ];
 }
