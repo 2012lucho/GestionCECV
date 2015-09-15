@@ -1,3 +1,5 @@
 <?php
-$this->title = 'Catálogo';
+	
+	$this->title = 'Catálogo de libros';
+
 ?>

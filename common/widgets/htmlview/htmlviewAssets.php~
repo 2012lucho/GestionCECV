@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
  */
 class htmlviewAssets extends AssetBundle
 {
-    public $sourcePath = '@common\widgets\htmlview';
+    public $sourcePath = 'common\widgets\htmlview';
     public $css = [
     	'css/htmlview.css',
     ];
