@@ -7,7 +7,7 @@
 
 <?= HtmlView::widget([
 	'RegistrosPagina' => $paginacion,
-	//'TituloSeccion' => 'novedades',
+	'TituloSeccion' => 'Catálogo de libros',
 	'EtiquetaTitulo' => 'h3',
 	'ClaseTitulo' => '',
 	'PaginaActual' => $pagina,

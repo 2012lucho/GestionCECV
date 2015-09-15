@@ -76,23 +76,22 @@ class HtmlView extends Widget {
 	}
 
 	//funcion que crea el un "nuevo articulo" de la pagina
-	private function MostrarRegistro($id,$titulo,$cuerpo){
-		$salida = '<div id="s'.$id.'" class="spoiler">';
-			if ($this->SoloTitulo=='0')
-			{
-				$expandido='0';
-				if ($this->RegAbierto==$id) {$expandido='1';}
-				$salida.= '<div id="t'.$id.'" data-expandido="'.$expandido.'" class="textoNot">'.$cuerpo.$this->ContExtraBody.'</div>';			
-			}
-			$salida.='<div id="'.$id.'" class="PrevVisualArti">';
+	private function MostrarRegistro($id,$titulo,$cuerpo,$autor,$cantDis){
+		$salida = '<div class="RegistroLib">';
+			$salida.='<div class="TituloLib">';
 			$salida.= $titulo;
 			if ($this->RedirigePag=='0'){
-				$salida.= '<div id="b'.$id.'" class="btn btn-default botAmpliarNot" title="Ver artículo">Ver</div>';
+				$salida.= '';
 			} else {
 				$salida.= '<a href="'.$this->Urlpag.'/1/'.$this->RegistrosPagina.'/'.$id.'">
-						<div class="btn btn-default botAmpliarNot" title="Ver artículo">Ver
-						</div></a>';
-			}	
+						</a>';
+			}				
+			if ($this->SoloTitulo=='0')
+			{
+				if($autor!=''){$salida.= '<div class="AutorLib"><b>Autor: </b>'.$autor.'</div>';}
+				$salida.= '<div class="DescripcionLib"><b>Descripción: </b>'.$cuerpo.$this->ContExtraBody.'</div>';			
+				$salida.= '<div class="CantidadLib"><b>Cantidad disponible: </b>'.$cantDis.'</div>';			
+			}
 		$salida.= '</div></div>';
 		return $salida;
 	}
@@ -156,7 +155,7 @@ class HtmlView extends Widget {
 			$mostrar.= $this->Encabezado();
 		}
 		foreach ($datos as $data){
-			$mostrar.= $this->MostrarRegistro($data[$this->CampoIndice],$data[$this->CampoTitulo],$data[$this->CampoCuerpo]);
+			$mostrar.= $this->MostrarRegistro($data[$this->CampoIndice],$data[$this->CampoTitulo],$data[$this->CampoCuerpo],$data['Autor'],$data['CantidadDisponible']);
     	}
 		unset($data);
 		if ($this->DesabilitarEncabezado=="0")

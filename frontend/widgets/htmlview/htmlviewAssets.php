@@ -15,7 +15,7 @@ class htmlviewAssets extends AssetBundle
     	'css/htmlview.css',
     ];
     public $js = [
-		'js/htmlview.js',
+		//'js/htmlview.js',
 	];
     public $depends = [
         'frontend\assets\AppAsset',

@@ -17,5 +17,5 @@
 	'CampoTitulo' => 'Nombre',
 	'CampoCuerpo' => 'Descripcion',
 	'RegAbierto' => $RegAbierto,
-	'CampoIndice'=> 'idStock'
+	'CampoIndice'=> 'idStock',
 ]);?>
