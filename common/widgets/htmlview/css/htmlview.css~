@@ -1,0 +1,44 @@
+.PrevVisualArti{
+	border:2px solid #777777;
+	border-radius:15px;
+	height:50px;
+	padding-left:30px!important;
+	margin:5px;
+	background-image:linear-gradient(to top, #777777 0%,#888888 50%, #555555 100%);
+	padding-top: 6px;
+	font-size: 14pt;
+	color: #cccccc;
+	width:100%;
+}
+
+.contFecha{
+	right: 20%;
+	top: 15px;
+	position: absolute;
+}
+
+.PrevVisualArti:hover{
+	color:#ffffff;
+}
+
+.botAmpliarNot{
+	right: 45px;
+	position: absolute;
+	font-weight:bold!important;
+}
+
+.spoiler{
+	position:relative;
+}
+
+.textoNot{
+	display:none;
+	width:94%;
+	position: absolute;
+	top: 60px;
+	border-radius: 5px;
+	padding:10px;
+	padding-left:20px;
+}
+
+.textoNot a:link{color:#ffffff !important;}
