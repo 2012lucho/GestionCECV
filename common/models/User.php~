@@ -31,8 +31,9 @@ class User extends ActiveRecord implements IdentityInterface
 	 //Agregamos los permisos y los rangos
 	 public static function Rango($rango)
 	 {
+	 	  $ran = Yii::$app->user->identity->rango;
 	 	  for ($c=0;$c<sizeof($rango);$c++) {
-	 	  		return Yii::$app->user->identity->rango == $rango;
+	 	  		if ($ran != $rango[$c]) {return true;}
 	 	  }
 		  return false;
 	 }

@@ -27,7 +27,7 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'signup', 'about'],
+                'only' => ['logout', 'signup'],
                 'rules' => [
                     [
                         'actions' => ['signup'],
@@ -44,7 +44,7 @@ class SiteController extends Controller
                         'allow' => true,
                         'roles' => ['@'],
                         'matchCallback' => function() {
-                        	return User::Permiso('editar user');
+                        	return User::Rango(['0']);
                         },
                     ],
                 ],
@@ -81,9 +81,9 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        return $this->render('catalogo');
     }
-
+    
     /**
      * Logs in a user.
      *

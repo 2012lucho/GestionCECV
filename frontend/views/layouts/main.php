@@ -35,19 +35,12 @@ AppAsset::register($this);
         ],
     ]);
     $menuItems = [
-        ['label' => 'Inicio', 'url' => ['/site/index']],
-        ['label' => 'Sobre Nosotros', 'url' => ['/site/about']],
-        ['label' => 'Contacto', 'url' => ['/site/contact']],
+       
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Crear cuenta', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Ingresar', 'url' => ['/site/login']];
+        
     } else {
-        $menuItems[] = [
-            'label' => 'Salir (' . Yii::$app->user->identity->username . ')',
-            'url' => ['/site/logout'],
-            'linkOptions' => ['data-method' => 'post']
-        ];
+        
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
