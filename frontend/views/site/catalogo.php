@@ -8,8 +8,8 @@
 <?= HtmlView::widget([
 	'RegistrosPagina' => $paginacion,
 	'TituloSeccion' => 'Catálogo de libros',
-	'EtiquetaTitulo' => 'h3',
-	'ClaseTitulo' => '',
+	'EtiquetaTitulo' => 'div',
+	'ClaseTitulo' => 'TitCat',
 	'PaginaActual' => $pagina,
 	'tabla' => 'Stock',
 	'Urlpag' => $rutaweb.'/index.php/novedades',

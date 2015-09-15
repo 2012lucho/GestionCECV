@@ -76,10 +76,10 @@ class HtmlView extends Widget {
 	}
 
 	//funcion que crea el un "nuevo articulo" de la pagina
-	private function MostrarRegistro($id,$titulo,$cuerpo,$autor){
+	private function MostrarRegistro($id,$titulo,$cuerpo,$autor,$cantDis){
 		$salida = '<div class="RegistroLib">';
 			$salida.='<div class="TituloLib">';
-			$salida.= $titulo;
+			$salida.= $titulo.'</div>';
 			if ($this->RedirigePag=='0'){
 				$salida.= '';
 			} else {
@@ -90,8 +90,9 @@ class HtmlView extends Widget {
 			{
 				if($autor!=''){$salida.= '<div class="AutorLib"><b>Autor: </b>'.$autor.'</div>';}
 				$salida.= '<div class="DescripcionLib"><b>Descripción: </b>'.$cuerpo.$this->ContExtraBody.'</div>';			
+				$salida.= '<div class="CantidadLib"><b>Cantidad disponible: </b>'.$cantDis.'</div>';			
 			}
-		$salida.= '</div></div>';
+		$salida.= '</div>';
 		return $salida;
 	}
 
@@ -154,7 +155,7 @@ class HtmlView extends Widget {
 			$mostrar.= $this->Encabezado();
 		}
 		foreach ($datos as $data){
-			$mostrar.= $this->MostrarRegistro($data[$this->CampoIndice],$data[$this->CampoTitulo],$data[$this->CampoCuerpo],$data['Autor']);
+			$mostrar.= $this->MostrarRegistro($data[$this->CampoIndice],$data[$this->CampoTitulo],$data[$this->CampoCuerpo],$data['Autor'],$data['CantidadDisponible']);
     	}
 		unset($data);
 		if ($this->DesabilitarEncabezado=="0")

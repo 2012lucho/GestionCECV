@@ -7,9 +7,9 @@
 
 <?= HtmlView::widget([
 	'RegistrosPagina' => $paginacion,
-	//'TituloSeccion' => 'novedades',
-	'EtiquetaTitulo' => 'h3',
-	'ClaseTitulo' => '',
+	'TituloSeccion' => 'Catálogo de libros',
+	'EtiquetaTitulo' => 'div',
+	'ClaseTitulo' => 'TitCat',
 	'PaginaActual' => $pagina,
 	'tabla' => 'Stock',
 	'Urlpag' => $rutaweb.'/index.php/novedades',

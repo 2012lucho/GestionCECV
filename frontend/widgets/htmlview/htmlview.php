@@ -78,8 +78,8 @@ class HtmlView extends Widget {
 	//funcion que crea el un "nuevo articulo" de la pagina
 	private function MostrarRegistro($id,$titulo,$cuerpo,$autor,$cantDis){
 		$salida = '<div class="RegistroLib">';
-			$salida.='<div class="TituloLib">';
-			$salida.= $titulo;
+			$salida.='<div class="TituloLib">'.$titulo.'</div>';
+			
 			if ($this->RedirigePag=='0'){
 				$salida.= '';
 			} else {
@@ -92,7 +92,7 @@ class HtmlView extends Widget {
 				$salida.= '<div class="DescripcionLib"><b>Descripción: </b>'.$cuerpo.$this->ContExtraBody.'</div>';			
 				$salida.= '<div class="CantidadLib"><b>Cantidad disponible: </b>'.$cantDis.'</div>';			
 			}
-		$salida.= '</div></div>';
+		$salida.= '</div>';
 		return $salida;
 	}
 
