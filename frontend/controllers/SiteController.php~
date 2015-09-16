@@ -81,13 +81,10 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-    		//$p=10;
-    		//$r=0;
-    		//$h=1;
     		$req = Yii::$app->request;
-    	$h = $req->get('h');
-		$p = $req->get('p');
-		$r = $req->get('r');
+    		$h = $req->get('h');
+			$p = $req->get('p');
+			$r = $req->get('r');
         return $this->render('catalogo',[
          'pagina' => $h,
 			'paginacion' => $p,
