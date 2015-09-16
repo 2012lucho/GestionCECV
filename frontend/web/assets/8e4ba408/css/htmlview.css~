@@ -1,0 +1,28 @@
+.panel-footer .row{
+	position: relative;
+}
+.RegistroLib {
+	border-top: 2px solid #aad;
+	padding: 5px 10px 5px 10px;
+}
+
+.TituloLib{
+	font-weight: bold;
+	color: #06f;
+}
+
+.TitCat{
+	color: #eee;
+	font-weight: bold;
+	font-size: 125%;
+	text-align: center;
+}
+
+.enlaceLib {
+	color: #DDD;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.buscalib{
+}

@@ -1,0 +1,304 @@
+2015-09-15 16:27:30 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac/init".' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('rbac/init', Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('rbac/init', Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/html/cecv/yii(27): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac/init".' in /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php:169
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('rbac/init', Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/html/cecv/yii(27): yii\base\Application->run()
+#3 {main}
+2015-09-15 16:27:30 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'SSH_AGENT_PID' => '3363'
+    'XDG_SESSION_ID' => '1'
+    'SAL_USE_VCLPLUGIN' => 'gtk'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm/data/lucho'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'XDG_MENU_PREFIX' => 'lxde-'
+    'OLDPWD' => '/var/www/html'
+    'USER' => 'root'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-J7NSExy7aGJN/agent.3339'
+    'XDG_CONFIG_DIRS' => '/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'MAIL' => '/var/mail/root'
+    'DESKTOP_SESSION' => 'LXDE'
+    'PWD' => '/var/www/html/cecv'
+    'LANG' => 'es_AR.UTF-8'
+    'GDM_LANG' => 'es_AR.utf8'
+    'GDMSESSION' => 'lightdm-xsession'
+    '_LXSESSION_PID' => '3339'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/root'
+    'SHLVL' => '2'
+    'XDG_CONFIG_HOME' => '/home/lucho/.config'
+    'LANGUAGE' => 'es_AR:es'
+    'LOGNAME' => 'root'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/local/share/:/usr/share/:/usr/share/gdm/:/var/lib/menu-xdg/'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0.0'
+    'XDG_CURRENT_DESKTOP' => 'LXDE'
+    'XAUTHORITY' => '/tmp/libgksu-peqsVv/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1442334450.5227
+    'REQUEST_TIME' => 1442334450
+    'argv' => [
+        0 => './yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
+2015-09-15 16:28:23 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "migrat".' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrat', Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrat', Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/html/cecv/yii(27): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "migrat".' in /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php:169
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrat', Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/html/cecv/yii(27): yii\base\Application->run()
+#3 {main}
+2015-09-15 16:28:23 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'SSH_AGENT_PID' => '3363'
+    'XDG_SESSION_ID' => '1'
+    'SAL_USE_VCLPLUGIN' => 'gtk'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm/data/lucho'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'XDG_MENU_PREFIX' => 'lxde-'
+    'OLDPWD' => '/var/www/html'
+    'USER' => 'root'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-J7NSExy7aGJN/agent.3339'
+    'XDG_CONFIG_DIRS' => '/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'MAIL' => '/var/mail/root'
+    'DESKTOP_SESSION' => 'LXDE'
+    'PWD' => '/var/www/html/cecv'
+    'LANG' => 'es_AR.UTF-8'
+    'GDM_LANG' => 'es_AR.utf8'
+    'GDMSESSION' => 'lightdm-xsession'
+    '_LXSESSION_PID' => '3339'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/root'
+    'SHLVL' => '2'
+    'XDG_CONFIG_HOME' => '/home/lucho/.config'
+    'LANGUAGE' => 'es_AR:es'
+    'LOGNAME' => 'root'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/local/share/:/usr/share/:/usr/share/gdm/:/var/lib/menu-xdg/'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0.0'
+    'XDG_CURRENT_DESKTOP' => 'LXDE'
+    'XAUTHORITY' => '/tmp/libgksu-peqsVv/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1442334503.1875
+    'REQUEST_TIME' => 1442334503
+    'argv' => [
+        0 => './yii'
+        1 => 'migrat'
+    ]
+    'argc' => 2
+]
+2015-09-15 16:28:36 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac".' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('rbac', Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('rbac', Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/html/cecv/yii(27): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac".' in /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php:169
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('rbac', Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/html/cecv/yii(27): yii\base\Application->run()
+#3 {main}
+2015-09-15 16:28:36 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'SSH_AGENT_PID' => '3363'
+    'XDG_SESSION_ID' => '1'
+    'SAL_USE_VCLPLUGIN' => 'gtk'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm/data/lucho'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'XDG_MENU_PREFIX' => 'lxde-'
+    'OLDPWD' => '/var/www/html'
+    'USER' => 'root'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-J7NSExy7aGJN/agent.3339'
+    'XDG_CONFIG_DIRS' => '/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'MAIL' => '/var/mail/root'
+    'DESKTOP_SESSION' => 'LXDE'
+    'PWD' => '/var/www/html/cecv'
+    'LANG' => 'es_AR.UTF-8'
+    'GDM_LANG' => 'es_AR.utf8'
+    'GDMSESSION' => 'lightdm-xsession'
+    '_LXSESSION_PID' => '3339'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/root'
+    'SHLVL' => '2'
+    'XDG_CONFIG_HOME' => '/home/lucho/.config'
+    'LANGUAGE' => 'es_AR:es'
+    'LOGNAME' => 'root'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/local/share/:/usr/share/:/usr/share/gdm/:/var/lib/menu-xdg/'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0.0'
+    'XDG_CURRENT_DESKTOP' => 'LXDE'
+    'XAUTHORITY' => '/tmp/libgksu-peqsVv/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1442334516.3327
+    'REQUEST_TIME' => 1442334516
+    'argv' => [
+        0 => './yii'
+        1 => 'rbac'
+    ]
+    'argc' => 2
+]
+2015-09-15 16:32:04 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Missing required arguments: configFile, bundleFile' in /var/www/html/cecv/vendor/yiisoft/yii2/console/Controller.php:129
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('asset', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('asset', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /var/www/html/cecv/yii(27): yii\base\Application->run()
+#8 {main}
+2015-09-15 16:32:04 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'SSH_AGENT_PID' => '3363'
+    'XDG_SESSION_ID' => '1'
+    'SAL_USE_VCLPLUGIN' => 'gtk'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm/data/lucho'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'XDG_MENU_PREFIX' => 'lxde-'
+    'OLDPWD' => '/var/www/html/cecv/backend'
+    'USER' => 'root'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-J7NSExy7aGJN/agent.3339'
+    'XDG_CONFIG_DIRS' => '/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'MAIL' => '/var/mail/root'
+    'DESKTOP_SESSION' => 'LXDE'
+    'PWD' => '/var/www/html/cecv'
+    'LANG' => 'es_AR.UTF-8'
+    'GDM_LANG' => 'es_AR.utf8'
+    'GDMSESSION' => 'lightdm-xsession'
+    '_LXSESSION_PID' => '3339'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/root'
+    'SHLVL' => '2'
+    'XDG_CONFIG_HOME' => '/home/lucho/.config'
+    'LANGUAGE' => 'es_AR:es'
+    'LOGNAME' => 'root'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/local/share/:/usr/share/:/usr/share/gdm/:/var/lib/menu-xdg/'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0.0'
+    'XDG_CURRENT_DESKTOP' => 'LXDE'
+    'XAUTHORITY' => '/tmp/libgksu-peqsVv/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1442334724.6718
+    'REQUEST_TIME' => 1442334724
+    'argv' => [
+        0 => './yii'
+        1 => 'asset'
+    ]
+    'argc' => 2
+]
+2015-09-15 16:32:10 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Missing required arguments: configFile' in /var/www/html/cecv/vendor/yiisoft/yii2/console/Controller.php:129
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('template', Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('template', Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('asset/template', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('asset/template', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /var/www/html/cecv/yii(27): yii\base\Application->run()
+#8 {main}
+2015-09-15 16:32:10 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'SSH_AGENT_PID' => '3363'
+    'XDG_SESSION_ID' => '1'
+    'SAL_USE_VCLPLUGIN' => 'gtk'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm/data/lucho'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'XDG_MENU_PREFIX' => 'lxde-'
+    'OLDPWD' => '/var/www/html/cecv/backend'
+    'USER' => 'root'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-J7NSExy7aGJN/agent.3339'
+    'XDG_CONFIG_DIRS' => '/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'MAIL' => '/var/mail/root'
+    'DESKTOP_SESSION' => 'LXDE'
+    'PWD' => '/var/www/html/cecv'
+    'LANG' => 'es_AR.UTF-8'
+    'GDM_LANG' => 'es_AR.utf8'
+    'GDMSESSION' => 'lightdm-xsession'
+    '_LXSESSION_PID' => '3339'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/root'
+    'SHLVL' => '2'
+    'XDG_CONFIG_HOME' => '/home/lucho/.config'
+    'LANGUAGE' => 'es_AR:es'
+    'LOGNAME' => 'root'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/local/share/:/usr/share/:/usr/share/gdm/:/var/lib/menu-xdg/'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0.0'
+    'XDG_CURRENT_DESKTOP' => 'LXDE'
+    'XAUTHORITY' => '/tmp/libgksu-peqsVv/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1442334730.0961
+    'REQUEST_TIME' => 1442334730
+    'argv' => [
+        0 => './yii'
+        1 => 'asset/template'
+    ]
+    'argc' => 2
+]
