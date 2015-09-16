@@ -82,7 +82,20 @@ class SiteController extends Controller
 			'rutaweb' => 'http://localhost/cecv/frontend/web']);
     }
     
-   
+    public function actionBusca()
+    {
+    		$req = Yii::$app->request;
+    		$h = $req->get('h');
+			$p = $req->get('p');
+			$r = $req->get('r');
+			$b = $req->get('b');
+        return $this->render('catalogo',[
+         'pagina' => $h,
+			'paginacion' => $p,
+        	'RegAbierto' => $r,
+        	'TBusqueda' => $b,
+			'rutaweb' => 'http://localhost/cecv/frontend/web']);
+    }
 
     /**
      * Displays contact page.

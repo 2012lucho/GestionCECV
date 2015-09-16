@@ -8,6 +8,8 @@ use yii\helpers\Url;
 use app\widgets\htmlvbusca;
 
 class HtmlView extends Widget {
+//Campo de busqueda	
+	public $TBusqueda;
 //atributos de seleccion de la informacion
 	public $devolver;
 	public $RegistrosPagina;

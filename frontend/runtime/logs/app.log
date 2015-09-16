@@ -11165,3 +11165,60 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1442346533.442
     'REQUEST_TIME' => 1442346533
 ]
+2015-09-16 16:33:56 [::1][-][3pe48dadpp9hp7pedqo0c715v0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "busca".' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('busca', Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-16 16:33:56 [::1][-][3pe48dadpp9hp7pedqo0c715v0][info][application] $_COOKIE = [
+    'PHPSESSID' => '3pe48dadpp9hp7pedqo0c715v0'
+    '_csrf' => 'ec10af0856bec76ff898b9051cfa990e48d4d7309202d21f9c1774d08ac5af7aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MCYacK1uU1ikWOjDBb4LWrr0RDKC1gfD\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=3pe48dadpp9hp7pedqo0c715v0; _csrf=ec10af0856bec76ff898b9051cfa990e48d4d7309202d21f9c1774d08ac5af7aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MCYacK1uU1ikWOjDBb4LWrr0RDKC1gfD%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '34152'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/busca'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/busca'
+    'PATH_TRANSLATED' => '/var/www/html/busca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/busca'
+    'REQUEST_TIME_FLOAT' => 1442421236.879
+    'REQUEST_TIME' => 1442421236
+]

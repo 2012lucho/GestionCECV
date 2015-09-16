@@ -18,9 +18,9 @@ return [
             'enableStrictParsing' => false,
             'rules' => [
                 [
-						'pattern' => 'catalogo/<h>/<p>/<r>',
+						'pattern' => 'catalogo/<h>/<p>/<r>/<b>',
 						'route' => 'site/index',
-						'defaults' => ['h'=>'1','p'=>'5','r'=>''],		
+						'defaults' => ['h'=>'1','p'=>'5','r'=>'','b'=>''],		
 					],
 				],
     	  ],
