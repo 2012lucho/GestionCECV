@@ -23,7 +23,7 @@ return [
 						'defaults' => ['h'=>'1','p'=>'5','r'=>''],		
 					],
 					[
-						'pattern' => 'busca/<h>/<p>/<r>/<b>',
+						'pattern' => 'busca/<b>',
 						'route' => 'site/busca',
 						'defaults' => ['h'=>'1','p'=>'5','r'=>'','b'=>''],		
 					],

@@ -1,6 +1,11 @@
 .panel-footer .row{
 	position: relative;
 }
+
+#ebusca{
+	color:#00b;
+}
+
 .RegistroLib {
 	border-top: 2px solid #aad;
 	padding: 5px 10px 5px 10px;
@@ -25,4 +30,7 @@
 }
 
 .buscalib{
+	border-left: 2px solid #DDD;
+	color: #eee;
+	font-weight: bold;
 }

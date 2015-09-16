@@ -12,7 +12,7 @@ use common\widgets\Alert;
 
 AppAsset::register($this);
 
-Yii::$app->homeUrl="index.php/catalogo";
+//Yii::$app->homeUrl="index.php/catalogo";
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

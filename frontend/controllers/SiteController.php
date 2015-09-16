@@ -79,6 +79,7 @@ class SiteController extends Controller
          'pagina' => $h,
 			'paginacion' => $p,
         	'RegAbierto' => $r,
+        	'TBusqueda' => '',
 			'rutaweb' => 'http://localhost/cecv/frontend/web']);
     }
     

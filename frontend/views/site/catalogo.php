@@ -10,6 +10,7 @@
 	'TituloSeccion' => 'Catálogo de libros',
 	'EtiquetaTitulo' => 'div',
 	'ClaseTitulo' => 'TitCat',
+	'TBusqueda' => $TBusqueda,
 	'PaginaActual' => $pagina,
 	'tabla' => 'Stock',
 	'Urlpag' => $rutaweb.'/index.php/catalogo',

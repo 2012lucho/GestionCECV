@@ -1,0 +1,44 @@
+este widget tiene como funcionalidad el armado de la pagina leyendo el la base de datos.
+se le puede indicar que represente todos los registros de una tabla determinada en formato paginado 
+a modo de blog, o que represente solo un registro.
+
+las propiedades publicas que defininen aquello que se va a devolver son:
+
+*** RegistrosPagina: para establecer la cantidad de registros por página (solo toda la tabla)
+
+*** TituloSeccion: para establecer el titulo de  la seccion
+
+*** PaginaActual: se le pasa la pagina apartir de la cual se tiene que mostrar el listado (solo toda la tabla)
+
+*** ClaseTitulo: se le pasa las clases que pueden llegar a tener la etiqueta donde se 
+	mostrara el titulo (solo toda la pagina)
+
+*** Urlpag: es la url del controlador que muestra la vista en la cual se hace la llamada al widget
+	se usa para generar las url de los botones de pagina anterior y siguiente, esa url es una
+	llamada al controlador (donde se pasan como parametro la pagina a la que hay que ir y la 
+	cantidad de registros por pagina) (solo toda la pagina)
+
+*** Registro: sirve para mostrar un solo registro de la tabla, en este caso el comportamiento del widget
+	cambia sensiblemente y solo se limita a mostrar la pagina tal como este guardada en el registro
+
+*** CampoCuerpo: indica cual sera el campo de la tabla que contiene el texto principal
+*** CampoTitulo: indica cual sera el campo de la tabla que contiene el titulo de la pagina
+
+*** DesabilitarEncabezado: si se pone en '1' debuelve solo los registros , sin un encabezado y pie de página.
+
+*** MostrarFecha: si se situa en '0' no se muestra la fecha en los titulos de las publicaciones
+
+*** ContExtraBody: sirve para agregar contenido html extra a cada publicacion.
+
+*** RedirigePag: si vale '1' el boton de ampliar redirige a la pagina de novedades
+
+*** SoloTitulo: si se pone en '1' no entrega la informacion del contenido de la noticia, 
+		la idea es no descargar info de mas
+
+A tener en cuenta
+***** por ahora hay que refinir cosas como corregir errores de situaciones no contepladas, como 
+pasar cualquier verdura en los paametros.
+
+***** deberia considerar usar los "html helper's" (para algo estan)
+
+

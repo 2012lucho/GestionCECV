@@ -88,6 +88,7 @@ class SiteController extends Controller
     		$h = $req->get('h');
 			$p = $req->get('p');
 			$r = $req->get('r');
+			$b = $req->get('b');
         return $this->render('catalogo',[
          'pagina' => $h,
 			'paginacion' => $p,

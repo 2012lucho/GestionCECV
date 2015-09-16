@@ -18,8 +18,13 @@ return [
             'enableStrictParsing' => false,
             'rules' => [
                 [
-						'pattern' => 'catalogo/<h>/<p>/<r>/<b>',
+						'pattern' => 'catalogo/<h>/<p>/<r>',
 						'route' => 'site/index',
+						'defaults' => ['h'=>'1','p'=>'5','r'=>''],		
+					],
+					[
+						'pattern' => 'busca/<h>/<p>/<r>/<b>',
+						'route' => 'site/busca',
 						'defaults' => ['h'=>'1','p'=>'5','r'=>'','b'=>''],		
 					],
 				],
