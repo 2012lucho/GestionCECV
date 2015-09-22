@@ -74,13 +74,11 @@ class SiteController extends Controller
     		$req = Yii::$app->request;
     		$h = $req->get('h');
 			$p = $req->get('p');
-			$r = $req->get('r');
-        return $this->render('catalogo',[
+		   return $this->render('catalogo',[
          'pagina' => $h,
 			'paginacion' => $p,
-        	'RegAbierto' => $r,
         	'TBusqueda' => '',
-			'rutaweb' => 'http://localhost/cecv/frontend/web']);
+			'rutaweb' => 'http://localhost/cecv/frontend/web/index.php/catalogo']);
     }
     
     public function actionBusca()
@@ -88,14 +86,12 @@ class SiteController extends Controller
     		$req = Yii::$app->request;
     		$h = $req->get('h');
 			$p = $req->get('p');
-			$r = $req->get('r');
 			$b = $req->get('b');
-        return $this->render('catalogo',[
+         return $this->render('catalogo',[
          'pagina' => $h,
 			'paginacion' => $p,
-        	'RegAbierto' => $r,
         	'TBusqueda' => $b,
-			'rutaweb' => 'http://localhost/cecv/frontend/web']);
+			'rutaweb' => 'http://localhost/cecv/frontend/web/index.php/busca']);
     }
 
     /**

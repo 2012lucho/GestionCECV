@@ -12466,3 +12466,667 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1442427733.68
     'REQUEST_TIME' => 1442427733
 ]
+2015-09-22 13:36:39 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: TBusqueda' in /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php:131
+Stack trace:
+#0 /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php(131): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/c...', 131, Array)
+#1 /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php(154): app\widgets\htmlview\HtmlView->PrePag()
+#2 /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php(180): app\widgets\htmlview\HtmlView->Pie()
+#3 /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php(188): app\widgets\htmlview\HtmlView->CrearPagina(Array, NULL)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Widget.php(98): app\widgets\htmlview\HtmlView->run()
+#5 /var/www/html/cecv/frontend/views/site/catalogo.php(25): yii\base\Widget::widget(Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/c...')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/c...', Array, Object(frontend\controllers\SiteController))
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('catalogo', Array, Object(frontend\controllers\SiteController))
+#10 /var/www/html/cecv/frontend/controllers/SiteController.php(83): yii\base\Controller->render('catalogo', Array)
+#11 [internal function]: frontend\controllers\SiteController->actionIndex()
+#12 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#15 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#16 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#18 {main}
+2015-09-22 13:36:38 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '37981'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PHP_SELF' => '/cecv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1442928998.073
+    'REQUEST_TIME' => 1442928998
+]
+2015-09-22 13:36:39 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2015-09-22 13:36:38 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '37981'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PHP_SELF' => '/cecv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1442928998.073
+    'REQUEST_TIME' => 1442928998
+]
+2015-09-22 13:47:00 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: TBusqueda' in /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php:131
+Stack trace:
+#0 /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php(131): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/c...', 131, Array)
+#1 /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php(154): app\widgets\htmlview\HtmlView->PrePag()
+#2 /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php(180): app\widgets\htmlview\HtmlView->Pie()
+#3 /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php(188): app\widgets\htmlview\HtmlView->CrearPagina(Array, NULL)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Widget.php(98): app\widgets\htmlview\HtmlView->run()
+#5 /var/www/html/cecv/frontend/views/site/catalogo.php(23): yii\base\Widget::widget(Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/c...')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/c...', Array, Object(frontend\controllers\SiteController))
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('catalogo', Array, Object(frontend\controllers\SiteController))
+#10 /var/www/html/cecv/frontend/controllers/SiteController.php(83): yii\base\Controller->render('catalogo', Array)
+#11 [internal function]: frontend\controllers\SiteController->actionIndex()
+#12 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#15 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#16 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#18 {main}
+2015-09-22 13:46:59 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38103'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PHP_SELF' => '/cecv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1442929619.794
+    'REQUEST_TIME' => 1442929619
+]
+2015-09-22 13:47:00 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2015-09-22 13:46:59 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38103'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PHP_SELF' => '/cecv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1442929619.794
+    'REQUEST_TIME' => 1442929619
+]
+2015-09-22 13:49:05 [::1][-][ii1269vl1gltmmelukp57mvn12][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "busca/0/5".' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('busca/0/5', Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 13:49:05 [::1][-][ii1269vl1gltmmelukp57mvn12][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ii1269vl1gltmmelukp57mvn12'
+    '_csrf' => 'a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/cecv/frontend/web/index.php/busca/d'
+    'HTTP_COOKIE' => 'PHPSESSID=ii1269vl1gltmmelukp57mvn12; _csrf=a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38121'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/busca/0/5'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/busca/0/5'
+    'PATH_TRANSLATED' => '/var/www/html/busca/0/5'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/busca/0/5'
+    'REQUEST_TIME_FLOAT' => 1442929745.074
+    'REQUEST_TIME' => 1442929745
+]
+2015-09-22 13:52:20 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: TBusqueda' in /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php:131
+Stack trace:
+#0 /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php(131): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/c...', 131, Array)
+#1 /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php(156): app\widgets\htmlview\HtmlView->PrePag()
+#2 /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php(182): app\widgets\htmlview\HtmlView->Pie()
+#3 /var/www/html/cecv/frontend/widgets/htmlview/htmlview.php(190): app\widgets\htmlview\HtmlView->CrearPagina(Array, '5')
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Widget.php(98): app\widgets\htmlview\HtmlView->run()
+#5 /var/www/html/cecv/frontend/views/site/catalogo.php(23): yii\base\Widget::widget(Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/c...')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/c...', Array, Object(frontend\controllers\SiteController))
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('catalogo', Array, Object(frontend\controllers\SiteController))
+#10 /var/www/html/cecv/frontend/controllers/SiteController.php(98): yii\base\Controller->render('catalogo', Array)
+#11 [internal function]: frontend\controllers\SiteController->actionBusca()
+#12 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('busca', Array)
+#15 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/busca', Array)
+#16 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#18 {main}
+2015-09-22 13:52:20 [::1][-][-][info][application] $_GET = [
+    'h' => '1'
+    'p' => '5'
+    'r' => ''
+    'b' => 'a'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ii1269vl1gltmmelukp57mvn12'
+    '_csrf' => 'a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=ii1269vl1gltmmelukp57mvn12; _csrf=a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38130'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/busca/a'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/busca/a'
+    'PATH_TRANSLATED' => '/var/www/html/busca/a'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/busca/a'
+    'REQUEST_TIME_FLOAT' => 1442929940.325
+    'REQUEST_TIME' => 1442929940
+]
+2015-09-22 13:52:20 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2015-09-22 13:52:20 [::1][-][-][info][application] $_GET = [
+    'h' => '1'
+    'p' => '5'
+    'r' => ''
+    'b' => 'a'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ii1269vl1gltmmelukp57mvn12'
+    '_csrf' => 'a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=ii1269vl1gltmmelukp57mvn12; _csrf=a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38130'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/busca/a'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/busca/a'
+    'PATH_TRANSLATED' => '/var/www/html/busca/a'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/busca/a'
+    'REQUEST_TIME_FLOAT' => 1442929940.325
+    'REQUEST_TIME' => 1442929940
+]
+2015-09-22 13:56:07 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\View::paginacion' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/frontend/views/site/catalogo.php(5): yii\base\Component->__get('paginacion')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/c...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/c...', Array, Object(frontend\controllers\SiteController))
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('catalogo', Array, Object(frontend\controllers\SiteController))
+#5 /var/www/html/cecv/frontend/controllers/SiteController.php(83): yii\base\Controller->render('catalogo', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-09-22 13:56:07 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ii1269vl1gltmmelukp57mvn12'
+    '_csrf' => 'a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/cecv/frontend/web/index.php/busca/El%20gato,%20universo%20microsc%C3%B3pico/0/5'
+    'HTTP_COOKIE' => 'PHPSESSID=ii1269vl1gltmmelukp57mvn12; _csrf=a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38190'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/index.php'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PHP_SELF' => '/cecv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1442930167.221
+    'REQUEST_TIME' => 1442930167
+]
+2015-09-22 13:56:07 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-09-22 13:56:07 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ii1269vl1gltmmelukp57mvn12'
+    '_csrf' => 'a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/cecv/frontend/web/index.php/busca/El%20gato,%20universo%20microsc%C3%B3pico/0/5'
+    'HTTP_COOKIE' => 'PHPSESSID=ii1269vl1gltmmelukp57mvn12; _csrf=a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38190'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/index.php'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PHP_SELF' => '/cecv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1442930167.221
+    'REQUEST_TIME' => 1442930167
+]
+2015-09-22 14:04:16 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: RegAbierto' in /var/www/html/cecv/frontend/views/site/catalogo.php:20
+Stack trace:
+#0 /var/www/html/cecv/frontend/views/site/catalogo.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/c...', 20, Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/c...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/c...', Array, Object(frontend\controllers\SiteController))
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('catalogo', Array, Object(frontend\controllers\SiteController))
+#5 /var/www/html/cecv/frontend/controllers/SiteController.php(81): yii\base\Controller->render('catalogo', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/index', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-09-22 14:04:16 [::1][-][-][info][application] $_GET = [
+    'h' => '1'
+    'p' => '4'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ii1269vl1gltmmelukp57mvn12'
+    '_csrf' => 'a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=ii1269vl1gltmmelukp57mvn12; _csrf=a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38329'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/catalogo/1/4'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/catalogo/1/4'
+    'PATH_TRANSLATED' => '/var/www/html/catalogo/1/4'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/catalogo/1/4'
+    'REQUEST_TIME_FLOAT' => 1442930656.399
+    'REQUEST_TIME' => 1442930656
+]
+2015-09-22 14:04:16 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-09-22 14:04:16 [::1][-][-][info][application] $_GET = [
+    'h' => '1'
+    'p' => '4'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ii1269vl1gltmmelukp57mvn12'
+    '_csrf' => 'a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=ii1269vl1gltmmelukp57mvn12; _csrf=a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38329'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/catalogo/1/4'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/catalogo/1/4'
+    'PATH_TRANSLATED' => '/var/www/html/catalogo/1/4'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/catalogo/1/4'
+    'REQUEST_TIME_FLOAT' => 1442930656.399
+    'REQUEST_TIME' => 1442930656
+]
+2015-09-22 14:33:19 [::1][-][ii1269vl1gltmmelukp57mvn12][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "busca/".' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('busca/', Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-09-22 14:33:19 [::1][-][ii1269vl1gltmmelukp57mvn12][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ii1269vl1gltmmelukp57mvn12'
+    '_csrf' => 'a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/cecv/frontend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=ii1269vl1gltmmelukp57mvn12; _csrf=a974a5d36223eeada616714c2c7094ff375d40e79fdf8cf6e7c8c3432357c7bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KRuR0EJWAl3oDqwGPSnPUYdGe7jOmEDe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38665'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/busca/'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/busca/'
+    'PATH_TRANSLATED' => '/var/www/html/busca/'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/busca/'
+    'REQUEST_TIME_FLOAT' => 1442932399.686
+    'REQUEST_TIME' => 1442932399
+]

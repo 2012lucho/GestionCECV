@@ -20,12 +20,12 @@ return [
                 [
 						'pattern' => 'catalogo/<h>/<p>/<r>',
 						'route' => 'site/index',
-						'defaults' => ['h'=>'1','p'=>'5','r'=>''],		
+						'defaults' => ['h'=>'1','p'=>'10','r'=>''],		
 					],
 					[
-						'pattern' => 'busca/<h>/<p>/<r>/<b>',
+						'pattern' => 'busca/<b>/<h>/<p>',
 						'route' => 'site/busca',
-						'defaults' => ['h'=>'1','p'=>'5','r'=>'','b'=>''],		
+						'defaults' => ['h'=>'1','p'=>'10','r'=>'','b'=>''],		
 					],
 				],
     	  ],

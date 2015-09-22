@@ -18,14 +18,14 @@ return [
             'enableStrictParsing' => false,
             'rules' => [
                 [
-						'pattern' => 'catalogo/<h>/<p>/<r>',
+						'pattern' => 'catalogo/<h>/<p>',
 						'route' => 'site/index',
-						'defaults' => ['h'=>'1','p'=>'5','r'=>''],		
+						'defaults' => ['h'=>'1','p'=>'10'],		
 					],
 					[
-						'pattern' => 'busca/<b>',
+						'pattern' => 'busca/<b>/<h>/<p>',
 						'route' => 'site/busca',
-						'defaults' => ['h'=>'1','p'=>'5','r'=>'','b'=>''],		
+						'defaults' => ['h'=>'1','p'=>'10','b'=>''],		
 					],
 				],
     	  ],

@@ -13,10 +13,9 @@
 	'TBusqueda' => $TBusqueda,
 	'PaginaActual' => $pagina,
 	'tabla' => 'Stock',
-	'Urlpag' => $rutaweb.'/index.php/catalogo',
+	'Urlpag' => $rutaweb,
 	'registro' => 'todos',
 	'CampoTitulo' => 'Nombre',
 	'CampoCuerpo' => 'Descripcion',
-	'RegAbierto' => $RegAbierto,
 	'CampoIndice'=> 'idStock',
 ]);?>
