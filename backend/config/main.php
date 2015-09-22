@@ -16,8 +16,23 @@ return [
     		'gestionuser' => [
             'class' => 'app\modules\gestionuser\gestionuser',
         	],
+        	'gestionstock' => [
+            'class' => 'app\modules\gestionstock\gestionstock',
+        ],
        ],
     'components' => [
+    	  'urlManager' => [
+    	  		'enablePrettyUrl' => true,
+            'showScriptName' => true,
+            'enableStrictParsing' => false,
+            'rules' => [
+                [
+						'pattern' => 'stock',
+						'route' => 'gestionstock/stock/index',
+						//'defaults' => ['h'=>'1','p'=>'10'],		
+					],
+				],
+    	  ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,

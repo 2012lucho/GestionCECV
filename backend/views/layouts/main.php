@@ -42,7 +42,7 @@ AppAsset::register($this);
     } else {
         $menuItems[] = ['label' => 'Administración', 'items' => [
 					['label' => 'Estudiantes'],					
-					['label' => 'Libros'],    					
+					['label' => 'Libros', 'url' => ['/stock']],    					
 					['label' => 'Cuentas de Usuario'],        			
         			['label' => 'Salir (' . Yii::$app->user->identity->username . ')','url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']],
         		],

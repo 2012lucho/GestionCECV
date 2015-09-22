@@ -42,7 +42,7 @@ AppAsset::register($this);
     } else {
         $menuItems[] = ['label' => 'Administración', 'items' => [
 					['label' => 'Estudiantes'],					
-					['label' => 'Libros'],    					
+					['label' => 'Libros', 'url' => '/site/stock'],    					
 					['label' => 'Cuentas de Usuario'],        			
         			['label' => 'Salir (' . Yii::$app->user->identity->username . ')','url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']],
         		],
@@ -66,9 +66,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">Desarrollado por <a href="http://www.coodesoft.com.ar">Coodesoft</a> </p>
     </div>
 </footer>
 
