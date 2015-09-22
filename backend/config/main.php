@@ -18,7 +18,10 @@ return [
         	],
         	'gestionstock' => [
             'class' => 'app\modules\gestionstock\gestionstock',
-        ],
+         ],
+         'gestiondatos' => [
+            'class' => 'app\modules\gestiondatos\gestiondatos',
+         ],
        ],
     'components' => [
     	  'urlManager' => [
@@ -28,9 +31,16 @@ return [
             'rules' => [
                 [
 						'pattern' => 'stock',
-						'route' => 'gestionstock/stock/index',
-						//'defaults' => ['h'=>'1','p'=>'10'],		
-					],
+						'route' => 'gestionstock/stock/index',		
+					 ],
+					 [
+						'pattern' => 'users',
+						'route' => 'gestionuser/user/index',		
+					 ],
+					 [
+						'pattern' => 'datos',
+						'route' => 'gestiondatos/datos/index',		
+					 ],
 				],
     	  ],
         'user' => [

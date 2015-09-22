@@ -41,9 +41,9 @@ AppAsset::register($this);
         $menuItems[] = ['label' => 'Ingresar', 'url' => ['/site/login']];
     } else {
         $menuItems[] = ['label' => 'Administración', 'items' => [
-					['label' => 'Estudiantes'],					
+					['label' => 'Estudiantes', 'url' => ['/datos']],					
 					['label' => 'Libros', 'url' => ['/stock']],    					
-					['label' => 'Cuentas de Usuario'],        			
+					['label' => 'Cuentas de Usuario', 'url' => ['/users']],        			
         			['label' => 'Salir (' . Yii::$app->user->identity->username . ')','url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']],
         		],
         ];

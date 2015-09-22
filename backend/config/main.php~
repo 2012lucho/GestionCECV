@@ -27,10 +27,17 @@ return [
             'enableStrictParsing' => false,
             'rules' => [
                 [
-						'pattern' => 'Stock',
-						'route' => 'gestionstock/stock/index',
-						//'defaults' => ['h'=>'1','p'=>'10'],		
-					],
+						'pattern' => 'stock',
+						'route' => 'gestionstock/stock/index',		
+					 ],
+					 [
+						'pattern' => 'users',
+						'route' => 'gestionuser/user/index',		
+					 ],
+					 [
+						'pattern' => 'datos',
+						'route' => 'gestiondatos/datos/index',		
+					 ],
 				],
     	  ],
         'user' => [
