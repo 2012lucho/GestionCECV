@@ -39,7 +39,7 @@ return [
 					 ],
 					 [
 						'pattern' => 'datos',
-						'route' => 'gestiondatos/datos/index',		
+						'route' => 'gestiondatos/info/index',		
 					 ],
 				],
     	  ],
