@@ -3,6 +3,10 @@
 	use app\widgets\htmlview\htmlviewAssets;
 	htmlviewAssets::register($this);
 	$this->title = 'Catálogo de libros';
+	
+	use app\modules\buscador\buscador;
+	use app\modules\buscador\buscadorAssets;
+	buscadorAssets::register($this);
 ?>
 
 <?= HtmlView::widget([
@@ -19,3 +23,4 @@
 	'CampoCuerpo' => 'Descripcion',
 	'CampoIndice'=> 'Nombre',
 ]);?>
+

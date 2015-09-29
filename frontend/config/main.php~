@@ -11,21 +11,31 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    'modules' => [
+    		'buscador' => [
+            'class' => 'app\modules\buscador\buscador',
+        	],
+     ],
     'components' => [
     	  'urlManager' => [
     	  		'enablePrettyUrl' => true,
             'showScriptName' => true,
             'enableStrictParsing' => false,
             'rules' => [
-                [
-						'pattern' => 'catalogo/<h>/<p>/<r>',
+            	[
+						'pattern' => 'rbusca/<h>/<p>',
+						'route' => 'buscador/buscador/resultado',
+						'defaults' => ['h'=>'1','p'=>'10'],		
+					],
+               [
+						'pattern' => 'catalogo/<h>/<p>',
 						'route' => 'site/index',
-						'defaults' => ['h'=>'1','p'=>'10','r'=>''],		
+						'defaults' => ['h'=>'1','p'=>'10'],		
 					],
 					[
 						'pattern' => 'busca/<b>/<h>/<p>',
 						'route' => 'site/busca',
-						'defaults' => ['h'=>'1','p'=>'10','r'=>'','b'=>''],		
+						'defaults' => ['h'=>'1','p'=>'10','b'=>''],		
 					],
 				],
     	  ],

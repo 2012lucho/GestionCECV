@@ -1,5 +1,5 @@
 <?php
-
+//dfdfdfdf
 $params = array_merge(
     require(__DIR__ . '/../../common/config/params.php'),
     require(__DIR__ . '/../../common/config/params-local.php'),
@@ -32,6 +32,10 @@ return [
                 [
 						'pattern' => 'stock',
 						'route' => 'gestionstock/stock/index',		
+					 ],
+					 [
+						'pattern' => 'Npresta',
+						'route' => 'gestionstock/stock/presta',		
 					 ],
 					 [
 						'pattern' => 'users',

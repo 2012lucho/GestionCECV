@@ -11,13 +11,23 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    'modules' => [
+    		'buscador' => [
+            'class' => 'app\modules\buscador\buscador',
+        	],
+     ],
     'components' => [
     	  'urlManager' => [
     	  		'enablePrettyUrl' => true,
             'showScriptName' => true,
             'enableStrictParsing' => false,
             'rules' => [
-                [
+            	[
+						'pattern' => 'rbusca/<h>/<p>',
+						'route' => 'buscador/buscador/result',
+						'defaults' => ['h'=>'1','p'=>'10'],		
+					],
+               [
 						'pattern' => 'catalogo/<h>/<p>',
 						'route' => 'site/index',
 						'defaults' => ['h'=>'1','p'=>'10'],		

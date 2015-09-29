@@ -25,13 +25,17 @@ return [
        ],
     'components' => [
     	  'urlManager' => [
-    	  		//'enablePrettyUrl' => true,
+    	  		'enablePrettyUrl' => true,
             'showScriptName' => true,
             'enableStrictParsing' => false,
             'rules' => [
                 [
 						'pattern' => 'stock',
 						'route' => 'gestionstock/stock/index',		
+					 ],
+					 [
+						'pattern' => 'Npresta',
+						'route' => 'gestionstock/stock/presta',		
 					 ],
 					 [
 						'pattern' => 'users',
