@@ -8,6 +8,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 use common\models\stock;
+use common\models\stockar;
 use app\modules\buscador\models\resultados;
 
 use yii\helpers\BaseJson;
@@ -16,8 +17,12 @@ class BuscadorController extends Controller
 {
     public function actionResult()
     {
-    	 $modelo=new stock;
-       return BaseJson::encode("");
+		 $TBusqueda=urldecode($_REQUEST["TB"]);		 
+		 $Model = new stock();
+		 $Model = $Model::find()
+		 	->where(['like','Nombre','%'.$TBusqueda.'%',false])
+			-> all();
+    	 return BaseJson::encode($Model);
     }
 
 }
