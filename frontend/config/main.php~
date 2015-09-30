@@ -24,7 +24,7 @@ return [
             'rules' => [
             	[
 						'pattern' => 'rbusca/<h>/<p>',
-						'route' => 'buscador/buscador/resultado',
+						'route' => 'buscador/buscador/resultb',
 						'defaults' => ['h'=>'1','p'=>'10'],		
 					],
                [

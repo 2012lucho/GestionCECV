@@ -22,12 +22,15 @@ return [
             'showScriptName' => true,
             'enableStrictParsing' => false,
             'rules' => [
-            	[
-						'pattern' => 'rbusca/<h>/<p>',
-						'route' => 'buscador/buscador/result',
-						'defaults' => ['h'=>'1','p'=>'10'],		
+            		[
+						'pattern' => 'rbusca',
+						'route' => 'buscador/buscador/resultb',	
 					],
-               [
+					[
+						'pattern' => 'rtodo',
+						'route' => 'buscador/buscador/resultt',
+					],
+               		[
 						'pattern' => 'catalogo/<h>/<p>',
 						'route' => 'site/index',
 						'defaults' => ['h'=>'1','p'=>'10'],		
