@@ -1,6 +1,16 @@
 .NCero  {color:#f00;}
 .NoCero {color:#0a0;}
 
+.bEncab{
+	padding: 5px;
+	background:#DDD;
+}
+
+.Btit {
+	color: #555;
+	font-weight: bold;
+}
+
 .panel-footer .row{
 	position: relative;
 }
