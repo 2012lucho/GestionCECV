@@ -15,6 +15,15 @@ use yii\helpers\BaseJson;
 
 class BuscadorController extends Controller
 {
+	public function behaviors()
+	{
+    	return [
+        	'corsFilter' => [
+            	'class' => \yii\filters\Cors::className(),
+        	],
+    	];
+	}	
+	
 	//devolver los resultados que coinciden con el termino de busqueda
     public function actionResultb()
     { 

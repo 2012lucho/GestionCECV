@@ -27,7 +27,7 @@ class BuscadorController extends Controller
 		 $Resultado=[];	
 		 $Model = new stock();
 		 $Model = $Model::find() //se busca
-		 	->where(['like','Nombre','%'.$TBusqueda.'%',false]);
+		 	->where(['like','Nombre','%'.$TBusqueda.'%',false]); //si no hay termino de busqueda solo quedan los comodines y debuelve toos los resultados
 		 if ($OrdenResu != "n"){ //se ordena
 		 	if ($OrdenResu == "d"){ $Model = $Model->orderBy(['Nombre'=>SORT_DESC]);} else {
 		 	if ($OrdenResu == "a"){ $Model = $Model->orderBy(['Nombre'=>SORT_ASC]);}

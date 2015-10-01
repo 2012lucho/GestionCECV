@@ -13,10 +13,10 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
-    		'gestionuser' => [
+    	 'gestionuser' => [
             'class' => 'app\modules\gestionuser\gestionuser',
-        	],
-        	'gestionstock' => [
+         ],
+         'gestionstock' => [
             'class' => 'app\modules\gestionstock\gestionstock',
          ],
          'gestiondatos' => [
@@ -25,21 +25,21 @@ return [
        ],
     'components' => [
     	  'urlManager' => [
-    	  		'enablePrettyUrl' => true,
+    	  	'enablePrettyUrl' => true,
             'showScriptName' => true,
             'enableStrictParsing' => false,
             'rules' => [
-                [
+                	 [
 						'pattern' => 'stock',
 						'route' => 'gestionstock/stock/index',		
 					 ],
 					 [
-						'pattern' => 'Npresta',
-						'route' => 'gestionstock/stock/presta',		
+						'pattern' => 'npresta',
+						'route' => 'gestionstock/prestamos/nuevo',		
 					 ],
 					 [
 						'pattern' => 'users',
-						'route' => 'gestionuser/user/index',		
+						'route' => 'gestionuser/users/index',		
 					 ],
 					 [
 						'pattern' => 'datos',

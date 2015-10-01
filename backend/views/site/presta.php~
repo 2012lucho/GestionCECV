@@ -1,11 +1,14 @@
 <?php
-	use app\widgets\htmlview\htmlview;
-	use app\widgets\htmlview\htmlviewAssets;
-	htmlviewAssets::register($this);
+	//importamos el controlador de gestion de prestamos para mostrar en el index
+use app\modules\gestionstock\controllers\PrestamosController;
 /* @var $this yii\web\View */
 
 	$this->title = 'Área de administración - Archivar préstamo';
+	
+	echo PrestamosController::actionIndex();
+	
 ?>
+
 <div class="site-presta row">
 	<div class="col-md-6">
 		busca 1	

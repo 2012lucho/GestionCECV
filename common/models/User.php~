@@ -33,7 +33,7 @@ class User extends ActiveRecord implements IdentityInterface
 	 {
 	 	  $ran = Yii::$app->user->identity->rango;
 	 	  for ($c=0;$c<sizeof($rango);$c++) {
-	 	  		if ($ran != $rango[$c]) {return true;}
+	 	  		if ($ran == $rango[$c]) {return true;}
 	 	  }
 		  return false;
 	 }
@@ -74,6 +74,16 @@ class User extends ActiveRecord implements IdentityInterface
         return [
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+            [["email"], 'string', 'max' => 50],
+            [["rango"], 'string', 'max' => 2],
+        ];
+    }
+
+	public function attributeLabels()
+    {
+        return [
+            'username' => 'Usuario',
+            'email' => 'Correo Electrónico',
         ];
     }
 
