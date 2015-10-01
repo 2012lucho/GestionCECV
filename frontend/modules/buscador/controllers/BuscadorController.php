@@ -17,22 +17,40 @@ class BuscadorController extends Controller
 {
 	//devolver los resultados que coinciden con el termino de busqueda
     public function actionResultb()
-    {
-		 //$Resultado=[];		 
-		 $TBusqueda=urldecode($_REQUEST["TB"]);		 
+    { 
+		 //entrada de parametros		 
+		 $TBusqueda=urldecode($_REQUEST["TB"]);	
+		 $OrdenResu=urldecode($_REQUEST["O"]); // n=no ordenado a=ascendente d=descendente
+		 //$Desplaza=urldecode($_REQUEST["D"]); // desplazamiento
+		 //$CantReg=urldecode($_REQUEST["C"]); // cantidad de registros a devolver
+		 
+		 $Resultado=[];	
 		 $Model = new stock();
-		 $Model = $Model::find()
-		 	->where(['like','Nombre','%'.$TBusqueda.'%',false])
-			-> all();
-		 //$Resultado['rbusca'] = $Model;
-    	 return BaseJson::encode($Model);
+		 $Model = $Model::find() //se busca
+		 	->where(['like','Nombre','%'.$TBusqueda.'%',false]);
+		 if ($OrdenResu != "n"){ //se ordena
+		 	if ($OrdenResu == "d"){ $Model = $Model->orderBy(['Nombre'=>SORT_DESC]);} else {
+		 	if ($OrdenResu == "a"){ $Model = $Model->orderBy(['Nombre'=>SORT_ASC]);}
+		 	}		 
+		 }
+		 
+		 $Resultado["ResBusca"] = $Model-> all();
+		 $Resultado["CantTot"] = $Model->count();
+    	 return BaseJson::encode($Resultado);
     }
     
 	//devolver todos los resultados
 	public function actionResultt()
 	{
+		//entrada de parametros
+		$Desplaza=urldecode($_REQUEST["D"]); // desplazamiento
+        $CantReg=urldecode($_REQUEST["C"]); // cantidad de registros a devolver
+		 
+		$Resultado=[];
 		$Model = new stock();
-		$Model = $Model::find()->all();
-		return BaseJson::encode($Model);
+		$Model = $Model::find();
+		$Resultado["CantTot"] = $Model->count();
+		$Resultado["ResBusca"] = $Model->all();
+		return BaseJson::encode($Resultado);
 	}
 }
