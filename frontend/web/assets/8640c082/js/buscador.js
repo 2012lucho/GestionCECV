@@ -1,4 +1,4 @@
-const RutaWeb="http://localhost/cecv/frontend/web/index.php";
+const RutaWeb="http://192.168.0.42/cecv/frontend/web/index.php";
 const PeticionT="/rtodo"; //parte ruta peticion elementos sin filtrar
 const PeticionB="/rbusca"; //parte ruta peticion elementos filtrados
 const RegistrosPag=5;

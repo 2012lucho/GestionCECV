@@ -1,5 +1,6 @@
 .NCero  {color:#f00;}
 .NoCero {color:#0a0;}
+.NCero,.NoCero{display: inline-block;}
 
 .bEncab, .bFoot{
 	padding: 5px;

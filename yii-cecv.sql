@@ -2,10 +2,10 @@
 -- version 3.4.11.1deb2
 -- http://www.phpmyadmin.net
 --
--- Servidor: localhost
--- Tiempo de generación: 16-09-2015 a las 12:20:06
--- Versión del servidor: 5.5.43
--- Versión de PHP: 5.6.7-1
+-- Host: localhost
+-- Generation Time: Oct 01, 2015 at 02:03 PM
+-- Server version: 5.5.43
+-- PHP Version: 5.6.7-1
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,28 +17,35 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `yii-cecv`
+-- Database: `yii-cecv`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `DatosUser`
+-- Table structure for table `DatosUser`
 --
 
 CREATE TABLE IF NOT EXISTS `DatosUser` (
   `IdUser` int(6) NOT NULL AUTO_INCREMENT,
   `NombreyApellido` varchar(50) NOT NULL,
-  `DNI` varchar(9) NOT NULL,
+  `DNI` varchar(12) NOT NULL,
   `Email` varchar(50) NOT NULL,
   `Telefono` varchar(20) NOT NULL,
   PRIMARY KEY (`IdUser`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `DatosUser`
+--
+
+INSERT INTO `DatosUser` (`IdUser`, `NombreyApellido`, `DNI`, `Email`, `Telefono`) VALUES
+(1, 'Juan Manuel Vasquez', '38.270.23', 'JMVaz@hotmail.com', '3456 4545343');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `migration`
+-- Table structure for table `migration`
 --
 
 CREATE TABLE IF NOT EXISTS `migration` (
@@ -48,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `migration` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `migration`
+-- Dumping data for table `migration`
 --
 
 INSERT INTO `migration` (`version`, `apply_time`) VALUES
@@ -58,7 +65,7 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `Prestamos`
+-- Table structure for table `Prestamos`
 --
 
 CREATE TABLE IF NOT EXISTS `Prestamos` (
@@ -76,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `Prestamos` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `rangos`
+-- Table structure for table `rangos`
 --
 
 CREATE TABLE IF NOT EXISTS `rangos` (
@@ -88,7 +95,7 @@ CREATE TABLE IF NOT EXISTS `rangos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `rangos`
+-- Dumping data for table `rangos`
 --
 
 INSERT INTO `rangos` (`rango`, `editar user`, `agregar user`, `agregar catalogo`) VALUES
@@ -97,7 +104,7 @@ INSERT INTO `rangos` (`rango`, `editar user`, `agregar user`, `agregar catalogo`
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `Stock`
+-- Table structure for table `Stock`
 --
 
 CREATE TABLE IF NOT EXISTS `Stock` (
@@ -109,10 +116,10 @@ CREATE TABLE IF NOT EXISTS `Stock` (
   `Cantidad` int(10) NOT NULL,
   `CantidadDisponible` int(10) NOT NULL,
   PRIMARY KEY (`idStock`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
 
 --
--- Volcado de datos para la tabla `Stock`
+-- Dumping data for table `Stock`
 --
 
 INSERT INTO `Stock` (`idStock`, `Codigo`, `Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES
@@ -125,12 +132,14 @@ INSERT INTO `Stock` (`idStock`, `Codigo`, `Nombre`, `Descripcion`, `Autor`, `Can
 (8, 'jjghgjhgjg', 'De limón y Sal Vodka y mucho más', 'Que sería de la barra sin bebidas fuertes, puedes preparar muchos cocteles con gran porcentaje etílico y hermoso sabor!', 'Cherenkov', 200, 23),
 (9, '2353453', 'El gato, universo microscópico', 'El gato está vivo y muerto al mismo tiempo! Descubrelo a través de las 1200 páginas que te ofrece este libro!', 'Schoringer', 100, 90),
 (10, '6634', 'Química inorgánica I', 'El primer curso de Química, retirelo yá se agota!!!', 'Jaime', 1000, 998),
-(11, '768768', 'Química Inorgánica II', 'Segundo curso de Química ideal para aquellos que aprobaron Química I, Vamós para adelante que se puede!', 'jaime', 1200, 800);
+(11, '768768', 'Química Inorgánica II', 'Segundo curso de Química ideal para aquellos que aprobaron Química I, Vamós para adelante que se puede!', 'jaime', 1200, 800),
+(12, 'sswfsd45', 'Anatomía I', 'La constitución del cuerpo algo complejo un misterio que este libro pretende comenzar a develar', 'Klimovsky', 300, 200),
+(13, 'sdfsfw45', 'Química Biológica', 'Metabolismo y la cuestión química, nunca antes mejor explicada', 'Athur Fracis', 200, 30);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
@@ -151,7 +160,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
 
 --
--- Volcado de datos para la tabla `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `rango`, `status`, `created_at`, `updated_at`) VALUES
@@ -159,11 +168,11 @@ INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_res
 (2, 'lucho', 'o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p', '$2y$13$6Wz7jDuP3Y.Deuo1YV1ELOrNY6/zpUikNcfwAztWHC28iMmyOMTum', NULL, 'lucho@gmaill.com', 0, 10, 1441812643, 1441812643);
 
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `Prestamos`
+-- Constraints for table `Prestamos`
 --
 ALTER TABLE `Prestamos`
   ADD CONSTRAINT `Prestamos_ibfk_1` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`),

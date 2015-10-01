@@ -1,7 +1,7 @@
 .NCero  {color:#f00;}
 .NoCero {color:#0a0;}
 
-.bEncab{
+.bEncab, .bFoot{
 	padding: 5px;
 	background:#DDD;
 }
