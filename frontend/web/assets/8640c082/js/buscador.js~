@@ -34,7 +34,7 @@ function CreaVista(data,Elemento,n){
 
 function MostrarInfoRes(data,n){
 	var mostrando=Desplaza+RegistrosPag;
-	if (mostrando>CantidadT){mostrando=CantidadT;}
+	//if (mostrando>CantidadT){mostrando=CantidadT;}
 	$('#InfoResult'+n).html("Resultados: "+mostrando+" de "+data["CantTot"]);
 	CantidadT=data["CantTot"];
 }
