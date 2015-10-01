@@ -1,7 +1,5 @@
 <?php
-	use app\widgets\htmlview\htmlview;
-	use app\widgets\htmlview\htmlviewAssets;
-	htmlviewAssets::register($this);
+	
 /* @var $this yii\web\View */
 
 	$this->title = 'Área de administración - Archivar préstamo';
