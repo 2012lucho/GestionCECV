@@ -21,36 +21,21 @@ class BuscadorController extends Controller
 		 //entrada de parametros		 
 		 $TBusqueda=urldecode($_REQUEST["TB"]);	
 		 $OrdenResu=urldecode($_REQUEST["O"]); // n=no ordenado a=ascendente d=descendente
-		 //$Desplaza=urldecode($_REQUEST["D"]); // desplazamiento
-		 //$CantReg=urldecode($_REQUEST["C"]); // cantidad de registros a devolver
+		 $Desplaza=urldecode($_REQUEST["D"]); // desplazamiento
+		 $CantReg=urldecode($_REQUEST["C"]); // cantidad de registros a devolver
 		 
 		 $Resultado=[];	
 		 $Model = new stock();
 		 $Model = $Model::find() //se busca
-		 	->where(['like','Nombre','%'.$TBusqueda.'%',false]);
+		 	->where(['like','Nombre','%'.$TBusqueda.'%',false]); //si no hay termino de busqueda solo quedan los comodines y debuelve toos los resultados
 		 if ($OrdenResu != "n"){ //se ordena
 		 	if ($OrdenResu == "d"){ $Model = $Model->orderBy(['Nombre'=>SORT_DESC]);} else {
 		 	if ($OrdenResu == "a"){ $Model = $Model->orderBy(['Nombre'=>SORT_ASC]);}
 		 	}		 
 		 }
 		 
-		 $Resultado["ResBusca"] = $Model-> all();
-		 $Resultado["CantTot"] = $Model->count();
+		 $Resultado["CantTot"] = $Model->count(); //retornamos la cantidad total de registros
+		 $Resultado["ResBusca"] = $Model->offset($Desplaza)->limit($CantReg)->all();  //Agregamos los filtros de desplazamiento y cantidad de registros
     	 return BaseJson::encode($Resultado);
     }
-    
-	//devolver todos los resultados
-	public function actionResultt()
-	{
-		//entrada de parametros
-		$Desplaza=urldecode($_REQUEST["D"]); // desplazamiento
-        $CantReg=urldecode($_REQUEST["C"]); // cantidad de registros a devolver
-		 
-		$Resultado=[];
-		$Model = new stock();
-		$Model = $Model::find();
-		$Resultado["CantTot"] = $Model->count();
-		$Resultado["ResBusca"] = $Model->all();
-		return BaseJson::encode($Resultado);
-	}
 }

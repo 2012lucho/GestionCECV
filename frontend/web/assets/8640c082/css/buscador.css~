@@ -37,12 +37,6 @@
 	text-align: center;
 }
 
-.BInB {
-	color: #DDD;
-	text-decoration: none;
-	font-weight: bold;
-}
-
 .buscalib{
 	border-left: 2px solid #DDD;
 	color: #eee;
