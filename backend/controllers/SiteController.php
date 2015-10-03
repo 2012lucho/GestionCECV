@@ -14,7 +14,7 @@ use yii\filters\VerbFilter;
  */
 class SiteController extends Controller
 {
-	 public $defaultAction = 'presta';
+	public $defaultAction = 'presta';
     /**
      * @inheritdoc
      */

@@ -7,6 +7,8 @@ use yii\widgets\DetailView;
 /* @var $model app\modules\gestiondatos\models\datosuser */
 
 $this->title = $model->IdUser;
+$this->params['breadcrumbs'][] = ['label' => 'Datosusers', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="datosuser-view">
 

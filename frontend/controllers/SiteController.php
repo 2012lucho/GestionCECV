@@ -22,6 +22,8 @@ class SiteController extends Controller
     /**
      * @inheritdoc
      */
+    public $defaultAction = 'catalogo';
+     
     public function behaviors()
     {
         return [
@@ -69,51 +71,8 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionIndex()
+    public function actionCatalogo()
     {
-    		$req = Yii::$app->request;
-    		$h = $req->get('h');
-			$p = $req->get('p');
-		   return $this->render('catalogo',[
-         'pagina' => $h,
-			'paginacion' => $p,
-        	'TBusqueda' => '',
-			'rutaweb' => 'http://localhost/cecv/frontend/web/index.php/catalogo']);
-    }
-    
-    public function actionBusca()
-    {
-    		$req = Yii::$app->request;
-    		$h = $req->get('h');
-			$p = $req->get('p');
-			$b = $req->get('b');
-         return $this->render('catalogo',[
-         'pagina' => $h,
-			'paginacion' => $p,
-        	'TBusqueda' => $b,
-			'rutaweb' => 'http://localhost/cecv/frontend/web/index.php/busca']);
-    }
-
-    /**
-     * Displays contact page.
-     *
-     * @return mixed
-     */
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-            } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending email.');
-            }
-
-            return $this->refresh();
-        } else {
-            return $this->render('contact', [
-                'model' => $model,
-            ]);
-        }
+    	return $this->render('catalogo');
     }
 }

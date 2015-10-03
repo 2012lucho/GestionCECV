@@ -5,10 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\modules\gestiondatos\models\datosuser */
 
-$this->title = 'Update Datosuser: ' . ' ' . $model->IdUser;
-$this->params['breadcrumbs'][] = ['label' => 'Datosusers', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->IdUser, 'url' => ['view', 'id' => $model->IdUser]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->title = 'Actualizar datos: ' . ' ' . $model->IdUser;
+
 ?>
 <div class="datosuser-update">
 

@@ -9,7 +9,7 @@
 	buscadorAssets::register($this);
 ?>
 
-<div id="CatalogoLib" class="row col-xs-12"></div>
+<div id="CatalogoLib" class="col-xs-12"></div>
 
 
 
