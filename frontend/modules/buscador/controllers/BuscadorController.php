@@ -32,9 +32,11 @@ class BuscadorController extends Controller
 		 $OrdenResu=urldecode($_REQUEST["O"]); // n=no ordenado a=ascendente d=descendente
 		 $Desplaza=urldecode($_REQUEST["D"]); // desplazamiento
 		 $CantReg=urldecode($_REQUEST["C"]); // cantidad de registros a devolver
+		 //$Tabla=urldecode($_REQUEST["T"]); //tabla sobre la que levantar los datos
 		 
 		 $Resultado=[];	
 		 $Model = new stock();
+		 //$Model = $Model->Prestamos;
 		 $Model = $Model::find() //se busca
 		 	->where(['like','Nombre','%'.$TBusqueda.'%',false]); //si no hay termino de busqueda solo quedan los comodines y debuelve toos los resultados
 		 if ($OrdenResu != "n"){ //se ordena

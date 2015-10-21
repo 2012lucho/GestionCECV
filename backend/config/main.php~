@@ -38,6 +38,10 @@ return [
 						'route' => 'gestionstock/prestamos/nuevo',		
 					 ],
 					 [
+						'pattern' => 'presta',//luego sacar
+						'route' => 'gestionstock/prestamos/nn',		
+					 ],
+					 [
 						'pattern' => 'users',
 						'route' => 'gestionuser/users/index',		
 					 ],
@@ -63,6 +67,10 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'formatter' => [
+        	'class' => 'yii\i18n\Formatter',
+        	'nullDisplay' => '',
+    	],
     ],
     'params' => $params,
 ];

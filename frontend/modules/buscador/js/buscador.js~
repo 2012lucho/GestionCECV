@@ -1,4 +1,4 @@
-const RutaWeb="http://192.168.0.42/cecv/frontend/web/index.php";
+const RutaWeb="http://localhost/cecv/frontend/web/index.php";
 const PeticionT="/rtodo"; //parte ruta peticion elementos sin filtrar
 const PeticionB="/rbusca"; //parte ruta peticion elementos filtrados
 const RegistrosPag=5;
@@ -9,8 +9,8 @@ const Descendente="d";
 
 var Desplaza=0; //Se usa para seguir trayendo registros a la vista
 var Orden=NoOrdeanado;   //Almacena el ordenamiento que hay ahora
-var CantidadT=0;
-var Termino="";
+var CantidadT=0;       //almacena la cantidad de registros totales
+var Termino="";        //almacena el termino de busqueda
 
 function ValoresDef(){
 	Desplaza=0; 
@@ -53,7 +53,7 @@ function ActualizaResultados(Elemento,n,Orden,Termino){
 	}
 }
 
-function Busqueda(Elemento,n,Orden,Termino){
+function Busqueda(Elemento,n,Orden,Termino,Tabla){
 	//se vacia el html de la caja que muestra los resultados
 	$('#'+Elemento+n).html("");		
 	// se piden los resultados al servidor
@@ -66,7 +66,7 @@ function Busqueda(Elemento,n,Orden,Termino){
 }
 
 //n es el numero de buscador
-function InicializarBuscador(Elemento,n,Titulo){
+function InicializarBuscador(Elemento,n,Titulo,Tabla){
 	//Armamos el encabezado del buscador	
 	$('#'+Elemento).html("<div class='bEncab"+n+" bEncab col-xs-12'><div class='Btit col-xs-8'>"+Titulo+"</div></div>");
 	//agregamos el control de buscqueda del encabezado
@@ -86,7 +86,7 @@ function InicializarBuscador(Elemento,n,Titulo){
 		+"<input id='BBuscaMas"+n+"' class='btn btn-default btn-xs' type='button' value='Más resultados'></div>");
 	//Pedimos todos los datos y armamos la vista
 	ValoresDef();	
-	Busqueda(Elemento,n,NoOrdeanado,"");
+	Busqueda(Elemento,n,NoOrdeanado,"",Tabla);
 	
 	//Definimos los eventos para los controles de busqueda
 	$('#ebusca').on('input',function(){ //cuando se modifica el control de busqueda se cambian los terminos
@@ -99,22 +99,18 @@ function InicializarBuscador(Elemento,n,Titulo){
 	
 	$('#BBusca').on('click', function() { // si se apreta el boton de busqueda
 		ValoresDef();Orden=NoOrdeanado;		
-		Busqueda(Elemento,n,Orden,Termino);
+		Busqueda(Elemento,n,Orden,Termino,Tabla);
 	});
 	
 	$('#BOrdA').on('click', function() { // si se apreta el boton ordenar ascendente
 		ValoresDef();Orden=Ascendente;
-		Busqueda(Elemento,n,Orden,Termino);	
+		Busqueda(Elemento,n,Orden,Termino,Tabla);	
 	});
 	
 	$('#BOrdD').on('click', function() { // si se apreta el boton ordenar descendente
 		ValoresDef();Orden=Descendente;
-		Busqueda(Elemento,n,Descendente,Termino);
+		Busqueda(Elemento,n,Descendente,Termino,Tabla);
 	});
 	
 	$('#ebusca').on('click', function() { $('#ebusca').val(''); }); //si se hace click
 }
-
-$(document).ready(function () {
-	InicializarBuscador('CatalogoLib',1,'Catálogo de libros');	
-});

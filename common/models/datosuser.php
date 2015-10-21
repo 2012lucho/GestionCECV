@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\gestiondatos\models;
+namespace common\models;
 
 use Yii;
 
@@ -45,7 +45,7 @@ class datosuser extends \yii\db\ActiveRecord
     {
         return [
             'IdUser' => 'Id User',
-            'NombreyApellido' => 'Nombrey Apellido',
+            'NombreyApellido' => 'Nombre y Apellido',
             'DNI' => 'Dni',
             'Email' => 'Email',
             'Telefono' => 'Telefono',
@@ -57,6 +57,6 @@ class datosuser extends \yii\db\ActiveRecord
      */
     public function getPrestamos()
     {
-        return $this->hasMany(Prestamos::className(), ['idUser' => 'IdUser']);
+        return $this->hasMany(prestamos::className(), ['idUser' => 'IdUser']);
     }
 }

@@ -1,9 +1,10 @@
 <?php
-	//use app\widgets\htmlview\htmlview;
-	//use app\widgets\htmlview\htmlviewAssets;
-	//htmlviewAssets::register($this);
 	$this->title = 'Catálogo de libros';
 	
+	use app\assets\CatalogAssets;
+	CatalogAssets::register($this);	
+	
+	//Se importa el complemento del "Buscador"
 	use app\modules\buscador\buscador;
 	use app\modules\buscador\buscadorAssets;
 	buscadorAssets::register($this);

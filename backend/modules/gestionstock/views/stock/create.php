@@ -9,7 +9,7 @@ use yii\helpers\Html;
 $this->title = 'Agregar artículo';
 
 ?>
-<div class="stock-create">
+<div class="stock-create col-md-5">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

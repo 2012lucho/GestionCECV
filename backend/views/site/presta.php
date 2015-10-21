@@ -1,7 +1,7 @@
 <?php
 
 /* @var $this yii\web\View */
-	$this->title = 'Área de administración - Archivar préstamo';	
+	$this->title = 'Área de administración';	
 ?>
 
 <div class="site-presta row">

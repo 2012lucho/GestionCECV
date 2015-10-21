@@ -15,7 +15,7 @@ use yii\helpers\BaseJson;
 
 class BuscadorController extends Controller
 {
-	public function behaviors()
+	public function behaviors() //configuracion de cross origin, lo agregue pero no se bien como es la cosa
 	{
     	return [
         	'corsFilter' => [
@@ -32,17 +32,19 @@ class BuscadorController extends Controller
 		 $OrdenResu=urldecode($_REQUEST["O"]); // n=no ordenado a=ascendente d=descendente
 		 $Desplaza=urldecode($_REQUEST["D"]); // desplazamiento
 		 $CantReg=urldecode($_REQUEST["C"]); // cantidad de registros a devolver
+		 $Tabla=urldecode($_REQUEST["T"]); //tabla sobre la que levantar los datos
 		 
 		 $Resultado=[];	
 		 $Model = new stock();
-		 $Model = $Model::find() //se busca
+		 $Model = $Model->Prestamos;
+		 /*$Model = $Model::find(); //se busca
 		 	->where(['like','Nombre','%'.$TBusqueda.'%',false]); //si no hay termino de busqueda solo quedan los comodines y debuelve toos los resultados
 		 if ($OrdenResu != "n"){ //se ordena
 		 	if ($OrdenResu == "d"){ $Model = $Model->orderBy(['Nombre'=>SORT_DESC]);} else {
 		 	if ($OrdenResu == "a"){ $Model = $Model->orderBy(['Nombre'=>SORT_ASC]);}
 		 	}		 
 		 }
-		 
+		 */
 		 $Resultado["CantTot"] = $Model->count(); //retornamos la cantidad total de registros
 		 $Resultado["ResBusca"] = $Model->offset($Desplaza)->limit($CantReg)->all();  //Agregamos los filtros de desplazamiento y cantidad de registros
     	 return BaseJson::encode($Resultado);

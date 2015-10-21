@@ -3,12 +3,17 @@
 namespace app\modules\gestionstock\controllers;
 
 use Yii;
-use app\modules\gestionstock\models\prestamos;
-use app\modules\gestionstock\models\prestamosb;
+use common\models\prestamos;
+use common\models\prestamosb;
+
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+use common\models\stock;
+use common\models\datosuser;
+
+use yii\helpers\BaseJson;//borrar?
 /**
  * PrestamosController implements the CRUD actions for prestamos model.
  */
@@ -30,7 +35,7 @@ class PrestamosController extends Controller
      * Lists all prestamos models.
      * @return mixed
      */
-    public function actionIndex()
+    public function actionNuevo()
     {
         $searchModel = new prestamosb();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
@@ -39,6 +44,13 @@ class PrestamosController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
+    }
+    
+    public function actionNn(){
+		$m = new datosuser();		
+		$m = $m::findOne(1);
+		$c = $m->getPrestamos()->all();
+		return BaseJson::encode($c);    
     }
 
     /**
@@ -70,11 +82,6 @@ class PrestamosController extends Controller
             ]);
         }
     }
-	
-	public function actionNuevo()
-	{
-		return "";	
-	}	
 	
     /**
      * Updates an existing prestamos model.

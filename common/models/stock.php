@@ -62,6 +62,6 @@ class stock extends \yii\db\ActiveRecord
      */
     public function getPrestamos()
     {
-        return $this->hasMany(Prestamos::className(), ['IdStock' => 'idStock']);
+        return $this->hasMany(prestamos::className(), ['IdStock' => 'idStock']);
     }
 }
