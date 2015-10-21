@@ -22,7 +22,6 @@ return [
          'gestiondatos' => [
             'class' => 'app\modules\gestiondatos\gestiondatos',
          ],
-         ],
          'config' => [
             'class' => 'app\modules\config\config',
          ],
@@ -41,10 +40,10 @@ return [
 						'pattern' => 'npresta',
 						'route' => 'gestionstock/prestamos/nuevo',		
 					 ],
-					 [
-						'pattern' => 'presta',//luego sacar
-						'route' => 'gestionstock/prestamos/nn',		
-					 ],
+					 //[
+					//	'pattern' => 'presta',//luego sacar
+					//	'route' => 'gestionstock/prestamos/nn',		
+					 //],
 					 [
 						'pattern' => 'users',
 						'route' => 'gestionuser/users/index',		
@@ -53,10 +52,10 @@ return [
 						'pattern' => 'datos',
 						'route' => 'gestiondatos/info/index',		
 					 ],
-					 //[
-					//	'pattern' => 'conf',
-					//	'route' => 'config/config/index',		
-					 //],
+					 [
+						'pattern' => 'config',
+						'route' => 'config/config/index',		
+					 ],
 				],
     	  ],
         'user' => [

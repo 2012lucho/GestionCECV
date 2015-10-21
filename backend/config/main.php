@@ -40,10 +40,10 @@ return [
 						'pattern' => 'npresta',
 						'route' => 'gestionstock/prestamos/nuevo',		
 					 ],
-					 [
-						'pattern' => 'presta',//luego sacar
-						'route' => 'gestionstock/prestamos/nn',		
-					 ],
+					 //[
+					//	'pattern' => 'presta',//luego sacar
+					//	'route' => 'gestionstock/prestamos/nn',		
+					 //],
 					 [
 						'pattern' => 'users',
 						'route' => 'gestionuser/users/index',		
