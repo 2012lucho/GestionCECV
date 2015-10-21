@@ -1,5 +1,8 @@
 <?php
 
+use app\modules\config\ConfigAsset;
+ConfigAsset::register($this);
+
 $this->title = 'Configuración general';
 ?>
 <div class="stock-index">
