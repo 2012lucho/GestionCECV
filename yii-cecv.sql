@@ -2,10 +2,10 @@
 -- version 3.4.11.1deb2
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Oct 01, 2015 at 02:03 PM
--- Server version: 5.5.43
--- PHP Version: 5.6.7-1
+-- Servidor: localhost
+-- Tiempo de generación: 21-10-2015 a las 17:10:17
+-- Versión del servidor: 5.5.43
+-- Versión de PHP: 5.6.7-1
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,36 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `yii-cecv`
+-- Base de datos: `yii-cecv`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `DatosUser`
+-- Estructura de tabla para la tabla `configuracion`
+--
+
+CREATE TABLE IF NOT EXISTS `configuracion` (
+  `cod` varchar(25) NOT NULL,
+  `valor` varchar(255) NOT NULL,
+  `descripcion` varchar(250) NOT NULL,
+  `control` varchar(10) NOT NULL,
+  `unidad` varchar(25) NOT NULL,
+  `categoria` varchar(50) NOT NULL,
+  PRIMARY KEY (`cod`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `configuracion`
+--
+
+INSERT INTO `configuracion` (`cod`, `valor`, `descripcion`, `control`, `unidad`, `categoria`) VALUES
+('TPrestaLibro', '7', 'períodode tiempo máximo de debolución de material', 'number', 'Días', '');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `DatosUser`
 --
 
 CREATE TABLE IF NOT EXISTS `DatosUser` (
@@ -33,19 +56,20 @@ CREATE TABLE IF NOT EXISTS `DatosUser` (
   `Email` varchar(50) NOT NULL,
   `Telefono` varchar(20) NOT NULL,
   PRIMARY KEY (`IdUser`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `DatosUser`
+-- Volcado de datos para la tabla `DatosUser`
 --
 
 INSERT INTO `DatosUser` (`IdUser`, `NombreyApellido`, `DNI`, `Email`, `Telefono`) VALUES
-(1, 'Juan Manuel Vasquez', '38.270.23', 'JMVaz@hotmail.com', '3456 4545343');
+(1, 'Juan Manuel Vasquez', '38.270.23', 'JMVaz@hotmail.com', '3456 4545343'),
+(2, 'Ariel Soza', '23789654', '233@ddd', '23232332');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migration`
+-- Estructura de tabla para la tabla `migration`
 --
 
 CREATE TABLE IF NOT EXISTS `migration` (
@@ -55,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `migration` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `migration`
+-- Volcado de datos para la tabla `migration`
 --
 
 INSERT INTO `migration` (`version`, `apply_time`) VALUES
@@ -65,7 +89,7 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Prestamos`
+-- Estructura de tabla para la tabla `Prestamos`
 --
 
 CREATE TABLE IF NOT EXISTS `Prestamos` (
@@ -78,16 +102,26 @@ CREATE TABLE IF NOT EXISTS `Prestamos` (
   PRIMARY KEY (`idPresta`),
   KEY `idUser` (`idUser`),
   KEY `IdStock` (`IdStock`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Volcado de datos para la tabla `Prestamos`
+--
+
+INSERT INTO `Prestamos` (`idPresta`, `idUser`, `IdStock`, `FechaPresta`, `FechaDebT`, `FechaDeb`) VALUES
+(1, 1, 10, '2015-10-13', '2015-10-20', '0000-00-00'),
+(2, 1, 10, '2015-10-05', '2015-10-19', '0000-00-00'),
+(3, 2, 6, '2015-10-06', '2015-10-28', '0000-00-00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rangos`
+-- Estructura de tabla para la tabla `rangos`
 --
 
 CREATE TABLE IF NOT EXISTS `rangos` (
   `rango` int(2) NOT NULL,
+  `nombrerango` varchar(12) NOT NULL,
   `editar user` tinyint(1) NOT NULL,
   `agregar user` tinyint(1) NOT NULL,
   `agregar catalogo` tinyint(1) NOT NULL,
@@ -95,16 +129,16 @@ CREATE TABLE IF NOT EXISTS `rangos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `rangos`
+-- Volcado de datos para la tabla `rangos`
 --
 
-INSERT INTO `rangos` (`rango`, `editar user`, `agregar user`, `agregar catalogo`) VALUES
-(1, 1, 1, 1);
+INSERT INTO `rangos` (`rango`, `nombrerango`, `editar user`, `agregar user`, `agregar catalogo`) VALUES
+(0, '', 1, 1, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Stock`
+-- Estructura de tabla para la tabla `Stock`
 --
 
 CREATE TABLE IF NOT EXISTS `Stock` (
@@ -119,7 +153,7 @@ CREATE TABLE IF NOT EXISTS `Stock` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
 
 --
--- Dumping data for table `Stock`
+-- Volcado de datos para la tabla `Stock`
 --
 
 INSERT INTO `Stock` (`idStock`, `Codigo`, `Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES
@@ -139,7 +173,7 @@ INSERT INTO `Stock` (`idStock`, `Codigo`, `Nombre`, `Descripcion`, `Autor`, `Can
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Estructura de tabla para la tabla `user`
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
@@ -157,22 +191,22 @@ CREATE TABLE IF NOT EXISTS `user` (
   UNIQUE KEY `username` (`username`),
   UNIQUE KEY `email` (`email`),
   UNIQUE KEY `password_reset_token` (`password_reset_token`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
 
 --
--- Dumping data for table `user`
+-- Volcado de datos para la tabla `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `rango`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'D1xtffaWJXWNHUHfm_gfvOIAsEPCWveH', '$2y$13$ERX32qnbx/w1o23XphQAzu.I0KiK7NmkL79haOLMTDjOubUQOIm7a', NULL, 'lucho.2012.tandil@gmail.com', 1, 10, 1440643943, 1440643943),
-(2, 'lucho', 'o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p', '$2y$13$6Wz7jDuP3Y.Deuo1YV1ELOrNY6/zpUikNcfwAztWHC28iMmyOMTum', NULL, 'lucho@gmaill.com', 0, 10, 1441812643, 1441812643);
+(2, 'lucho', 'o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p', '$2y$13$6Wz7jDuP3Y.Deuo1YV1ELOrNY6/zpUikNcfwAztWHC28iMmyOMTum', NULL, 'lucho@gmaill.com', 0, 10, 1441812643, 1441812643),
+(5, 'jefe', 'toPkw3weW3RUsNSXJ6dUygCWAg9PBlOL', '$2y$13$iuQQXzyu5ABnKNQwYtBiKOCZTW46ViUf5hrD.7e3aL0CtWSia0zSu', NULL, 'eljefe@gmail.com', 1, 10, 1443724056, 1443724056);
 
 --
--- Constraints for dumped tables
+-- Restricciones para tablas volcadas
 --
 
 --
--- Constraints for table `Prestamos`
+-- Filtros para la tabla `Prestamos`
 --
 ALTER TABLE `Prestamos`
   ADD CONSTRAINT `Prestamos_ibfk_1` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`),
