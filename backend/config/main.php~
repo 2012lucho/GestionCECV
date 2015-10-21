@@ -28,7 +28,7 @@ return [
        ],
     'components' => [
     	  'urlManager' => [
-    	  	'enablePrettyUrl' => true,
+    	  	//'enablePrettyUrl' => true,
             'showScriptName' => true,
             'enableStrictParsing' => false,
             'rules' => [
@@ -53,7 +53,7 @@ return [
 						'route' => 'gestiondatos/info/index',		
 					 ],
 					 [
-						'pattern' => 'config',
+						'pattern' => 'conf',
 						'route' => 'config/config/index',		
 					 ],
 				],

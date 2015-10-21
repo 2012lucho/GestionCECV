@@ -24,16 +24,15 @@ $this->title = 'Prestamos';
 		busca 2	
 	</div>
 	<div class="col-md-12">
-		boton sig
+		<input id='NuevoPrestamo' class='btn btn-default btn-xs' value='Ingresar retiro' type='button'>
+		<input id='CancelPrestamo' class='btn btn-default btn-xs' value='Ingresar devolución' type='button'>
 	</div>
 </div>
 
 <div class="prestamos-index">
 	
-	<h1><?= Html::encode($this->title) ?></h1>
+	<h3>Historial de préstamos</h3>
     
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -47,7 +46,7 @@ $this->title = 'Prestamos';
     		], 
 			[
 				'label' => 'Estudiante',
-				'filter' => ArrayHelper::map(datosuser::find()->all(),'Id','NombreyApellido'),
+				'filter' => ArrayHelper::map(datosuser::find()->all(),'IdUser','NombreyApellido'),
         		'value' => function($model){
         			$Estudiante = datosuser::findOne($model->idUser);
         			return $Estudiante->NombreyApellido;

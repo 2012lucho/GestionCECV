@@ -1,0 +1,23 @@
+<?php
+
+namespace app\modules\buscador;
+
+use yii\web\AssetBundle;
+
+/**
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @since 2.0
+ */
+class buscador extends AssetBundle
+{
+    public $sourcePath = '@app/modules/buscador';
+    public $css = [
+    	'css/buscador.css',
+    ];
+    public $js = [
+		'js/buscador.js',
+	];
+    public $depends = [
+        'frontend\assets\AppAsset',
+    ];
+}

@@ -18,22 +18,23 @@ $this->title = 'Prestamos';
 
 <div class="site-presta row">
 	<div class="col-md-6">
-		busca 1	
+		<div class="col-xs-12"> Seleccionar estudiante</div>	
+		<div></div>
 	</div>
 	<div class="col-md-6">
-		busca 2	
+		<div class="col-xs-12"> Seleccionar libro</div>
+		<div></div>
 	</div>
 	<div class="col-md-12">
-		boton sig
+		<input id='NuevoPrestamo' class='btn btn-default btn-xs' value='Ingresar retiro' type='button'>
+		<input id='CancelPrestamo' class='btn btn-default btn-xs' value='Ingresar devolución' type='button'>
 	</div>
 </div>
 
 <div class="prestamos-index">
 	
-	<h1><?= Html::encode($this->title) ?></h1>
+	<h3>Historial de préstamos</h3>
     
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
