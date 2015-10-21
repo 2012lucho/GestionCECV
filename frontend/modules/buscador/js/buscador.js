@@ -39,12 +39,12 @@ function MostrarInfoRes(data,n){
 	CantidadT=data["CantTot"];
 }
 
-function ActualizaResultados(Elemento,n,Orden,Termino){
+function ActualizaResultados(Elemento,n,Orden,Termino,Tabla){
 	//se actualizan la variable de desplazamiento y se procede a pedir datos si hay mas para pedir
 	if (Desplaza+RegistrosPag <= CantidadT){ 
 		Desplaza+=RegistrosPag;
 		//se piden los demas datos
-		$.get(RutaWeb+PeticionB,{TB:Termino, O:Orden, D:Desplaza, C:RegistrosPag},function (data) {		
+		$.get(RutaWeb+PeticionB,{TB:Termino, O:Orden, D:Desplaza, C:RegistrosPag, T:Tabla},function (data) {		
 			data = JSON.parse(data);
 			MostrarInfoRes(data,n);
 			data = data["ResBusca"];			
@@ -94,7 +94,7 @@ function InicializarBuscador(Elemento,n,Titulo,Tabla){
 	});	
 	
 	$('#BBuscaMas'+n).on('click', function() { // si se apreta el boton de busqueda
-		ActualizaResultados(Elemento,n,Orden,Termino);
+		ActualizaResultados(Elemento,n,Orden,Termino,Tabla);
 	});
 	
 	$('#BBusca').on('click', function() { // si se apreta el boton de busqueda

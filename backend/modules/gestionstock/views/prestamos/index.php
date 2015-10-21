@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 use common\models\datosuser;
+use app\models\datosuserb;
 use common\models\stock;
 
 //importamos el módulo del "buscador"
@@ -14,16 +15,22 @@ buscadorAssets::register($this);
 
 $this->title = 'Prestamos';
 
+$MStock = new stock;
+
 ?>
 
 <div class="site-presta row">
 	<div class="col-md-6">
 		<div class="col-xs-12"> Seleccionar estudiante</div>	
-		<div></div>
+		<div class="col-xs-12">
+			
+		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="col-xs-12"> Seleccionar libro</div>
-		<div></div>
+		<div class="col-xs-12">
+					
+		</div>
 	</div>
 	<div class="col-md-12">
 		<input id='NuevoPrestamo' class='btn btn-default btn-xs' value='Ingresar retiro' type='button'>

@@ -39,16 +39,18 @@ class PrestamosController extends Controller
     {
         $searchModel = new prestamosb();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+		$MDatos = new datosuser();
+		$MDatos = $MDatos::find()->all();
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'MDatos' => $MDatos,
         ]);
     }
     
     public function actionNn(){
 		$m = new datosuser();		
-		$m = $m::findOne(1);
+		$m = $m::findOne(2);
 		$c = $m->getPrestamos()->all();
 		return BaseJson::encode($c);    
     }
