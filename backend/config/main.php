@@ -22,6 +22,9 @@ return [
          'gestiondatos' => [
             'class' => 'app\modules\gestiondatos\gestiondatos',
          ],
+         'config' => [
+            'class' => 'app\modules\config\config',
+         ],
        ],
     'components' => [
     	  'urlManager' => [
@@ -48,6 +51,10 @@ return [
 					 [
 						'pattern' => 'datos',
 						'route' => 'gestiondatos/info/index',		
+					 ],
+					 [
+						'pattern' => 'conf',
+						'route' => 'config/config/index',		
 					 ],
 				],
     	  ],

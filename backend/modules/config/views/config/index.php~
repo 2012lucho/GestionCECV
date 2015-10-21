@@ -1,0 +1,10 @@
+<?php
+
+$this->title = 'Configuración general';
+?>
+<div class="stock-index">
+	<div class="col-xs-12"> <h1>Opciones generales de configuración</h1></div>
+	<div class="col-xs-12">
+	
+	</div>
+</div>

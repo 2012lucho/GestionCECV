@@ -44,7 +44,8 @@ AppAsset::register($this);
         			['label' => 'Préstamos', 'url' => ['/npresta']],
 					['label' => 'Estudiantes', 'url' => ['/datos']],					
 					['label' => 'Libros', 'url' => ['/stock']],    					
-					['label' => 'Cuentas de Usuario', 'url' => ['/users']],        			
+					['label' => 'Cuentas de Usuario', 'url' => ['/users']],   
+					['label' => 'Configuración', 'url' => ['/config']],     			
         			['label' => 'Salir (' . Yii::$app->user->identity->username . ')','url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']],
         		],
         ];
