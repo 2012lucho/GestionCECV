@@ -29286,3 +29286,1971 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1445527469.089
     'REQUEST_TIME' => 1445527469
 ]
+2015-10-22 15:52:12 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 15:52:12 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'LlBweUF0TGpNaUU3DEYWBhkhFQsbR3QcTAoKKhIFew96FREMOCV4Iw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38554'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529132.062
+    'REQUEST_TIME' => 1445529132
+]
+2015-10-22 15:52:12 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-10-22 15:52:12 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'LlBweUF0TGpNaUU3DEYWBhkhFQsbR3QcTAoKKhIFew96FREMOCV4Iw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38554'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529132.062
+    'REQUEST_TIME' => 1445529132
+]
+2015-10-22 15:52:20 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 15:52:20 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '5'
+    'C' => '5'
+    'T' => 'DatosUser'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'LlBweUF0TGpNaUU3DEYWBhkhFQsbR3QcTAoKKhIFew96FREMOCV4Iw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38562'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=5&C=5&T=DatosUser'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=5&C=5&T=DatosUser'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529140.801
+    'REQUEST_TIME' => 1445529140
+]
+2015-10-22 15:52:20 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-10-22 15:52:20 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '5'
+    'C' => '5'
+    'T' => 'DatosUser'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'LlBweUF0TGpNaUU3DEYWBhkhFQsbR3QcTAoKKhIFew96FREMOCV4Iw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38562'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=5&C=5&T=DatosUser'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=5&C=5&T=DatosUser'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529140.801
+    'REQUEST_TIME' => 1445529140
+]
+2015-10-22 15:54:34 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 15:54:34 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'aEhKSldDeFALcX8EGnEiPF85LzgNcEAmChIwGQQyTzU8DSs/LhJMGQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38565'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529274.633
+    'REQUEST_TIME' => 1445529274
+]
+2015-10-22 15:54:34 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-10-22 15:54:34 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'aEhKSldDeFALcX8EGnEiPF85LzgNcEAmChIwGQQyTzU8DSs/LhJMGQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38565'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529274.633
+    'REQUEST_TIME' => 1445529274
+]
+2015-10-22 15:55:04 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 15:55:04 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38575'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529304.693
+    'REQUEST_TIME' => 1445529304
+]
+2015-10-22 16:01:08 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 16:01:08 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eF96cjVIM3obZk88eHppFk8uHwBvewsMGgUAIWY5BB8sGhsHTBkHMw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38606'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529668.006
+    'REQUEST_TIME' => 1445529668
+]
+2015-10-22 16:01:08 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-10-22 16:01:08 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eF96cjVIM3obZk88eHppFk8uHwBvewsMGgUAIWY5BB8sGhsHTBkHMw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38606'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529668.006
+    'REQUEST_TIME' => 1445529668
+]
+2015-10-22 16:01:14 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 16:01:14 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'bnRmZTJNWkcNTVMrf38AK1kFAxdofmIxDC4cNmE8bSI6MQcQSxxuDg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38616'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529674.248
+    'REQUEST_TIME' => 1445529674
+]
+2015-10-22 16:01:14 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-10-22 16:01:14 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'bnRmZTJNWkcNTVMrf38AK1kFAxdofmIxDC4cNmE8bSI6MQcQSxxuDg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38616'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529674.248
+    'REQUEST_TIME' => 1445529674
+]
+2015-10-22 16:02:25 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 16:02:25 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'aXkyanAwZXQKQAckPQI/GF4IVxgqA10CCyNIOSNBUhE9PFMfCWFRPQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38627'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529745.216
+    'REQUEST_TIME' => 1445529745
+]
+2015-10-22 16:02:25 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-10-22 16:02:25 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'aXkyanAwZXQKQAckPQI/GF4IVxgqA10CCyNIOSNBUhE9PFMfCWFRPQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38627'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529745.216
+    'REQUEST_TIME' => 1445529745
+]
+2015-10-22 16:02:38 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 16:02:38 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'RXMuWmNvU2smShsULl0JB3ICSyg5XGsdJylUCTAeZA4RNk8vGj5nIg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38637'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529758.19
+    'REQUEST_TIME' => 1445529758
+]
+2015-10-22 16:02:38 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-10-22 16:02:38 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'RXMuWmNvU2smShsULl0JB3ICSyg5XGsdJylUCTAeZA4RNk8vGj5nIg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38637'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529758.19
+    'REQUEST_TIME' => 1445529758
+]
+2015-10-22 16:03:05 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 16:03:05 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38645'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445529785.336
+    'REQUEST_TIME' => 1445529785
+]
+2015-10-22 16:07:18 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 16:07:18 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38651'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445530038.282
+    'REQUEST_TIME' => 1445530038
+]
+2015-10-22 16:08:38 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 16:08:38 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38657'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445530118.901
+    'REQUEST_TIME' => 1445530118
+]
+2015-10-22 16:09:55 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 16:09:55 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38663'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445530195.247
+    'REQUEST_TIME' => 1445530195
+]
+2015-10-22 16:12:00 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 16:12:00 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '38669'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445530320.605
+    'REQUEST_TIME' => 1445530320
+]
+2015-10-22 16:33:31 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 16:33:31 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '39749'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445531611.453
+    'REQUEST_TIME' => 1445531611
+]
+2015-10-22 16:33:34 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 16:33:34 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '39751'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445531614.255
+    'REQUEST_TIME' => 1445531614
+]
+2015-10-22 16:34:00 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Nombre' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `DatosUser` WHERE `Nombre` LIKE '%%'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/frontend/modules/buscador/models/Busqueda.php(37): yii\db\Query->count()
+#5 /var/www/html/cecv/frontend/modules/buscador/controllers/BuscadorController.php(37): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'Nombre' in 'where clause'
+)
+
+2015-10-22 16:34:00 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => 'e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=e1072e6ba390b55c8ddc35f6ae34b6bfcfd9f7bfca18d68082d9ff661a88c847a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c95NM2Zl7qerZ38vbZzSSq7eTEauyQ4I%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '39756'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/cecv/frontend/web/index.php/rbusca?TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/frontend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1445531640.093
+    'REQUEST_TIME' => 1445531640
+]

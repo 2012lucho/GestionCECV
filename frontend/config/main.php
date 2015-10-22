@@ -26,20 +26,6 @@ return [
 						'pattern' => 'rbusca',
 						'route' => 'buscador/buscador/resultb',	
 					],
-					[
-						'pattern' => 'rtodo',
-						'route' => 'buscador/buscador/resultt',
-					],
-               		[
-						'pattern' => 'catalogo/<h>/<p>',
-						'route' => 'site/index',
-						'defaults' => ['h'=>'1','p'=>'10'],		
-					],
-					[
-						'pattern' => 'busca/<b>/<h>/<p>',
-						'route' => 'site/busca',
-						'defaults' => ['h'=>'1','p'=>'10','b'=>''],		
-					],
 				],
     	  ],
         'user' => [

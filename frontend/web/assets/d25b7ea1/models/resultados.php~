@@ -4,12 +4,16 @@
 	use Yii;
 	use yii\base\Model;
 	use yii\data\ActiveDataProvider;
-	public $modelo=''; //modelo de tabla de base de datos
-	class resultados extends Model
+	
+	class Resultados extends Model
 	{
-		
-		
+		public $Tabla; //Nombre de tabla de base de datos
+		public $TBusqueda;
+		public $Desplaza;
+		public $OrdenResu;
+		public $CantReg;
+		 
 		public function Resultados(){
-			return $this->modelo;
+			return $this->Tabla;
 		}
 	}

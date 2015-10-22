@@ -8,10 +8,14 @@ use app\models\datosuserb;
 use common\models\stock;
 
 //importamos el módulo del "buscador"
-use app\modules\buscador\buscador;
 use app\modules\buscador\buscadorAssets;
-use yii\helpers\ArrayHelper;
 buscadorAssets::register($this);
+
+use yii\helpers\ArrayHelper;
+
+//importamos los asets de la página
+use app\modules\gestionstock\PrestaAsset;
+PrestaAsset::register($this);
 
 $this->title = 'Prestamos';
 

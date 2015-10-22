@@ -1,3 +1,8 @@
 $(document).ready(function(){
-	alert('');
+	var r ="http://localhost/cecv/backend/web/index.php";
+	InicializarBuscador('BuscaEstu',1,'Catálogo de libros','DatosUser','NombreyApellido',r
+						
+						);	
+	InicializarBuscador('BuscaLib',1,'Catálogo de libros','Stock','Nombre',r
+						);	
 });

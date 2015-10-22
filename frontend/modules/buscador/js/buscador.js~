@@ -44,7 +44,7 @@ function ActualizaResultados(Elemento,n,Orden,Termino,Tabla){
 	if (Desplaza+RegistrosPag <= CantidadT){ 
 		Desplaza+=RegistrosPag;
 		//se piden los demas datos
-		$.get(RutaWeb+PeticionB,{TB:Termino, O:Orden, D:Desplaza, C:RegistrosPag},function (data) {		
+		$.get(RutaWeb+PeticionB,{TB:Termino, O:Orden, D:Desplaza, C:RegistrosPag, T:Tabla},function (data) {		
 			data = JSON.parse(data);
 			MostrarInfoRes(data,n);
 			data = data["ResBusca"];			

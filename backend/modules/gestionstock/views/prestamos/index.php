@@ -8,10 +8,10 @@ use app\models\datosuserb;
 use common\models\stock;
 
 //importamos el módulo del "buscador"
-use app\modules\buscador\buscador;
 use app\modules\buscador\buscadorAssets;
-use yii\helpers\ArrayHelper;
 buscadorAssets::register($this);
+
+use yii\helpers\ArrayHelper;
 
 //importamos los asets de la página
 use app\modules\gestionstock\PrestaAsset;
@@ -24,17 +24,11 @@ $MStock = new stock;
 ?>
 
 <div class="site-presta row">
-	<div class="col-md-6">
-		<div class="col-xs-12"> Seleccionar estudiante</div>	
-		<div class="col-xs-12">
-			
-		</div>
+	<div id="BuscaEstu" class="col-md-6">
+		
 	</div>
-	<div class="col-md-6">
-		<div class="col-xs-12"> Seleccionar libro</div>
-		<div class="col-xs-12">
-					
-		</div>
+	<div id="BuscaLib" class="col-md-6">
+		
 	</div>
 	<div class="col-md-12">
 		<input id='NuevoPrestamo' class='btn btn-default btn-xs' value='Ingresar retiro' type='button'>

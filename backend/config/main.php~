@@ -25,10 +25,13 @@ return [
          'config' => [
             'class' => 'app\modules\config\config',
          ],
+         'buscador' => [
+            'class' => 'app\modules\buscador\buscador',
+         ],
        ],
     'components' => [
     	  'urlManager' => [
-    	  	//'enablePrettyUrl' => true,
+    	  	'enablePrettyUrl' => true,
             'showScriptName' => true,
             'enableStrictParsing' => false,
             'rules' => [

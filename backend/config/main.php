@@ -25,6 +25,9 @@ return [
          'config' => [
             'class' => 'app\modules\config\config',
          ],
+         'buscador' => [
+            'class' => 'app\modules\buscador\buscador',
+         ],
        ],
     'components' => [
     	  'urlManager' => [
@@ -55,6 +58,10 @@ return [
 					 [
 						'pattern' => 'conf',
 						'route' => 'config/config/index',		
+					 ],
+					 [
+						'pattern' => 'rbusca',
+						'route' => 'buscador/buscador/resultb',	
 					 ],
 				],
     	  ],
