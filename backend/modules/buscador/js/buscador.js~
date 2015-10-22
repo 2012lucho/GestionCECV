@@ -10,19 +10,22 @@ function ValoresDef(Elemento){
 	$('#'+Elemento).data('CantidadT',0);
 }
 
-function CreaVista(data,Elemento,n,CamposM){
+function CreaVista(data,Elemento,n,CamposM,V){
 	var clase='';
 	for (item=0;item<data.length;item++){
 		if (data[item]["CantidadDisponible"]!=0) {clase="NoCero";} else {clase="NCero";}
 		var vista='';
 		
 		for (c=0;c<CamposM.length;c++) {
-			vista+='<div><b>'+CamposM[c][1]+': </b>'+data[item][CamposM[c][0]]+'</div>';		
+			vista+='<div><b>'+CamposM[c][1]+': </b>'+data[item][CamposM[c][0]];
+			vista+='</div>';		
 		}
-		$('#'+Elemento+n).append(
-			'<div class="RegistroLib">'
-				+vista
-			+'</div>');
+		
+		if (V['Control']!=''){
+			vista+='<div class="col-xs-1"><input type='+V['Control']+'></div>';
+		}		
+		
+		$('#'+Elemento+n).append('<div class="RegistroLib"><div class="col-xs-11">'+vista+'</div></div>');
 	}
 }
 
@@ -39,7 +42,7 @@ function MostrarInfoRes(data,n,RegistrosPag,Elemento){
 	$('#'+Elemento).data('CantidadT',data["CantTot"]);
 }
 
-function ActualizaResultados(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,Rweb,CamposM){
+function ActualizaResultados(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista){
 	//se actualizan la variable de desplazamiento y se procede a pedir datos si hay mas para pedir
 	if ($('#'+Elemento).data('Desplaza')+RegistrosPag <= $('#'+Elemento).data('CantidadT')){ 
 		$('#'+Elemento).data('Desplaza',$('#'+Elemento).data('Desplaza')+RegistrosPag);
@@ -48,26 +51,34 @@ function ActualizaResultados(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,
 			data = JSON.parse(data);
 			MostrarInfoRes(data,n,RegistrosPag,Elemento);
 			data = data["ResBusca"];			
-			CreaVista(data,Elemento,n,CamposM);
+			CreaVista(data,Elemento,n,CamposM,Vista);
 		});		
 	}
 }
 
-function Busqueda(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,Rweb,CamposM){
+function Busqueda(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista){
 	//se vacia el html de la caja que muestra los resultados
 	$('#'+Elemento+n).html("");		
 	// se piden los resultados al servidor
 	$.get(Rweb+PeticionB,{TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
 		data = JSON.parse(data);
-		MostrarInfoRes(data,n,RegistrosPag,Elemento);
+		MostrarInfoRes(data,n,RegistrosPag,Elemento,Vista);
 		data = data["ResBusca"];			
-		CreaVista(data,Elemento,n,CamposM);
+		CreaVista(data,Elemento,n,CamposM,Vista);
 	});		
 }
 
 //n es el numero de buscador
 //camposM es el arreglo que se usa para definir los campos que se mostraran en la vista 
-function InicializarBuscador(Elemento,n,Titulo,Tabla,CampoB,Rweb,RegistrosPag,CamposM){
+function InicializarBuscador(Config,CamposM,Vista){
+	//Abrimos la configuracion
+	var Elemento=Config['id'];
+	var n=Config['n'];
+	var Titulo=Config['Tit'];
+	var Tabla=Config['Tabla'];
+	var CampoB=Config['CampoB'];
+	var Rweb=Config['RWeb'];
+	var RegistrosPag=Config['CantR'];
 	//Definimos los datos basicos de cada buscador
 	$('#'+Elemento).data('Desplaza',0);        //Se usa para seguir trayendo registros a la vista
 	$('#'+Elemento).data('Orden',NoOrdeanado); //Almacena el ordenamiento que hay ahora
@@ -92,7 +103,7 @@ function InicializarBuscador(Elemento,n,Titulo,Tabla,CampoB,Rweb,RegistrosPag,Ca
 		+"<input id='BBuscaMas"+n+"' class='btn btn-default btn-xs' type='button' value='Más resultados'></div>");
 	//Pedimos todos los datos y armamos la vista
 	ValoresDef(Elemento);	
-	Busqueda(Elemento,n,NoOrdeanado,"",Tabla,CampoB,RegistrosPag,Rweb,CamposM);
+	Busqueda(Elemento,n,NoOrdeanado,"",Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista);
 	
 	//Definimos los eventos para los controles de busqueda
 	$('#ebusca'+n).on('input',function(){ //cuando se modifica el control de busqueda se cambian los terminos
@@ -100,22 +111,22 @@ function InicializarBuscador(Elemento,n,Titulo,Tabla,CampoB,Rweb,RegistrosPag,Ca
 	});	
 	
 	$('#BBuscaMas'+n).on('click', function() { // si se apreta el boton de busqueda
-		ActualizaResultados(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM);
+		ActualizaResultados(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista);
 	});
 	
 	$('#BBusca'+n).on('click', function() { // si se apreta el boton de busqueda
 		ValoresDef(Elemento);$('#'+Elemento).data('Orden',NoOrdeanado);		
-		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM);
+		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista);
 	});
 	
 	$('#BOrdA'+n).on('click', function() { // si se apreta el boton ordenar ascendente
 		ValoresDef(Elemento);$('#'+Elemento).data('Orden',Ascendente);
-		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM);	
+		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista);	
 	});
 	
 	$('#BOrdD'+n).on('click', function() { // si se apreta el boton ordenar descendente
 		ValoresDef(Elemento);$('#'+Elemento).data('Orden',Descendente);
-		Busqueda(Elemento,n,Descendente,$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM);
+		Busqueda(Elemento,n,Descendente,$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista);
 	});
 	
 	$('#ebusca'+n).on('click', function() { $('#ebusca'+n).val(''); }); //si se hace click

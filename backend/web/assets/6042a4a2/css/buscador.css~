@@ -17,7 +17,7 @@
 	position: relative;
 }
 
-#ebusca{
+.ebusca{
 	color:#00b;
 }
 
@@ -25,7 +25,9 @@
 	border-top: 2px solid #aad;
 	padding: 5px 10px 5px 10px;
 }
-
+.Breg{
+	display:inline-block;
+}
 .TituloLib{
 	font-weight: bold;
 	color: #06f;
