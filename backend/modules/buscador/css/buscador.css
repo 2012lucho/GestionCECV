@@ -7,6 +7,22 @@
 	background:#DDD;
 }
 
+.bEncab{
+	display:inline-block;
+	width: 100%;
+}
+
+.binfr{display:inline-block;
+	width: 100%;}
+
+.bFoot{
+	bottom: 0px;
+	display:inline-block;
+	width: 100%;
+}
+
+/* .cajares{overflow:scroll; overflow-x:hidden;} */
+
 .Btit {
 	color: #555;
 	font-weight: bold;
@@ -21,10 +37,12 @@
 	color:#00b;
 }
 
-.RegistroLib {
+.RB{ /* Registro buscador*/
 	border-top: 2px solid #aad;
 	padding: 5px 10px 5px 10px;
 }
+
+.BI:checked ~ .RB {background:#dfd;}
 
 .TituloLib{
 	font-weight: bold;
@@ -42,4 +60,12 @@
 	border-left: 2px solid #DDD;
 	color: #eee;
 	font-weight: bold;
+}
+
+.cajares{
+	overflow:scroll;
+	overflow-x:hidden;
+	display:inline-block;
+	height: 100%;
+	width:100%;
 }

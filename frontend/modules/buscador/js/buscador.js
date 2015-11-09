@@ -60,7 +60,7 @@ function Busqueda(Elemento,n,Orden,Termino,Tabla){
 		data = JSON.parse(data);
 		MostrarInfoRes(data,n);
 		data = data["ResBusca"];			
-		CreaVista(data,Elemento,n)
+		CreaVista(data,Elemento,n);
 	});		
 }
 
@@ -100,6 +100,14 @@ function InicializarBuscador(Elemento,n,Titulo,Tabla){
 		ValoresDef();Orden=NoOrdeanado;		
 		Busqueda(Elemento,n,Orden,Termino,Tabla);
 	});
+	
+	$('#ebusca').keypress(function(event){  
+    	var keycode = (event.keyCode ? event.keyCode : event.which);  
+      	if(keycode == '13'){  
+          	ValoresDef();Orden=NoOrdeanado;		
+			Busqueda(Elemento,n,Orden,Termino,Tabla);  
+    	}   
+ 	});  
 	
 	$('#BOrdA').on('click', function() { // si se apreta el boton ordenar ascendente
 		ValoresDef();Orden=Ascendente;

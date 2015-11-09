@@ -6,6 +6,7 @@ $(document).ready(function(){
 							Tit:'Catálogo de libros',
 							Tabla:'Stock',
 							CampoB:'Nombre',
+							CampoId:'Codigo',
 							RWeb:r,
 							CantR:5,
 						},
@@ -18,6 +19,7 @@ $(document).ready(function(){
 						],
 						{
 							Control:'checkbox',//control
+							Alto:'300px', // definir altura fija de la caja
 						}
 						);	
 	InicializarBuscador(
@@ -27,6 +29,7 @@ $(document).ready(function(){
 							Tit:'Estudiantes',
 							Tabla:'DatosUser',
 							CampoB:'NombreyApellido',
+							CampoId:'IdUser',
 							RWeb:r,
 							CantR:5,
 						},						
@@ -37,7 +40,8 @@ $(document).ready(function(){
 							["Telefono","Teléfono"],
 						],
 						{
-							Control:'checkbox',
+							Control:'checkbox', //control asociado con registro
+							Alto:'300px',
 						}			
 						);	
 });

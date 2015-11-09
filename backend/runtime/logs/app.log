@@ -13433,3 +13433,660 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1445539805.622
     'REQUEST_TIME' => 1445539805
 ]
+2015-10-22 21:39:04 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'stock' not found' in /var/www/html/cecv/backend/modules/gestionstock/views/prestamos/index.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-10-22 21:39:04 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'lfv17ib68eaa0ib6nrl0r7v2u6'
+    '_csrf' => '1e1ad5ec8a42fd7010630fab1255ea4f6e4f14dbc5787c633f68fd0e3aeefc53a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z7q8PsxErcKxYr4x4de-d4r-79tfro0M\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=lfv17ib68eaa0ib6nrl0r7v2u6; _csrf=1e1ad5ec8a42fd7010630fab1255ea4f6e4f14dbc5787c633f68fd0e3aeefc53a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z7q8PsxErcKxYr4x4de-d4r-79tfro0M%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '47639'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php/npresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/npresta'
+    'PATH_TRANSLATED' => '/var/www/html/npresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/npresta'
+    'REQUEST_TIME_FLOAT' => 1445549944.836
+    'REQUEST_TIME' => 1445549944
+]
+2015-11-09 04:14:22 [192.168.1.106][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/backend/views/layouts/main.php:76
+    in /var/www/html/cecv/backend/controllers/SiteController.php:76
+2015-11-09 04:14:22 [192.168.1.106][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'vn6v1t7g150qe8pp4pjlba1ih0'
+    '_csrf' => 'dc7b3aecc2f3afddbbee4226bbf6bd85f90dc388e35e240efc268b84de770fdca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1VuRcThnhfXQ0mPCkel_nxu6pHoZUFRC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-es; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+    'HTTP_COOKIE' => 'PHPSESSID=vn6v1t7g150qe8pp4pjlba1ih0; _csrf=dc7b3aecc2f3afddbbee4226bbf6bd85f90dc388e35e240efc268b84de770fdca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221VuRcThnhfXQ0mPCkel_nxu6pHoZUFRC%22%3B%7D'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '51828'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php/site/login'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/site/login'
+    'PATH_TRANSLATED' => '/var/www/html/site/login'
+    'PHP_SELF' => '/cecv/backend/web/index.php/site/login'
+    'REQUEST_TIME_FLOAT' => 1447042462.421
+    'REQUEST_TIME' => 1447042462
+]
+2015-11-09 04:14:51 [192.168.1.106][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/backend/views/layouts/main.php:76
+    in /var/www/html/cecv/backend/controllers/SiteController.php:61
+2015-11-09 04:14:51 [192.168.1.106][2][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35rlckd1hkim0hnvsnap4gb251'
+    '_csrf' => 'ed8b3cdd05b280766da2d0233194bf49b757f3372bc5e86cafcf40fdeb5798c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eAG4EYLQxWDALxMRC-_RsoSSYGmnthQB\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_COOKIE' => 'PHPSESSID=35rlckd1hkim0hnvsnap4gb251; _csrf=ed8b3cdd05b280766da2d0233194bf49b757f3372bc5e86cafcf40fdeb5798c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eAG4EYLQxWDALxMRC-_RsoSSYGmnthQB%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'HTTP_REFERER' => 'http://192.168.1.138/cecv/backend/web/index.php/site/login'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-es; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+    'HTTP_ORIGIN' => 'http://192.168.1.138'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '41469'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PHP_SELF' => '/cecv/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447042491.868
+    'REQUEST_TIME' => 1447042491
+]
+2015-11-09 04:15:08 [192.168.1.106][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/backend/views/layouts/main.php:76
+    in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:46
+2015-11-09 04:15:08 [192.168.1.106][2][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35rlckd1hkim0hnvsnap4gb251'
+    '_csrf' => 'ed8b3cdd05b280766da2d0233194bf49b757f3372bc5e86cafcf40fdeb5798c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eAG4EYLQxWDALxMRC-_RsoSSYGmnthQB\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_REFERER' => 'http://192.168.1.138/cecv/backend/web/index.php'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-es; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+    'HTTP_COOKIE' => 'PHPSESSID=35rlckd1hkim0hnvsnap4gb251; _csrf=ed8b3cdd05b280766da2d0233194bf49b757f3372bc5e86cafcf40fdeb5798c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eAG4EYLQxWDALxMRC-_RsoSSYGmnthQB%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '42022'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php/npresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/npresta'
+    'PATH_TRANSLATED' => '/var/www/html/npresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/npresta'
+    'REQUEST_TIME_FLOAT' => 1447042508.286
+    'REQUEST_TIME' => 1447042508
+]
+2015-11-09 04:16:55 [192.168.1.106][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/backend/views/layouts/main.php:76
+    in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:46
+2015-11-09 04:16:55 [192.168.1.106][2][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35rlckd1hkim0hnvsnap4gb251'
+    '_csrf' => 'ed8b3cdd05b280766da2d0233194bf49b757f3372bc5e86cafcf40fdeb5798c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eAG4EYLQxWDALxMRC-_RsoSSYGmnthQB\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-es; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+    'HTTP_COOKIE' => 'PHPSESSID=35rlckd1hkim0hnvsnap4gb251; _csrf=ed8b3cdd05b280766da2d0233194bf49b757f3372bc5e86cafcf40fdeb5798c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eAG4EYLQxWDALxMRC-_RsoSSYGmnthQB%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '41965'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php/npresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/npresta'
+    'PATH_TRANSLATED' => '/var/www/html/npresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/npresta'
+    'REQUEST_TIME_FLOAT' => 1447042615.261
+    'REQUEST_TIME' => 1447042615
+]
+2015-11-09 04:27:40 [192.168.1.106][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/backend/views/layouts/main.php:76
+    in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:46
+2015-11-09 04:27:40 [192.168.1.106][2][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35rlckd1hkim0hnvsnap4gb251'
+    '_csrf' => 'ed8b3cdd05b280766da2d0233194bf49b757f3372bc5e86cafcf40fdeb5798c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eAG4EYLQxWDALxMRC-_RsoSSYGmnthQB\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-es; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+    'HTTP_COOKIE' => 'PHPSESSID=35rlckd1hkim0hnvsnap4gb251; _csrf=ed8b3cdd05b280766da2d0233194bf49b757f3372bc5e86cafcf40fdeb5798c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eAG4EYLQxWDALxMRC-_RsoSSYGmnthQB%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '41512'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php/npresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/npresta'
+    'PATH_TRANSLATED' => '/var/www/html/npresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/npresta'
+    'REQUEST_TIME_FLOAT' => 1447043260.117
+    'REQUEST_TIME' => 1447043260
+]
+2015-11-09 04:30:37 [192.168.1.106][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/backend/views/layouts/main.php:76
+    in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:46
+2015-11-09 04:30:37 [192.168.1.106][2][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35rlckd1hkim0hnvsnap4gb251'
+    '_csrf' => '6e7420ef3f08cf8d71641495bfa0248605f4faa95b0ee673dc70bfb00e0d1a33a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0NuSJe9Vc-h-auwKW66rwSq0sZy3l8BM\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-es; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+    'HTTP_COOKIE' => 'PHPSESSID=35rlckd1hkim0hnvsnap4gb251; _csrf=6e7420ef3f08cf8d71641495bfa0248605f4faa95b0ee673dc70bfb00e0d1a33a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220NuSJe9Vc-h-auwKW66rwSq0sZy3l8BM%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59947'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php/npresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/npresta'
+    'PATH_TRANSLATED' => '/var/www/html/npresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/npresta'
+    'REQUEST_TIME_FLOAT' => 1447043437.321
+    'REQUEST_TIME' => 1447043437
+]
+2015-11-09 04:32:51 [192.168.1.106][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/backend/views/layouts/main.php:76
+    in /var/www/html/cecv/backend/controllers/SiteController.php:61
+2015-11-09 04:32:51 [192.168.1.106][2][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35rlckd1hkim0hnvsnap4gb251'
+    '_csrf' => '3e5cafa9bfb2d9c106408533bab901e8f2a978b8c5db541458ed80675a084701a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eMunMeQfTVV29V6vDb5ltL9TIeKRaTEK\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-es; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+    'HTTP_COOKIE' => 'PHPSESSID=35rlckd1hkim0hnvsnap4gb251; _csrf=3e5cafa9bfb2d9c106408533bab901e8f2a978b8c5db541458ed80675a084701a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eMunMeQfTVV29V6vDb5ltL9TIeKRaTEK%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60493'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PHP_SELF' => '/cecv/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447043571.152
+    'REQUEST_TIME' => 1447043571
+]
+2015-11-09 04:32:58 [192.168.1.106][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/backend/views/layouts/main.php:76
+    in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:46
+2015-11-09 04:32:58 [192.168.1.106][2][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35rlckd1hkim0hnvsnap4gb251'
+    '_csrf' => '3e5cafa9bfb2d9c106408533bab901e8f2a978b8c5db541458ed80675a084701a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eMunMeQfTVV29V6vDb5ltL9TIeKRaTEK\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_REFERER' => 'http://192.168.1.138/cecv/backend/web/index.php'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-es; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+    'HTTP_COOKIE' => 'PHPSESSID=35rlckd1hkim0hnvsnap4gb251; _csrf=3e5cafa9bfb2d9c106408533bab901e8f2a978b8c5db541458ed80675a084701a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eMunMeQfTVV29V6vDb5ltL9TIeKRaTEK%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '56211'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php/npresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/npresta'
+    'PATH_TRANSLATED' => '/var/www/html/npresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/npresta'
+    'REQUEST_TIME_FLOAT' => 1447043578.356
+    'REQUEST_TIME' => 1447043578
+]
+2015-11-09 04:35:02 [192.168.1.106][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/backend/views/layouts/main.php:76
+    in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:46
+2015-11-09 04:35:02 [192.168.1.106][2][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35rlckd1hkim0hnvsnap4gb251'
+    '_csrf' => '3e5cafa9bfb2d9c106408533bab901e8f2a978b8c5db541458ed80675a084701a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eMunMeQfTVV29V6vDb5ltL9TIeKRaTEK\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-es; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+    'HTTP_COOKIE' => 'PHPSESSID=35rlckd1hkim0hnvsnap4gb251; _csrf=3e5cafa9bfb2d9c106408533bab901e8f2a978b8c5db541458ed80675a084701a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eMunMeQfTVV29V6vDb5ltL9TIeKRaTEK%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '50051'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php/npresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/npresta'
+    'PATH_TRANSLATED' => '/var/www/html/npresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/npresta'
+    'REQUEST_TIME_FLOAT' => 1447043702.189
+    'REQUEST_TIME' => 1447043702
+]
+2015-11-09 04:35:09 [192.168.1.106][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/backend/views/layouts/main.php:76
+    in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:46
+2015-11-09 04:35:09 [192.168.1.106][2][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35rlckd1hkim0hnvsnap4gb251'
+    '_csrf' => '3e5cafa9bfb2d9c106408533bab901e8f2a978b8c5db541458ed80675a084701a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eMunMeQfTVV29V6vDb5ltL9TIeKRaTEK\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_REFERER' => 'http://192.168.1.138/cecv/backend/web/index.php/npresta'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-es; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+    'HTTP_COOKIE' => 'PHPSESSID=35rlckd1hkim0hnvsnap4gb251; _csrf=3e5cafa9bfb2d9c106408533bab901e8f2a978b8c5db541458ed80675a084701a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eMunMeQfTVV29V6vDb5ltL9TIeKRaTEK%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '49188'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php/npresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/npresta'
+    'PATH_TRANSLATED' => '/var/www/html/npresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/npresta'
+    'REQUEST_TIME_FLOAT' => 1447043709.159
+    'REQUEST_TIME' => 1447043709
+]
+2015-11-09 04:35:45 [192.168.1.106][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/backend/views/layouts/main.php:76
+    in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:46
+2015-11-09 04:35:45 [192.168.1.106][2][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35rlckd1hkim0hnvsnap4gb251'
+    '_csrf' => '3e5cafa9bfb2d9c106408533bab901e8f2a978b8c5db541458ed80675a084701a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eMunMeQfTVV29V6vDb5ltL9TIeKRaTEK\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_REFERER' => 'http://192.168.1.138/cecv/backend/web/index.php/npresta'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-es; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+    'HTTP_COOKIE' => 'PHPSESSID=35rlckd1hkim0hnvsnap4gb251; _csrf=3e5cafa9bfb2d9c106408533bab901e8f2a978b8c5db541458ed80675a084701a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eMunMeQfTVV29V6vDb5ltL9TIeKRaTEK%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '51456'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php/npresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/npresta'
+    'PATH_TRANSLATED' => '/var/www/html/npresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/npresta'
+    'REQUEST_TIME_FLOAT' => 1447043745.403
+    'REQUEST_TIME' => 1447043745
+]
+2015-11-09 04:46:17 [192.168.1.106][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/backend/views/layouts/main.php:76
+    in /var/www/html/cecv/backend/controllers/SiteController.php:61
+2015-11-09 04:46:17 [192.168.1.106][2][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35rlckd1hkim0hnvsnap4gb251'
+    '_csrf' => '84b2e09035a0adf3289c9dcc72c344aa7f3bfbea8003e346494c50a6b3e3d14ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lo4zB7jwZtby_C1Fm_XX1DBAr8o4SeMW\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/cecv/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-es; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+    'HTTP_COOKIE' => 'PHPSESSID=35rlckd1hkim0hnvsnap4gb251; _csrf=84b2e09035a0adf3289c9dcc72c344aa7f3bfbea8003e346494c50a6b3e3d14ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lo4zB7jwZtby_C1Fm_XX1DBAr8o4SeMW%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '55166'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PHP_SELF' => '/cecv/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447044377.783
+    'REQUEST_TIME' => 1447044377
+]
