@@ -8,6 +8,7 @@ function ValoresDef(Elemento){
 	$('#'+Elemento).data('Desplaza',0) 
 	$('#'+Elemento).data('Orden',NoOrdeanado);  
 	$('#'+Elemento).data('CantidadT',0);
+	$('#'+Elemento).data('Arreglo-Val',[]); //arreglo de valores de salida, como los elementos selecionados
 }
 
 function CreaVista(data,Elemento,n,CamposM,V,Cindice){
@@ -23,12 +24,15 @@ function CreaVista(data,Elemento,n,CamposM,V,Cindice){
 		
 		if (V['Control']!=''){
 			//creamos el control			
-			vista+='</div><div class="col-xs-1"><input id="C'+Elemento+n+item+'" data-padre="'+Elemento+n+item+'" type='+V['Control']+' class="BI" ></div>';	
+			vista+='</div><div class="col-xs-1"><input id="C'+Elemento+n+item+'" type='+V['Control']+' class="BI" ></div>';	
 		}		
 		// creamos registro 
 		$('#'+Elemento+n).append('<div class="RB col-xs-12" id="'+Elemento+n+'-'+data[item][Cindice]+'"><div class="col-xs-11" id="'+Elemento+n+item+'">'+vista+'</div>');
 		//asociamos evento y comportamiento
 		CompartamientoControl('C'+Elemento+n+item);	
+		$('#C'+Elemento+n+item).data('data-padre',Elemento+n+item);
+		$('#C'+Elemento+n+item).data('idRegistro',data[item][Cindice]);
+		$('#C'+Elemento+n+item).data('Control',Elemento);
 	}
 }
 // el objetivo de esa funcion es definir los eventos del control asociados al registro
@@ -37,13 +41,32 @@ function CreaVista(data,Elemento,n,CamposM,V,Cindice){
 function CompartamientoControl(id){
 	//agregamos eventos para los checkbox
 	$('#'+id).change(function() {
-		var Padre=$(this).attr('data-padre');
+		var Padre=$(this).data('data-padre');
+		var IdRegistro=$(this).data('idRegistro');
+		var IdControl='#'+$(this).data('Control');
     	if ( $(this).is(':checked') ) {
-    		// si es "cheked" pintamos en colorcito verde
-    		$("#"+Padre).css('background','#0f0');
+    		var ArregloVal=$(IdControl).data('Arreglo-Val');
+			//nos fijamos de no pasarno del límite    		
+    		if (ArregloVal.length<$(IdControl).data('CantMaxSelec')){
+				// si es "cheked" pintamos en colorcito verde
+    			$("#"+Padre).css('background','#dfd');
+    			// agregamos el id del registro al arreglo
+    			ArregloVal.push(IdRegistro);
+    			$(IdControl).data('Arreglo-Val',ArregloVal);
+    			alert(ArregloVal);    		
+    		} else {
+    			//sino se pueden seleccionar mas, sacamos el "cheked" del control
+    			$(this).prop('checked','false');
+    		}
   		} else {
 			// si no es "cheked" pintamos en colorcito blanco
-    		$("#"+Padre).css('background','#fff');  		
+    		$("#"+Padre).css('background','#fff');  	
+    		//eliminamos el elemento del array
+    		var ArregloVal=$(IdControl).data('Arreglo-Val');
+    		var PEliminar=ArregloVal.indexOf(IdRegistro);
+    		ArregloVal.splice(PEliminar,1);
+    		$(IdControl).data('Arreglo-Val',ArregloVal);
+    		alert(ArregloVal);
   		}
 	});	
 }
@@ -92,7 +115,8 @@ function InicializarBuscador(Config,CamposM,Vista){
 	var Titulo=Config['Tit'];
 	var Tabla=Config['Tabla'];
 	var CampoB=Config['CampoB'];
-	var CantMaxSelec=Vista['MaxCantEleSele'];
+	//definimos la cantidad máxima de elementos seleccionables para el control
+	$('#'+Elemento).data('CantMaxSelec',Vista['MaxCantEleSele']);
 	var Rweb=Config['RWeb'];
 	var RegistrosPag=Config['CantR'];
 	var Cindice=Config['CampoId'];
