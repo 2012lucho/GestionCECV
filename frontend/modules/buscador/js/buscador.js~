@@ -61,7 +61,6 @@ function Busqueda(Elemento,n,Orden,Termino,Tabla){
 		MostrarInfoRes(data,n);
 		data = data["ResBusca"];			
 		CreaVista(data,Elemento,n);
-		alert(data);
 	});		
 }
 
@@ -101,7 +100,7 @@ function InicializarBuscador(Elemento,n,Titulo,Tabla){
 		ValoresDef();Orden=NoOrdeanado;		
 		Busqueda(Elemento,n,Orden,Termino,Tabla);
 	});
-	
+	/*
 	$('#ebusca').keypress(function(event){  
     	var keycode = (event.keyCode ? event.keyCode : event.which);  
       	if(keycode == '13'){  
@@ -109,7 +108,7 @@ function InicializarBuscador(Elemento,n,Titulo,Tabla){
 			Busqueda(Elemento,n,Orden,Termino,Tabla);  
     	}   
  	});  
-	
+	*/
 	$('#BOrdA').on('click', function() { // si se apreta el boton ordenar ascendente
 		ValoresDef();Orden=Ascendente;
 		Busqueda(Elemento,n,Orden,Termino,Tabla);	

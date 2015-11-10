@@ -19,7 +19,8 @@ $(document).ready(function(){
 						],
 						{
 							Control:'checkbox',//control
-							Alto:'350px', // definir altura fija de la caja
+							MaxCantEleSele:'2',//maxima cantidad de elementos seleccionables
+							Alto:'300px', // definir altura fija de la caja
 						}
 						);	
 	InicializarBuscador(
@@ -41,7 +42,8 @@ $(document).ready(function(){
 						],
 						{
 							Control:'checkbox', //control asociado con registro
-							Alto:'350px',
+							MaxCantEleSele:'1',//maxima cantidad de elementos seleccionables
+							Alto:'300px',
 						}			
 						);	
 });

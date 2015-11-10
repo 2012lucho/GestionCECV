@@ -22,7 +22,7 @@ class SiteController extends Controller
     /**
      * @inheritdoc
      */
-    public $defaultAction = 'Catalogo';
+    public $defaultAction = 'catalogo';
      
     public function behaviors()
     {
