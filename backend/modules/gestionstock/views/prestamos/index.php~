@@ -10,10 +10,10 @@ $this->title = 'Prestamos';
 ?>
 
 <div class="site-presta row">
-	<div class="col-md-6">
+	<div class="col-md-6 col-xs-12">
 		<div id="BuscaEstu" class="bus"></div>
 	</div>
-	<div class="col-md-6">
+	<div class="col-md-6 col-xs-12">
 		<div id="BuscaLib" class="bus"></div>
 	</div>
 	

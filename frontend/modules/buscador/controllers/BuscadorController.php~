@@ -21,6 +21,9 @@ class BuscadorController extends Controller
     	return [
         	'corsFilter' => [
             	'class' => \yii\filters\Cors::className(),
+            	'cors' => [
+					//'Origin'=>['http://localhost'],            	
+            	],
         	],
     	];
 	}	
@@ -32,7 +35,8 @@ class BuscadorController extends Controller
 		                    'OrdenResu' => urldecode($_REQUEST["O"]),
 		                    'Desplaza' => urldecode($_REQUEST["D"]),
 		                    'CantReg' => urldecode($_REQUEST["C"]),
-							'Tabla' => urldecode($_REQUEST["T"])]);		 
+							'Tabla' => urldecode($_REQUEST["T"])]);	
+		 $Model->CamposB = 'Nombre';	 
 		 return BaseJson::encode($Model->Resultados());
     }
 }

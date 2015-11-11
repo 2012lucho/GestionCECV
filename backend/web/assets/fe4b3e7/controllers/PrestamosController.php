@@ -31,11 +31,7 @@ class PrestamosController extends Controller
         ];
     }
 
-    /**
-     * Lists all prestamos models.
-     * @return mixed
-     */
-    public function actionNuevo()
+    public function actionNuevo() //no borrar
     {
         $searchModel = new prestamosb();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
@@ -46,12 +42,20 @@ class PrestamosController extends Controller
         ]);
     }
     
-    public function actionNn(){
+    public function actionApresta()
+    {
+    	$Modelo=new prestamos();
+		$Libros=urldecode($_REQUEST["L"]);
+		$Estud=urldecode($_REQUEST["E"]);    	
+    	//$Modelo->save();
+    	//return '';
+    }
+  /*  public function actionNn(){
 		$m = new datosuser();		
 		$m = $m::findOne(2);
 		$c = $m->getPrestamos()->all();
 		return BaseJson::encode($c);    
-    }
+    }*/
 
     /**
      * Displays a single prestamos model.
@@ -70,7 +74,7 @@ class PrestamosController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+   /* public function actionCreate()
     {
         $model = new prestamos();
 
@@ -81,7 +85,7 @@ class PrestamosController extends Controller
                 'model' => $model,
             ]);
         }
-    }
+    }/
 	
     /**
      * Updates an existing prestamos model.

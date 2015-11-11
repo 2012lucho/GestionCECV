@@ -24,23 +24,23 @@ function CreaVista(data,Elemento,n,CamposM,V,Cindice){
 		
 		if (V['Control']!=''){
 			//creamos el control			
-			vista+='</div><div class="col-xs-1"><input id="C'+Elemento+n+item+'" type='+V['Control']+' class="BI" ></div>';	
+			vista+='</div><div class="col-xs-1"><input id="C'+Elemento+n+data[item][Cindice]+'" type='+V['Control']+' class="BI" ></div>';	
 		}		
 		// creamos registro 
-		$('#'+Elemento+n).append('<div class="RB col-xs-12" id="'+Elemento+n+'-'+data[item][Cindice]+'"><div class="col-xs-11" id="'+Elemento+n+item+'">'+vista+'</div>');
+		$('#'+Elemento+n).append('<div class="RB col-xs-12" id="'+Elemento+n+'-'+data[item][Cindice]+'"><div class="col-xs-11" id="'+Elemento+n+data[item][Cindice]+'">'+vista+'</div>');
 		//asociamos evento y comportamiento
-		CompartamientoControl('C'+Elemento+n+item);	
-		$('#C'+Elemento+n+item).data('data-padre',Elemento+n+item);
-		$('#C'+Elemento+n+item).data('idRegistro',data[item][Cindice]);
-		$('#C'+Elemento+n+item).data('Control',Elemento);
+		CompartamientoControl('C'+Elemento+n+data[item][Cindice]);	
+		$('#C'+Elemento+n+data[item][Cindice]).data('data-padre',Elemento+n+data[item][Cindice]);
+		$('#C'+Elemento+n+data[item][Cindice]).data('idRegistro',data[item][Cindice]);
+		$('#C'+Elemento+n+data[item][Cindice]).data('Control',Elemento);
 	}
 }
 // el objetivo de esa funcion es definir los eventos del control asociados al registro
 // y los comportamientos de los mismos
 //esta función solo deb ser llamada de la función que arma la vista
 function CompartamientoControl(id){
-	//agregamos eventos para los checkbox
-	$('#'+id).change(function() {
+	$('#'+id).unbind();//eliminamos todos los eventos que pudieran estar asociados
+	$('#'+id).bind('change',function() {//agregamos eventos para los checkbox
 		var Padre=$(this).data('data-padre');
 		var IdRegistro=$(this).data('idRegistro');
 		var IdControl='#'+$(this).data('Control');
@@ -53,10 +53,10 @@ function CompartamientoControl(id){
     			// agregamos el id del registro al arreglo
     			ArregloVal.push(IdRegistro);
     			$(IdControl).data('Arreglo-Val',ArregloVal);
-    			alert(ArregloVal);    		
+    			//alert(ArregloVal);    		
     		} else {
     			//sino se pueden seleccionar mas, sacamos el "cheked" del control
-    			$(this).prop('checked','false');
+    			$(this).prop('checked',false);
     		}
   		} else {
 			// si no es "cheked" pintamos en colorcito blanco
@@ -66,7 +66,7 @@ function CompartamientoControl(id){
     		var PEliminar=ArregloVal.indexOf(IdRegistro);
     		ArregloVal.splice(PEliminar,1);
     		$(IdControl).data('Arreglo-Val',ArregloVal);
-    		alert(ArregloVal);
+    		//alert(ArregloVal);
   		}
 	});	
 }

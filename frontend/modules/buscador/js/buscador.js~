@@ -1,4 +1,4 @@
-const RutaWeb="http://localhost/cecv/frontend/web/index.php";
+const RutaWeb="/cecv/frontend/web/index.php";
 const PeticionB="/rbusca"; //parte ruta peticion elementos filtrados
 const RegistrosPag=5;
 
@@ -100,7 +100,7 @@ function InicializarBuscador(Elemento,n,Titulo,Tabla){
 		ValoresDef();Orden=NoOrdeanado;		
 		Busqueda(Elemento,n,Orden,Termino,Tabla);
 	});
-	/*
+	
 	$('#ebusca').keypress(function(event){  
     	var keycode = (event.keyCode ? event.keyCode : event.which);  
       	if(keycode == '13'){  
@@ -108,7 +108,7 @@ function InicializarBuscador(Elemento,n,Titulo,Tabla){
 			Busqueda(Elemento,n,Orden,Termino,Tabla);  
     	}   
  	});  
-	*/
+	
 	$('#BOrdA').on('click', function() { // si se apreta el boton ordenar ascendente
 		ValoresDef();Orden=Ascendente;
 		Busqueda(Elemento,n,Orden,Termino,Tabla);	

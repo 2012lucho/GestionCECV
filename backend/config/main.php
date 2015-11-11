@@ -40,13 +40,13 @@ return [
 						'route' => 'gestionstock/stock/index',		
 					 ],
 					 [
-						'pattern' => 'npresta',
+						'pattern' => 'npresta', //action para cargar la vista desde donde crear nuevos prestamos
 						'route' => 'gestionstock/prestamos/nuevo',		
 					 ],
-					 //[
-					//	'pattern' => 'presta',//luego sacar
-					//	'route' => 'gestionstock/prestamos/nn',		
-					 //],
+					 [
+						'pattern' => 'apresta',//action para cargar un prestamo en la base de datos
+						'route' => 'gestionstock/prestamos/apresta',		
+					 ],
 					 [
 						'pattern' => 'users',
 						'route' => 'gestionuser/users/index',		

@@ -15,16 +15,19 @@ use app\modules\buscador\models\Busqueda;
 use yii\helpers\BaseJson;
 
 class BuscadorController extends Controller
-{
+{/*
 	public function behaviors() //configuracion de cross origin, lo agregue pero no se bien como es la cosa
 	{
     	return [
         	'corsFilter' => [
             	'class' => \yii\filters\Cors::className(),
+            	'cors' => [
+					//'Origin'=>['http://localhost'],            	
+            	],
         	],
     	];
 	}	
-	
+	*/
 	//devolver los resultados que coinciden con el termino de busqueda
     public function actionResultb()
     { 

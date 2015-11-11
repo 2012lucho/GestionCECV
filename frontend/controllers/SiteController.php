@@ -27,9 +27,12 @@ class SiteController extends Controller
     public function behaviors()
     {
         return [
-        	'corsFilter' => [
+        	/*'corsFilter' => [
             	'class' => \yii\filters\Cors::className(),
-        	],
+            	'cors' => [
+					//'Origin'=>['http://localhost'],            	
+            	],
+        	],*/
             'access' => [
                 'class' => AccessControl::className(),
                 'only' => ['logout', 'signup'],
