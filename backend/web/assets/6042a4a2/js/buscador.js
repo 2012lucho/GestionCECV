@@ -123,11 +123,7 @@ function InicializarBuscador(Config,CamposM,Vista){
 	//Se aplican las configuraciones de estilo
 	var Alto=Vista['Alto'];
 	if (Alto!=''){
-		//$('#'+Elemento).css('overflow','scroll');
-		//$('#'+Elemento).css('overflow-x','hidden');
-		//$('#'+Elemento+n).css('height',Alto);
 		$('#'+Elemento).css('height',Alto);
-		//alert('#'+Elemento+n);
 		$('#'+Elemento).css('padding','2px');
 	}	
 	//Definimos los datos basicos de cada buscador

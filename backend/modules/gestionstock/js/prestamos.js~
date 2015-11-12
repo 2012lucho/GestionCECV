@@ -1,25 +1,25 @@
 const IdSelecLibro='BuscaLib';
 const IdSelecEstud='BuscaEstu';
-const r="http://localhost/cecv/backend/web/index.php";
-const PeticionPre='';
+const r="/cecv/backend/web/index.php";
+const PeticionPre='/apresta';
 
 $(document).ready(function(){
 	//Inicializamos controles de carga de información
 	$('#NuevoPrestamo').click(function () {
 		//se hace la peticion
-		/*$.get(Rweb+PeticionPre,{TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
-			data = JSON.parse(data);
-			MostrarInfoRes(data,n,RegistrosPag,Elemento);
-			data = data["ResBusca"];			
-			CreaVista(data,Elemento,n,CamposM,Vista,Cindice);
-		});		*/
+		var ArLib=JSON.stringify($('#'+IdSelecLibro).data('Arreglo-Val'));
+		var ArEst=JSON.stringify($('#'+IdSelecEstud).data('Arreglo-Val'));
+		$.get(r+PeticionPre,{L:ArLib,E:ArEst},function (data) {		
+			//data = JSON.parse(data);
+			//alert(data);
+		});		
 	});
 	$('#CancelPrestamo').click(function () {
 	});
 	//Inicializamos controles de búsqueda	
 	InicializarBuscador({
 							id:IdSelecLibro,n:1,Tit:'Catálogo de libros',Tabla:'Stock',
-							CampoB:'Nombre',CampoId:'Codigo',RWeb:r,CantR:5,
+							CampoB:'Nombre',CampoId:'idStock',RWeb:r,CantR:5,
 						},
 						[
 							["Codigo","Código"], //campos, 1 Nombre campo, 2 Alias

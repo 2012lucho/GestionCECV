@@ -44,11 +44,23 @@ class PrestamosController extends Controller
     
     public function actionApresta()
     {
-    	$Modelo=new prestamos();
-		$Libros=urldecode($_REQUEST["L"];
-		$Estud=urldecode($_REQUEST["E"];    	
+		//Leemos los parametros		
+		$Libros=urldecode($_REQUEST["L"]);
+		$Estud=urldecode($_REQUEST["E"]);   
+		//Creamos un registro por cada libro prestado
+		for($c=0;$c<sizeof($Libros);$c++){
+			//Creamos los registros
+			$Modelo=new prestamos();
+			$Modelo->idUser=$Estud[0];	
+			$Modelo->IdStock=$Libros[$c];
+			$Modelo->FechaDebT="";
+			$Modelo->FechaDeb="";
+			$Modelo->FechaPresta=date('Y-m-d');		 
+			$Modelo->save();return "a";
+		}
+		return "";
     	//$Modelo->save();
-    	//return '';
+    	//return BaseJson::encode($Sal);
     }
   /*  public function actionNn(){
 		$m = new datosuser();		
