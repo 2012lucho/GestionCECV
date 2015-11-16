@@ -2,23 +2,42 @@ const IdSelecLibro='BuscaLib';
 const IdSelecEstud='BuscaEstu';
 const r="/cecv/backend/web/index.php";
 const PeticionPre='/apresta';
+const PeticionDev='/adevol';
+
+const PetExitosa='1';
+const MensPetExit="Préstamo cargado correctamente";
+const MensSeleccionar="Tiene que seleccionar al menos un estudiante y un libro";
 
 $(document).ready(function(){
 		
 	//Inicializamos controles de carga de información
 	$('#NuevoPrestamo').click(function () {
-		//se hace la peticion
-		var ArLib=JSON.stringify($('#'+IdSelecLibro).data('Arreglo-Val'));
-		var ArEst=JSON.stringify($('#'+IdSelecEstud).data('Arreglo-Val'));
-		$.get(r+PeticionPre,{L:ArLib,E:ArEst},function (data) {		
+		var ArLib=$('#'+IdSelecLibro).data('Arreglo-Val');
+		var ArEst=$('#'+IdSelecEstud).data('Arreglo-Val');
+		//se comprueba que se hayan seleccionado estudiante y libro
+		if (ArLib.length>0&&ArEst>0){
+			//se hace la peticion
+			ArLib=JSON.stringify(ArLib);
+			ArEst=JSON.stringify(ArEst);
+			$.get(r+PeticionPre,{L:ArLib,E:ArEst},function (data) {		
+				//Se anuncia el resultado
+				//data = JSON.parse(data);
+				if (data == PetExitosa){alert(MensPetExit);}
+			});
+			//reestablecemos los buscadores
+	    	InicializarBuscadores();		
+		} else {
+			alert(MensSeleccionar);		
+		}
+	});
+	
+	$('#CancelPrestamo').click(function () {
+		//se hace la petición
+		$.get(r+PeticionDev,{L:ArLib,E:ArEst},function (data) {		
 			//Se anuncia el resultado
 			//data = JSON.parse(data);
 			//alert(data);
 		});
-		//reestablecemos los buscadores
-	    InicializarBuscadores();		
-	});
-	$('#CancelPrestamo').click(function () {
 	    //reestablecemos los buscadores
 	    InicializarBuscadores();
 	});

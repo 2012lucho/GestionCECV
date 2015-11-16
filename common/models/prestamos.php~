@@ -67,6 +67,6 @@ class prestamos extends \yii\db\ActiveRecord
      */
     public function getIdStock()
     {
-        return $this->hasOne(Stock::className(), ['idStock' => 'IdStock']);
+        return $this->hasOne(stock::className(), ['idStock' => 'IdStock']);
     }
 }
