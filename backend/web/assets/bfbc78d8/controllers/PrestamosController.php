@@ -49,6 +49,8 @@ class PrestamosController extends Controller
     //"Action" que se utiliza para agregar un nuevo préstamo a la base de datos
     public function actionApresta()
     {
+    	//resultado de la petición
+    	$resultado=[];
     	//Buscamos en la configuracion la cantidad de dias de duraci{on del prestamo
     	$DiasPresta=$this->ValorConfiguracion('TPrestaLibro');
 		//Leemos los parametros		
@@ -61,19 +63,23 @@ class PrestamosController extends Controller
     	$FDebT->modify('+'.$DiasPresta.' day');
 		//Creamos un registro por cada libro prestado
 		for($c=0;$c<sizeof($Libros);$c++){
-			//modelo de la tabla de prestamos
-			$Modelo=new prestamos();
-			//Creacion del registro para la tabla de prestamos
-			$Modelo->idUser=$Estud[0];	
-			$Modelo->IdStock=$Libros[$c];	
-			$Modelo->FechaDebT=$FDebT->format('Y-m-d');
-			$Modelo->FechaDeb='0000-00-00';
-			$Modelo->FechaPresta=$date->format('Y-m-d');	 
-			//$Modelo->save();
-			//actualizamos la cantidad en stock
+			//buscamos en el stock  
 			$Stock=stock::findOne($Libros[$c]);
-			$Stock->CantidadDisponible-=1;
-			$Stock->save();
+			$Cant=$Stock->CantidadDisponible;
+			if($Cant>0){ // comprobamos la cantidad disponible
+				//modelo de la tabla de prestamos
+				$Modelo=new prestamos();
+				//Creacion del registro para la tabla de prestamos
+				$Modelo->idUser=$Estud[0];	
+				$Modelo->IdStock=$Libros[$c];	
+				$Modelo->FechaDebT=$FDebT->format('Y-m-d');
+				$Modelo->FechaDeb='0000-00-00';
+				$Modelo->FechaPresta=$date->format('Y-m-d');	 
+				$Modelo->save();
+				//actualizamos la cantidad en stock
+				$Stock->CantidadDisponible-=1;
+				$Stock->save();
+			}
 		}
 		return "1"; //aca se debe debolver un arreglo con el resultado del ingreso de datos
     }

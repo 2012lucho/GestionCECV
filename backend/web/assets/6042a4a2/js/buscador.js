@@ -147,7 +147,7 @@ function InicializarBuscador(Config,CamposM,Vista){
 	//Definimos lacaja donde mostrar los resultados y la caja donde mostrar el "boton mas resultados"
 	$('#'+Elemento).append("<div id='"+Elemento+n+"' class='cajares'></div>"
 		+"<div class='col-xs-12 bFoot'>"
-		+"<input id='BBuscaMas"+n+"' class='btn btn-default btn-xs' type='button' value='Más resultados'></div>");
+		+"<input id='BBuscaMas"+n+"' class='btn btn-success btn-xs' type='button' value='Más resultados'></div>");
 	//Pedimos todos los datos y armamos la vista
 	ValoresDef(Elemento);	
 	Busqueda(Elemento,n,NoOrdeanado,"",Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);

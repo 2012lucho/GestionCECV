@@ -10,16 +10,23 @@ $this->title = 'Prestamos';
 ?>
 
 <div class="site-presta row">
-	<div class="col-md-6 col-xs-12">
-		<div id="BuscaEstu" class="bus"></div>
+	<div  class="col-xs-12" id="bot-presta">
+		<div id="Notific" class="col-md-10">Área de notificaciones</div>	
+		<div class="col-md-2" >
+			<input id='NuevoPrestamo' class='btn btn-info btn-xs boto' value='Ingresar retiro' type='button'>
+			<input id='CancelPrestamo' class='btn btn-success btn-xs boto' value='Ingresar devolución' type='button'>
+		</div>	
 	</div>
-	<div class="col-md-6 col-xs-12">
-		<div id="BuscaLib" class="bus"></div>
-	</div>
-	
-	<div class="col-xs-12" id="bot-presta">
-		<input id='NuevoPrestamo' class='btn btn-default btn-xs' value='Ingresar retiro' type='button'>
-		<input id='CancelPrestamo' class='btn btn-default btn-xs' value='Ingresar devolución' type='button'>
+	<div class="col-xs-12">
+		<div class="col-md-4 col-xs-12">
+			<div id="BuscaEstu" class="bus"></div>
+		</div>
+		<div class="col-md-4 col-xs-12">
+			<div id="InfoEstud"></div>
+		</div>
+		<div class="col-md-4 col-xs-12">
+			<div id="BuscaLib" class="bus"></div>
+		</div>
 	</div>
 </div>
 
