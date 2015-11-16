@@ -12,6 +12,7 @@ class PrestaAsset extends AssetBundle
     ];
     public $js = [
     	'js/prestamos.js',
+    	'js/infoestud.js',
     ];
     public $depends = [
        'backend\assets\AppAsset',
