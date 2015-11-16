@@ -8,7 +8,7 @@ class PrestaAsset extends AssetBundle
 {
     public $sourcePath = '@app/modules/gestionstock';
     public $css = [
-        //'css/site.css',
+        'css/stock.css',
     ];
     public $js = [
     	'js/prestamos.js',
