@@ -33283,3 +33283,50 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1447204992.688
     'REQUEST_TIME' => 1447204992
 ]
+2015-11-16 23:48:00 [192.168.1.106][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.106
+    in /var/www/html/cecv/frontend/views/layouts/main.php:70
+    in /var/www/html/cecv/frontend/controllers/SiteController.php:82
+2015-11-16 23:47:59 [192.168.1.106][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '1315rncs16j49alln39nf3kuu5'
+    '_csrf' => 'c72a835410c7ca0183daf9c32fc800cbd9a6ce166270b2ab479d9c3674951cf2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"BVn1IRMks-dDnvP4Qkz6Oe9UoPqIo7eY\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.1.138'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES, en-US'
+    'HTTP_X_WAP_PROFILE' => 'http://wap.samsungmobile.com/uaprof/GT-S5360.xml'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; es-ES; GT-S5360 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 OPR/12.0.1987.97260 Mobile Safari/533.1'
+    'HTTP_COOKIE' => 'PHPSESSID=1315rncs16j49alln39nf3kuu5; _csrf=c72a835410c7ca0183daf9c32fc800cbd9a6ce166270b2ab479d9c3674951cf2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22BVn1IRMks-dDnvP4Qkz6Oe9UoPqIo7eY%22%3B%7D'
+    'HTTP_ACCEPT' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+    'HTTP_ACCEPT_CHARSET' => 'utf-8, iso-8859-1, utf-16, *;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 192.168.1.138 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '192.168.1.138'
+    'SERVER_ADDR' => '192.168.1.138'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.106'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/frontend/web/index.php'
+    'REMOTE_PORT' => '60620'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/frontend/web/'
+    'SCRIPT_NAME' => '/cecv/frontend/web/index.php'
+    'PHP_SELF' => '/cecv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447717679.505
+    'REQUEST_TIME' => 1447717679
+]

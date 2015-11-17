@@ -52,6 +52,10 @@ return [
 						'route' => 'gestionstock/prestamos/adevol',		
 					 ],
 					 [
+						'pattern' => 'lpresta',//action para devolver el listado de prestamos del usuario
+						'route' => 'gestionstock/prestamos/lpresta',		
+					 ],
+					 [
 						'pattern' => 'users',
 						'route' => 'gestionuser/users/index',		
 					 ],

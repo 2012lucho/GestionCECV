@@ -11,6 +11,7 @@ class PrestaAsset extends AssetBundle
         'css/stock.css',
     ];
     public $js = [
+    	'js/infoestud.js',
     	'js/prestamos.js',
     ];
     public $depends = [
