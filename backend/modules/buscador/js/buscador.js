@@ -1,4 +1,4 @@
-const PeticionB="/rbusca"; //parte ruta peticion elementos filtrados
+//const PeticionB="/rbusca"; //parte ruta peticion elementos filtrados
 
 const NoOrdeanado="n";
 const Ascendente="a";
@@ -87,7 +87,7 @@ function ActualizaResultados(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,
 	if ($('#'+Elemento).data('Desplaza')+RegistrosPag <= $('#'+Elemento).data('CantidadT')){ 
 		$('#'+Elemento).data('Desplaza',$('#'+Elemento).data('Desplaza')+RegistrosPag);
 		//se piden los demas datos
-		$.get(Rweb+PeticionB,{TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
+		$.get(Rweb+$('#'+Elemento).data('Action'),{TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
 			data = JSON.parse(data);
 			MostrarInfoRes(data,n,RegistrosPag,Elemento);
 			data = data["ResBusca"];			
@@ -100,7 +100,7 @@ function Busqueda(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,Rweb,Campos
 	//se vacia el html de la caja que muestra los resultados
 	$('#'+Elemento+n).html("");		
 	// se piden los resultados al servidor
-	$.get(Rweb+PeticionB,{TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
+	$.get(Rweb+$('#'+Elemento).data('Action'),{TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
 		data = JSON.parse(data);
 		MostrarInfoRes(data,n,RegistrosPag,Elemento,Vista);
 		data = data["ResBusca"];			
@@ -122,6 +122,8 @@ function InicializarBuscador(Config,CamposM,Vista){
 	//definimos la funcion que se ejecutara al hacer click en el check box
 	$('#'+Elemento).data('Fcontrol',Config['FuncionControl']);
 	$('#'+Elemento).data('FcontrolD',Config['FuncionControlD']);
+	//definimos el action para hacer la petición que nos devolverá resultados
+	$('#'+Elemento).data('Action',Config['Action']);
 	//FuncionControl();
 	//definimos la cantidad máxima de elementos seleccionables para el control
 	$('#'+Elemento).data('CantMaxSelec',Vista['MaxCantEleSele']);
@@ -143,7 +145,7 @@ function InicializarBuscador(Config,CamposM,Vista){
 	$('#'+Elemento).html("<div class='bEncab"+n+" bEncab col-xs-12'><div class='Btit col-xs-12'>"+Titulo+"</div></div>");
 	//agregamos el control de buscqueda del encabezado
 	$('.bEncab'+n).append("<div class='buscalib col-xs-12'>"
-		+"<input type='text' id='ebusca"+n+"' class='ebusca' value='Busqueda por título'>"
+		+"<input type='text' id='ebusca"+n+"' class='ebusca' value='"+Vista['TextoDef']+"'>"
 		+" <input id='BBusca"+n+"' class='btn btn-default btn-xs' type='button' value='Ir'>"
 		+" <input id='BOrdD"+n+"' class='btn btn-default btn-xs' type='button' value='&dArr;'>"	
 		+" <input id='BOrdA"+n+"' class='btn btn-default btn-xs' type='button' value='&uArr;'>"	

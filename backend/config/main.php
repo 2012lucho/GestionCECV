@@ -48,7 +48,7 @@ return [
 						'route' => 'gestionstock/prestamos/apresta',		
 					 ],
 					 [
-						'pattern' => 'apresta',//action para cargar la devolución de un préstamo
+						'pattern' => 'adevol',//action para cargar la devolución de un préstamo
 						'route' => 'gestionstock/prestamos/adevol',		
 					 ],
 					 [

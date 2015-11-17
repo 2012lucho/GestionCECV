@@ -22,11 +22,17 @@
 		public function Resultados(){
 			$this->CamposO=$this->CamposB; //Por ahora son iguales	
 			
+//consulta que funciona
+// select idPresta,NombreyApellido from Prestamos left join DatosUser on Prestamos.idUser=DatosUser.IdUser			
+		
+//otra consulta que funciona
+// select idPresta,Nombre from Prestamos left join Stock on Prestamos.IdStock=Stock.idStock		
+			
 			$Consulta = (new \yii\db\Query())
 						->select('*')
 						->from($this->Tabla)
 						->where(['like',$this->CamposB,'%'.$this->TBusqueda.'%',false]);
-						
+					
 			if ($this->OrdenResu != "n"){ //se ordena
 		 		if ($this->OrdenResu == "d"){ 
 		 			$Consulta = $Consulta->orderBy([$this->CamposO=>SORT_DESC]);

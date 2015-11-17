@@ -4,7 +4,7 @@ const PrestaPend="/lpresta";
 function InicInfoEstu(){
 	var Id='InfoEstud';
 	var ContHtml='';//variable que contendrá el codigo html del control
-	ContHtml="<div id='InfEstEnc' class='bEncab col-xs-12'><div class='Btit col-xs-12'>Préstamos del Estudiante</div></div>";
+	ContHtml="<div id='InfEstEnc' class='bEncab col-xs-12'><div class='Btit col-xs-12'>Préstamos pendientes</div></div>";
 	ContHtml+="<div class='col-xs-12'><p> </p></div>";	
 	ContHtml+="<div id='InfoM' class='col-xs-12 cajares'></div>";
 	//Creamos la estructura del control		

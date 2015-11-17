@@ -70,7 +70,7 @@ function CompartamientoControl(id){
     		$(IdControl).data('Arreglo-Val',ArregloVal);
     		//llamamos a la función asociada para reiniciar la pantalla de información
     		var funcion=$(IdControl).data('FcontrolD');
-    		if(funcion!=''){funcion}
+    		if(funcion!=''){funcion();}
   		}
 	});	
 }
@@ -122,6 +122,8 @@ function InicializarBuscador(Config,CamposM,Vista){
 	//definimos la funcion que se ejecutara al hacer click en el check box
 	$('#'+Elemento).data('Fcontrol',Config['FuncionControl']);
 	$('#'+Elemento).data('FcontrolD',Config['FuncionControlD']);
+	//definimos el action para hacer la petición que nos devolverá resultados
+	$('#'+Elemento).data('Action',Config['Action']);
 	//FuncionControl();
 	//definimos la cantidad máxima de elementos seleccionables para el control
 	$('#'+Elemento).data('CantMaxSelec',Vista['MaxCantEleSele']);
@@ -143,7 +145,7 @@ function InicializarBuscador(Config,CamposM,Vista){
 	$('#'+Elemento).html("<div class='bEncab"+n+" bEncab col-xs-12'><div class='Btit col-xs-12'>"+Titulo+"</div></div>");
 	//agregamos el control de buscqueda del encabezado
 	$('.bEncab'+n).append("<div class='buscalib col-xs-12'>"
-		+"<input type='text' id='ebusca"+n+"' class='ebusca' value='Busqueda por título'>"
+		+"<input type='text' id='ebusca"+n+"' class='ebusca' value='"+Vista['TextoDef']+"'>"
 		+" <input id='BBusca"+n+"' class='btn btn-default btn-xs' type='button' value='Ir'>"
 		+" <input id='BOrdD"+n+"' class='btn btn-default btn-xs' type='button' value='&dArr;'>"	
 		+" <input id='BOrdA"+n+"' class='btn btn-default btn-xs' type='button' value='&uArr;'>"	

@@ -33,7 +33,7 @@ class prestamos extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idUser', 'IdStock', 'FechaPresta', 'FechaDebT', 'FechaDeb'], 'required'],
+            //[['idUser', 'IdStock', 'FechaPresta', 'FechaDebT', 'FechaDeb'],],//, 'required'],
             [['idUser', 'IdStock'], 'integer'],
             [['FechaPresta', 'FechaDebT', 'FechaDeb'], 'safe']
         ];
