@@ -23,12 +23,16 @@ $(document).ready(function(){
 			$.get(r+PeticionPre,{L:ArLib,E:ArEst},function (data) {		
 				//Se anuncia el resultado
 				//data = JSON.parse(data);
-				if (data == PetExitosa){alert(MensPetExit);}
+				if (data == PetExitosa){
+					$('#Notific > .mensaje').html(MensPetExit);
+					$('#Notific > .mensaje').css('background','#dfd');
+				}
 			});
 			//reestablecemos los buscadores
 	    	InicializarBuscadores();		
 		} else {
-			alert(MensSeleccionar);		
+			$('#Notific > .mensaje').html(MensSeleccionar);
+			$('#Notific > .mensaje').css('background','#fdd');
 		}
 	});
 	
