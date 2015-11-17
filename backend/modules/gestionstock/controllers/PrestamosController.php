@@ -112,14 +112,23 @@ class PrestamosController extends Controller
 		$OrdenResu = urldecode($_REQUEST["O"]);
 		$Desplaza= urldecode($_REQUEST["D"]);
 		$CantReg= urldecode($_REQUEST["C"]);
-		//$Tabla = urldecode($_REQUEST["T"]);
-		//$CamposB = urldecode($_REQUEST["CB"]);
-
+		
     	$Consulta = (new \yii\db\Query())
 			->select('idPresta,NombreyApellido,Nombre,FechaPresta,FechaDebT')
 			->from('Prestamos')
 			->leftJoin('DatosUser','Prestamos.idUser=DatosUser.IdUser') //establecemos las relaciones
-			->leftJoin('Stock','Prestamos.IdStock=Stock.idStock');
+			->leftJoin('Stock','Prestamos.IdStock=Stock.idStock')
+			->where(['like','idPresta','%'.$TBusqueda.'%',false]);
+		
+		if ($OrdenResu != "n"){ //se ordena
+	 		if ($OrdenResu == "d"){ 
+	 			$Consulta = $Consulta->orderBy(['idPresta'=>SORT_DESC]);
+	 		} else {
+	 			if ($OrdenResu == "a"){ 
+	 				$Consulta = $Consulta->orderBy(['idPresta'=>SORT_ASC]);
+	 			}
+	 		}		 
+	 	}				
 		
 		$CantTot=$Consulta->count();
 		$Consulta = $Consulta->offset($Desplaza)->limit($CantReg)->all();

@@ -1,4 +1,4 @@
-const PeticionB="/rbusca"; //parte ruta peticion elementos filtrados
+//const PeticionB="/rbusca"; //parte ruta peticion elementos filtrados
 
 const NoOrdeanado="n";
 const Ascendente="a";
@@ -87,7 +87,7 @@ function ActualizaResultados(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,
 	if ($('#'+Elemento).data('Desplaza')+RegistrosPag <= $('#'+Elemento).data('CantidadT')){ 
 		$('#'+Elemento).data('Desplaza',$('#'+Elemento).data('Desplaza')+RegistrosPag);
 		//se piden los demas datos
-		$.get(Rweb+PeticionB,{TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
+		$.get(Rweb+$('#'+Elemento).data('Action'),{TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
 			data = JSON.parse(data);
 			MostrarInfoRes(data,n,RegistrosPag,Elemento);
 			data = data["ResBusca"];			
@@ -100,7 +100,7 @@ function Busqueda(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,Rweb,Campos
 	//se vacia el html de la caja que muestra los resultados
 	$('#'+Elemento+n).html("");		
 	// se piden los resultados al servidor
-	$.get(Rweb+PeticionB,{TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
+	$.get(Rweb+$('#'+Elemento).data('Action'),{TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
 		data = JSON.parse(data);
 		MostrarInfoRes(data,n,RegistrosPag,Elemento,Vista);
 		data = data["ResBusca"];			

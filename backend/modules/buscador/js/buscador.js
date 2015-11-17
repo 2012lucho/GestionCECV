@@ -1,4 +1,3 @@
-//const PeticionB="/rbusca"; //parte ruta peticion elementos filtrados
 
 const NoOrdeanado="n";
 const Ascendente="a";
