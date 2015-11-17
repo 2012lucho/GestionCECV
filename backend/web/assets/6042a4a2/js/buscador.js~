@@ -1,4 +1,3 @@
-const PeticionB="/rbusca"; //parte ruta peticion elementos filtrados
 
 const NoOrdeanado="n";
 const Ascendente="a";
@@ -86,8 +85,10 @@ function ActualizaResultados(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,
 	//se actualizan la variable de desplazamiento y se procede a pedir datos si hay mas para pedir
 	if ($('#'+Elemento).data('Desplaza')+RegistrosPag <= $('#'+Elemento).data('CantidadT')){ 
 		$('#'+Elemento).data('Desplaza',$('#'+Elemento).data('Desplaza')+RegistrosPag);
+		// "cargamos" el array de condiciones
+		var Condiciones=JSON.stringify($('#'+Elemento).data('Condiciones'));		
 		//se piden los demas datos
-		$.get(Rweb+PeticionB,{TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
+		$.get(Rweb+$('#'+Elemento).data('Action'),{CO:Condiciones, TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
 			data = JSON.parse(data);
 			MostrarInfoRes(data,n,RegistrosPag,Elemento);
 			data = data["ResBusca"];			
@@ -99,8 +100,10 @@ function ActualizaResultados(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,
 function Busqueda(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice){
 	//se vacia el html de la caja que muestra los resultados
 	$('#'+Elemento+n).html("");		
+	// "cargamos" el array de condiciones
+	var Condiciones=JSON.stringify($('#'+Elemento).data('Condiciones'));
 	// se piden los resultados al servidor
-	$.get(Rweb+PeticionB,{TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
+	$.get(Rweb+$('#'+Elemento).data('Action'),{CO:Condiciones, TB:Termino, O:Orden, D:$('#'+Elemento).data('Desplaza'), C:RegistrosPag, T:Tabla, CB:CampoB},function (data) {		
 		data = JSON.parse(data);
 		MostrarInfoRes(data,n,RegistrosPag,Elemento,Vista);
 		data = data["ResBusca"];			
@@ -124,7 +127,8 @@ function InicializarBuscador(Config,CamposM,Vista){
 	$('#'+Elemento).data('FcontrolD',Config['FuncionControlD']);
 	//definimos el action para hacer la petición que nos devolverá resultados
 	$('#'+Elemento).data('Action',Config['Action']);
-	//FuncionControl();
+	//cargamos el arreglo de filtros, por ahora solo vale el primer elemento del array
+	$('#'+Elemento).data('Condiciones',Config['Condiciones']);
 	//definimos la cantidad máxima de elementos seleccionables para el control
 	$('#'+Elemento).data('CantMaxSelec',Vista['MaxCantEleSele']);
 	var Rweb=Config['RWeb'];

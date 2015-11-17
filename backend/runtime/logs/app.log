@@ -22995,3 +22995,1876 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1447734886.649
     'REQUEST_TIME' => 1447734886
 ]
+2015-11-17 19:48:55 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: CO' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:115
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(115): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 115, Array)
+#1 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-17 19:48:54 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'MS5ULTI2NzN9AwAcfEV6QHZLC2NWZgRfZ0Eifn5GAmRUGzxvUXJmVA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60846'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447789734.981
+    'REQUEST_TIME' => 1447789734
+]
+2015-11-17 19:48:55 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-17 19:48:54 [::1][-][-][info][application] $_GET = [
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'MS5ULTI2NzN9AwAcfEV6QHZLC2NWZgRfZ0Eifn5GAmRUGzxvUXJmVA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60846'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447789734.981
+    'REQUEST_TIME' => 1447789734
+]
+2015-11-17 20:21:36 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` LEFT JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser LEFT JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE idUser=1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'idUser' in where clause is ambiguous
+)
+
+2015-11-17 20:21:36 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SVZQenkwbnEFewRLN0MjAg4zDzQdYF0dHzkmKTVAWyYsYzg4GnQ/Fg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32797'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447791696.444
+    'REQUEST_TIME' => 1447791696
+]
+2015-11-17 20:21:36 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#7 {main}
+2015-11-17 20:21:36 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SVZQenkwbnEFewRLN0MjAg4zDzQdYF0dHzkmKTVAWyYsYzg4GnQ/Fg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32797'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447791696.444
+    'REQUEST_TIME' => 1447791696
+]
+2015-11-17 20:21:42 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` LEFT JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser LEFT JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE idUser=2' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'idUser' in where clause is ambiguous
+)
+
+2015-11-17 20:21:42 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=2\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SVZQenkwbnEFewRLN0MjAg4zDzQdYF0dHzkmKTVAWyYsYzg4GnQ/Fg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32804'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D2%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D2%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447791702.584
+    'REQUEST_TIME' => 1447791702
+]
+2015-11-17 20:21:42 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#7 {main}
+2015-11-17 20:21:42 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=2\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SVZQenkwbnEFewRLN0MjAg4zDzQdYF0dHzkmKTVAWyYsYzg4GnQ/Fg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32804'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D2%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D2%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447791702.584
+    'REQUEST_TIME' => 1447791702
+]
+2015-11-17 20:21:57 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` LEFT JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser LEFT JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE idUser=2' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'idUser' in where clause is ambiguous
+)
+
+2015-11-17 20:21:57 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=2\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32806'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D2%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D2%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447791717.409
+    'REQUEST_TIME' => 1447791717
+]
+2015-11-17 20:25:05 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` LEFT JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser LEFT JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE idUser=2' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'idUser' in where clause is ambiguous
+)
+
+2015-11-17 20:25:05 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=2\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32812'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D2%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D2%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447791905.649
+    'REQUEST_TIME' => 1447791905
+]
+2015-11-17 20:25:07 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` LEFT JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser LEFT JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE idUser=2' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'idUser' in where clause is ambiguous
+)
+
+2015-11-17 20:25:07 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=2\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D2%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D2%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447791907.36
+    'REQUEST_TIME' => 1447791907
+]
+2015-11-17 20:39:17 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Manuel Vasquez' at line 1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Manuel Vasquez' at line 1
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` INNER JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser INNER JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE NombreyApellido=Juan Manuel Vasquez' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Manuel Vasquez' at line 1
+)
+
+2015-11-17 20:39:17 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"NombreyApellido=Juan Manuel Vasquez\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZElhT2xqLVMoZDV.IhlgICMsPgEIOh4/MiYXHCAaGAQBfAkNDy58NA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32903'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22NombreyApellido%3DJuan+Manuel+Vasquez%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22NombreyApellido%3DJuan+Manuel+Vasquez%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447792757.797
+    'REQUEST_TIME' => 1447792757
+]
+2015-11-17 20:39:17 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-11-17 20:39:17 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"NombreyApellido=Juan Manuel Vasquez\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZElhT2xqLVMoZDV.IhlgICMsPgEIOh4/MiYXHCAaGAQBfAkNDy58NA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32903'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22NombreyApellido%3DJuan+Manuel+Vasquez%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22NombreyApellido%3DJuan+Manuel+Vasquez%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447792757.797
+    'REQUEST_TIME' => 1447792757
+]
+2015-11-17 20:43:35 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` INNER JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser INNER JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE idUser=1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'idUser' in where clause is ambiguous
+)
+
+2015-11-17 20:43:35 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'djNmTmZjOFY6HjJ/KBB1JTFWOQACMws6IFwQHSoTDQETBg4MBSdpMQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32943'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447793015.664
+    'REQUEST_TIME' => 1447793015
+]
+2015-11-17 20:43:35 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#7 {main}
+2015-11-17 20:43:35 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'djNmTmZjOFY6HjJ/KBB1JTFWOQACMws6IFwQHSoTDQETBg4MBSdpMQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32943'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447793015.664
+    'REQUEST_TIME' => 1447793015
+]
+2015-11-17 20:43:44 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` INNER JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser INNER JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE idUser=1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'idUser' in where clause is ambiguous
+)
+
+2015-11-17 20:43:44 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'djNmTmZjOFY6HjJ/KBB1JTFWOQACMws6IFwQHSoTDQETBg4MBSdpMQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32952'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447793024.569
+    'REQUEST_TIME' => 1447793024
+]
+2015-11-17 20:43:44 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#7 {main}
+2015-11-17 20:43:44 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'djNmTmZjOFY6HjJ/KBB1JTFWOQACMws6IFwQHSoTDQETBg4MBSdpMQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32952'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447793024.569
+    'REQUEST_TIME' => 1447793024
+]
+2015-11-17 20:43:49 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` INNER JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser INNER JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE idUser=1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'idUser' in where clause is ambiguous
+)
+
+2015-11-17 20:43:49 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32953'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447793029.151
+    'REQUEST_TIME' => 1447793029
+]
+2015-11-17 20:44:28 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Operator 'FECHADEB=0000-00-00' requires two operands.' in /var/www/html/cecv/vendor/yiisoft/yii2/db/QueryBuilder.php:1279
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/QueryBuilder.php(924): yii\db\QueryBuilder->buildSimpleCondition('FECHADEB=0000-0...', Array, '<span class="st...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/QueryBuilder.php(743): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/QueryBuilder.php(96): yii\db\QueryBuilder->buildWhere(Array, '<span class="st...')
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(122): yii\db\QueryBuilder->build(Object(yii\db\Query))
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(382): yii\db\Query->createCommand(NULL)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#6 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#7 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#12 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+2015-11-17 20:44:28 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32961'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447793068.409
+    'REQUEST_TIME' => 1447793068
+]
+2015-11-17 20:44:28 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#6 {main}
+2015-11-17 20:44:28 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32961'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447793068.409
+    'REQUEST_TIME' => 1447793068
+]
+2015-11-17 20:46:42 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` INNER JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser INNER JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE FechaDeb=0000-00-00 && idUser=1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'idUser' in where clause is ambiguous
+)
+
+2015-11-17 20:46:42 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00 && idUser=1\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'czRQaUZlT2I/GQRYCBYCETRRDyciNXwOJVsmOgoVejUWATgrJSEeBQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32999'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00+%26%26+idUser%3D1%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00+%26%26+idUser%3D1%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447793202.803
+    'REQUEST_TIME' => 1447793202
+]
+2015-11-17 20:46:42 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#7 {main}
+2015-11-17 20:46:42 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00 && idUser=1\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'czRQaUZlT2I/GQRYCBYCETRRDyciNXwOJVsmOgoVejUWATgrJSEeBQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '32999'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00+%26%26+idUser%3D1%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00+%26%26+idUser%3D1%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447793202.803
+    'REQUEST_TIME' => 1447793202
+]
+2015-11-17 20:46:46 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` INNER JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser INNER JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE FechaDeb=0000-00-00 && idUser=1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'idUser' in where clause is ambiguous
+)
+
+2015-11-17 20:46:46 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00 && idUser=1\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '33000'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00+%26%26+idUser%3D1%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00+%26%26+idUser%3D1%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447793206.476
+    'REQUEST_TIME' => 1447793206
+]
+2015-11-17 20:54:12 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` INNER JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser INNER JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE FechaDeb=0000-00-00 && idUser=1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'idUser' in where clause is ambiguous
+)
+
+2015-11-17 20:54:12 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00 && idUser=1\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '33050'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00+%26%26+idUser%3D1%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00+%26%26+idUser%3D1%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447793652.54
+    'REQUEST_TIME' => 1447793652
+]
+2015-11-17 20:54:14 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'idUser' in where clause is ambiguous
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` INNER JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser INNER JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE FechaDeb=0000-00-00 && idUser=1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'idUser' in where clause is ambiguous
+)
+
+2015-11-17 20:54:14 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00 && idUser=1\",\"idUser=1\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '3n0acig6mqv8oc0cqguka7j1i0'
+    '_csrf' => '60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=3n0acig6mqv8oc0cqguka7j1i0; _csrf=60904b9dda8af831c7bac89d616ffb1240a2bf0c596b325c3ea0c28082f3f490a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22L-T1NsMsGe_NdP3lVovSLp5We5hBcDQg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '33052'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00+%26%26+idUser%3D1%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00+%26%26+idUser%3D1%22%2C%22idUser%3D1%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447793654.779
+    'REQUEST_TIME' => 1447793654
+]
