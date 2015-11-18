@@ -33414,3 +33414,1352 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1447827925.745
     'REQUEST_TIME' => 1447827925
 ]
+2015-11-18 14:50:13 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'urldecode() expects parameter 1 to be string, array given' in /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php:33
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'urldecode() exp...', '/var/www/html/c...', 33, Array)
+#1 /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php(33): urldecode(Array)
+#2 [internal function]: app\modules\config\controllers\ConfigController->actionGuardaop()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('guardaop', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('config/config/g...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 14:50:13 [::1][-][-][info][application] $_GET = [
+    'OP' => [
+        'cod' => [
+            0 => 'CantLibSel'
+            1 => 'PrestaMulti'
+            2 => 'TPrestaLibro'
+        ]
+        'val' => [
+            0 => '2'
+            1 => 'no'
+            2 => '7'
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZEVJUGV4Q0s1FwgaCEgGHi13LhwjGjEIEjcCBDMQIgk9DwUdPT4GHA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/conf'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '58943'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP%5Bcod%5D%5B%5D=CantLibSel&OP%5Bcod%5D%5B%5D=PrestaMulti&OP%5Bcod%5D%5B%5D=TPrestaLibro&OP%5Bval%5D%5B%5D=2&OP%5Bval%5D%5B%5D=no&OP%5Bval%5D%5B%5D=7'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP%5Bcod%5D%5B%5D=CantLibSel&OP%5Bcod%5D%5B%5D=PrestaMulti&OP%5Bcod%5D%5B%5D=TPrestaLibro&OP%5Bval%5D%5B%5D=2&OP%5Bval%5D%5B%5D=no&OP%5Bval%5D%5B%5D=7'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858213.134
+    'REQUEST_TIME' => 1447858213
+]
+2015-11-18 14:50:13 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 14:50:13 [::1][-][-][info][application] $_GET = [
+    'OP' => [
+        'cod' => [
+            0 => 'CantLibSel'
+            1 => 'PrestaMulti'
+            2 => 'TPrestaLibro'
+        ]
+        'val' => [
+            0 => '2'
+            1 => 'no'
+            2 => '7'
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZEVJUGV4Q0s1FwgaCEgGHi13LhwjGjEIEjcCBDMQIgk9DwUdPT4GHA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/conf'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '58943'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP%5Bcod%5D%5B%5D=CantLibSel&OP%5Bcod%5D%5B%5D=PrestaMulti&OP%5Bcod%5D%5B%5D=TPrestaLibro&OP%5Bval%5D%5B%5D=2&OP%5Bval%5D%5B%5D=no&OP%5Bval%5D%5B%5D=7'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP%5Bcod%5D%5B%5D=CantLibSel&OP%5Bcod%5D%5B%5D=PrestaMulti&OP%5Bcod%5D%5B%5D=TPrestaLibro&OP%5Bval%5D%5B%5D=2&OP%5Bval%5D%5B%5D=no&OP%5Bval%5D%5B%5D=7'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858213.134
+    'REQUEST_TIME' => 1447858213
+]
+2015-11-18 14:50:17 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'urldecode() expects parameter 1 to be string, array given' in /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php:33
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'urldecode() exp...', '/var/www/html/c...', 33, Array)
+#1 /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php(33): urldecode(Array)
+#2 [internal function]: app\modules\config\controllers\ConfigController->actionGuardaop()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('guardaop', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('config/config/g...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 14:50:17 [::1][-][-][info][application] $_GET = [
+    'OP' => [
+        'cod' => [
+            0 => 'CantLibSel'
+            1 => 'PrestaMulti'
+            2 => 'TPrestaLibro'
+        ]
+        'val' => [
+            0 => '2'
+            1 => 'no'
+            2 => '7'
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '58944'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP%5Bcod%5D%5B%5D=CantLibSel&OP%5Bcod%5D%5B%5D=PrestaMulti&OP%5Bcod%5D%5B%5D=TPrestaLibro&OP%5Bval%5D%5B%5D=2&OP%5Bval%5D%5B%5D=no&OP%5Bval%5D%5B%5D=7'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP%5Bcod%5D%5B%5D=CantLibSel&OP%5Bcod%5D%5B%5D=PrestaMulti&OP%5Bcod%5D%5B%5D=TPrestaLibro&OP%5Bval%5D%5B%5D=2&OP%5Bval%5D%5B%5D=no&OP%5Bval%5D%5B%5D=7'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858217.239
+    'REQUEST_TIME' => 1447858217
+]
+2015-11-18 14:50:17 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 14:50:17 [::1][-][-][info][application] $_GET = [
+    'OP' => [
+        'cod' => [
+            0 => 'CantLibSel'
+            1 => 'PrestaMulti'
+            2 => 'TPrestaLibro'
+        ]
+        'val' => [
+            0 => '2'
+            1 => 'no'
+            2 => '7'
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '58944'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP%5Bcod%5D%5B%5D=CantLibSel&OP%5Bcod%5D%5B%5D=PrestaMulti&OP%5Bcod%5D%5B%5D=TPrestaLibro&OP%5Bval%5D%5B%5D=2&OP%5Bval%5D%5B%5D=no&OP%5Bval%5D%5B%5D=7'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP%5Bcod%5D%5B%5D=CantLibSel&OP%5Bcod%5D%5B%5D=PrestaMulti&OP%5Bcod%5D%5B%5D=TPrestaLibro&OP%5Bval%5D%5B%5D=2&OP%5Bval%5D%5B%5D=no&OP%5Bval%5D%5B%5D=7'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858217.239
+    'REQUEST_TIME' => 1447858217
+]
+2015-11-18 14:50:38 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Invalid JSON data.' in /var/www/html/cecv/vendor/yiisoft/yii2/helpers/BaseJson.php:71
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php(33): yii\helpers\BaseJson::decode(Array)
+#1 [internal function]: app\modules\config\controllers\ConfigController->actionGuardaop()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('guardaop', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('config/config/g...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 14:50:38 [::1][-][-][info][application] $_GET = [
+    'OP' => [
+        'cod' => [
+            0 => 'CantLibSel'
+            1 => 'PrestaMulti'
+            2 => 'TPrestaLibro'
+        ]
+        'val' => [
+            0 => '2'
+            1 => 'no'
+            2 => '7'
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '58948'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP%5Bcod%5D%5B%5D=CantLibSel&OP%5Bcod%5D%5B%5D=PrestaMulti&OP%5Bcod%5D%5B%5D=TPrestaLibro&OP%5Bval%5D%5B%5D=2&OP%5Bval%5D%5B%5D=no&OP%5Bval%5D%5B%5D=7'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP%5Bcod%5D%5B%5D=CantLibSel&OP%5Bcod%5D%5B%5D=PrestaMulti&OP%5Bcod%5D%5B%5D=TPrestaLibro&OP%5Bval%5D%5B%5D=2&OP%5Bval%5D%5B%5D=no&OP%5Bval%5D%5B%5D=7'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858238.852
+    'REQUEST_TIME' => 1447858238
+]
+2015-11-18 14:50:39 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#6 {main}
+2015-11-18 14:50:38 [::1][-][-][info][application] $_GET = [
+    'OP' => [
+        'cod' => [
+            0 => 'CantLibSel'
+            1 => 'PrestaMulti'
+            2 => 'TPrestaLibro'
+        ]
+        'val' => [
+            0 => '2'
+            1 => 'no'
+            2 => '7'
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '58948'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP%5Bcod%5D%5B%5D=CantLibSel&OP%5Bcod%5D%5B%5D=PrestaMulti&OP%5Bcod%5D%5B%5D=TPrestaLibro&OP%5Bval%5D%5B%5D=2&OP%5Bval%5D%5B%5D=no&OP%5Bval%5D%5B%5D=7'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP%5Bcod%5D%5B%5D=CantLibSel&OP%5Bcod%5D%5B%5D=PrestaMulti&OP%5Bcod%5D%5B%5D=TPrestaLibro&OP%5Bval%5D%5B%5D=2&OP%5Bval%5D%5B%5D=no&OP%5Bval%5D%5B%5D=7'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858238.852
+    'REQUEST_TIME' => 1447858238
+]
+2015-11-18 14:53:01 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Response content must not be an array.' in /var/www/html/cecv/vendor/yiisoft/yii2/web/Response.php:952
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/web/Response.php(310): yii\web\Response->prepare()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(381): yii\web\Response->send()
+#2 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2015-11-18 14:53:01 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'WTR1VlFtMVQIZjQcPF10ARAGEhoXD0MXL0Y.AgcFUBYAfjkbCSt0Aw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/conf'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '58999'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858381.165
+    'REQUEST_TIME' => 1447858381
+]
+2015-11-18 14:53:06 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Response content must not be an array.' in /var/www/html/cecv/vendor/yiisoft/yii2/web/Response.php:952
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/web/Response.php(310): yii\web\Response->prepare()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(381): yii\web\Response->send()
+#2 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2015-11-18 14:53:06 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59003'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858386.441
+    'REQUEST_TIME' => 1447858386
+]
+2015-11-18 14:54:16 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Invalid JSON data.' in /var/www/html/cecv/vendor/yiisoft/yii2/helpers/BaseJson.php:71
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php(33): yii\helpers\BaseJson::decode(Array)
+#1 [internal function]: app\modules\config\controllers\ConfigController->actionGuardaop()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('guardaop', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('config/config/g...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 14:54:16 [::1][-][-][info][application] $_POST = [
+    'OP' => [
+        'cod' => [
+            0 => 'CantLibSel'
+            1 => 'PrestaMulti'
+            2 => 'TPrestaLibro'
+        ]
+        'val' => [
+            0 => '2'
+            1 => 'no'
+            2 => '7'
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'YlhfN3lNREgzCh59FH0BHStqOHs/LzYLFCoUYy8lJQo7EhN6IQsBHw=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/conf'
+    'CONTENT_LENGTH' => '150'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59183'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858456.909
+    'REQUEST_TIME' => 1447858456
+]
+2015-11-18 14:54:16 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#6 {main}
+2015-11-18 14:54:16 [::1][-][-][info][application] $_POST = [
+    'OP' => [
+        'cod' => [
+            0 => 'CantLibSel'
+            1 => 'PrestaMulti'
+            2 => 'TPrestaLibro'
+        ]
+        'val' => [
+            0 => '2'
+            1 => 'no'
+            2 => '7'
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'YlhfN3lNREgzCh59FH0BHStqOHs/LzYLFCoUYy8lJQo7EhN6IQsBHw=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/conf'
+    'CONTENT_LENGTH' => '150'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59183'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858456.909
+    'REQUEST_TIME' => 1447858456
+]
+2015-11-18 14:56:24 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Response content must not be an array.' in /var/www/html/cecv/vendor/yiisoft/yii2/web/Response.php:952
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/web/Response.php(310): yii\web\Response->prepare()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(381): yii\web\Response->send()
+#2 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2015-11-18 14:56:24 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'c2ljWlhlUmQiOyIQNVUXMTpbBBYeByAnBRsoDg4NMyYqIy8XACMXMw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/conf'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59240'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858584.862
+    'REQUEST_TIME' => 1447858584
+]
+2015-11-18 14:56:30 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Response content must not be an array.' in /var/www/html/cecv/vendor/yiisoft/yii2/web/Response.php:952
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/web/Response.php(310): yii\web\Response->prepare()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(381): yii\web\Response->send()
+#2 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2015-11-18 14:56:30 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59244'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858590.84
+    'REQUEST_TIME' => 1447858590
+]
+2015-11-18 14:57:22 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'cod'' in /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php:34
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php(34): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', '/var/www/html/c...', 34, Array)
+#1 [internal function]: app\modules\config\controllers\ConfigController->actionGuardaop()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('guardaop', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('config/config/g...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 14:57:22 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59256'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858642.856
+    'REQUEST_TIME' => 1447858642
+]
+2015-11-18 14:57:22 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 14:57:22 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59256'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858642.856
+    'REQUEST_TIME' => 1447858642
+]
+2015-11-18 14:58:06 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'cod'' in /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php:34
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php(34): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', '/var/www/html/c...', 34, Array)
+#1 [internal function]: app\modules\config\controllers\ConfigController->actionGuardaop()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('guardaop', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('config/config/g...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 14:58:06 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59264'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858686.385
+    'REQUEST_TIME' => 1447858686
+]
+2015-11-18 14:58:06 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 14:58:06 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59264'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858686.385
+    'REQUEST_TIME' => 1447858686
+]
+2015-11-18 15:00:01 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'cod'' in /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php:34
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php(34): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', '/var/www/html/c...', 34, Array)
+#1 [internal function]: app\modules\config\controllers\ConfigController->actionGuardaop()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('guardaop', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('config/config/g...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 15:00:01 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59313'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858801.607
+    'REQUEST_TIME' => 1447858801
+]
+2015-11-18 15:00:01 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 15:00:01 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59313'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858801.607
+    'REQUEST_TIME' => 1447858801
+]
+2015-11-18 15:00:08 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'cod'' in /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php:34
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php(34): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', '/var/www/html/c...', 34, Array)
+#1 [internal function]: app\modules\config\controllers\ConfigController->actionGuardaop()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('guardaop', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('config/config/g...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 15:00:08 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59316'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858808.624
+    'REQUEST_TIME' => 1447858808
+]
+2015-11-18 15:00:08 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 15:00:08 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59316'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858808.624
+    'REQUEST_TIME' => 1447858808
+]
+2015-11-18 15:02:49 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: OPC' in /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php:33
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/config/controllers/ConfigController.php(33): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/c...', 33, Array)
+#1 [internal function]: app\modules\config\controllers\ConfigController->actionGuardaop()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('guardaop', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('config/config/g...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 15:02:49 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59327'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858969.733
+    'REQUEST_TIME' => 1447858969
+]
+2015-11-18 15:02:49 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 15:02:49 [::1][-][-][info][application] $_GET = [
+    'OP' => '{\"cod\":[\"CantLibSel\",\"PrestaMulti\",\"TPrestaLibro\"],\"val\":[\"2\",\"no\",\"7\"]}'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => '24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=24c3d9bb597c5bdd166160c64e9382b8d8b58447281b7b8cf15ab81bdc23229ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QRAJm0EUI2gLFbrCvrKTVhaBYJLMXFEW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '59327'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/guardaop?OP=%7B%22cod%22%3A%5B%22CantLibSel%22%2C%22PrestaMulti%22%2C%22TPrestaLibro%22%5D%2C%22val%22%3A%5B%222%22%2C%22no%22%2C%227%22%5D%7D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/guardaop'
+    'PATH_TRANSLATED' => '/var/www/html/guardaop'
+    'PHP_SELF' => '/cecv/backend/web/index.php/guardaop'
+    'REQUEST_TIME_FLOAT' => 1447858969.733
+    'REQUEST_TIME' => 1447858969
+]

@@ -60,6 +60,10 @@ return [
 						'route' => 'gestiondatos/info/delete',		
 					 ],
 					 [
+						'pattern' => 'guardaop',//action guardar configuracion
+						'route' => 'config/config/guardaop',		
+					 ],
+					 [
 						'pattern' => 'users',
 						'route' => 'gestionuser/users/index',		
 					 ],

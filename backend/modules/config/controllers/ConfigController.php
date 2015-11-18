@@ -2,12 +2,16 @@
 
 namespace app\modules\config\controllers;
 
+//cargamos el modelo de configuración
+use common\models\Configuracion;
+
 use Yii;
 
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+use yii\helpers\BaseJson;
 
 class ConfigController extends Controller
 {
@@ -28,8 +32,15 @@ class ConfigController extends Controller
     }
     
 	// "Action" quepermite guardar las opciones de configuración     
-	public function actionGuardaOp(){
-		
-		return "1";	
+	public function actionGuardaop(){
+		$Datos=BaseJson::decode($_REQUEST["OPC"]);
+		$Valores=BaseJson::decode($_REQUEST["OPV"]);
+		//recorremos las opciones de configuración y guardamos
+		for($c=0;$c<sizeof($Datos);$c++){
+			$modelo=configuracion::findOne($Datos[$c]);
+			$modelo->valor=$Valores[$c];
+			$modelo->save();
+		}
+		return $Datos[0];	
 	}    
 }

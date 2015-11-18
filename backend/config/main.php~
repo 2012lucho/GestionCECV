@@ -57,7 +57,11 @@ return [
 					 ],
 					 [
 						'pattern' => 'eliestu',//action para eliminar estudiante
-						'route' => 'gestiondatos/info/lpresta',		
+						'route' => 'gestiondatos/info/delete',		
+					 ],
+					 [
+						'pattern' => 'guardaop',//action guardar configuracion
+						'route' => 'config/config/guardaop',		
 					 ],
 					 [
 						'pattern' => 'users',
