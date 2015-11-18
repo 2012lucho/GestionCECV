@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace common\models;
 
 use Yii;
 
@@ -29,7 +29,7 @@ class Configuracion extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['cod', 'valor', 'descripcion', 'control', 'unidad'], 'required'],
+            //[['cod', 'valor', 'descripcion', 'control', 'unidad'], 'required'],
             [['cod', 'unidad'], 'string', 'max' => 25],
             [['valor'], 'string', 'max' => 255],
             [['descripcion'], 'string', 'max' => 250],
