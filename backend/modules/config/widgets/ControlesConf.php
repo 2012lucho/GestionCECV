@@ -19,18 +19,19 @@ class ControlesConf extends Widget
 	
 	private function NuevoControl($conf)
 	{
-		$htmlCont='<input type="'.$conf['control'].'" name="" min="1" max="999" value="'.$conf['valor'].'">';
-		$salida='<div>
-			<div class="conf-descrip">'.$conf['descripcion'].'<div>
-			<div class="conf-control">'.$htmlCont.' '.$conf['unidad'].'</div>'
-		.'</div>';
+		$htmlCont='<input type="'.$conf['control'].'" id="'.$conf['cod'].'" min="1" max="999" value="'.$conf['valor'].'">';
+		
+		$salida='<div class="col-md-4 col-xs-12 conf-block">
+					<div class="conf-descrip col-xs-12">'.$conf['descripcion'].'</div>
+					<div class="conf-control col-xs-12">'.$htmlCont.' '.$conf['unidad'].'</div>'
+				.'</div>';
 		return $salida;
 	}
 
 	private function OpcionGuardar()
 	{
-		return "<div class='col-xs-12'>
-					<input id='GuardaOpcio' class='btn btn-default btn-xs' value='Guardar configuración' type='button'>
+		return "<div class='col-xs-12 conf-g'>
+					<input id='GuardaOpcio' class='btn btn-success btn-xs' value='Guardar configuración' type='button'>
 				</div>";	
 	}	
 	
@@ -44,7 +45,7 @@ class ControlesConf extends Widget
     	}
     	unset($conf);
     	
-		$Html .= $this->OpcionGuardar();    	
+		//$Html .= $this->OpcionGuardar();    	
     	
         return $Html;
     }

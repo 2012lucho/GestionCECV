@@ -48,12 +48,16 @@ return [
 						'route' => 'gestionstock/prestamos/apresta',		
 					 ],
 					 [
-						'pattern' => 'apresta',//action para cargar la devolución de un préstamo
+						'pattern' => 'adevol',//action para cargar la devolución de un préstamo
 						'route' => 'gestionstock/prestamos/adevol',		
 					 ],
 					 [
 						'pattern' => 'lpresta',//action para devolver el listado de prestamos del usuario
 						'route' => 'gestionstock/prestamos/lpresta',		
+					 ],
+					 [
+						'pattern' => 'eliestu',//action para eliminar estudiante
+						'route' => 'gestiondatos/info/lpresta',		
 					 ],
 					 [
 						'pattern' => 'users',

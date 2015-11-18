@@ -5,7 +5,7 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\datosuser;
+use app\models\datosuser;
 
 /**
  * datosuserb represents the model behind the search form about `common\models\datosuser`.

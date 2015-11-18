@@ -26,4 +26,10 @@ class ConfigController extends Controller
     public function actionIndex(){
 		return $this->render('index.php');    
     }
+    
+	// "Action" quepermite guardar las opciones de configuración     
+	public function actionGuardaOp(){
+		
+		return "1";	
+	}    
 }

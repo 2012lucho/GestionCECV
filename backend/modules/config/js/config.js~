@@ -1,4 +1,6 @@
 
 $(document).ready(function(){
-
+	$('#GuardaOpcio').click(function () {
+		IniBusEst();		
+	});
 });

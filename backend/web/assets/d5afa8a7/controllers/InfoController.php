@@ -9,6 +9,8 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+use yii\helpers\BaseJson;
+
 /**
  * InfoController implements the CRUD actions for datosuser model.
  */
@@ -17,12 +19,12 @@ class InfoController extends Controller
     public function behaviors()
     {
         return [
-            'verbs' => [
+           /* 'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
                 ],
-            ],
+            ],*/
         ];
     }
 
@@ -91,16 +93,15 @@ class InfoController extends Controller
     }
 
     /**
-     * Deletes an existing datosuser model.
-     * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
-     * @return mixed
+     "Action" para borrar un estudiante
      */
-    public function actionDelete($id)
+    public function actionDelete()
     {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
+    	$id=urldecode($_REQUEST['id']);
+		$m=$this->findModel($id);   
+		if($m!=''){
+        	$m->delete();return '1';}else{return '0';}
+        
     }
 
     /**
@@ -115,7 +116,7 @@ class InfoController extends Controller
         if (($model = datosuser::findOne($id)) !== null) {
             return $model;
         } else {
-            throw new NotFoundHttpException('The requested page does not exist.');
+            return '';
         }
     }
 }

@@ -89,6 +89,8 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
+.conf-block{border:1px solid #eee; padding:5px 2px;min-height:80px;}
+.conf-g{margin-top: 5px;}
 /* Oculto */
 .oculto{display:none;}
 /* Notificaciones, etc*/
@@ -96,6 +98,7 @@ a.desc:after {
 .Notific p{margin:2px;background-color: #ddd;}
 .boto{margin-top: 2px;margin-bottom: 2px;width: 150px;}
 .botonera input{margin:1px;height: 48px;}
+.botonera{border:1px solid #eee;}
 /* Agregados*/
 .navbar-brand {height:35px;padding:9px;}
 .navbar{min-height:35px;}

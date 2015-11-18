@@ -1,4 +1,6 @@
 
 $(document).ready(function(){
-//Por ahora no se usa
+	$('#GuardaOpcio').click(function () {
+		//hacemos petición carga de datos		
+	});
 });

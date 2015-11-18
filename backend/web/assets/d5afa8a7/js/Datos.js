@@ -1,16 +1,48 @@
-const IdHistPresta='InfoEstudiantes';
+const MensSeleccionar="Tiene que seleccionar al menos un estudiante";
+const MensEliExit="Estudiante eliminado correctamente";
+const ColorAlerta='#fdd';
+const ColorExito='#dfd';
+
+const IdSelEstud='InfoEstudiantes';
 const r="/cecv/backend/web/index.php";
+
+const PeticionEli='/eliestu';
 
 $(document).ready(function(){
 	$('#Agregar').click(function () {
 		IniBusEst();		
+	});
+	$('#Modificar').click(function () {
+		IniBusEst();		
+	});
+	$('#Suspender').click(function () {
+		IniBusEst();		
+	});
+	$('#Eliminar').click(function () {
+		var ArEst=$('#'+IdSelEstud).data('Arreglo-Val');
+		if (ArEst.length>0){
+			$.get(r+PeticionEli,{id:ArEst[0]},function (data) {		
+				//Se anuncia el resultado
+				//data = JSON.parse(data);
+				if (data == PetExitosa){
+					$('#Notific > .mensaje').html(MensEliExit);
+					$('#Notific > .mensaje').css('background',ColorExito);
+					//reestablecemos los buscadores
+	    			IniBusEst();	
+				}
+			});
+		} else {
+			$('#Notific > .mensaje').html(MensSeleccionar);
+			$('#Notific > .mensaje').css('background',ColorAlerta);
+		}
+				
 	});
 	
 	IniBusEst();
 	function IniBusEst(){
 		InicializarBuscador(
 			{
-				id:IdHistPresta,n:2,Tit:'Estudiantes',Tabla:'DatosUser',
+				id:IdSelEstud,n:2,Tit:'Estudiantes',Tabla:'DatosUser',
 				CampoB:'NombreyApellido',CampoId:'IdUser',RWeb:r,CantR:5,
 				Condiciones:'',							
 				FuncionControl:'',//BuscaIdPresta,//función que se ejecuta al activar el checkbox

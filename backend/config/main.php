@@ -56,6 +56,10 @@ return [
 						'route' => 'gestionstock/prestamos/lpresta',		
 					 ],
 					 [
+						'pattern' => 'eliestu',//action para eliminar estudiante
+						'route' => 'gestiondatos/info/delete',		
+					 ],
+					 [
 						'pattern' => 'users',
 						'route' => 'gestionuser/users/index',		
 					 ],
