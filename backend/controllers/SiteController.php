@@ -7,7 +7,8 @@ use yii\web\Controller;
 use common\models\LoginForm;
 use yii\filters\VerbFilter;
 
-
+//cargamos el modelo de configuración
+use common\models\Configuracion;
 
 /**
  * Site controller
@@ -55,10 +56,21 @@ class SiteController extends Controller
             ],
         ];
     }
-
+	
+	//función que retorna valores de configuraciones ingresadas, pasándole como parámetro el id de la configuración
+    protected function ValorConfiguracion($id) //tal vez debería pasarse al modelo //mas adelante
+    {if (($model = Configuracion::findOne($id)) !== null) {return $model->valor;} else {return "";}}
+     
     public function actionPresta()
     {
-        return $this->render('presta');
+    	//Obtenemos la configuración
+    	$DiasPresta=$this->ValorConfiguracion('TPrestaLibro'); 
+    	//Obtenemos la fecha actual
+		$timezone = new \DateTimeZone('America/Argentina/Buenos_Aires');
+    	$Fecha = new \DateTime('now', $timezone);
+    	$FDebT = new \DateTime('now', $timezone); 
+    	$FDebT->modify('+'.$DiasPresta.' day');
+        return $this->render('presta',['fecha'=>$Fecha->format('Y-m-d')]);
     }
 
     public function actionLogin()

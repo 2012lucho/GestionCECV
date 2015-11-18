@@ -34,6 +34,7 @@ class BuscadorController extends Controller
 		                    'CantReg' => urldecode($_REQUEST["C"]),
 							'Tabla' => urldecode($_REQUEST["T"]),
 							'CamposB'=> urldecode($_REQUEST["CB"]),
+							''=>urldecode($_REQUEST["CO"]),//condiciones para el where
 							]); 
 		 return BaseJson::encode($Model->Resultados());
     }

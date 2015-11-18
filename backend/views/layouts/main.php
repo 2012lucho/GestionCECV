@@ -42,7 +42,8 @@ AppAsset::register($this);
         $menuItems[] = ['label' => 'Ingresar', 'url' => ['/site/login']];
     } else {
         $menuItems[] = ['label' => 'Administración', 'items' => [
-        			['label' => 'Préstamos', 'url' => ['/npresta']],
+        			['label' => 'Historial préstamos', 'url' => Yii::$app->homeUrl],
+        			['label' => 'Gestionar préstamos', 'url' => ['/npresta']],
 					['label' => 'Estudiantes', 'url' => ['/datos']],					
 					['label' => 'Libros', 'url' => ['/stock']],    					
 					['label' => 'Cuentas de Usuario', 'url' => ['/users']],   

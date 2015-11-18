@@ -89,10 +89,18 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
+/* Notificaciones, etc*/
+.Notific{border:1px solid #ddd;height: 50px;}
+.Notific p{margin:2px;background-color: #ddd;}
+.boto{margin-top: 2px;margin-bottom: 2px;width: 150px;}
+.botonera input{margin:1px;height: 48px;}
 /* Agregados*/
 .navbar-brand {height:35px;padding:9px;}
 .navbar{min-height:35px;}
 .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 5px;
+}
+.wrap > .container {
+    padding: 40px 15px 20px;
 }

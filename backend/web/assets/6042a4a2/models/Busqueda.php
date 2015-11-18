@@ -2,6 +2,7 @@
 	namespace app\modules\buscador\models;
 
 	use yii\base\Model;
+	use yii\helpers\BaseJson;
 	
 	class Busqueda extends Model
 	{
@@ -11,6 +12,7 @@
 		public $OrdenResu;
 		public $CantReg;
 		public $Tabla;
+		public $Filtros;		
 		//Parámetros necesarios para la búsqueda $TBusqueda y: 		
 		public $CamposB;
 		public $CamposO; //Se mira el campo 'x' para ordenar
@@ -27,12 +29,14 @@
 		
 //otra consulta que funciona
 // select idPresta,Nombre from Prestamos left join Stock on Prestamos.IdStock=Stock.idStock		
-			
+			$filtro=BaseJson::decode($this->Filtros);
 			$Consulta = (new \yii\db\Query())
 						->select('*')
 						->from($this->Tabla)
 						->where(['like',$this->CamposB,'%'.$this->TBusqueda.'%',false]);
-					
+			
+			$Consulta->where($filtro);
+
 			if ($this->OrdenResu != "n"){ //se ordena
 		 		if ($this->OrdenResu == "d"){ 
 		 			$Consulta = $Consulta->orderBy([$this->CamposO=>SORT_DESC]);
