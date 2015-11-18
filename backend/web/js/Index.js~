@@ -11,7 +11,7 @@ $(document).ready(function(){
 	});
 	
 	$('#Vencidos').click(function () { //agregar comprobación de vencimiento
-		InicBusca('FechaDeb=0000-00-00 && FechaDebT<STR_TO_DATE('+$('#parametros').attr('data-fecha')+',"%y-%m-%d")');
+		InicBusca('FechaDeb=0000-00-00 && FechaDebT<STR_TO_DATE('+$('#parametros').attr('data-fecha')+',"Y-m-d")');
 	});	
 	InicBusca('');
 	
@@ -34,7 +34,7 @@ $(document).ready(function(){
 				["FechaDeb","Fecha devolución"],
 			],
 			{
-				Control:'', //control asociado con registro
+				Control:'checkbox', //control asociado con registro
 				MaxCantEleSele:'1',//maxima cantidad de elementos seleccionables
 				Alto:'300px',
 				TextoDef:'Número de préstamo', //texto por defecto del campo de busqueda

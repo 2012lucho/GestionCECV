@@ -19,7 +19,7 @@ $(document).ready(function(){
 			["Telefono","Número de teléfono"],
 		],
 		{
-			Control:'', //control asociado con registro
+			Control:'checkbox', //control asociado con registro
 			MaxCantEleSele:'1',//maxima cantidad de elementos seleccionables
 			Alto:'300px',
 			TextoDef:'Nombre', //texto por defecto del campo de busqueda
