@@ -118,13 +118,13 @@ class PrestamosController extends Controller
 			->select('idPresta,NombreyApellido,Nombre,FechaPresta,FechaDebT')
 			->from('Prestamos')
 			->innerJoin('DatosUser','Prestamos.idUser=DatosUser.IdUser') //establecemos las relaciones
-			->innerJoin('Stock','Prestamos.IdStock=Stock.idStock')
-			->where(['like','idPresta','%'.$TBusqueda.'%',false]);
+			->innerJoin('Stock','Prestamos.IdStock=Stock.idStock');
+			//->where(['like','idPresta','%'.$TBusqueda.'%',false]);
 			//->where(['FechaDeb'=>'0000-00-00']);		
 			
 		//aplicamos todos los where necesarios a la consulta
 		//for($c=0;$c<sizeof($Condicion);$c++){
-			$Consulta->where($Condicion);
+			$Consulta->where($Condicion[0]);
 		//}				
 		
 		if ($OrdenResu != "n"){ //se ordena

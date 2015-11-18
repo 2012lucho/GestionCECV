@@ -76,7 +76,7 @@ function CompartamientoControl(id){
 
 function MostrarInfoRes(data,n,RegistrosPag,Elemento){
 	var mostrando=$('#'+Elemento).data('Desplaza')+RegistrosPag;
-	if (mostrando>$('#'+Elemento).data('CantidadT') && $('#'+Elemento).data('CantidadT')!=0){mostrando=$('#'+Elemento).data('CantidadT');}
+	if (mostrando<$('#'+Elemento).data('CantidadT')){mostrando=$('#'+Elemento).data('CantidadT');}	
 	$('#InfoResult'+n).html("Resultados: "+mostrando+" de "+data["CantTot"]);
 	$('#'+Elemento).data('CantidadT',data["CantTot"]);
 }

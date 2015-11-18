@@ -5,15 +5,6 @@ $(document).ready(function(){
 	$('#Agregar').click(function () {
 		IniBusEst();		
 	});
-	$('#Modificar').click(function () {
-		IniBusEst();		
-	});
-	$('#Suspender').click(function () {
-		IniBusEst();		
-	});
-	$('#Agregar').click(function () {
-		IniBusEst();		
-	});
 	
 	IniBusEst();
 	function IniBusEst(){
