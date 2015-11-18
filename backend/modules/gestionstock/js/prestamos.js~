@@ -2,7 +2,7 @@ const IdSelecLibro='BuscaLib';
 const IdSelecEstud='BuscaEstu';
 const IdSelecPrest='InfoEstud';
 
-const r="/cecv/backend/web/index.php";
+var r;
 const PeticionPre='/apresta';
 const PeticionDev='/adevol';
 
@@ -103,6 +103,7 @@ function InicializarBuscadores() {
 		}
 
 $(document).ready(function(){
+	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
 	//Inicializamos control donde se muestra info delos estudiantes
 	//InicInfoEstu();
 	//Inicializamos controles de carga de información

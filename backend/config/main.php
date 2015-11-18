@@ -60,6 +60,22 @@ return [
 						'route' => 'gestiondatos/info/delete',		
 					 ],
 					 [
+						'pattern' => 'suspend',//action para suspender estudiante
+						'route' => 'gestiondatos/info/suspend',		
+					 ],
+					 [
+						'pattern' => 'nuevoest',//action para agregar estudiante
+						'route' => 'gestiondatos/info/nuevo',		
+					 ],
+					 [
+						'pattern' => 'editarest',//action para modificar estudiante
+						'route' => 'gestiondatos/info/editar',		
+					 ],
+					 [
+						'pattern' => 'infoest',//action para obtener info de un estudiante
+						'route' => 'gestiondatos/info/infoest',		
+					 ],
+					 [
 						'pattern' => 'guardaop',//action guardar configuracion
 						'route' => 'config/config/guardaop',		
 					 ],

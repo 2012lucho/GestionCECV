@@ -98,7 +98,10 @@ a.desc:after {
 .Notific p{margin:2px;background-color: #ddd;}
 .boto{margin-top: 2px;margin-bottom: 2px;width: 150px;}
 .botonera input{margin:1px;height: 48px;}
+.botonera{border:1px solid #eee;}
 /* Agregados*/
+.rojo{color:#F00;}
+
 .navbar-brand {height:35px;padding:9px;}
 .navbar{min-height:35px;}
 .navbar-nav > li > a {

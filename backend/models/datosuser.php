@@ -31,10 +31,11 @@ class datosuser extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['NombreyApellido', 'DNI', 'Email', 'Telefono'], 'required'],
+           // [['NombreyApellido', 'DNI', 'Email', 'Telefono'], 'required'],
             [['NombreyApellido', 'Email'], 'string', 'max' => 50],
             [['DNI'], 'string', 'max' => 12],
-            [['Telefono'], 'string', 'max' => 20]
+            [['Telefono'], 'string', 'max' => 20],
+            ['Suspendido','string','max'=>1]
         ];
     }
 

@@ -10,6 +10,7 @@ const PetExitosa='1';
 const MensPetExit="Préstamo cargado correctamente";
 const MensDebExit="Devolución cargada correctamente";
 const MensSeleccionar="Tiene que seleccionar al menos un estudiante y un libro";
+const MensUsrSusExit="Estudiante suspendido, no se puede cargar el préstamo";
 const MensSelecPresta="Se debe seleccionar un número de préstamo";
 
 const ColorAlerta='#fdd';
@@ -123,6 +124,13 @@ $(document).ready(function(){
 					$('#Notific > .mensaje').css('background',ColorExito);
 					//reestablecemos los buscadores
 	    			InicializarBuscadores();	
+				} else {
+					if (data == 2){
+						$('#Notific > .mensaje').html(MensUsrSusExit);
+						$('#Notific > .mensaje').css('background',ColorAlerta);
+						//reestablecemos los buscadores
+	    				InicializarBuscadores();
+					}
 				}
 			});	
 		} else {

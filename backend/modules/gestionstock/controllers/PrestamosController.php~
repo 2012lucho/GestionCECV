@@ -8,6 +8,8 @@ use common\models\prestamos;
 //cargamos el modelo de configuración
 use common\models\Config;
 
+use app\models\datosuser;
+
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -32,9 +34,13 @@ class PrestamosController extends Controller
         ];
     }
 	//"Action" que se encarga de mostrar la página de carga deprestamos y devoluciones
-    public function actionNuevo() //no borrar
+    public function actionNuevo() 
     {
-        return $this->render('PrestayDev');
+    	$Config=new Config(['conf'=>'DirWeb']);
+		$Rweb=$Config->Valor();
+        return $this->render('PrestayDev', [
+            'Rweb'=>$Rweb,
+        ]);
     }
     
     //"Action" que se utiliza para agregar un nuevo préstamo a la base de datos
@@ -48,32 +54,40 @@ class PrestamosController extends Controller
 		//Leemos los parametros		
 		$Libros=BaseJson::decode(urldecode($_REQUEST["L"]));
 		$Estud=BaseJson::decode(urldecode($_REQUEST["E"])); 
-		//Obtenemos la fecha actual
-		$timezone = new \DateTimeZone('America/Argentina/Buenos_Aires');
-    	$date = new \DateTime('now', $timezone); 
-    	$FDebT = new \DateTime('now', $timezone); 
-    	$FDebT->modify('+'.$DiasPresta.' day');
-		//Creamos un registro por cada libro prestado
-		for($c=0;$c<sizeof($Libros);$c++){
-			//buscamos en el stock  
-			$Stock=stock::findOne($Libros[$c]);
-			$Cant=$Stock->CantidadDisponible;
-			if($Cant>0){ // comprobamos la cantidad disponible
-				//modelo de la tabla de prestamos
-				$Presta=new prestamos();
-				//Creacion del registro para la tabla de prestamos
-				$Presta->idUser=$Estud[0];	
-				$Presta->IdStock=$Libros[$c];	
-				$Presta->FechaDebT=$FDebT->format('Y-m-d');
-				$Presta->FechaDeb='0000-00-00';
-				$Presta->FechaPresta=$date->format('Y-m-d');	 
-				$Presta->save();
-				//actualizamos la cantidad en stock
-				$Stock->CantidadDisponible-=1;
-				$Stock->save();
+		//buscamos el estudiante
+		$Me=datosuser::findOne($Estud[0]);
+		$Suspen=$Me->Suspendido;
+		//comprobamos que el estudiante no este susendido
+		if ($Suspen==1){
+			return "2"; //no se puede cargar
+		} else {
+			//Obtenemos la fecha actual
+			$timezone = new \DateTimeZone('America/Argentina/Buenos_Aires');
+    		$date = new \DateTime('now', $timezone); 
+    		$FDebT = new \DateTime('now', $timezone); 
+    		$FDebT->modify('+'.$DiasPresta.' day');
+			//Creamos un registro por cada libro prestado
+			for($c=0;$c<sizeof($Libros);$c++){
+				//buscamos en el stock  
+				$Stock=stock::findOne($Libros[$c]);
+				$Cant=$Stock->CantidadDisponible;
+				if($Cant>0){ // comprobamos la cantidad disponible
+					//modelo de la tabla de prestamos
+					$Presta=new prestamos();
+					//Creacion del registro para la tabla de prestamos
+					$Presta->idUser=$Estud[0];	
+					$Presta->IdStock=$Libros[$c];	
+					$Presta->FechaDebT=$FDebT->format('Y-m-d');
+					$Presta->FechaDeb='0000-00-00';
+					$Presta->FechaPresta=$date->format('Y-m-d');	 
+					$Presta->save();
+					//actualizamos la cantidad en stock
+					$Stock->CantidadDisponible-=1;
+					$Stock->save();
+				}
 			}
+			return "1"; //aca se debe debolver un arreglo con el resultado del ingreso de datos
 		}
-		return "1"; //aca se debe debolver un arreglo con el resultado del ingreso de datos
     }
     
     //"Action" que se utiliza para ingresar la devolución del prestamo
