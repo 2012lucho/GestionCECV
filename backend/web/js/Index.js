@@ -3,17 +3,17 @@ const r="/cecv/backend/web/index.php";
 
 $(document).ready(function(){
 	$('#Todos').click(function () {
-		InicBusca('');
+		InicBusca(['']);
 	});
 	
 	$('#Adeudados').click(function () {
-		InicBusca('FechaDeb=0000-00-00');
+		InicBusca(['FechaDeb=0000-00-00']);
 	});
 	
 	$('#Vencidos').click(function () { //agregar comprobación de vencimiento
-		InicBusca('FechaDeb=0000-00-00 && FechaDebT<STR_TO_DATE('+$('#parametros').attr('data-fecha')+',"Y-m-d")');
+		InicBusca(['FechaDeb=0000-00-00 && DATE(FechaDebT) < DATE("'+$('#parametros').attr('data-fecha')+'")']);//+);
 	});	
-	InicBusca('');
+	InicBusca(['']);
 	
 	function InicBusca(Filtro) {
 		InicializarBuscador(
@@ -23,7 +23,7 @@ $(document).ready(function(){
 				Condiciones:Filtro,							
 				FuncionControl:'',//BuscaIdPresta,//función que se ejecuta al activar el checkbox
 				FuncionControlD:'',//BlancIdPresta,//función que se ejecuta al desactivar el checkbox
-				Action:"/rbusca",						
+				Action:"/lpresta",						
 			},						
 			[
 				["idPresta","Número de préstamo"], //campos, 1 Nombre campo, 2 Alias

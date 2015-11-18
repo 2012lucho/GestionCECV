@@ -26819,3 +26819,1765 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1447805967.281
     'REQUEST_TIME' => 1447805967
 ]
+2015-11-18 04:51:57 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BETWEEN FechaDebT 2015-11-18' at line 1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/buscador/models/Busqueda.php(50): yii\db\Query->count()
+#5 /var/www/html/cecv/backend/modules/buscador/controllers/BuscadorController.php(39): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BETWEEN FechaDebT 2015-11-18' at line 1
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` WHERE FechaDeb=0000-00-00 && BETWEEN FechaDebT 2015-11-18' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/buscador/models/Busqueda.php(50): yii\db\Query->count()
+#5 /var/www/html/cecv/backend/modules/buscador/controllers/BuscadorController.php(39): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BETWEEN FechaDebT 2015-11-18' at line 1
+)
+
+2015-11-18 04:51:56 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"FechaDeb=0000-00-00 && BETWEEN FechaDebT 2015-11-18\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VWg4LjRuUlRkGVldGR9lJCwlFXsEJSMjNjhwZ107GxA2BAFqdw9jYA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '42899'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22FechaDeb%3D0000-00-00+%26%26+BETWEEN+FechaDebT+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/rbusca?CO=%22FechaDeb%3D0000-00-00+%26%26+BETWEEN+FechaDebT+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447822316.982
+    'REQUEST_TIME' => 1447822316
+]
+2015-11-18 04:51:57 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-11-18 04:51:56 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"FechaDeb=0000-00-00 && BETWEEN FechaDebT 2015-11-18\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VWg4LjRuUlRkGVldGR9lJCwlFXsEJSMjNjhwZ107GxA2BAFqdw9jYA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '42899'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22FechaDeb%3D0000-00-00+%26%26+BETWEEN+FechaDebT+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/rbusca?CO=%22FechaDeb%3D0000-00-00+%26%26+BETWEEN+FechaDebT+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447822316.982
+    'REQUEST_TIME' => 1447822316
+]
+2015-11-18 04:52:00 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BETWEEN FechaDebT 2015-11-18' at line 1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/buscador/models/Busqueda.php(50): yii\db\Query->count()
+#5 /var/www/html/cecv/backend/modules/buscador/controllers/BuscadorController.php(39): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BETWEEN FechaDebT 2015-11-18' at line 1
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` WHERE FechaDeb=0000-00-00 && BETWEEN FechaDebT 2015-11-18' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/buscador/models/Busqueda.php(50): yii\db\Query->count()
+#5 /var/www/html/cecv/backend/modules/buscador/controllers/BuscadorController.php(39): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BETWEEN FechaDebT 2015-11-18' at line 1
+)
+
+2015-11-18 04:52:00 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"FechaDeb=0000-00-00 && BETWEEN FechaDebT 2015-11-18\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VWg4LjRuUlRkGVldGR9lJCwlFXsEJSMjNjhwZ107GxA2BAFqdw9jYA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '42907'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22FechaDeb%3D0000-00-00+%26%26+BETWEEN+FechaDebT+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/rbusca?CO=%22FechaDeb%3D0000-00-00+%26%26+BETWEEN+FechaDebT+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447822320.225
+    'REQUEST_TIME' => 1447822320
+]
+2015-11-18 04:52:00 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-11-18 04:52:00 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"FechaDeb=0000-00-00 && BETWEEN FechaDebT 2015-11-18\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VWg4LjRuUlRkGVldGR9lJCwlFXsEJSMjNjhwZ107GxA2BAFqdw9jYA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '42907'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22FechaDeb%3D0000-00-00+%26%26+BETWEEN+FechaDebT+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/rbusca?CO=%22FechaDeb%3D0000-00-00+%26%26+BETWEEN+FechaDebT+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447822320.225
+    'REQUEST_TIME' => 1447822320
+]
+2015-11-18 04:55:03 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date(FechaDebT) < date(2015-11-18)' at line 1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/buscador/models/Busqueda.php(50): yii\db\Query->count()
+#5 /var/www/html/cecv/backend/modules/buscador/controllers/BuscadorController.php(39): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date(FechaDebT) < date(2015-11-18)' at line 1
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` WHERE FechaDeb=0000-00-00 && FechaDebT date(FechaDebT) < date(2015-11-18)' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/buscador/models/Busqueda.php(50): yii\db\Query->count()
+#5 /var/www/html/cecv/backend/modules/buscador/controllers/BuscadorController.php(39): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date(FechaDebT) < date(2015-11-18)' at line 1
+)
+
+2015-11-18 04:55:03 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"FechaDeb=0000-00-00 && FechaDebT date(FechaDebT) < date(2015-11-18)\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VUtqS002TkJkOgs4YEd5MiwGRx59fT81NhsiAiRjBwY2J1MPDld/dg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '42996'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22FechaDeb%3D0000-00-00+%26%26+FechaDebT+date(FechaDebT)+%3C+date(2015-11-18)%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/rbusca?CO=%22FechaDeb%3D0000-00-00+%26%26+FechaDebT+date(FechaDebT)+%3C+date(2015-11-18)%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447822503.289
+    'REQUEST_TIME' => 1447822503
+]
+2015-11-18 04:55:03 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-11-18 04:55:03 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"FechaDeb=0000-00-00 && FechaDebT date(FechaDebT) < date(2015-11-18)\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VUtqS002TkJkOgs4YEd5MiwGRx59fT81NhsiAiRjBwY2J1MPDld/dg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '42996'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22FechaDeb%3D0000-00-00+%26%26+FechaDebT+date(FechaDebT)+%3C+date(2015-11-18)%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/rbusca?CO=%22FechaDeb%3D0000-00-00+%26%26+FechaDebT+date(FechaDebT)+%3C+date(2015-11-18)%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447822503.289
+    'REQUEST_TIME' => 1447822503
+]
+2015-11-18 05:01:47 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Y-m-d) < 2015-11-18' at line 1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/buscador/models/Busqueda.php(50): yii\db\Query->count()
+#5 /var/www/html/cecv/backend/modules/buscador/controllers/BuscadorController.php(39): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Y-m-d) < 2015-11-18' at line 1
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` WHERE FechaDeb=0000-00-00 && DATE(FechaDebT,Y-m-d) < 2015-11-18' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/buscador/models/Busqueda.php(50): yii\db\Query->count()
+#5 /var/www/html/cecv/backend/modules/buscador/controllers/BuscadorController.php(39): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Y-m-d) < 2015-11-18' at line 1
+)
+
+2015-11-18 05:01:47 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"FechaDeb=0000-00-00 && DATE(FechaDebT,Y-m-d) < 2015-11-18\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'NnlSLVVJb0IHCDNeeDhYMk80f3hlAh41VSkaZDwcJgZVFWtpFihedg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43076'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22FechaDeb%3D0000-00-00+%26%26+DATE(FechaDebT%2CY-m-d)+%3C+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/rbusca?CO=%22FechaDeb%3D0000-00-00+%26%26+DATE(FechaDebT%2CY-m-d)+%3C+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447822907.494
+    'REQUEST_TIME' => 1447822907
+]
+2015-11-18 05:01:47 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-11-18 05:01:47 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"FechaDeb=0000-00-00 && DATE(FechaDebT,Y-m-d) < 2015-11-18\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'NnlSLVVJb0IHCDNeeDhYMk80f3hlAh41VSkaZDwcJgZVFWtpFihedg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43076'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22FechaDeb%3D0000-00-00+%26%26+DATE(FechaDebT%2CY-m-d)+%3C+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/rbusca?CO=%22FechaDeb%3D0000-00-00+%26%26+DATE(FechaDebT%2CY-m-d)+%3C+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447822907.494
+    'REQUEST_TIME' => 1447822907
+]
+2015-11-18 05:02:07 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"Y-m-d") < 2015-11-18' at line 1' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/buscador/models/Busqueda.php(50): yii\db\Query->count()
+#5 /var/www/html/cecv/backend/modules/buscador/controllers/BuscadorController.php(39): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"Y-m-d") < 2015-11-18' at line 1
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` WHERE FechaDeb=0000-00-00 && DATE(FechaDebT,"Y-m-d") < 2015-11-18' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/buscador/models/Busqueda.php(50): yii\db\Query->count()
+#5 /var/www/html/cecv/backend/modules/buscador/controllers/BuscadorController.php(39): app\modules\buscador\models\Busqueda->Resultados()
+#6 [internal function]: app\modules\buscador\controllers\BuscadorController->actionResultb()
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('resultb', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('buscador/buscad...', Array)
+#11 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"Y-m-d") < 2015-11-18' at line 1
+)
+
+2015-11-18 05:02:07 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"FechaDeb=0000-00-00 && DATE(FechaDebT,\\\"Y-m-d\\\") < 2015-11-18\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'LjdIQnVSWmQfRikxWCNtFFd6ZRdFGSsTTWcACxwHEyBNW3EGNjNrUA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43089'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22FechaDeb%3D0000-00-00+%26%26+DATE(FechaDebT%2C%5C%22Y-m-d%5C%22)+%3C+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/rbusca?CO=%22FechaDeb%3D0000-00-00+%26%26+DATE(FechaDebT%2C%5C%22Y-m-d%5C%22)+%3C+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447822927.809
+    'REQUEST_TIME' => 1447822927
+]
+2015-11-18 05:02:07 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-11-18 05:02:07 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"FechaDeb=0000-00-00 && DATE(FechaDebT,\\\"Y-m-d\\\") < 2015-11-18\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'LjdIQnVSWmQfRikxWCNtFFd6ZRdFGSsTTWcACxwHEyBNW3EGNjNrUA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43089'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22FechaDeb%3D0000-00-00+%26%26+DATE(FechaDebT%2C%5C%22Y-m-d%5C%22)+%3C+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/rbusca?CO=%22FechaDeb%3D0000-00-00+%26%26+DATE(FechaDebT%2C%5C%22Y-m-d%5C%22)+%3C+2015-11-18%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/rbusca'
+    'PHP_SELF' => '/cecv/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447822927.809
+    'REQUEST_TIME' => 1447822927
+]
+2015-11-18 05:14:02 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Uninitialized string offset: 0' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:127
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(127): yii\base\ErrorHandler->handleError(8, 'Uninitialized s...', '/var/www/html/c...', 127, Array)
+#1 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 05:14:02 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'LXRIamVRMXQcBSkZSCAGBFQ5ZT9VGkADTiQAIwwEeDBOGHEuJjAAQA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43554'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823642.208
+    'REQUEST_TIME' => 1447823642
+]
+2015-11-18 05:14:02 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 05:14:02 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'LXRIamVRMXQcBSkZSCAGBFQ5ZT9VGkADTiQAIwwEeDBOGHEuJjAAQA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43554'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823642.208
+    'REQUEST_TIME' => 1447823642
+]
+2015-11-18 05:14:04 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Uninitialized string offset: 0' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:127
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(127): yii\base\ErrorHandler->handleError(8, 'Uninitialized s...', '/var/www/html/c...', 127, Array)
+#1 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 05:14:04 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'LXRIamVRMXQcBSkZSCAGBFQ5ZT9VGkADTiQAIwwEeDBOGHEuJjAAQA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43552'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823644.61
+    'REQUEST_TIME' => 1447823644
+]
+2015-11-18 05:14:04 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 05:14:04 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'LXRIamVRMXQcBSkZSCAGBFQ5ZT9VGkADTiQAIwwEeDBOGHEuJjAAQA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43552'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823644.61
+    'REQUEST_TIME' => 1447823644
+]
+2015-11-18 05:14:05 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'F' in 'where clause'' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'F' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `Prestamos` INNER JOIN `DatosUser` ON Prestamos.idUser=DatosUser.IdUser INNER JOIN `Stock` ON Prestamos.IdStock=Stock.idStock WHERE F' in /var/www/html/cecv/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /var/www/html/cecv/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(140): yii\db\Query->count()
+#5 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#9 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#10 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'F' in 'where clause'
+)
+
+2015-11-18 05:14:05 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"FechaDeb=0000-00-00\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'LXRIamVRMXQcBSkZSCAGBFQ5ZT9VGkADTiQAIwwEeDBOGHEuJjAAQA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43558'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22FechaDeb%3D0000-00-00%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22FechaDeb%3D0000-00-00%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823645.602
+    'REQUEST_TIME' => 1447823645
+]
+2015-11-18 05:14:05 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#7 {main}
+2015-11-18 05:14:05 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"FechaDeb=0000-00-00\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'LXRIamVRMXQcBSkZSCAGBFQ5ZT9VGkADTiQAIwwEeDBOGHEuJjAAQA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43558'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22FechaDeb%3D0000-00-00%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22FechaDeb%3D0000-00-00%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823645.602
+    'REQUEST_TIME' => 1447823645
+]
+2015-11-18 05:14:18 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Uninitialized string offset: 0' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:127
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(127): yii\base\ErrorHandler->handleError(8, 'Uninitialized s...', '/var/www/html/c...', 127, Array)
+#1 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 05:14:18 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'Y0pfY0pTdjlSOz4QZyJBSRoHcjZ6GAdOABoXKiMGP30AJmYnCTJHDQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43565'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823658.538
+    'REQUEST_TIME' => 1447823658
+]
+2015-11-18 05:14:18 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 05:14:18 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'Y0pfY0pTdjlSOz4QZyJBSRoHcjZ6GAdOABoXKiMGP30AJmYnCTJHDQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43565'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823658.538
+    'REQUEST_TIME' => 1447823658
+]
+2015-11-18 05:14:26 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Uninitialized string offset: 0' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:127
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(127): yii\base\ErrorHandler->handleError(8, 'Uninitialized s...', '/var/www/html/c...', 127, Array)
+#1 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 05:14:26 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43572'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823666.198
+    'REQUEST_TIME' => 1447823666
+]
+2015-11-18 05:14:26 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 05:14:26 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43572'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823666.198
+    'REQUEST_TIME' => 1447823666
+]
+2015-11-18 05:15:48 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Uninitialized string offset: 0' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:127
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(127): yii\base\ErrorHandler->handleError(8, 'Uninitialized s...', '/var/www/html/c...', 127, Array)
+#1 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 05:15:48 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'V2M3ekhtNXRmElYJZRwCBC4uGi94JkQDNDN/MyE4fDA0Dw4.CwwEQA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43580'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823748.758
+    'REQUEST_TIME' => 1447823748
+]
+2015-11-18 05:15:48 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 05:15:48 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'V2M3ekhtNXRmElYJZRwCBC4uGi94JkQDNDN/MyE4fDA0Dw4.CwwEQA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43580'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823748.758
+    'REQUEST_TIME' => 1447823748
+]
+2015-11-18 05:15:54 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Uninitialized string offset: 0' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:127
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(127): yii\base\ErrorHandler->handleError(8, 'Uninitialized s...', '/var/www/html/c...', 127, Array)
+#1 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionLpresta()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('lpresta', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 05:15:54 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43588'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823754.315
+    'REQUEST_TIME' => 1447823754
+]
+2015-11-18 05:15:54 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 05:15:54 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'bd5u3kd1ttm1vlj1depo0b90u0'
+    '_csrf' => 'e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1qas-q7pyM-U0KqwcPHIiUIDcl9DCa14\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=bd5u3kd1ttm1vlj1depo0b90u0; _csrf=e6d9def99d826089007e2bdcbebc59bcf9065e079d6001aa8a1e924e0852abfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221qas-q7pyM-U0KqwcPHIiUIDcl9DCa14%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '43588'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/lpresta?CO=%22%22&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/lpresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447823754.315
+    'REQUEST_TIME' => 1447823754
+]
