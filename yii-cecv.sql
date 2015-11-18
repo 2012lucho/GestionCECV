@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 17-11-2015 a las 23:35:28
+-- Tiempo de generación: 18-11-2015 a las 14:27:20
 -- Versión del servidor: 5.5.43
 -- Versión de PHP: 5.6.7-1
 
@@ -41,9 +41,10 @@ CREATE TABLE IF NOT EXISTS `configuracion` (
 --
 
 INSERT INTO `configuracion` (`cod`, `valor`, `descripcion`, `control`, `unidad`, `categoria`) VALUES
-('CantLibSel', '2', 'Cantidad de libros que se pueden seleccionar por préstamo ingresado', 'number', '', ''),
+('CantLibSel', '7', 'Cantidad de libros que se pueden seleccionar por préstamo ingresado', 'number', '', ''),
+('DirWeb', '/GestionCECV', 'Directorio base del sistema (modificar solo admin)', 'textbox', '', ''),
 ('PrestaMulti', 'no', 'Define si se puede cargar un prestamo nuevo, cuando todavía no existe devolución', 'checkbox', '', ''),
-('TPrestaLibro', '7', 'Periodo de tiempo máximo de devolución de material ', 'number', 'Días', '');
+('TPrestaLibro', '9', 'Periodo de tiempo máximo de devolución de material ', 'number', 'Días', '');
 
 -- --------------------------------------------------------
 
@@ -104,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `Prestamos` (
   PRIMARY KEY (`idPresta`),
   KEY `idUser` (`idUser`),
   KEY `IdStock` (`IdStock`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=37 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=39 ;
 
 --
 -- Volcado de datos para la tabla `Prestamos`
@@ -134,7 +135,9 @@ INSERT INTO `Prestamos` (`idPresta`, `idUser`, `IdStock`, `FechaPresta`, `FechaD
 (33, 1, 1, '2015-11-17', '2015-11-24', '2015-11-17'),
 (34, 1, 2, '2015-11-17', '2015-11-24', '2015-11-17'),
 (35, 1, 1, '2015-11-17', '2015-11-24', '0000-00-00'),
-(36, 1, 2, '2015-11-17', '2015-11-24', '0000-00-00');
+(36, 1, 2, '2015-11-17', '2015-11-24', '0000-00-00'),
+(37, 1, 1, '2015-11-18', '2015-11-27', '0000-00-00'),
+(38, 1, 2, '2015-11-18', '2015-11-27', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -180,8 +183,8 @@ CREATE TABLE IF NOT EXISTS `Stock` (
 --
 
 INSERT INTO `Stock` (`idStock`, `Codigo`, `Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES
-(1, '5566876764', 'Noriega Super Stars', 'El más exitoso libro de Análisis matemático de todos los tiempos, aquí para que lo disfrutes! :D', 'Arnold Swatchzseneger', 200, 148),
-(2, '7767676g', 'Matemática Corporativa I', 'Las oscuras garras del capitalismo nunca encontraron mejor aliado en las matemáticas aprende a robar la plusvalía como un campeón', '', 149, 9),
+(1, '5566876764', 'Noriega Super Stars', 'El más exitoso libro de Análisis matemático de todos los tiempos, aquí para que lo disfrutes! :D', 'Arnold Swatchzseneger', 200, 147),
+(2, '7767676g', 'Matemática Corporativa I', 'Las oscuras garras del capitalismo nunca encontraron mejor aliado en las matemáticas aprende a robar la plusvalía como un campeón', '', 149, 8),
 (3, 'hhjh344', 'La verdad de la milanesa', 'Oculta detrás de un halo de pan rallado se encuentra la verdad, aquello que nunca podrá ser negado', '', 45, 41),
 (5, 'hgbj452', 'El agua y el aceite, más allá de la poesia', 'Poesia para cuando uno se aburre y no hay nada mejor para leer', '', 3, 0),
 (6, '343455edd', 'Matemática Corporativa II', 'Economía mundial en tiempo de buitres, fino análisis matemático de las antimañas financieras de los paises del "primer mundo".', '', 200, 174),

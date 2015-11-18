@@ -2,17 +2,15 @@
 namespace frontend\controllers;
 
 use Yii;
-use common\models\LoginForm;
-use common\models\User;
-use frontend\models\PasswordResetRequestForm;
-use frontend\models\ResetPasswordForm;
-use frontend\models\SignupForm;
-use frontend\models\ContactForm;
+
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+
+//cargamos el modelo de configuración
+use common\models\Config;
 
 /**
  * Site controller
@@ -79,6 +77,8 @@ class SiteController extends Controller
      */
     public function actionCatalogo()
     {
-    	return $this->render('catalogo');
+    	$Config=new Config(['conf'=>'DirWeb']);
+		$Rweb=$Config->Valor();
+    	return $this->render('catalogo',['Rweb'=>$Rweb]);
     }
 }

@@ -8,7 +8,7 @@ use app\modules\gestionstock\PrestaAsset;PrestaAsset::register($this);
 
 $this->title = 'Área de administración - Prestamos';
 ?>
-
+<div class="oculto" id="parametros" data-rweb="<?= $Rweb; ?>"></div>
 <div class="site-presta row">
 	<div  class="col-xs-12" id="bot-presta">
 		<div id="Notific" class="col-md-10">

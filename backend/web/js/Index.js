@@ -1,7 +1,8 @@
 const IdHistPresta='HistorialPresta';
-const r="/cecv/backend/web/index.php";
+var r;
 
 $(document).ready(function(){
+	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
 	$('#Todos').click(function () {
 		InicBusca(['']);
 	});

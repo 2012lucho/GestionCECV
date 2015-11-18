@@ -1,7 +1,8 @@
 const IdHistPresta='HistorialPresta';
-const r="/cecv/backend/web/index.php";
+var r;//="/cecv/backend/web/index.php";
 
 $(document).ready(function(){
+	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
 	$('#Todos').click(function () {
 		InicBusca(['']);
 	});
@@ -13,7 +14,7 @@ $(document).ready(function(){
 	$('#Vencidos').click(function () { //agregar comprobación de vencimiento
 		InicBusca(['FechaDeb=0000-00-00 && DATE(FechaDebT) < DATE("'+$('#parametros').attr('data-fecha')+'")']);//+);
 	});	
-	InicBusca('');
+	InicBusca(['']);
 	
 	function InicBusca(Filtro) {
 		InicializarBuscador(

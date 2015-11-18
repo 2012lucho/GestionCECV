@@ -35052,3 +35052,3264 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1447860128.248
     'REQUEST_TIME' => 1447860128
 ]
+2015-11-18 16:01:34 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function app\modules\gestionstock\controllers\config()' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:01:34 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VllxQl8wdmoCNzUkZwAZWC8/HXM9UU4nZgEEDzVxRDgcMUYQZkQABQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60065'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862494.443
+    'REQUEST_TIME' => 1447862494
+]
+2015-11-18 16:02:08 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\Configuracion' not found' in /var/www/html/cecv/common/models/config.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:02:08 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VllxQl8wdmoCNzUkZwAZWC8/HXM9UU4nZgEEDzVxRDgcMUYQZkQABQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60073'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862528.851
+    'REQUEST_TIME' => 1447862528
+]
+2015-11-18 16:02:15 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\Configuracion' not found' in /var/www/html/cecv/common/models/config.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:02:15 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VllxQl8wdmoCNzUkZwAZWC8/HXM9UU4nZgEEDzVxRDgcMUYQZkQABQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60074'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862535.293
+    'REQUEST_TIME' => 1447862535
+]
+2015-11-18 16:02:18 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\Configuracion' not found' in /var/www/html/cecv/common/models/config.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:02:18 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60075'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862538.224
+    'REQUEST_TIME' => 1447862538
+]
+2015-11-18 16:02:52 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: id' in /var/www/html/cecv/common/models/config.php:12
+Stack trace:
+#0 /var/www/html/cecv/common/models/config.php(12): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/c...', 12, Array)
+#1 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(54): common\models\config->valor(Array)
+#2 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 16:02:52 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60078'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862572.5
+    'REQUEST_TIME' => 1447862572
+]
+2015-11-18 16:02:52 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 16:02:52 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60078'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862572.5
+    'REQUEST_TIME' => 1447862572
+]
+2015-11-18 16:03:30 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\gestionstock\controllers\PrestamosController::config' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/common/models/config.php(12): yii\base\Component->__get('config')
+#1 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(54): common\models\config->valor(Array)
+#2 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 16:03:30 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60083'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862610.605
+    'REQUEST_TIME' => 1447862610
+]
+2015-11-18 16:03:30 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-11-18 16:03:30 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60083'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862610.605
+    'REQUEST_TIME' => 1447862610
+]
+2015-11-18 16:04:51 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\gestionstock\controllers\PrestamosController::Config' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/common/models/config.php(12): yii\base\Component->__get('Config')
+#1 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(54): common\models\config->valor(Array)
+#2 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 16:04:50 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60089'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862690.989
+    'REQUEST_TIME' => 1447862690
+]
+2015-11-18 16:04:51 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-11-18 16:04:50 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60089'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862690.989
+    'REQUEST_TIME' => 1447862690
+]
+2015-11-18 16:05:55 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\gestionstock\controllers\PrestamosController::conf' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/common/models/config.php(12): yii\base\Component->__get('conf')
+#1 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(54): common\models\config->valor(Array)
+#2 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 16:05:55 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60098'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862755.5
+    'REQUEST_TIME' => 1447862755
+]
+2015-11-18 16:05:55 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-11-18 16:05:55 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60098'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862755.5
+    'REQUEST_TIME' => 1447862755
+]
+2015-11-18 16:07:10 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\gestionstock\controllers\PrestamosController::conf' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/common/models/config.php(13): yii\base\Component->__get('conf')
+#1 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(54): common\models\config->valor(Array)
+#2 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 16:07:09 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60104'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862829.982
+    'REQUEST_TIME' => 1447862829
+]
+2015-11-18 16:07:10 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-11-18 16:07:09 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60104'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862829.982
+    'REQUEST_TIME' => 1447862829
+]
+2015-11-18 16:07:47 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\gestionstock\controllers\PrestamosController::conf' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/common/models/config.php(13): yii\base\Component->__get('conf')
+#1 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(54): common\models\config->valor(Array)
+#2 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 16:07:47 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60110'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862867.96
+    'REQUEST_TIME' => 1447862867
+]
+2015-11-18 16:07:48 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-11-18 16:07:47 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60110'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862867.96
+    'REQUEST_TIME' => 1447862867
+]
+2015-11-18 16:07:54 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\gestionstock\controllers\PrestamosController::conf' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/common/models/config.php(13): yii\base\Component->__get('conf')
+#1 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(54): common\models\config->valor(Array)
+#2 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 16:07:54 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VllxQl8wdmoCNzUkZwAZWC8/HXM9UU4nZgEEDzVxRDgcMUYQZkQABQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60118'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862874.523
+    'REQUEST_TIME' => 1447862874
+]
+2015-11-18 16:07:54 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-11-18 16:07:54 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VllxQl8wdmoCNzUkZwAZWC8/HXM9UU4nZgEEDzVxRDgcMUYQZkQABQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/cecv/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60118'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862874.523
+    'REQUEST_TIME' => 1447862874
+]
+2015-11-18 16:07:59 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\gestionstock\controllers\PrestamosController::conf' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/common/models/config.php(13): yii\base\Component->__get('conf')
+#1 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(54): common\models\config->valor(Array)
+#2 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 16:07:59 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60121'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862879.011
+    'REQUEST_TIME' => 1447862879
+]
+2015-11-18 16:07:59 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-11-18 16:07:59 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60121'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862879.011
+    'REQUEST_TIME' => 1447862879
+]
+2015-11-18 16:08:47 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\gestionstock\controllers\PrestamosController::conf' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/common/models/config.php(13): yii\base\Component->__get('conf')
+#1 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(54): common\models\Config->valor(Array)
+#2 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 16:08:47 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60127'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862927.933
+    'REQUEST_TIME' => 1447862927
+]
+2015-11-18 16:08:48 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-11-18 16:08:47 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60127'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862927.933
+    'REQUEST_TIME' => 1447862927
+]
+2015-11-18 16:09:23 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\gestionstock\controllers\PrestamosController::conf' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/common/models/config.php(13): yii\base\Component->__get('conf')
+#1 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(54): common\models\Config->Valor(Array)
+#2 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 16:09:23 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60133'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862963.175
+    'REQUEST_TIME' => 1447862963
+]
+2015-11-18 16:09:23 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-11-18 16:09:23 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60133'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=%5B%221%22%2C%222%22%5D&E=%5B%221%22%5D'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447862963.175
+    'REQUEST_TIME' => 1447862963
+]
+2015-11-18 16:10:01 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'if' (T_IF)' in /var/www/html/cecv/common/models/config.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:10:01 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60139'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863001.555
+    'REQUEST_TIME' => 1447863001
+]
+2015-11-18 16:10:15 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\gestionstock\controllers\PrestamosController::conf' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/common/models/config.php(13): yii\base\Component->__get('conf')
+#1 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(54): common\models\Config->Valor(Array)
+#2 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 16:10:15 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60142'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863015.073
+    'REQUEST_TIME' => 1447863015
+]
+2015-11-18 16:10:15 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-11-18 16:10:15 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60142'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863015.073
+    'REQUEST_TIME' => 1447863015
+]
+2015-11-18 16:11:42 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\config' not found' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:11:42 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60148'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863102.375
+    'REQUEST_TIME' => 1447863102
+]
+2015-11-18 16:11:58 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\gestionstock\controllers\PrestamosController::conf' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/common/models/Config.php(13): yii\base\Component->__get('conf')
+#1 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(54): common\models\Config->Valor(Array)
+#2 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#7 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-18 16:11:58 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60151'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863118.836
+    'REQUEST_TIME' => 1447863118
+]
+2015-11-18 16:11:58 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-11-18 16:11:58 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60151'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863118.836
+    'REQUEST_TIME' => 1447863118
+]
+2015-11-18 16:13:14 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\modules\gestionstock\controllers\Valor' not found' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:13:14 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60159'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863194.198
+    'REQUEST_TIME' => 1447863194
+]
+2015-11-18 16:13:46 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'Valor' (T_STRING), expecting variable (T_VARIABLE) or '$'' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:13:46 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60162'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863226.787
+    'REQUEST_TIME' => 1447863226
+]
+2015-11-18 16:14:23 [::1][-][-][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Object of class common\models\Config could not be converted to string' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:62
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(62): yii\base\ErrorHandler->handleError(4096, 'Object of class...', '/var/www/html/c...', 62, Array)
+#1 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 16:14:23 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60165'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863263.649
+    'REQUEST_TIME' => 1447863263
+]
+2015-11-18 16:14:23 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 16:14:23 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60165'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863263.649
+    'REQUEST_TIME' => 1447863263
+]
+2015-11-18 16:14:57 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:14:57 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60168'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863297.796
+    'REQUEST_TIME' => 1447863297
+]
+2015-11-18 16:15:44 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Config::Valor' in /var/www/html/cecv/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(55): yii\base\Component->__get('Valor')
+#1 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 16:15:44 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60171'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863344.257
+    'REQUEST_TIME' => 1447863344
+]
+2015-11-18 16:15:44 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#6 {main}
+2015-11-18 16:15:44 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60171'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863344.257
+    'REQUEST_TIME' => 1447863344
+]
+2015-11-18 16:16:23 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:16:23 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60177'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863383.614
+    'REQUEST_TIME' => 1447863383
+]
+2015-11-18 16:16:38 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:16:38 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60180'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863398.568
+    'REQUEST_TIME' => 1447863398
+]
+2015-11-18 16:16:41 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:16:41 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60183'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863401.321
+    'REQUEST_TIME' => 1447863401
+]
+2015-11-18 16:16:42 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:16:42 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60184'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863402.736
+    'REQUEST_TIME' => 1447863402
+]
+2015-11-18 16:16:53 [::1][-][-][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Object of class common\models\Config could not be converted to string' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:62
+Stack trace:
+#0 /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php(62): yii\base\ErrorHandler->handleError(4096, 'Object of class...', '/var/www/html/c...', 62, Array)
+#1 [internal function]: app\modules\gestionstock\controllers\PrestamosController->actionApresta()
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('apresta', Array)
+#5 /var/www/html/cecv/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/pr...', Array)
+#6 /var/www/html/cecv/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/cecv/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-18 16:16:53 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60187'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863413.337
+    'REQUEST_TIME' => 1447863413
+]
+2015-11-18 16:16:53 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/cecv/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/cecv/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/cecv/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/cecv/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-18 16:16:53 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60187'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863413.337
+    'REQUEST_TIME' => 1447863413
+]
+2015-11-18 16:17:05 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:17:05 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60190'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863425.668
+    'REQUEST_TIME' => 1447863425
+]
+2015-11-18 16:17:13 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in /var/www/html/cecv/backend/modules/gestionstock/controllers/PrestamosController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-18 16:17:13 [::1][-][-][info][application] $_GET = [
+    'L' => '[\"1\",\"2\"]'
+    'E' => '[\"1\"]'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=ffe924dccfa44d4ceecebfa99d36875ca723ce575619972bc7673bb2d874331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TnDf80o2yfl1ba8M0XuMjA2RJh7R9tvo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/cecv/backend/web/index.php'
+    'REMOTE_PORT' => '60193'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'L=[%221%22%2C%222%22]&E=[%221%22]'
+    'REQUEST_URI' => '/cecv/backend/web/index.php/apresta?L=[%221%22%2C%222%22]&E=[%221%22]'
+    'SCRIPT_NAME' => '/cecv/backend/web/index.php'
+    'PATH_INFO' => '/apresta'
+    'PATH_TRANSLATED' => '/var/www/html/apresta'
+    'PHP_SELF' => '/cecv/backend/web/index.php/apresta'
+    'REQUEST_TIME_FLOAT' => 1447863433.568
+    'REQUEST_TIME' => 1447863433
+]
+2015-11-18 17:17:02 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "undefined/backend/web/index.php/rbusca".' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('undefined/backe...', Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-18 17:17:02 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'Tlg1eHR3eFEAIE08MkETJ2NqVD4XPkAyCz8MER0jCGMUbwIAGlpJKA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '52600'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca?CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/undefined/backend/web/index.php/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/undefined/backend/web/index.php/rbusca'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447867022.933
+    'REQUEST_TIME' => 1447867022
+]
+2015-11-18 17:17:05 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "undefined/backend/web/index.php/rbusca".' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('undefined/backe...', Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-18 17:17:05 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'dUVnSGdNS087PR8MIXsgOVh3Bg4EBHMsMCJeIQ4ZO30vclAwCWB6Ng=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '52610'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca?CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/undefined/backend/web/index.php/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/undefined/backend/web/index.php/rbusca'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447867025.185
+    'REQUEST_TIME' => 1447867025
+]
+2015-11-18 17:17:16 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "undefined/backend/web/index.php/rbusca".' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('undefined/backe...', Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-18 17:17:16 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'UHhVZkl4cHUeAC0iD04bA31KNCAqMUgWFR9sDyAsAEcKT2IeJ1VBDA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '52621'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca?CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/undefined/backend/web/index.php/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/undefined/backend/web/index.php/rbusca'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447867036.652
+    'REQUEST_TIME' => 1447867036
+]
+2015-11-18 17:18:30 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "undefined/backend/web/index.php/rbusca".' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('undefined/backe...', Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-18 17:18:30 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VkhUenlYMmIYMCw.P25ZFHt6NTwaEQoBEy9tExAMQlAMf2MCF3UDGw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '52635'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca?CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/undefined/backend/web/index.php/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/undefined/backend/web/index.php/rbusca'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447867110.709
+    'REQUEST_TIME' => 1447867110
+]
+2015-11-18 17:18:53 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "undefined/backend/web/index.php/rbusca".' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('undefined/backe...', Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-18 17:18:53 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VkhUenlYMmIYMCw.P25ZFHt6NTwaEQoBEy9tExAMQlAMf2MCF3UDGw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '52644'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca?CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/undefined/backend/web/index.php/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/undefined/backend/web/index.php/rbusca'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447867133.451
+    'REQUEST_TIME' => 1447867133
+]
+2015-11-18 17:24:15 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "undefined/backend/web/index.php/rbusca".' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('undefined/backe...', Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-18 17:24:15 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SnlrLUk4aDQEARNpDw4DQmdLCmsqcVBXDx5SRCBsGAYQTlxVJxVZTQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '52707'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca?CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/undefined/backend/web/index.php/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/undefined/backend/web/index.php/rbusca'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447867455.926
+    'REQUEST_TIME' => 1447867455
+]
+2015-11-18 17:24:15 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "undefined/backend/web/index.php/lpresta".' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('undefined/backe...', Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-18 17:24:15 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SnlrLUk4aDQEARNpDw4DQmdLCmsqcVBXDx5SRCBsGAYQTlxVJxVZTQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '52704'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/undefined/backend/web/index.php/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/undefined/backend/web/index.php/lpresta'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447867455.918
+    'REQUEST_TIME' => 1447867455
+]
+2015-11-18 17:24:15 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "undefined/backend/web/index.php/rbusca".' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('undefined/backe...', Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-18 17:24:15 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Stock'
+    'CB' => 'Nombre'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SnlrLUk4aDQEARNpDw4DQmdLCmsqcVBXDx5SRCBsGAYQTlxVJxVZTQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '52702'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Stock&CB=Nombre'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca?CO=%22%22&TB=&O=n&D=0&C=5&T=Stock&CB=Nombre'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/undefined/backend/web/index.php/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/undefined/backend/web/index.php/rbusca'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447867455.923
+    'REQUEST_TIME' => 1447867455
+]
+2015-11-18 17:24:27 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "undefined/backend/web/index.php/rbusca".' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('undefined/backe...', Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-18 17:24:27 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Stock'
+    'CB' => 'Nombre'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SmJuMGpVemYEGhZ0LGMREGdQD3YJHEIFDwVXWQMBClQQVVlIBHhLHw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '52712'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=Stock&CB=Nombre'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca?CO=%22%22&TB=&O=n&D=0&C=5&T=Stock&CB=Nombre'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/undefined/backend/web/index.php/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/undefined/backend/web/index.php/rbusca'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447867467.611
+    'REQUEST_TIME' => 1447867467
+]
+2015-11-18 17:24:27 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "undefined/backend/web/index.php/rbusca".' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('undefined/backe...', Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-18 17:24:27 [::1][-][-][info][application] $_GET = [
+    'CO' => '\"\"'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'DatosUser'
+    'CB' => 'NombreyApellido'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SmJuMGpVemYEGhZ0LGMREGdQD3YJHEIFDwVXWQMBClQQVVlIBHhLHw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '52719'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca?CO=%22%22&TB=&O=n&D=0&C=5&T=DatosUser&CB=NombreyApellido'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/undefined/backend/web/index.php/rbusca'
+    'PATH_TRANSLATED' => '/var/www/html/undefined/backend/web/index.php/rbusca'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/rbusca'
+    'REQUEST_TIME_FLOAT' => 1447867467.614
+    'REQUEST_TIME' => 1447867467
+]
+2015-11-18 17:24:27 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "undefined/backend/web/index.php/lpresta".' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('undefined/backe...', Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-18 17:24:27 [::1][-][-][info][application] $_GET = [
+    'CO' => '[\"FechaDeb=0000-00-00\"]'
+    'TB' => ''
+    'O' => 'n'
+    'D' => '0'
+    'C' => '5'
+    'T' => 'Prestamos'
+    'CB' => 'idPresta'
+]
+
+$_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '2blj5iujj76rhss0b1aivaoc55'
+    '_csrf' => 'f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SmJuMGpVemYEGhZ0LGMREGdQD3YJHEIFDwVXWQMBClQQVVlIBHhLHw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/npresta'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=2blj5iujj76rhss0b1aivaoc55; _csrf=f16f75642d796e0080edca81b78ff18cc6c666af611ae00fa526b3956f37210ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NxxDF6kv-2aFcI8cEg9iiTp2Z77xn-1y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '52714'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CO=%5B%22FechaDeb%3D0000-00-00%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/lpresta?CO=%5B%22FechaDeb%3D0000-00-00%22%5D&TB=&O=n&D=0&C=5&T=Prestamos&CB=idPresta'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/undefined/backend/web/index.php/lpresta'
+    'PATH_TRANSLATED' => '/var/www/html/undefined/backend/web/index.php/lpresta'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/undefined/backend/web/index.php/lpresta'
+    'REQUEST_TIME_FLOAT' => 1447867467.608
+    'REQUEST_TIME' => 1447867467
+]

@@ -1,7 +1,8 @@
 const IdHistPresta='InfoStock';
-const r="/cecv/backend/web/index.php";
+var r;
 
 $(document).ready(function(){
+	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
 	InicializarBuscador(
 		{
 			id:IdHistPresta,n:2,Tit:'Catálogo',Tabla:'Stock',
@@ -20,7 +21,7 @@ $(document).ready(function(){
 			["CantidadDisponible","Cantidad disponible"],
 		],
 		{
-			Control:'', //control asociado con registro
+			Control:'checkbox', //control asociado con registro
 			MaxCantEleSele:'1',//maxima cantidad de elementos seleccionables
 			Alto:'300px',
 			TextoDef:'Nombre', //texto por defecto del campo de busqueda

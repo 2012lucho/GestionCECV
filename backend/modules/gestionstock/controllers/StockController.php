@@ -9,6 +9,10 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+//cargamos el modelo de configuración
+use common\models\Config;
+
+
 /**
  * StockController implements the CRUD actions for stock model.
  */
@@ -32,12 +36,10 @@ class StockController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new stockbusca();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+        $Config=new Config(['conf'=>'DirWeb']);
+		$Rweb=$Config->Valor();
         return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
+            'Rweb'=>$Rweb,
         ]);
     }
 

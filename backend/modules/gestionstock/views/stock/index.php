@@ -7,7 +7,7 @@
 
 	$this->title = 'Catálogo';
 ?>
-
+<div class="oculto" id="parametros" data-rweb="<?= $Rweb; ?>"></div>
 <div class="site-presta row">
 	<div  class="col-xs-12" id="bot-presta">
 		<div id="Notific" class="Notific col-md-9">

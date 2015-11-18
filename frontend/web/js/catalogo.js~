@@ -1,3 +1,4 @@
 $(document).ready(function () {
-	InicializarBuscador('CatalogoLib',1,'Catálogo de libros');	
+	var RutaWeb=$("#parametros").attr('data-rweb')+"/frontend/web/index.php";
+	InicializarBuscador('CatalogoLib',1,'Catálogo de libros','Stock');	
 });

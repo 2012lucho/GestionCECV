@@ -1,2 +1,2 @@
-rm -r /var/www/html/cecv/frontend/web/assets/*
-rm -r /var/www/html/cecv/backend/web/assets/*
+rm -r /var/www/html/GestionCECV/frontend/web/assets/*
+rm -r /var/www/html/GestionCECV/backend/web/assets/*
