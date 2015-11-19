@@ -68,10 +68,26 @@ return [
 						'route' => 'gestiondatos/info/nuevo',		
 					 ],
 					 [
+						'pattern' => 'editarest',//action para modificar estudiante
+						'route' => 'gestiondatos/info/editar',		
+					 ],
+					 [
 						'pattern' => 'infoest',//action para obtener info de un estudiante
 						'route' => 'gestiondatos/info/infoest',		
 					 ],
 					 [
+						'pattern' => 'infolib',//action para obtener info de un libro
+						'route' => 'gestionstock/stock/infolib',		
+					 ],
+					 [
+						'pattern' => 'elilib',//action para eliminar un libro
+						'route' => 'gestionstock/stock/elilib',		
+					 ],
+					 [
+						'pattern' => 'editalib',//action para editar un libro
+						'route' => 'gestionstock/stock/editalib',		
+					 ],
+					 [ elilib
 						'pattern' => 'guardaop',//action guardar configuracion
 						'route' => 'config/config/guardaop',		
 					 ],

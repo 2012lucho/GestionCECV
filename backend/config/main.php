@@ -76,6 +76,22 @@ return [
 						'route' => 'gestiondatos/info/infoest',		
 					 ],
 					 [
+						'pattern' => 'infolib',//action para obtener info de un libro
+						'route' => 'gestionstock/stock/infolib',		
+					 ],
+					 [
+						'pattern' => 'elilib',//action para eliminar un libro
+						'route' => 'gestionstock/stock/elilib',		
+					 ],
+					 [
+						'pattern' => 'editalib',//action para editar un libro
+						'route' => 'gestionstock/stock/editalib',		
+					 ],
+					 [
+						'pattern' => 'nuevolib',//action para agregar un libro
+						'route' => 'gestionstock/stock/nuevolib',		
+					 ],
+					 [ 
 						'pattern' => 'guardaop',//action guardar configuracion
 						'route' => 'config/config/guardaop',		
 					 ],

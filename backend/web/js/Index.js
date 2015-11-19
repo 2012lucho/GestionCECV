@@ -38,6 +38,13 @@ $(document).ready(function(){
 				Control:'', //control asociado con registro
 				MaxCantEleSele:'1',//maxima cantidad de elementos seleccionables
 				Alto:'300px',
+				Resaltar:{ //Especificamos el campo, condicion y color para resaltar
+					campo:'',
+					cfondo:'',//color resaltado, fondo
+					condicion:'',
+					valor:'', //valor con el que comparar el campo
+					mensaje:'',//mensaje a incluir si se resalta por ej "Suspendido"
+				}, 
 				TextoDef:'Número de préstamo', //texto por defecto del campo de busqueda
 			}			
 		);
