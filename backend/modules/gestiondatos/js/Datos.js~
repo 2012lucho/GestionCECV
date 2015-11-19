@@ -107,15 +107,26 @@ $(document).ready(function(){
 	});
 	$('#Suspender').click(function () {
 		var ArEst=$('#'+IdSelEstud).data('Arreglo-Val');
+		var Val=1;		
+		if ($('#Suspender').val()=='Quitar suspensión'){
+			Val=0;
+		} 
 		if (ArEst.length>0){
-			$.get(r+PeticionSus,{id:ArEst[0]},function (data) {		
+			$.get(r+PeticionSus,{id:ArEst[0], v:Val},function (data) {		
 				//Se anuncia el resultado
 				//data = JSON.parse(data);
-				if (data == PetExitosa){
+				if (data == 1){
 					$('#Notific > .mensaje').html(MensSusExit);
-					$('#Notific > .mensaje').css('background',ColorExito);
+					$('#Notific > .mensaje').css('background',ColorExit);
 					//reestablecemos los buscadores
 	    			IniBusEst();	
+				} else {
+					if (data == 3){
+						$('#Notific > .mensaje').html("Sanción quitada");
+						$('#Notific > .mensaje').css('background',ColorExit);
+						//reestablecemos los buscadores
+	    				IniBusEst();	
+					}
 				}
 			});
 		} else {
@@ -131,7 +142,7 @@ $(document).ready(function(){
 				//data = JSON.parse(data);
 				if (data == PetExitosa){
 					$('#Notific > .mensaje').html(MensEliExit);
-					$('#Notific > .mensaje').css('background',ColorExito);
+					$('#Notific > .mensaje').css('background',ColorExit);
 					//reestablecemos los buscadores
 	    			IniBusEst();	
 				}
@@ -143,11 +154,22 @@ $(document).ready(function(){
 				
 	});
 	
-	function EstudS(){}
-	function EstudDS(){}
+	function EstudS(){
+		var ArEst=$('#'+IdSelEstud).data('Arreglo-Val');
+		//averiguamos si esta suspendido para quitarle la suspensión
+		$.post(r+PeticionInf,{id:ArEst[0]},function (data) {
+			data = JSON.parse(data);
+			if (data['Suspendido']=="1"){
+				$('#Suspender').val('Quitar suspensión');
+			}
+		});		
+		
+	}
+	function EstudDS(){$('#Suspender').val('Suspender');}
 	
 	IniBusEst();
 	function IniBusEst(){
+		EstudDS();
 		InicializarBuscador(
 			{
 				id:IdSelEstud,n:2,Tit:'Estudiantes',Tabla:'DatosUser',

@@ -169,8 +169,8 @@ $(document).ready(function(){
 	
 	IniBusEst();
 	function IniBusEst(){
-		EstudDS();
 		InicializarBuscador(
+			EstudDS();
 			{
 				id:IdSelEstud,n:2,Tit:'Estudiantes',Tabla:'DatosUser',
 				CampoB:'NombreyApellido',CampoId:'IdUser',RWeb:r,CantR:5,

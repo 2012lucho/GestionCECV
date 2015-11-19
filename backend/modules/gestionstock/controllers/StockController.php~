@@ -53,17 +53,15 @@ class StockController extends Controller
         $model->Descripcion=urldecode($_REQUEST["Descripcion"]);
 		$model->Autor=urldecode($_REQUEST["Autor"]);
 		$model->Cantidad=urldecode($_REQUEST["Cantidad"]);
-		$model->Cantidad=$model->CantidadDisponible;
+		$model->CantidadDisponible=$model->Cantidad;
         $model->save();
         return '1';
 	}    
     
     //"action" para eliminar un libro
     public function actionElilib(){
-		$id=urldecode($_REQUEST['id']);
-		$m=$this->findModel($id);   
-		if($m!=''){
-        	$m->delete();return '1';}else{return '0';}    
+		$model = stock::findOne($_REQUEST["id"]);
+		$m->delete();return '1';   
     }
     
 	//"action" para modificar un libro
@@ -73,7 +71,7 @@ class StockController extends Controller
         $model->Descripcion=urldecode($_REQUEST["Descripcion"]);
 		$model->Autor=urldecode($_REQUEST["Autor"]);
 		$model->Cantidad=urldecode($_REQUEST["Cantidad"]);
-		$model->Cantidad=$model->CantidadDisponible;
+		$model->CantidadDisponible=$model->Cantidad;
         $model->save(false);
         return '1';
 	}   

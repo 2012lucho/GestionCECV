@@ -60,10 +60,8 @@ class StockController extends Controller
     
     //"action" para eliminar un libro
     public function actionElilib(){
-		$id=urldecode($_REQUEST['id']);
-		$m=$this->findModel($id);   
-		if($m!=''){
-        	$m->delete();return '1';}else{return '0';}    
+		$model = stock::findOne($_REQUEST["id"]);
+		$model->delete();return '1';   
     }
     
 	//"action" para modificar un libro
