@@ -1,20 +1,34 @@
 const IdHistPresta='HistorialPresta';
+const ColorAlerta='#fdd';
+const ColorExit='#dfd';
+const ColorDeuda="#ddb";
+const MensTodos="Mostrando todos los préstamos: Vencidos|Devueltos|Pendientes";
+const MensPendiente="Mostrando préstamos Pendientes";
+const MensVencido="Mostrando todos los préstamos Vencidos";
 var r;
 
 $(document).ready(function(){
 	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
 	$('#Todos').click(function () {
 		InicBusca(['']);
+		$('#Notific > .mensaje').html(MensTodos);
+		$('#Notific > .mensaje').css('background',ColorExit);
 	});
 	
 	$('#Adeudados').click(function () {
 		InicBusca(['FechaDeb=0000-00-00']);
+		$('#Notific > .mensaje').html(MensPendiente);
+		$('#Notific > .mensaje').css('background',ColorDeuda);
 	});
 	
 	$('#Vencidos').click(function () { //agregar comprobación de vencimiento
-		InicBusca(['FechaDeb=0000-00-00 && DATE(FechaDebT) < DATE("'+$('#parametros').attr('data-fecha')+'")']);//+);
+		InicBusca(['FechaDeb=0000-00-00 && DATE(FechaDebT) < DATE("'+$('#parametros').attr('data-fecha')+'")']);
+		$('#Notific > .mensaje').html(MensVencido);
+		$('#Notific > .mensaje').css('background',ColorAlerta);	
 	});	
-	InicBusca(['']);
+	InicBusca(['FechaDeb=0000-00-00 && DATE(FechaDebT) < DATE("'+$('#parametros').attr('data-fecha')+'")']);
+	$('#Notific > .mensaje').html(MensVencido);
+	$('#Notific > .mensaje').css('background',ColorAlerta);
 	
 	function InicBusca(Filtro) {
 		InicializarBuscador(
@@ -28,8 +42,8 @@ $(document).ready(function(){
 			},						
 			[
 				["idPresta","Número de préstamo"], //campos, 1 Nombre campo, 2 Alias
-				["idUser","Estudiante"],
-				["IdStock","Libro"],
+				["NombreyApellido","Estudiante"],
+				["Nombre","Libro"],
 				["FechaPresta","Fecha retiro"],
 				["FechaDebT","Plazo devolución"],
 				["FechaDeb","Fecha devolución"],

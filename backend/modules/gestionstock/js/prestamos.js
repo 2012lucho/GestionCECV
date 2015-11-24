@@ -81,11 +81,11 @@ function InicializarBuscadores() {
 							MaxCantEleSele:'1',//maxima cantidad de elementos seleccionables
 							Alto:'300px',
 							Resaltar:{ //Especificamos el campo, condicion y color para resaltar
-								campo:'',
-								cfondo:'',//color resaltado, fondo
-								condicion:'',
-								valor:'', //valor con el que comparar el campo
-								mensaje:'',//mensaje a incluir si se resalta por ej "Suspendido"
+								campo:'Suspendido',
+								cfondo:'#fcc',//color resaltado, fondo
+								condicion:'=',
+								valor:'1', //valor con el que comparar el campo
+								mensaje:'<b class="rojo">Suspendido</b>',//mensaje a incluir si se resalta por ej "Suspendido"
 							},
 							TextoDef:'Nombre', //texto por defecto del campo de busqueda
 						}			

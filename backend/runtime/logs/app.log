@@ -43255,3 +43255,3072 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1447895403.983
     'REQUEST_TIME' => 1447895403
 ]
+2015-11-24 15:59:51 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:51 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32777'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380791.761
+    'REQUEST_TIME' => 1448380791
+]
+2015-11-24 15:59:51 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:51 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32777'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380791.761
+    'REQUEST_TIME' => 1448380791
+]
+2015-11-24 15:59:55 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:55 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32781'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380795.818
+    'REQUEST_TIME' => 1448380795
+]
+2015-11-24 15:59:55 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:55 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32781'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380795.818
+    'REQUEST_TIME' => 1448380795
+]
+2015-11-24 15:59:56 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:56 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32782'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380796.368
+    'REQUEST_TIME' => 1448380796
+]
+2015-11-24 15:59:56 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:56 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32782'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380796.368
+    'REQUEST_TIME' => 1448380796
+]
+2015-11-24 15:59:56 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:56 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32783'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380796.66
+    'REQUEST_TIME' => 1448380796
+]
+2015-11-24 15:59:56 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:56 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32783'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380796.66
+    'REQUEST_TIME' => 1448380796
+]
+2015-11-24 15:59:56 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:56 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32784'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380796.926
+    'REQUEST_TIME' => 1448380796
+]
+2015-11-24 15:59:56 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:56 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32784'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380796.926
+    'REQUEST_TIME' => 1448380796
+]
+2015-11-24 15:59:57 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:57 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32785'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380797.182
+    'REQUEST_TIME' => 1448380797
+]
+2015-11-24 15:59:57 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:57 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32785'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380797.182
+    'REQUEST_TIME' => 1448380797
+]
+2015-11-24 15:59:57 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:57 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32786'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380797.434
+    'REQUEST_TIME' => 1448380797
+]
+2015-11-24 15:59:57 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:57 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32786'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380797.434
+    'REQUEST_TIME' => 1448380797
+]
+2015-11-24 15:59:57 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:57 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32787'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380797.676
+    'REQUEST_TIME' => 1448380797
+]
+2015-11-24 15:59:57 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:57 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32787'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380797.676
+    'REQUEST_TIME' => 1448380797
+]
+2015-11-24 15:59:58 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:58 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32788'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380798.126
+    'REQUEST_TIME' => 1448380798
+]
+2015-11-24 15:59:58 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:58 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32788'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380798.126
+    'REQUEST_TIME' => 1448380798
+]
+2015-11-24 15:59:58 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:58 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32789'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380798.437
+    'REQUEST_TIME' => 1448380798
+]
+2015-11-24 15:59:58 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:58 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32789'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380798.437
+    'REQUEST_TIME' => 1448380798
+]
+2015-11-24 15:59:58 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:58 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32790'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380798.747
+    'REQUEST_TIME' => 1448380798
+]
+2015-11-24 15:59:58 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:58 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32790'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380798.747
+    'REQUEST_TIME' => 1448380798
+]
+2015-11-24 15:59:59 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:59 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32791'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380799.062
+    'REQUEST_TIME' => 1448380799
+]
+2015-11-24 15:59:59 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:59 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32791'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380799.062
+    'REQUEST_TIME' => 1448380799
+]
+2015-11-24 15:59:59 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:59 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32792'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380799.366
+    'REQUEST_TIME' => 1448380799
+]
+2015-11-24 15:59:59 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:59 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32792'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380799.366
+    'REQUEST_TIME' => 1448380799
+]
+2015-11-24 15:59:59 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:59 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32793'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380799.646
+    'REQUEST_TIME' => 1448380799
+]
+2015-11-24 15:59:59 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:59 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32793'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380799.646
+    'REQUEST_TIME' => 1448380799
+]
+2015-11-24 15:59:59 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 15:59:59 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32794'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380799.887
+    'REQUEST_TIME' => 1448380799
+]
+2015-11-24 15:59:59 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 15:59:59 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32794'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380799.887
+    'REQUEST_TIME' => 1448380799
+]
+2015-11-24 16:00:00 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 16:00:00 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32795'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380800.129
+    'REQUEST_TIME' => 1448380800
+]
+2015-11-24 16:00:00 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 16:00:00 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32795'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380800.129
+    'REQUEST_TIME' => 1448380800
+]
+2015-11-24 16:00:00 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 16:00:00 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32796'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380800.39
+    'REQUEST_TIME' => 1448380800
+]
+2015-11-24 16:00:00 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 16:00:00 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32796'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380800.39
+    'REQUEST_TIME' => 1448380800
+]
+2015-11-24 16:00:00 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 16:00:00 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32797'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380800.72
+    'REQUEST_TIME' => 1448380800
+]
+2015-11-24 16:00:00 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 16:00:00 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32797'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380800.72
+    'REQUEST_TIME' => 1448380800
+]
+2015-11-24 16:00:01 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 16:00:01 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32798'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380801.242
+    'REQUEST_TIME' => 1448380801
+]
+2015-11-24 16:00:01 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 16:00:01 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32798'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380801.242
+    'REQUEST_TIME' => 1448380801
+]
+2015-11-24 16:00:02 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 16:00:02 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32799'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380802.009
+    'REQUEST_TIME' => 1448380802
+]
+2015-11-24 16:00:02 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 16:00:02 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32799'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380802.009
+    'REQUEST_TIME' => 1448380802
+]
+2015-11-24 16:00:13 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 16:00:13 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32804'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380813.657
+    'REQUEST_TIME' => 1448380813
+]
+2015-11-24 16:00:13 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 16:00:13 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32804'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380813.657
+    'REQUEST_TIME' => 1448380813
+]
+2015-11-24 16:00:14 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 16:00:14 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32800'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380814.744
+    'REQUEST_TIME' => 1448380814
+]
+2015-11-24 16:00:14 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 16:00:14 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32800'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380814.744
+    'REQUEST_TIME' => 1448380814
+]
+2015-11-24 16:00:15 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 16:00:15 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32802'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380815.02
+    'REQUEST_TIME' => 1448380815
+]
+2015-11-24 16:00:15 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 16:00:15 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32802'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380815.02
+    'REQUEST_TIME' => 1448380815
+]
+2015-11-24 16:00:15 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 16:00:15 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32803'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380815.156
+    'REQUEST_TIME' => 1448380815
+]
+2015-11-24 16:00:15 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 16:00:15 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'a0VIUjV5RmICBg0Gcw4IKQVzL2cANCwXJQ8PMFxJExY5DgUDdBtwCw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32803'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380815.156
+    'REQUEST_TIME' => 1448380815
+]
+2015-11-24 16:00:22 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\datosuser::Suspendido' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('Suspendido', '1')
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(54): yii\db\BaseActiveRecord->__set('Suspendido', '1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionSuspend()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('suspend', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 16:00:22 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32806'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380822.81
+    'REQUEST_TIME' => 1448380822
+]
+2015-11-24 16:00:22 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-11-24 16:00:22 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+    'v' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nvfibr764mvi6h5392veq2vt11'
+    '_csrf' => '1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=nvfibr764mvi6h5392veq2vt11; _csrf=1f2923a234ae8dc4064e4ed0de3184e1982174efa02669d7547237f29ced95d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCETFwNKn6g55MjuNJGbi0UtRKMQAb6i%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '32806'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&v=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/suspend?id=1&v=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/suspend'
+    'PATH_TRANSLATED' => '/var/www/html/suspend'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/suspend'
+    'REQUEST_TIME_FLOAT' => 1448380822.81
+    'REQUEST_TIME' => 1448380822
+]

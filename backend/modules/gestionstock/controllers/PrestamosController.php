@@ -122,7 +122,7 @@ class PrestamosController extends Controller
 		$Condicion=BaseJson::decode(urldecode($_REQUEST["CO"]));//condiciones para el where
 		
     	$Consulta = (new \yii\db\Query())
-			->select('idPresta,NombreyApellido,Nombre,FechaPresta,FechaDebT')
+			->select('idPresta,NombreyApellido,Nombre,FechaPresta,FechaDebT,FechaDeb')
 			->from('Prestamos')
 			->innerJoin('DatosUser','Prestamos.idUser=DatosUser.IdUser') //establecemos las relaciones
 			->innerJoin('Stock','Prestamos.IdStock=Stock.idStock')

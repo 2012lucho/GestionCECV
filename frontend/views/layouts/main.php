@@ -29,28 +29,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => 'Biblioteca CECV',
-        //'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    $menuItems = [
-       
-    ];
-    if (Yii::$app->user->isGuest) {
-        
-    } else {
-        
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
-    ?>
+    <div class="col-xs-12" id="Encabezado"><h3>Catálogo Biblioteca del CECV</h3></div>
 
     <div class="container">
         <?= Breadcrumbs::widget([

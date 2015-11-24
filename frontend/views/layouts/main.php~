@@ -18,7 +18,8 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="<?= Yii::$app->charset ?>">
+	<link rel="shortcut icon" href="<?php echo Yii::$app->request->baseUrl; ?>/icocecv.png" type="image/x-icon" />
+    <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
@@ -28,28 +29,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => 'Biblioteca CECV',
-        //'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    $menuItems = [
-       
-    ];
-    if (Yii::$app->user->isGuest) {
-        
-    } else {
-        
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
-    ?>
+    <div class="col-xs-12"><h3>Catálogo Biblioteca del CECV</h3></div>
 
     <div class="container">
         <?= Breadcrumbs::widget([

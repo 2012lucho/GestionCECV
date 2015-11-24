@@ -90,8 +90,4 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 /* Agregados*/
-.navbar-brand {height:35px;padding:9px;}
-.navbar{min-height:35px;}
-.wrap > .container {
-    padding: 40px 15px 20px;
-}
+#Encabezado{background:#000; color:#ddd;}

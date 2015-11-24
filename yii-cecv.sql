@@ -1,20 +1,20 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.11.1deb2
+-- version 4.5.2
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 18-11-2015 a las 14:27:20
--- Versión del servidor: 5.5.43
--- Versión de PHP: 5.6.7-1
+-- Tiempo de generación: 24-11-2015 a las 13:27:36
+-- Versión del servidor: 5.5.46-0+deb8u1
+-- Versión de PHP: 5.6.14-0+deb8u1
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Base de datos: `yii-cecv`
@@ -26,14 +26,13 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `configuracion`
 --
 
-CREATE TABLE IF NOT EXISTS `configuracion` (
+CREATE TABLE `configuracion` (
   `cod` varchar(25) NOT NULL,
   `valor` varchar(255) NOT NULL,
   `descripcion` varchar(250) NOT NULL,
   `control` varchar(10) NOT NULL,
   `unidad` varchar(25) NOT NULL,
-  `categoria` varchar(50) NOT NULL,
-  PRIMARY KEY (`cod`)
+  `categoria` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -52,22 +51,22 @@ INSERT INTO `configuracion` (`cod`, `valor`, `descripcion`, `control`, `unidad`,
 -- Estructura de tabla para la tabla `DatosUser`
 --
 
-CREATE TABLE IF NOT EXISTS `DatosUser` (
-  `IdUser` int(6) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `DatosUser` (
+  `IdUser` int(6) NOT NULL,
   `NombreyApellido` varchar(50) NOT NULL,
   `DNI` varchar(12) NOT NULL,
   `Email` varchar(50) NOT NULL,
   `Telefono` varchar(20) NOT NULL,
-  PRIMARY KEY (`IdUser`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+  `Suspendido` tinyint(1) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `DatosUser`
 --
 
-INSERT INTO `DatosUser` (`IdUser`, `NombreyApellido`, `DNI`, `Email`, `Telefono`) VALUES
-(1, 'Juan Manuel Vasquez', '38.270.23', 'JMVaz@hotmail.com', '3456 4545343'),
-(2, 'Ariel Soza', '23789654', '233@ddd', '23232332');
+INSERT INTO `DatosUser` (`IdUser`, `NombreyApellido`, `DNI`, `Email`, `Telefono`, `Suspendido`) VALUES
+(1, 'Juan Manuel Vasquez', '38.270.23', 'JMVaz@hotmail.com', '3456 4545343', 1),
+(2, 'Ariel Soza', '23789654', '233@ddd', '23232332', 0);
 
 -- --------------------------------------------------------
 
@@ -75,10 +74,9 @@ INSERT INTO `DatosUser` (`IdUser`, `NombreyApellido`, `DNI`, `Email`, `Telefono`
 -- Estructura de tabla para la tabla `migration`
 --
 
-CREATE TABLE IF NOT EXISTS `migration` (
+CREATE TABLE `migration` (
   `version` varchar(180) NOT NULL,
-  `apply_time` int(11) DEFAULT NULL,
-  PRIMARY KEY (`version`)
+  `apply_time` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -95,17 +93,14 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 -- Estructura de tabla para la tabla `Prestamos`
 --
 
-CREATE TABLE IF NOT EXISTS `Prestamos` (
-  `idPresta` int(10) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `Prestamos` (
+  `idPresta` int(10) NOT NULL,
   `idUser` int(10) NOT NULL,
   `IdStock` int(10) NOT NULL,
   `FechaPresta` date NOT NULL,
   `FechaDebT` date NOT NULL,
-  `FechaDeb` date NOT NULL,
-  PRIMARY KEY (`idPresta`),
-  KEY `idUser` (`idUser`),
-  KEY `IdStock` (`IdStock`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=39 ;
+  `FechaDeb` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `Prestamos`
@@ -145,13 +140,12 @@ INSERT INTO `Prestamos` (`idPresta`, `idUser`, `IdStock`, `FechaPresta`, `FechaD
 -- Estructura de tabla para la tabla `rangos`
 --
 
-CREATE TABLE IF NOT EXISTS `rangos` (
+CREATE TABLE `rangos` (
   `rango` int(2) NOT NULL,
   `nombrerango` varchar(12) NOT NULL,
   `editar user` tinyint(1) NOT NULL,
   `agregar user` tinyint(1) NOT NULL,
-  `agregar catalogo` tinyint(1) NOT NULL,
-  PRIMARY KEY (`rango`)
+  `agregar catalogo` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -167,16 +161,15 @@ INSERT INTO `rangos` (`rango`, `nombrerango`, `editar user`, `agregar user`, `ag
 -- Estructura de tabla para la tabla `Stock`
 --
 
-CREATE TABLE IF NOT EXISTS `Stock` (
-  `idStock` int(10) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `Stock` (
+  `idStock` int(10) NOT NULL,
   `Codigo` varchar(11) NOT NULL,
   `Nombre` varchar(50) NOT NULL,
   `Descripcion` varchar(300) NOT NULL,
   `Autor` varchar(50) NOT NULL,
   `Cantidad` int(10) NOT NULL,
-  `CantidadDisponible` int(10) NOT NULL,
-  PRIMARY KEY (`idStock`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+  `CantidadDisponible` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `Stock`
@@ -202,8 +195,8 @@ INSERT INTO `Stock` (`idStock`, `Codigo`, `Nombre`, `Descripcion`, `Autor`, `Can
 -- Estructura de tabla para la tabla `user`
 --
 
-CREATE TABLE IF NOT EXISTS `user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
   `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `auth_key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
   `password_hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -212,12 +205,8 @@ CREATE TABLE IF NOT EXISTS `user` (
   `rango` int(2) NOT NULL,
   `status` smallint(6) NOT NULL DEFAULT '10',
   `created_at` int(11) NOT NULL,
-  `updated_at` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `username` (`username`),
-  UNIQUE KEY `email` (`email`),
-  UNIQUE KEY `password_reset_token` (`password_reset_token`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
+  `updated_at` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `user`
@@ -227,6 +216,81 @@ INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_res
 (2, 'lucho', 'o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p', '$2y$13$6Wz7jDuP3Y.Deuo1YV1ELOrNY6/zpUikNcfwAztWHC28iMmyOMTum', NULL, 'lucho@gmaill.com', 0, 10, 1441812643, 1441812643),
 (5, 'jefe', 'toPkw3weW3RUsNSXJ6dUygCWAg9PBlOL', '$2y$13$iuQQXzyu5ABnKNQwYtBiKOCZTW46ViUf5hrD.7e3aL0CtWSia0zSu', NULL, 'eljefe@gmail.com', 1, 10, 1443724056, 1443724056);
 
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `configuracion`
+--
+ALTER TABLE `configuracion`
+  ADD PRIMARY KEY (`cod`);
+
+--
+-- Indices de la tabla `DatosUser`
+--
+ALTER TABLE `DatosUser`
+  ADD PRIMARY KEY (`IdUser`);
+
+--
+-- Indices de la tabla `migration`
+--
+ALTER TABLE `migration`
+  ADD PRIMARY KEY (`version`);
+
+--
+-- Indices de la tabla `Prestamos`
+--
+ALTER TABLE `Prestamos`
+  ADD PRIMARY KEY (`idPresta`),
+  ADD KEY `idUser` (`idUser`),
+  ADD KEY `IdStock` (`IdStock`);
+
+--
+-- Indices de la tabla `rangos`
+--
+ALTER TABLE `rangos`
+  ADD PRIMARY KEY (`rango`);
+
+--
+-- Indices de la tabla `Stock`
+--
+ALTER TABLE `Stock`
+  ADD PRIMARY KEY (`idStock`);
+
+--
+-- Indices de la tabla `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`),
+  ADD UNIQUE KEY `email` (`email`),
+  ADD UNIQUE KEY `password_reset_token` (`password_reset_token`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `DatosUser`
+--
+ALTER TABLE `DatosUser`
+  MODIFY `IdUser` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT de la tabla `Prestamos`
+--
+ALTER TABLE `Prestamos`
+  MODIFY `idPresta` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+--
+-- AUTO_INCREMENT de la tabla `Stock`
+--
+ALTER TABLE `Stock`
+  MODIFY `idStock` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+--
+-- AUTO_INCREMENT de la tabla `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- Restricciones para tablas volcadas
 --

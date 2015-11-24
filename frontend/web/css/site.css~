@@ -92,3 +92,6 @@ a.desc:after {
 /* Agregados*/
 .navbar-brand {height:35px;padding:9px;}
 .navbar{min-height:35px;}
+.wrap > .container {
+    padding: 40px 15px 20px;
+}
