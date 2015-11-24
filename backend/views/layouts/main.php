@@ -5,6 +5,7 @@
 
 use backend\assets\AppAsset;
 use yii\helpers\Html;
+use yii\widgets\Menu;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
@@ -35,25 +36,20 @@ AppAsset::register($this);
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
-    $menuItems = [
-        //['label' => 'Home', 'url' => ['/site/index']],
-    ];
+    $menuItems = [];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Ingresar', 'url' => ['/site/login']];
     } else {
-        $menuItems[] = ['label' => 'Administración', 'items' => [
-        			['label' => 'Historial préstamos', 'url' => Yii::$app->homeUrl],
-        			['label' => 'Gestionar préstamos', 'url' => ['/npresta']],
-					['label' => 'Estudiantes', 'url' => ['/datos']],					
-					['label' => 'Libros', 'url' => ['/stock']],    					
-					['label' => 'Cuentas de Usuario', 'url' => ['/users']],   
-					['label' => 'Configuración', 'url' => ['/conf']],     			
-        			['label' => 'Salir (' . Yii::$app->user->identity->username . ')','url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']],
-        		],
-        ];
+    	$menuItems[] = ['label' => 'Historial préstamos', 'url' => Yii::$app->homeUrl];
+    	$menuItems[] = ['label' => 'Gestionar préstamos', 'url' => ['/npresta']];
+    	$menuItems[] = ['label' => 'Estudiantes', 'url' => ['/datos']];
+    	$menuItems[] = ['label' => 'Libros', 'url' => ['/stock']];
+    	$menuItems[] = ['label' => 'Cuentas de Usuario', 'url' => ['/users']];
+    	$menuItems[] = ['label' => 'Configuración', 'url' => ['/conf']];
+    	$menuItems[] = ['label' => 'Salir (' . Yii::$app->user->identity->username . ')','url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]; 
     }
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'main-menu navbar-nav navbar-right'],
         'items' => $menuItems,
     ]);
     NavBar::end();
