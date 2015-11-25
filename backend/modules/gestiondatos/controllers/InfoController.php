@@ -4,7 +4,6 @@ namespace app\modules\gestiondatos\controllers;
 
 use Yii;
 use app\models\datosuser;
-use app\models\datosuserb;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -70,12 +69,12 @@ class InfoController extends Controller
 	//"action" modificar datos estudiante
 	public function actionEditar(){
 		$model = datosuser::findOne($_REQUEST["id"]);
-        $model->NombreyApellido=urldecode($_REQUEST["NombreyApellido"]);
-        $model->DNI=urldecode($_REQUEST["DNI"]);
+      $model->NombreyApellido=urldecode($_REQUEST["NombreyApellido"]);
+      $model->DNI=urldecode($_REQUEST["DNI"]);
 		$model->Email=urldecode($_REQUEST["Email"]);
 		$model->Telefono=urldecode($_REQUEST["Telefono"]);
-        $model->save(false);
-        return '1';
+      $model->save(false);
+      return '1';
 	}
 
     /**

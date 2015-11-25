@@ -7,6 +7,7 @@ use app\modules\config\widgets\ControlesConf;
 
 $this->title = 'Configuración general';
 ?>
+<div class="oculto" id="parametros" data-rweb="<?= $Rweb; ?>"></div>
 <div class="stock-index row">
 	<div  class="col-xs-12" id="bot-presta">
 		<div id="Notific" class="Notific col-md-10">

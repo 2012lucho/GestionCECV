@@ -1,4 +1,4 @@
-const r="/cecv/backend/web/index.php";
+var r;
 const ColorAlerta='#fdd';
 const ColorExito='#dfd';
 const MensExit="Configuración guardada correctamente";

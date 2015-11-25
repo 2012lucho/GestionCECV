@@ -1,9 +1,10 @@
-const r="/cecv/backend/web/index.php";
+var r;
 const ColorAlerta='#fdd';
 const ColorExito='#dfd';
 const MensExit="Configuración guardada correctamente";
 const Peticion='/guardaop';
 $(document).ready(function(){
+	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
 	$('#GuardaOpcio').click(function () {
 		//creamos JSON con los valores de configuración
 		var Opcio={cod:[],val:[]};

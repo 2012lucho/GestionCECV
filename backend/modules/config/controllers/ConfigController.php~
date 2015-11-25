@@ -4,6 +4,8 @@ namespace app\modules\config\controllers;
 
 //cargamos el modelo de configuración
 use common\models\Configuracion;
+//cargamos el modelo de configuración
+use common\models\Config;
 
 use Yii;
 
@@ -21,13 +23,15 @@ class ConfigController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['post'],
+                    'guardaop' => ['post'],
                 ],
             ],
         ];
     }
 
     public function actionIndex(){
+    	$Config=new Config(['conf'=>'DirWeb']);
+		$Rweb=$Config->Valor();
 		return $this->render('index.php');    
     }
     

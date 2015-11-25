@@ -4,6 +4,8 @@ namespace app\modules\config\controllers;
 
 //cargamos el modelo de configuración
 use common\models\Configuracion;
+//cargamos el modelo de configuración
+use common\models\Config;
 
 use Yii;
 
@@ -28,7 +30,11 @@ class ConfigController extends Controller
     }
 
     public function actionIndex(){
-		return $this->render('index.php');    
+    	$Config=new Config(['conf'=>'DirWeb']);
+		$Rweb=$Config->Valor();
+		return $this->render('index.php',[
+			'Rweb'=>$Rweb,		
+		]);    
     }
     
 	// "Action" quepermite guardar las opciones de configuración     

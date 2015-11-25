@@ -1,0 +1,42 @@
+<?php
+
+use yii\helpers\Html;
+use yii\grid\GridView;
+
+/* @var $this yii\web\View */
+/* @var $searchModel common\models\userb */
+/* @var $dataProvider yii\data\ActiveDataProvider */
+
+$this->title = 'Gestion de usuarios';
+?>
+<div class="user-index">
+	<div  class="col-xs-12" id="bot-presta">
+		<div id="Notific" class="Notific col-md-9">
+			<p>Área de notificaciones</p>
+			<div class="mensaje"></div>		
+		</div>	
+		<div class="col-md-3 botonera" >
+			<a href="/GestionCECV/backend/web/index.php/gestionuser/users/create"><input class='btn btn-success btn-xs' value='Agregar' type='button'></a>
+			<input id='Modificar' class='btn btn-info btn-xs' value='Modificar' type='button'>
+			<input id='Eliminar' class='btn btn-danger btn-xs' value='Eliminar' type='button'>		
+		</div>	
+	</div>	
+	
+	<div class="col-xs-12 ingresoInfo" id="ingInf">
+		<div class="col-md-5">
+			<div><b>Nombre: </b><input type="text" id="Nombre"></div>
+			<div><b>Descripción: </b><input type="text" id="Descripcion"></div>
+    	</div>
+		<div class="col-md-5">    		
+			<div><b>Autor: </b><input type="text" id="Autor"></div>
+			<div><b>Cantidad: </b><input type="text" id="Cantidad"></div>
+    	</div>
+    	<div class="col-md-2">
+    		<input id='Aceptar' class='btn btn-success btn-xs' value='Aceptar' type='button'>
+        </div>
+	</div>	
+	
+	<div class="col-xs-12 pad">
+		<div id="InfoStock" class="bus"></div>
+	</div>
+</div>

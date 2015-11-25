@@ -2,6 +2,9 @@
 
 namespace app\modules\gestionuser\controllers;
 
+//cargamos el modelo de configuración
+use common\models\Config;
+
 use Yii;
 use common\models\User;
 use common\models\LoginForm;
@@ -36,13 +39,9 @@ class UsersController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new userb();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+    	$Config=new Config(['conf'=>'DirWeb']);
+		$Rweb=$Config->Valor();
+        return $this->render('iniadmin',['Rweb'=>$Rweb]);
     }
 
     /**
@@ -68,7 +67,7 @@ class UsersController extends Controller
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
                 if (Yii::$app->getUser()->login($user)) {
-                    return $this->goHome();
+                    return $this->actionIndex();
                 }
             }
         }
@@ -111,11 +110,7 @@ class UsersController extends Controller
     }
 
     /**
-     * Finds the User model based on its primary key value.
-     * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param integer $id
-     * @return User the loaded model
-     * @throws NotFoundHttpException if the model cannot be found
+     
      */
     protected function findModel($id)
     {

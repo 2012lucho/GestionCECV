@@ -4,6 +4,7 @@
 /* @var $content string */
 
 use backend\assets\AppAsset;
+use common\models\User;
 use yii\helpers\Html;
 use yii\widgets\Menu;
 use yii\bootstrap\Nav;
@@ -44,8 +45,11 @@ AppAsset::register($this);
     	$menuItems[] = ['label' => 'Gestionar préstamos', 'url' => ['/npresta']];
     	$menuItems[] = ['label' => 'Estudiantes', 'url' => ['/datos']];
     	$menuItems[] = ['label' => 'Libros', 'url' => ['/stock']];
-    	$menuItems[] = ['label' => 'Cuentas de Usuario', 'url' => ['/users']];
-    	$menuItems[] = ['label' => 'Configuración', 'url' => ['/conf']];
+    	
+    	if (User::findOne(Yii::$app->user->id)->Rango(['0'])){   //el rango cero es el admin 	
+    		$menuItems[] = ['label' => 'Cuentas de Usuario', 'url' => ['/users']];
+    		$menuItems[] = ['label' => 'Configuración', 'url' => ['/conf']];
+		}
     	$menuItems[] = ['label' => 'Salir (' . Yii::$app->user->identity->username . ')','url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]; 
     }
     echo Nav::widget([

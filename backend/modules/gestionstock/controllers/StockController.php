@@ -41,7 +41,7 @@ class StockController extends Controller
     {
         $Config=new Config(['conf'=>'DirWeb']);
 		$Rweb=$Config->Valor();
-        return $this->render('index', [
+        return $this->render('modstock', [
             'Rweb'=>$Rweb,
         ]);
     }
@@ -66,7 +66,7 @@ class StockController extends Controller
     
 	//"action" para modificar un libro
 	public function actionEditalib(){
-		$model = datosuser::findOne($_REQUEST["id"]);
+		$model = stock::findOne($_REQUEST["id"]);
         $model->Nombre=urldecode($_REQUEST["Nombre"]);
         $model->Descripcion=urldecode($_REQUEST["Descripcion"]);
 		$model->Autor=urldecode($_REQUEST["Autor"]);
