@@ -44,6 +44,10 @@ return [
 						'route' => 'gestionstock/prestamos/nuevo',		
 					 ],
 					 [
+						'pattern' => 'ingresadevol', //action para cargar la vista desde donde se ingresan devoluciones
+						'route' => 'gestionstock/prestamos/ingresadevol',		
+					 ],
+					 [
 						'pattern' => 'apresta',//action para cargar un prestamo en la base de datos
 						'route' => 'gestionstock/prestamos/apresta',		
 					 ],

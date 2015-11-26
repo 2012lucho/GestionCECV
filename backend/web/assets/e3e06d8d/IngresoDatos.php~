@@ -1,0 +1,28 @@
+<?php
+
+namespace app\modules\buscador;
+use yii\base\Widget;
+
+class IngresoDatos extends Widget
+{
+
+	public $Tabla;
+	public $id;
+
+    public function init()
+    {
+        parent::init();
+		
+        // custom initialization code goes here
+		 
+    }
+    
+    public function run()
+    {
+    	$vista="";
+    	//recorremos los registros de la tabla de configuraciones y creamos los controles
+    	$Consulta=(new \yii\db\Query())->select('*')->from($this->Tabla)->all();
+    	$Html='<div id="'.$id.'" class="col-xs-12">'.$vista.'</div>';	
+        return $Html;
+    }
+}

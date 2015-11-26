@@ -87,7 +87,11 @@ return [
 						'pattern' => 'editalib',//action para editar un libro
 						'route' => 'gestionstock/stock/editalib',		
 					 ],
-					 [ elilib
+					 [
+						'pattern' => 'nuevolib',//action para agregar un libro
+						'route' => 'gestionstock/stock/nuevolib',		
+					 ],
+					 [ 
 						'pattern' => 'guardaop',//action guardar configuracion
 						'route' => 'config/config/guardaop',		
 					 ],

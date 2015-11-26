@@ -33,15 +33,29 @@ class PrestamosController extends Controller
             ],
         ];
     }
-	//"Action" que se encarga de mostrar la página de carga deprestamos y devoluciones
+	//"Action" que se encarga de mostrar la página de carga de prestamos 
     public function actionNuevo() 
     {
     	$Config=new Config(['conf'=>'DirWeb']);
 		$Rweb=$Config->Valor();
 		$Config=new Config(['conf'=>'CantLibSel']);
 		$CantLib=$Config->Valor();
-        return $this->render('PrestayDev', [
+        return $this->render('IngresaDevolucion', [
             'Rweb'=>$Rweb,
+            'CantLib'=>$CantLib,
+        ]);
+    }
+    
+    //"Action" que se encarga de mostrar la página de carga de devoluciones
+    public function actionIngresadevol() 
+    {
+    	$Config=new Config(['conf'=>'DirWeb']);
+		$Rweb=$Config->Valor();
+		$Config=new Config(['conf'=>'CantLibSel']);
+		$CantLib=$Config->Valor();
+        return $this->render('IngresaDevolucion', [
+            'Rweb'=>$Rweb,
+            'CantLib'=>$CantLib,
         ]);
     }
     

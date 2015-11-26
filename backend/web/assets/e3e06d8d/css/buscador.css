@@ -1,0 +1,71 @@
+.NCero  {color:#f00;}
+.NoCero {color:#0a0;}
+.NCero,.NoCero{display: inline-block;}
+
+.bEncab, .bFoot{
+	padding: 5px;
+	background:#DDD;
+}
+
+.bEncab{
+	display:inline-block;
+	width: 100%;
+}
+
+.binfr{display:inline-block;
+	width: 100%;}
+
+.bFoot{
+	bottom: 0px;
+	display:inline-block;
+	width: 100%;
+}
+
+/* .cajares{overflow:scroll; overflow-x:hidden;} */
+
+.Btit {
+	color: #555;
+	font-weight: bold;
+	margin-top: 3px; /*Sustituir por otra forma de alineacion vertical*/
+}
+
+.panel-footer .row{
+	position: relative;
+}
+
+.ebusca{
+	color:#00b;
+}
+
+.RB{ /* Registro buscador*/
+	border-top: 2px solid #aad;
+	padding: 5px 10px 5px 10px;
+}
+
+.BI:checked ~ .RB {background:#dfd;}
+
+.TituloLib{
+	font-weight: bold;
+	color: #06f;
+}
+
+.TitCat{
+	color: #eee;
+	font-weight: bold;
+	font-size: 125%;
+	text-align: center;
+}
+
+.buscalib{
+	border-left: 2px solid #DDD;
+	color: #eee;
+	font-weight: bold;
+}
+
+.cajares{
+	overflow:scroll;
+	overflow-x:hidden;
+	display:inline-block;
+	height: 100%;
+	width:100%;
+}
