@@ -6,7 +6,7 @@ use app\modules\buscador\buscadorAssets;buscadorAssets::register($this);
 //importamos los assets de la página
 use app\modules\gestionstock\PrestaAsset;PrestaAsset::register($this);
 
-$this->title = 'Área de administración - Ingresar devolución';
+$this->title = 'Área de administración - Ingresar nuevo préstamo';
 ?>
 <div class="oculto" id="parametros" data-CantLibSel="<?= $CantLib; ?>" data-rweb="<?= $Rweb; ?>"></div>
 <div class="site-presta row">
@@ -16,15 +16,18 @@ $this->title = 'Área de administración - Ingresar devolución';
 			<div class="mensaje"></div>		
 		</div>	
 		<div class="col-md-2" >
-			<input id='CancelPrestamo' class='btn btn-success btn-xs boto' value='Ingresar devolución' type='button'>
+			<input id='NuevoPrestamo' class='btn btn-info btn-xs boto' value='Ingresar retiro' type='button'>
 		</div>	
 	</div>
 	<div class="col-xs-12">
-		<div class="col-md-6 col-xs-12 pad">
+		<div class="col-md-4 col-xs-12 pad">
 			<div id="BuscaEstu" class="bus"></div>
 		</div>
-		<div class="col-md-6 col-xs-12 pad">
+		<div class="col-md-4 col-xs-12 pad">
 			<div id="InfoEstud" class="bus"></div>
+		</div>
+		<div class="col-md-4 col-xs-12 pad">
+			<div id="BuscaLib" class="bus"></div>
 		</div>
 	</div>
 </div>
