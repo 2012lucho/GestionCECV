@@ -54132,3 +54132,1336 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1448860860.272
     'REQUEST_TIME' => 1448860860
 ]
+2015-11-30 05:38:32 [::1][2][6ep85mvuaopgqn84let2kl47t3][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\modules\gestiondatos\controllers\InfoController::findModel()' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:285
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(112): yii\base\Component->__call('findModel', Array)
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(112): app\modules\gestiondatos\controllers\InfoController->findModel('1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionDelete()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-30 05:38:32 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_X_CSRF_TOKEN' => 'RFNrZmNsLXQiYAkULwFOQ3Q2LzMSVEwkJR4tFSwoGic1Z1sHETZ1Dg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58726'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu?id=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448861912.016
+    'REQUEST_TIME' => 1448861912
+]
+2015-11-30 05:38:32 [::1][2][6ep85mvuaopgqn84let2kl47t3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#7 {main}
+2015-11-30 05:38:32 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_X_CSRF_TOKEN' => 'RFNrZmNsLXQiYAkULwFOQ3Q2LzMSVEwkJR4tFSwoGic1Z1sHETZ1Dg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58726'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu?id=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448861912.016
+    'REQUEST_TIME' => 1448861912
+]
+2015-11-30 05:38:58 [::1][2][6ep85mvuaopgqn84let2kl47t3][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\modules\gestiondatos\controllers\InfoController::findModel()' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:285
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(112): yii\base\Component->__call('findModel', Array)
+#1 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(112): app\modules\gestiondatos\controllers\InfoController->findModel('1')
+#2 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionDelete()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-30 05:38:58 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58742'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu?id=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448861938.436
+    'REQUEST_TIME' => 1448861938
+]
+2015-11-30 05:38:58 [::1][2][6ep85mvuaopgqn84let2kl47t3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#7 {main}
+2015-11-30 05:38:58 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58742'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu?id=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448861938.436
+    'REQUEST_TIME' => 1448861938
+]
+2015-11-30 05:40:20 [::1][2][6ep85mvuaopgqn84let2kl47t3][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-30 05:40:20 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58777'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu?id=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862020.79
+    'REQUEST_TIME' => 1448862020
+]
+2015-11-30 05:40:20 [::1][2][6ep85mvuaopgqn84let2kl47t3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\MethodNotAllowedHttpException))
+#7 {main}
+2015-11-30 05:40:20 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58777'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu?id=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862020.79
+    'REQUEST_TIME' => 1448862020
+]
+2015-11-30 05:41:16 [::1][2][6ep85mvuaopgqn84let2kl47t3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`) ON DELETE NO ACTION ON UPDATE NO ACTION)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(114): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionDelete()
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+The SQL being executed was: DELETE FROM `DatosUser` WHERE `IdUser`=1' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'DELETE FROM `Da...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(114): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionDelete()
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1451
+    [2] => Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+)
+
+2015-11-30 05:41:16 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_POST = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'SjgtdVdnSU4sC08HGwoqeXpdaSAmXygeK3VrBhgjfh07DB0UJT0RNA=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3'
+    'CONTENT_LENGTH' => '4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862076.444
+    'REQUEST_TIME' => 1448862076
+]
+2015-11-30 05:41:16 [::1][2][6ep85mvuaopgqn84let2kl47t3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#7 {main}
+2015-11-30 05:41:16 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_POST = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'SjgtdVdnSU4sC08HGwoqeXpdaSAmXygeK3VrBhgjfh07DB0UJT0RNA=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3'
+    'CONTENT_LENGTH' => '4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862076.444
+    'REQUEST_TIME' => 1448862076
+]
+2015-11-30 05:42:30 [::1][2][6ep85mvuaopgqn84let2kl47t3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`))' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(114): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionDelete()
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`))
+The SQL being executed was: DELETE FROM `DatosUser` WHERE `IdUser`=1' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'DELETE FROM `Da...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(114): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionDelete()
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1451
+    [2] => Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`))
+)
+
+2015-11-30 05:42:30 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_POST = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'SjgtdVdnSU4sC08HGwoqeXpdaSAmXygeK3VrBhgjfh07DB0UJT0RNA=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'CONTENT_LENGTH' => '4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58849'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862150.068
+    'REQUEST_TIME' => 1448862150
+]
+2015-11-30 05:42:30 [::1][2][6ep85mvuaopgqn84let2kl47t3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#7 {main}
+2015-11-30 05:42:30 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_POST = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'SjgtdVdnSU4sC08HGwoqeXpdaSAmXygeK3VrBhgjfh07DB0UJT0RNA=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'CONTENT_LENGTH' => '4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58849'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862150.068
+    'REQUEST_TIME' => 1448862150
+]
+2015-11-30 05:42:41 [::1][2][6ep85mvuaopgqn84let2kl47t3][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-30 05:42:41 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58855'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu?id=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862161.136
+    'REQUEST_TIME' => 1448862161
+]
+2015-11-30 05:42:41 [::1][2][6ep85mvuaopgqn84let2kl47t3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\MethodNotAllowedHttpException))
+#7 {main}
+2015-11-30 05:42:41 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58855'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu?id=1'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862161.136
+    'REQUEST_TIME' => 1448862161
+]
+2015-11-30 05:42:56 [::1][2][6ep85mvuaopgqn84let2kl47t3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`))' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(114): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionDelete()
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`))
+The SQL being executed was: DELETE FROM `DatosUser` WHERE `IdUser`=1' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'DELETE FROM `Da...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(114): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionDelete()
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1451
+    [2] => Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`))
+)
+
+2015-11-30 05:42:56 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_POST = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'YkVtMmVoVkwEdg9AKQU1e1IgKWcUUDccAwgrQSosYR8TcV1TFzIONg=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3'
+    'CONTENT_LENGTH' => '4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58873'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862176.051
+    'REQUEST_TIME' => 1448862176
+]
+2015-11-30 05:42:56 [::1][2][6ep85mvuaopgqn84let2kl47t3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#7 {main}
+2015-11-30 05:42:56 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_POST = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'YkVtMmVoVkwEdg9AKQU1e1IgKWcUUDccAwgrQSosYR8TcV1TFzIONg=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3'
+    'CONTENT_LENGTH' => '4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58873'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862176.051
+    'REQUEST_TIME' => 1448862176
+]
+2015-11-30 05:43:44 [::1][2][6ep85mvuaopgqn84let2kl47t3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`))' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(114): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionDelete()
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`))
+The SQL being executed was: DELETE FROM `DatosUser` WHERE `IdUser`=1' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'DELETE FROM `Da...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(114): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionDelete()
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1451
+    [2] => Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`))
+)
+
+2015-11-30 05:43:44 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_POST = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'YkVtMmVoVkwEdg9AKQU1e1IgKWcUUDccAwgrQSosYR8TcV1TFzIONg=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'CONTENT_LENGTH' => '4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58896'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862224.68
+    'REQUEST_TIME' => 1448862224
+]
+2015-11-30 05:43:44 [::1][2][6ep85mvuaopgqn84let2kl47t3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#7 {main}
+2015-11-30 05:43:44 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_POST = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'YkVtMmVoVkwEdg9AKQU1e1IgKWcUUDccAwgrQSosYR8TcV1TFzIONg=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'CONTENT_LENGTH' => '4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58896'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862224.68
+    'REQUEST_TIME' => 1448862224
+]
+2015-11-30 05:46:33 [::1][2][6ep85mvuaopgqn84let2kl47t3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`))' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(114): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionDelete()
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`))
+The SQL being executed was: DELETE FROM `DatosUser` WHERE `IdUser`=2' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'DELETE FROM `Da...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(114): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionDelete()
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1451
+    [2] => Cannot delete or update a parent row: a foreign key constraint fails (`yii-cecv`.`Prestamos`, CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`))
+)
+
+2015-11-30 05:46:33 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_POST = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'T3Fwb0MyQUQpQhIdD18ic38UNDoyCiAULjw2HAx2dhc.RUAOMWgZPg=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3'
+    'CONTENT_LENGTH' => '4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58985'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862393.674
+    'REQUEST_TIME' => 1448862393
+]
+2015-11-30 05:46:33 [::1][2][6ep85mvuaopgqn84let2kl47t3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#7 {main}
+2015-11-30 05:46:33 [::1][2][6ep85mvuaopgqn84let2kl47t3][info][application] $_POST = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => '3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f3brLmc70eDUq8aPaMFsOD7Sq40arZXz\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '6ep85mvuaopgqn84let2kl47t3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/datos'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'T3Fwb0MyQUQpQhIdD18ic38UNDoyCiAULjw2HAx2dhc.RUAOMWgZPg=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3ec45e7004dcc174da5eed5503b3609d0dd5ede47d1f4460ae48f9192f2cb5d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f3brLmc70eDUq8aPaMFsOD7Sq40arZXz%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=6ep85mvuaopgqn84let2kl47t3'
+    'CONTENT_LENGTH' => '4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '58985'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/eliestu'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/eliestu'
+    'PATH_TRANSLATED' => '/var/www/html/eliestu'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/eliestu'
+    'REQUEST_TIME_FLOAT' => 1448862393.674
+    'REQUEST_TIME' => 1448862393
+]

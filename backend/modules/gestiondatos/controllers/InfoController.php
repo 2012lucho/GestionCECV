@@ -30,12 +30,12 @@ class InfoController extends Controller
                     ],
                 ],
             ],
-           /* 'verbs' => [
+            'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
                 ],
-            ],*/
+            ],
         ];
     }
 
@@ -109,7 +109,7 @@ class InfoController extends Controller
     public function actionDelete()
     {
     	$id=urldecode($_REQUEST['id']);
-		$m=$this->findModel($id);   
+		$m=datosuser::findOne($_REQUEST["id"]);   
 		if($m!=''){
         	$m->delete();return '1';}else{return '0';}
         

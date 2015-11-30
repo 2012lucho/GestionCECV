@@ -106,7 +106,7 @@ $(document).ready(function(){
 			$.get(r+PeticionEli,{id:ArLib[0]},function (data) {		
 				//Se anuncia el resultado
 				//data = JSON.parse(data);
-				if (data == PetExitosa){
+				if (data == 1){
 					$('#Notific > .mensaje').html(MensEliExit);
 					$('#Notific > .mensaje').css('background',ColorExito);
 					//reestablecemos los buscadores

@@ -24,18 +24,18 @@ class InfoController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['index', 'suspend', 'infoest', 'editar', 'nuevo', 'Delete'],
+                        'actions' => ['index', 'suspend', 'infoest', 'editar', 'nuevo', 'delete'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
                 ],
             ],
-           /* 'verbs' => [
+            'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
                 ],
-            ],*/
+            ],
         ];
     }
 

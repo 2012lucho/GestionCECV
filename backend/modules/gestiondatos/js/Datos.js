@@ -137,7 +137,7 @@ $(document).ready(function(){
 	$('#Eliminar').click(function () {
 		var ArEst=$('#'+IdSelEstud).data('Arreglo-Val');
 		if (ArEst.length>0){
-			$.get(r+PeticionEli,{id:ArEst[0]},function (data) {		
+			$.post(r+PeticionEli,{id:ArEst[0]},function (data) {		
 				//Se anuncia el resultado
 				//data = JSON.parse(data);
 				if (data == PetExitosa){

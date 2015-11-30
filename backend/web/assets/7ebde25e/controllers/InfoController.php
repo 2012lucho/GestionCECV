@@ -9,7 +9,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 use yii\helpers\BaseJson;
-
+use yii\filters\AccessControl;
 //cargamos el modelo de configuración
 use common\models\Config;
 /**
@@ -20,12 +20,22 @@ class InfoController extends Controller
     public function behaviors()
     {
         return [
-           /* 'verbs' => [
+        		'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['index', 'suspend', 'infoest', 'editar', 'nuevo', 'delete'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+            'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
                 ],
-            ],*/
+            ],
         ];
     }
 
@@ -99,7 +109,7 @@ class InfoController extends Controller
     public function actionDelete()
     {
     	$id=urldecode($_REQUEST['id']);
-		$m=$this->findModel($id);   
+		$m=datosuser::findOne($_REQUEST["id"]);   
 		if($m!=''){
         	$m->delete();return '1';}else{return '0';}
         

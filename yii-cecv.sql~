@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 30, 2015 at 02:51 AM
+-- Generation Time: Nov 30, 2015 at 02:48 AM
 -- Server version: 5.5.44-0+deb8u1
 -- PHP Version: 5.6.9-0+deb8u1
 
@@ -279,8 +279,8 @@ ALTER TABLE `user`
 -- Constraints for table `Prestamos`
 --
 ALTER TABLE `Prestamos`
-  ADD CONSTRAINT `Prestamos_ibfk_4` FOREIGN KEY (`IdStock`) REFERENCES `Stock` (`idStock`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `Prestamos_ibfk_3` FOREIGN KEY (`idUser`) REFERENCES `DatosUser` (`IdUser`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `Prestamos_ibfk_2` FOREIGN KEY (`IdStock`) REFERENCES `Stock` (`idStock`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
