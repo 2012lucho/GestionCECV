@@ -100,6 +100,14 @@ return [
 						'route' => 'config/config/guardaop',		
 					 ],
 					 [
+						'pattern' => 'infousr', //action que devuelve informacion de un usuario
+						'route' => 'gestionuser/users/infousr',		
+					 ],
+					 [
+						'pattern' => 'editausr', //action para editar un usuario
+						'route' => 'gestionuser/users/editausr',		
+					 ],
+					 [
 						'pattern' => 'users',
 						'route' => 'gestionuser/users/index',		
 					 ],

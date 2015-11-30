@@ -1,16 +1,15 @@
 const IdBusUsr='InfoUser';
 var r;
 
-const MensSeleccionar="Tiene que seleccionar un libro";
-const MensEliExit="Libro eliminado correctamente";
+const MensSeleccionar="Tiene que seleccionar un usuario";
+const MensEliExit="Usuario eliminado correctamente";
 const MensEstAgre="Registro exitoso";
 const ColorAlerta='#fdd';
 const ColorExit='#dfd';
 
 const PeticionEli='/elilib';
-const PeticionInf='/infolib';
-const PeticionNus='/nuevolib';
-const PeticionEdi='/editalib';
+const PeticionInf='/infousr';
+const PeticionEdi='/editausr';
 
 const CreaLib="1";
 const ModiLib="2";
@@ -19,8 +18,8 @@ $(document).ready(function(){
 	//eventos y funciones del formulario
 	function InicForm(){
 		$('#id').val("");
-		$('#Descripcion').val("");
-		$('#Autor').val("");
+		$('#username').val("");
+		$('#email').val("");
 		$('#rango').val("");
 	}	
 	//id	username 	email 	rango 	 	
@@ -45,9 +44,10 @@ $(document).ready(function(){
 	}	
 	
 	$('#Aceptar').click(function () {
-		if($('#ingInf').data('peticion')==CreaLib){
-			$.get(r+PeticionNus,{
-				id:$('#id').val(),
+		if($('#ingInf').data('peticion')==ModiLib){
+			var ArLib=$('#'+IdBusUsr).data('Arreglo-Val');
+			$.post(r+PeticionEdi,{
+				id:ArLib[0],
 				username:$('#username').val(),
 				email:$('#email').val(),
 				rango:$('#rango').val()},
@@ -56,34 +56,26 @@ $(document).ready(function(){
 						$('#Notific > .mensaje').html(MensEstAgre);
 						$('#Notific > .mensaje').css('background',ColorExit);
 						IniBusLib();
-					}
-			});
-		} else {
-			if($('#ingInf').data('peticion')==ModiLib){
-				var ArLib=$('#'+IdBusLibro).data('Arreglo-Val');
-				$.post(r+PeticionEdi,{
-					id:ArLib[0],
-					username:$('#username').val(),
-					email:$('#email').val(),
-					rango:$('#rango').val()},
-					function (data) {
-						if (data==1){
-							$('#Notific > .mensaje').html(MensEstAgre);
+					} else {
+						if (data==3){
+							$('#Notific > .mensaje').html('El rango solo puede ser 0 (Administrador) o 1 (Operador)');
 							$('#Notific > .mensaje').css('background',ColorExit);
 							IniBusLib();
 						}
-					});
-			}		
-		}
+					}
+				});
+		}		
+		
 		InicForm();
 		$('#ingInf').css('display','none');
 	});
 	//eventos botonera	
 	$('#Modificar').click(function () {
-		var ArLib=$('#'+IdBusLibro).data('Arreglo-Val');
+		var ArLib=$('#'+IdBusUsr).data('Arreglo-Val');
 		if (ArLib.length>0){		
 			$('#ingInf').css('display','block');	
 			$('#ingInf').data('peticion',ModiLib);	
+			
 			Actualizar(ArLib[0]);
 			//
 			//IniBusEst();		
@@ -95,7 +87,7 @@ $(document).ready(function(){
 	});
 	
 	$('#Eliminar').click(function () {
-		var ArLib=$('#'+IdBusLibro).data('Arreglo-Val');
+		var ArLib=$('#'+IdBusUsr).data('Arreglo-Val');
 		if (ArLib.length>0){
 			$.get(r+PeticionEli,{id:ArLib[0]},function (data) {		
 				//Se anuncia el resultado

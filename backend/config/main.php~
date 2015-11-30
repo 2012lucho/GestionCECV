@@ -44,6 +44,10 @@ return [
 						'route' => 'gestionstock/prestamos/nuevo',		
 					 ],
 					 [
+						'pattern' => 'ingresadevol', //action para cargar la vista desde donde se ingresan devoluciones
+						'route' => 'gestionstock/prestamos/ingresadevol',		
+					 ],
+					 [
 						'pattern' => 'apresta',//action para cargar un prestamo en la base de datos
 						'route' => 'gestionstock/prestamos/apresta',		
 					 ],
@@ -94,6 +98,14 @@ return [
 					 [ 
 						'pattern' => 'guardaop',//action guardar configuracion
 						'route' => 'config/config/guardaop',		
+					 ],
+					 [
+						'pattern' => 'infousr', //action que devuelve informacion de un usuario
+						'route' => 'gestionuser/users/infousr',		
+					 ],
+					 [
+						'pattern' => 'useredit', //action para editar un usuario
+						'route' => 'gestionuser/users/index',		
 					 ],
 					 [
 						'pattern' => 'users',
