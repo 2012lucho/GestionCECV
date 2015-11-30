@@ -53921,3 +53921,167 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1448856239.907
     'REQUEST_TIME' => 1448856239
 ]
+2015-11-30 04:21:11 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ')', expecting ']'' in /var/www/html/GestionCECV/backend/modules/gestionuser/views/users/signup.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-11-30 04:21:11 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '9p8it96f9lu3fge7ajck55bnp2'
+    '_csrf' => 'a40c7453c3a57bad0cc0d8ab5daefb6b5cfc384f3e428af0fc23f2d76012130ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z3w_abXO0WdO0vpxq03RzyMcrUk4dn72\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.2.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/users'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=9p8it96f9lu3fge7ajck55bnp2; _csrf=a40c7453c3a57bad0cc0d8ab5daefb6b5cfc384f3e428af0fc23f2d76012130ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z3w_abXO0WdO0vpxq03RzyMcrUk4dn72%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '55966'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/gestionuser/users/create'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/gestionuser/users/create'
+    'PATH_TRANSLATED' => '/var/www/html/gestionuser/users/create'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/gestionuser/users/create'
+    'REQUEST_TIME_FLOAT' => 1448857271.639
+    'REQUEST_TIME' => 1448857271
+]
+2015-11-30 04:23:13 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\widgets\ActiveField::dropDownList(), called in /var/www/html/GestionCECV/backend/modules/gestionuser/views/users/signup.php on line 27 and defined' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/widgets/ActiveField.php:561
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/widgets/ActiveField.php(561): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', '/var/www/html/G...', 561, Array)
+#1 /var/www/html/GestionCECV/backend/modules/gestionuser/views/users/signup.php(27): yii\widgets\ActiveField->dropDownList()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/G...')
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/G...', Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/G...', Array, Object(app\modules\gestionuser\controllers\UsersController))
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('signup', Array, Object(app\modules\gestionuser\controllers\UsersController))
+#6 /var/www/html/GestionCECV/backend/modules/gestionuser/controllers/UsersController.php(98): yii\base\Controller->render('signup', Array)
+#7 [internal function]: app\modules\gestionuser\controllers\UsersController->actionCreate()
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionuser/use...', Array)
+#12 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+2015-11-30 04:23:13 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '9p8it96f9lu3fge7ajck55bnp2'
+    '_csrf' => 'a40c7453c3a57bad0cc0d8ab5daefb6b5cfc384f3e428af0fc23f2d76012130ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z3w_abXO0WdO0vpxq03RzyMcrUk4dn72\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.2.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/users'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=9p8it96f9lu3fge7ajck55bnp2; _csrf=a40c7453c3a57bad0cc0d8ab5daefb6b5cfc384f3e428af0fc23f2d76012130ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z3w_abXO0WdO0vpxq03RzyMcrUk4dn72%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '56062'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/gestionuser/users/create'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/gestionuser/users/create'
+    'PATH_TRANSLATED' => '/var/www/html/gestionuser/users/create'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/gestionuser/users/create'
+    'REQUEST_TIME_FLOAT' => 1448857393.14
+    'REQUEST_TIME' => 1448857393
+]
+2015-11-30 04:23:13 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2015-11-30 04:23:13 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => '9p8it96f9lu3fge7ajck55bnp2'
+    '_csrf' => 'a40c7453c3a57bad0cc0d8ab5daefb6b5cfc384f3e428af0fc23f2d76012130ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z3w_abXO0WdO0vpxq03RzyMcrUk4dn72\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.2.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/users'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=9p8it96f9lu3fge7ajck55bnp2; _csrf=a40c7453c3a57bad0cc0d8ab5daefb6b5cfc384f3e428af0fc23f2d76012130ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z3w_abXO0WdO0vpxq03RzyMcrUk4dn72%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '56062'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/gestionuser/users/create'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/gestionuser/users/create'
+    'PATH_TRANSLATED' => '/var/www/html/gestionuser/users/create'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/gestionuser/users/create'
+    'REQUEST_TIME_FLOAT' => 1448857393.14
+    'REQUEST_TIME' => 1448857393
+]

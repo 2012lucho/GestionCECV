@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.2
+-- version 4.4.13.1
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 24-11-2015 a las 13:27:36
--- Versión del servidor: 5.5.46-0+deb8u1
--- Versión de PHP: 5.6.14-0+deb8u1
+-- Tiempo de generación: 30-11-2015 a las 02:05:02
+-- Versión del servidor: 5.5.44-0+deb8u1
+-- Versión de PHP: 5.6.9-0+deb8u1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `configuracion`
 --
 
-CREATE TABLE `configuracion` (
+CREATE TABLE IF NOT EXISTS `configuracion` (
   `cod` varchar(25) NOT NULL,
   `valor` varchar(255) NOT NULL,
   `descripcion` varchar(250) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE `configuracion` (
 --
 
 INSERT INTO `configuracion` (`cod`, `valor`, `descripcion`, `control`, `unidad`, `categoria`) VALUES
-('CantLibSel', '7', 'Cantidad de libros que se pueden seleccionar por préstamo ingresado', 'number', '', ''),
+('CantLibSel', '2', 'Cantidad de libros que se pueden seleccionar por préstamo ingresado', 'number', '', ''),
 ('DirWeb', '/GestionCECV', 'Directorio base del sistema (modificar solo admin)', 'textbox', '', ''),
 ('PrestaMulti', 'no', 'Define si se puede cargar un prestamo nuevo, cuando todavía no existe devolución', 'checkbox', '', ''),
 ('TPrestaLibro', '9', 'Periodo de tiempo máximo de devolución de material ', 'number', 'Días', '');
@@ -51,21 +51,21 @@ INSERT INTO `configuracion` (`cod`, `valor`, `descripcion`, `control`, `unidad`,
 -- Estructura de tabla para la tabla `DatosUser`
 --
 
-CREATE TABLE `DatosUser` (
+CREATE TABLE IF NOT EXISTS `DatosUser` (
   `IdUser` int(6) NOT NULL,
   `NombreyApellido` varchar(50) NOT NULL,
   `DNI` varchar(12) NOT NULL,
   `Email` varchar(50) NOT NULL,
   `Telefono` varchar(20) NOT NULL,
   `Suspendido` tinyint(1) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `DatosUser`
 --
 
 INSERT INTO `DatosUser` (`IdUser`, `NombreyApellido`, `DNI`, `Email`, `Telefono`, `Suspendido`) VALUES
-(1, 'Juan Manuel Vasquez', '38.270.23', 'JMVaz@hotmail.com', '3456 4545343', 1),
+(1, 'Juan Manuel Vasques', '38.270.23', 'JMVaz@hotmail.com', '3456 4545343', 1),
 (2, 'Ariel Soza', '23789654', '233@ddd', '23232332', 0);
 
 -- --------------------------------------------------------
@@ -74,7 +74,7 @@ INSERT INTO `DatosUser` (`IdUser`, `NombreyApellido`, `DNI`, `Email`, `Telefono`
 -- Estructura de tabla para la tabla `migration`
 --
 
-CREATE TABLE `migration` (
+CREATE TABLE IF NOT EXISTS `migration` (
   `version` varchar(180) NOT NULL,
   `apply_time` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -93,14 +93,14 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 -- Estructura de tabla para la tabla `Prestamos`
 --
 
-CREATE TABLE `Prestamos` (
+CREATE TABLE IF NOT EXISTS `Prestamos` (
   `idPresta` int(10) NOT NULL,
   `idUser` int(10) NOT NULL,
   `IdStock` int(10) NOT NULL,
   `FechaPresta` date NOT NULL,
   `FechaDebT` date NOT NULL,
   `FechaDeb` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `Prestamos`
@@ -125,7 +125,7 @@ INSERT INTO `Prestamos` (`idPresta`, `idUser`, `IdStock`, `FechaPresta`, `FechaD
 (28, 1, 2, '2015-11-17', '2015-11-24', '2015-11-17'),
 (29, 1, 1, '2015-11-17', '2015-11-24', '2015-11-17'),
 (30, 1, 2, '2015-11-17', '2015-11-24', '2015-11-17'),
-(31, 2, 1, '2015-11-17', '2015-10-24', '0000-00-00'),
+(31, 2, 1, '2015-11-17', '2015-10-24', '2015-11-26'),
 (32, 2, 2, '2015-11-17', '2015-11-24', '2015-11-17'),
 (33, 1, 1, '2015-11-17', '2015-11-24', '2015-11-17'),
 (34, 1, 2, '2015-11-17', '2015-11-24', '2015-11-17'),
@@ -140,7 +140,7 @@ INSERT INTO `Prestamos` (`idPresta`, `idUser`, `IdStock`, `FechaPresta`, `FechaD
 -- Estructura de tabla para la tabla `rangos`
 --
 
-CREATE TABLE `rangos` (
+CREATE TABLE IF NOT EXISTS `rangos` (
   `rango` int(2) NOT NULL,
   `nombrerango` varchar(12) NOT NULL,
   `editar user` tinyint(1) NOT NULL,
@@ -161,7 +161,7 @@ INSERT INTO `rangos` (`rango`, `nombrerango`, `editar user`, `agregar user`, `ag
 -- Estructura de tabla para la tabla `Stock`
 --
 
-CREATE TABLE `Stock` (
+CREATE TABLE IF NOT EXISTS `Stock` (
   `idStock` int(10) NOT NULL,
   `Codigo` varchar(11) NOT NULL,
   `Nombre` varchar(50) NOT NULL,
@@ -169,14 +169,14 @@ CREATE TABLE `Stock` (
   `Autor` varchar(50) NOT NULL,
   `Cantidad` int(10) NOT NULL,
   `CantidadDisponible` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `Stock`
 --
 
 INSERT INTO `Stock` (`idStock`, `Codigo`, `Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES
-(1, '5566876764', 'Noriega Super Stars', 'El más exitoso libro de Análisis matemático de todos los tiempos, aquí para que lo disfrutes! :D', 'Arnold Swatchzseneger', 200, 147),
+(1, '5566876764', 'Noriega Super Stars', 'El más exitoso libro de Análisis matemático de todos los tiempos, aquí para que lo disfrutes! :D', 'Arnold Swatchzseneger', 200, 148),
 (2, '7767676g', 'Matemática Corporativa I', 'Las oscuras garras del capitalismo nunca encontraron mejor aliado en las matemáticas aprende a robar la plusvalía como un campeón', '', 149, 8),
 (3, 'hhjh344', 'La verdad de la milanesa', 'Oculta detrás de un halo de pan rallado se encuentra la verdad, aquello que nunca podrá ser negado', '', 45, 41),
 (5, 'hgbj452', 'El agua y el aceite, más allá de la poesia', 'Poesia para cuando uno se aburre y no hay nada mejor para leer', '', 3, 0),
@@ -195,7 +195,7 @@ INSERT INTO `Stock` (`idStock`, `Codigo`, `Nombre`, `Descripcion`, `Autor`, `Can
 -- Estructura de tabla para la tabla `user`
 --
 
-CREATE TABLE `user` (
+CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL,
   `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `auth_key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
@@ -206,7 +206,7 @@ CREATE TABLE `user` (
   `status` smallint(6) NOT NULL DEFAULT '10',
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `user`
@@ -214,7 +214,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `rango`, `status`, `created_at`, `updated_at`) VALUES
 (2, 'lucho', 'o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p', '$2y$13$6Wz7jDuP3Y.Deuo1YV1ELOrNY6/zpUikNcfwAztWHC28iMmyOMTum', NULL, 'lucho@gmaill.com', 0, 10, 1441812643, 1441812643),
-(5, 'jefe', 'toPkw3weW3RUsNSXJ6dUygCWAg9PBlOL', '$2y$13$iuQQXzyu5ABnKNQwYtBiKOCZTW46ViUf5hrD.7e3aL0CtWSia0zSu', NULL, 'eljefe@gmail.com', 1, 10, 1443724056, 1443724056);
+(18, 'operador', 'fFhgzh7m5Il0mlzvKSZ3RES6vGiIrwOK', '$2y$13$hASy1x5Nngv36f1Z7h0G0uYGXNYlW.Hu73Q2l1TJRp5RkId76qmUO', NULL, 'aasasas@cbcb.m', 1, 10, 1448859825, 1448859825);
 
 --
 -- Índices para tablas volcadas
@@ -275,22 +275,22 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT de la tabla `DatosUser`
 --
 ALTER TABLE `DatosUser`
-  MODIFY `IdUser` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `IdUser` int(6) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `Prestamos`
 --
 ALTER TABLE `Prestamos`
-  MODIFY `idPresta` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `idPresta` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=39;
 --
 -- AUTO_INCREMENT de la tabla `Stock`
 --
 ALTER TABLE `Stock`
-  MODIFY `idStock` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `idStock` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT de la tabla `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
 --
 -- Restricciones para tablas volcadas
 --
