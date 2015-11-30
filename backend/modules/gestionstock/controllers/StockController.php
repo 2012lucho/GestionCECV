@@ -15,6 +15,8 @@ use yii\filters\AccessControl;
 
 //cargamos el modelo de configuración
 use common\models\Config;
+
+use common\models\User;
 /**
  * StockController implements the CRUD actions for stock model.
  */
@@ -52,8 +54,10 @@ class StockController extends Controller
     {
         $Config=new Config(['conf'=>'DirWeb']);
 		$Rweb=$Config->Valor();
+			$rango=User::findOne(Yii::$app->user->id)->Rango(['0']);
         return $this->render('modstock', [
             'Rweb'=>$Rweb,
+            'Rango'=>$rango,
         ]);
     }
 	//"action" para crear un nuevo libro

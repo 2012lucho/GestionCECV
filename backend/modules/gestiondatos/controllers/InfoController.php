@@ -12,6 +12,7 @@ use yii\helpers\BaseJson;
 use yii\filters\AccessControl;
 //cargamos el modelo de configuración
 use common\models\Config;
+use common\models\User;
 /**
  * InfoController implements the CRUD actions for datosuser model.
  */
@@ -47,9 +48,11 @@ class InfoController extends Controller
         $Config=new Config(['conf'=>'DirWeb']);
 		$Rweb=$Config->Valor();
 		$model=new datosuser();
+		$rango=User::findOne(Yii::$app->user->id)->Rango(['0']);
         return $this->render('index', [
             'Rweb'=>$Rweb,
             'model'=>$model,
+            'rango'=>$rango,
         ]);
     }
 

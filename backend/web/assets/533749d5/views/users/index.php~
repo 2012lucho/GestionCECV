@@ -1,29 +1,24 @@
 <?php
 
-	//importamos el módulo del "buscador"
-	use app\modules\buscador\buscadorAssets;buscadorAssets::register($this);
+use yii\helpers\Html;
+use yii\grid\GridView;
 
-	use app\modules\gestionstock\StockAsset;StockAsset::register($this); 
+/* @var $this yii\web\View */
+/* @var $searchModel common\models\userb */
+/* @var $dataProvider yii\data\ActiveDataProvider */
 
-	$this->title = 'Catálogo';
+$this->title = 'Gestion de usuarios';
 ?>
-<div class="oculto" id="parametros" data-rweb="<?= $Rweb; ?>"></div>
-<div class="site-presta row">
+<div class="user-index">
 	<div  class="col-xs-12" id="bot-presta">
 		<div id="Notific" class="Notific col-md-9">
 			<p>Área de notificaciones</p>
 			<div class="mensaje"></div>		
 		</div>	
 		<div class="col-md-3 botonera" >
-			<input id='Agregar' class='btn btn-success btn-xs' value='Agregar' type='button'>
+			<a href="/GestionCECV/backend/web/index.php/gestionuser/users/create"><input class='btn btn-success btn-xs' value='Agregar' type='button'></a>
 			<input id='Modificar' class='btn btn-info btn-xs' value='Modificar' type='button'>
-			<?php 
-				if ($Rango){
-					echo "<input id='Eliminar' class='btn btn-danger btn-xs' value='Eliminar' type='button'>";				
-				} else {
-					echo "<input class='btn btn-danger btn-xs' value='Eliminar' type='button'>";
-				}
-			?>		
+			<input id='Eliminar' class='btn btn-danger btn-xs' value='Eliminar' type='button'>		
 		</div>	
 	</div>	
 	
