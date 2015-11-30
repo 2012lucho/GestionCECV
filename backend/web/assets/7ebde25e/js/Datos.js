@@ -145,6 +145,11 @@ $(document).ready(function(){
 					$('#Notific > .mensaje').css('background',ColorExit);
 					//reestablecemos los buscadores
 	    			IniBusEst();	
+				} else {
+					if (data == 4){ //no se puede borrar por que todavia adeuda prestamos
+						$('#Notific > .mensaje').html("El estudiante aun adeuda préstamos, no se puede eliminar");
+						$('#Notific > .mensaje').css('background',ColorAlerta);	
+					}			
 				}
 			});
 		} else {

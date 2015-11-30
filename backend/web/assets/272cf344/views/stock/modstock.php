@@ -15,9 +15,15 @@
 			<div class="mensaje"></div>		
 		</div>	
 		<div class="col-md-3 botonera" >
-			<input id='Agregar' class='btn btn-success btn-xs' value='Agregar' type='button'>
-			<input id='Modificar' class='btn btn-info btn-xs' value='Modificar' type='button'>
-			<input id='Eliminar' class='btn btn-danger btn-xs' value='Eliminar' type='button'>		
+			<input id='Agregar' class='btn btn-success btn-xs' value='Nuevo' <?php if (!$Rango){echo "disabled='disabled'";} ?> type='button'>
+			<input id='Modificar' class='btn btn-info btn-xs' value='Modificar' <?php if (!$Rango){echo "disabled='disabled'";} ?> type='button'>
+			<?php 
+				if ($Rango){
+					echo "<input id='Eliminar' class='btn btn-danger btn-xs' value='Eliminar' type='button'>";				
+				} else {
+					echo "<input class='btn btn-danger btn-xs' value='Eliminar' type='button' disabled='disabled'>";
+				}
+			?>		
 		</div>	
 	</div>	
 	

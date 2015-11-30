@@ -20,10 +20,11 @@
 			<div class="mensaje"></div>		
 		</div>	
 		<div class="col-md-5 botonera" >
-			<input id='Agregar' class='btn btn-success btn-xs' value='Agregar' type='button'>
-			<input id='Modificar' class='btn btn-info btn-xs' value='Modificar' type='button'>
+			<input id='Agregar' class='btn btn-success btn-xs' value='Agregar' <?php if (!$rango){echo "disabled='disabled'";} ?> type='button'>
+			<input id='Modificar' class='btn btn-info btn-xs' value='Modificar' <?php if (!$rango){echo "disabled='disabled'";} ?> type='button'>
 			<input id='Suspender' class='btn btn-warning btn-xs' value='Suspender' type='button'>
-			<input id='Eliminar' class='btn btn-danger btn-xs' value='Eliminar' type='button'>		
+			<input id='Eliminar' class='btn btn-danger btn-xs' value='Eliminar' <?php if (!$rango){echo "disabled='disabled'";} ?> type='button'>		
+					
 		</div>	
 	</div>	
 	

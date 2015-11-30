@@ -1,7 +1,7 @@
 <?php
 
 namespace app\models;
-
+use common\models\prestamos;
 use Yii;
 
 /**

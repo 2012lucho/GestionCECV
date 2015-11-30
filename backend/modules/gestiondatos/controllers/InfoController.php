@@ -2,6 +2,9 @@
 
 namespace app\modules\gestiondatos\controllers;
 
+//cargamos el modelo de la tabla prestamos para poder ver si el usuario tiene prestamos adeudados antes de poder eliminarlo
+use common\models\prestamos;
+
 use Yii;
 use app\models\datosuser;
 use yii\web\Controller;
@@ -13,6 +16,7 @@ use yii\filters\AccessControl;
 //cargamos el modelo de configuración
 use common\models\Config;
 use common\models\User;
+
 /**
  * InfoController implements the CRUD actions for datosuser model.
  */
@@ -34,7 +38,7 @@ class InfoController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['post'],
+                  //  'delete' => ['post'],
                 ],
             ],
         ];
@@ -99,8 +103,8 @@ class InfoController extends Controller
 
         $model->NombreyApellido=urldecode($_REQUEST["NombreyApellido"]);
         $model->DNI=urldecode($_REQUEST["DNI"]);
-		$model->Email=urldecode($_REQUEST["Email"]);
-		$model->Telefono=urldecode($_REQUEST["Telefono"]);
+		  $model->Email=urldecode($_REQUEST["Email"]);
+		  $model->Telefono=urldecode($_REQUEST["Telefono"]);
         $model->save();
         return '1';
     }
@@ -111,10 +115,12 @@ class InfoController extends Controller
      */
     public function actionDelete()
     {
-    	$id=urldecode($_REQUEST['id']);
-		$m=datosuser::findOne($_REQUEST["id"]);   
-		if($m!=''){
-        	$m->delete();return '1';}else{return '0';}
+    	$id=urldecode($_POST['id']);
+		$m=datosuser::findOne($id)->getPrestamos()->where(['=','FechaDeb','0000-00-00']);   
+		//verificamos que no tenga prestamos adeudados
+		if ($m->count() == 0) {
+        	$m=datosuser::findOne($id)->delete();return '1';
+		}	else {return '4';}	
         
     }
 }

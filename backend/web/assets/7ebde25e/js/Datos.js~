@@ -137,7 +137,7 @@ $(document).ready(function(){
 	$('#Eliminar').click(function () {
 		var ArEst=$('#'+IdSelEstud).data('Arreglo-Val');
 		if (ArEst.length>0){
-			$.get(r+PeticionEli,{id:ArEst[0]},function (data) {		
+			$.post(r+PeticionEli,{id:ArEst[0]},function (data) {		
 				//Se anuncia el resultado
 				//data = JSON.parse(data);
 				if (data == PetExitosa){
@@ -145,6 +145,11 @@ $(document).ready(function(){
 					$('#Notific > .mensaje').css('background',ColorExit);
 					//reestablecemos los buscadores
 	    			IniBusEst();	
+				} else {
+					if (data == 4){ //no se puede borrar por que todavia adeuda prestamos
+						$('#Notific > .mensaje').html("El estudiante aun adeuda préstamos, no se puede eliminar");
+						$('#Notific > .mensaje').css('background',ColorExit);	
+					}			
 				}
 			});
 		} else {
