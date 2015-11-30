@@ -34,35 +34,7 @@ function BlancIdPresta(){
 
 function InicializarBuscadores() {
 		InicBuscaPresta(['FechaDeb=0000-00-00']);		
-		InicializarBuscador({
-							id:IdSelecLibro,n:1,Tit:'Catálogo de libros',Tabla:'Stock',
-							CampoB:'Nombre',CampoId:'idStock',RWeb:r,CantR:5,
-							Condiciones:'',							
-							FuncionControl:'', //función que se ejecuta al activar el checkbox
-							FuncionControlD:'',//función que se ejecuta al desactivar el checkbox
-							Action:"/rbusca",						
-						},
-						[
-							//campos, 1 Nombre campo, 2 Alias
-							["Nombre","Nombre"],
-							["Descripcion","Descripción"],
-							["Autor","Autor"],
-							["CantidadDisponible","Cantidad Disponible"],
-						],
-						{
-							Control:'checkbox',//control
-							MaxCantEleSele:CanSelLib,//maxima cantidad de elementos seleccionables
-							Alto:'300px', // definir altura fija de la caja
-							Resaltar:{ //Especificamos el campo, condicion y color para resaltar
-								campo:'',
-								cfondo:'',//color resaltado, fondo
-								condicion:'',
-								valor:'', //valor con el que comparar el campo
-								mensaje:'',//mensaje a incluir si se resalta por ej "Suspendido"
-							}, 
-							TextoDef:'Nombre', //texto por defecto del campo de busqueda
-						}
-						);	
+		
 		InicializarBuscador(
 						{
 							id:IdSelecEstud,n:2,Tit:'Estudiantes',Tabla:'DatosUser',
@@ -111,7 +83,7 @@ function InicializarBuscadores() {
 							["FechaDebT","Plazo de devolución"],
 						],
 						{
-							Control:'',//control
+							Control:'checkbox',//control
 							MaxCantEleSele:'3',//maxima cantidad de elementos seleccionables
 							Alto:'300px', // definir altura fija de la caja
 							Resaltar:{ //Especificamos el campo, condicion y color para resaltar
@@ -163,6 +135,26 @@ $(document).ready(function(){
 		}
 	});
 	
+	$('#CancelPrestamo').click(function () {
+		//se cargan los parametros
+		var ArPres=$('#'+IdSelecPrest).data('Arreglo-Val');
+		//se comprueba que se hayan seleccionado estudiante y libro
+		if (ArPres.length>0){
+			ArPres=JSON.stringify(ArPres);
+			//se hace la petición
+			$.get(r+PeticionDev,{P:ArPres},function (data) {		
+				if (data == PetExitosa){
+					$('#Notific > .mensaje').html(MensDebExit);
+					$('#Notific > .mensaje').css('background',ColorExito);
+					//reestablecemos los buscadores
+	    			InicializarBuscadores();
+				}
+			});
+		} else {
+			$('#Notific > .mensaje').html(MensSelecPresta);
+			$('#Notific > .mensaje').css('background',ColorAlerta);
+		}
+	});
 	//Inicializamos controles de búsqueda
 	InicializarBuscadores();	
 });

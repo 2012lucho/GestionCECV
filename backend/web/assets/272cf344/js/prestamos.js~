@@ -111,7 +111,7 @@ function InicializarBuscadores() {
 							["FechaDebT","Plazo de devolución"],
 						],
 						{
-							Control:'',//control
+							Control:'checkbox',//control
 							MaxCantEleSele:'3',//maxima cantidad de elementos seleccionables
 							Alto:'300px', // definir altura fija de la caja
 							Resaltar:{ //Especificamos el campo, condicion y color para resaltar
@@ -128,7 +128,6 @@ function InicializarBuscadores() {
 
 $(document).ready(function(){
 	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
-	CanSelLib=$("#parametros").attr('data-CantLibSel');
 	//Inicializamos control donde se muestra info delos estudiantes
 	//InicInfoEstu();
 	//Inicializamos controles de carga de información
@@ -163,6 +162,26 @@ $(document).ready(function(){
 		}
 	});
 	
+	$('#CancelPrestamo').click(function () {
+		//se cargan los parametros
+		var ArPres=$('#'+IdSelecPrest).data('Arreglo-Val');
+		//se comprueba que se hayan seleccionado estudiante y libro
+		if (ArPres.length>0){
+			ArPres=JSON.stringify(ArPres);
+			//se hace la petición
+			$.get(r+PeticionDev,{P:ArPres},function (data) {		
+				if (data == PetExitosa){
+					$('#Notific > .mensaje').html(MensDebExit);
+					$('#Notific > .mensaje').css('background',ColorExito);
+					//reestablecemos los buscadores
+	    			InicializarBuscadores();
+				}
+			});
+		} else {
+			$('#Notific > .mensaje').html(MensSelecPresta);
+			$('#Notific > .mensaje').css('background',ColorAlerta);
+		}
+	});
 	//Inicializamos controles de búsqueda
 	InicializarBuscadores();	
 });

@@ -40,7 +40,7 @@ class PrestamosController extends Controller
 		$Rweb=$Config->Valor();
 		$Config=new Config(['conf'=>'CantLibSel']);
 		$CantLib=$Config->Valor();
-        return $this->render('IngresaDevolucion', [
+        return $this->render('IngresaPrestamo', [
             'Rweb'=>$Rweb,
             'CantLib'=>$CantLib,
         ]);
@@ -136,18 +136,19 @@ class PrestamosController extends Controller
 		$Desplaza= urldecode($_REQUEST["D"]);
 		$CantReg= urldecode($_REQUEST["C"]);
 		$Condicion=BaseJson::decode(urldecode($_REQUEST["CO"]));//condiciones para el where
-		
+
     	$Consulta = (new \yii\db\Query())
-			->select('idPresta,NombreyApellido,Nombre,FechaPresta,FechaDebT')
+			->select('idPresta,NombreyApellido,Nombre,FechaPresta,FechaDebT,FechaDeb')
 			->from('Prestamos')
 			->innerJoin('DatosUser','Prestamos.idUser=DatosUser.IdUser') //establecemos las relaciones
-			->innerJoin('Stock','Prestamos.IdStock=Stock.idStock')
-			->where(['like','idPresta','%'.$TBusqueda.'%',false]);
+			->where(['like','idPresta','%'.$TBusqueda.'%',false])
+			->innerJoin('Stock','Prestamos.IdStock=Stock.idStock');
+			
 			//->where(['FechaDeb'=>'0000-00-00']);		
 			
 		//aplicamos todos los where necesarios a la consulta
 		//for($c=0;$c<sizeof($Condicion);$c++){
-			$Consulta->where($Condicion[0]);
+			$Consulta->andWhere($Condicion[0]);
 		//}				
 		
 		if ($OrdenResu != "n"){ //se ordena

@@ -35,7 +35,7 @@
 						->from($this->Tabla)
 						->where(['like',$this->CamposB,'%'.$this->TBusqueda.'%',false]);
 			
-			$Consulta->where($filtro);
+			$Consulta->andWhere($filtro);
 
 			if ($this->OrdenResu != "n"){ //se ordena
 		 		if ($this->OrdenResu == "d"){ 
