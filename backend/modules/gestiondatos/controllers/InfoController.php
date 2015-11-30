@@ -9,7 +9,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 use yii\helpers\BaseJson;
-
+use yii\filters\AccessControl;
 //cargamos el modelo de configuración
 use common\models\Config;
 /**
@@ -20,6 +20,16 @@ class InfoController extends Controller
     public function behaviors()
     {
         return [
+        		'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['index', 'suspend', 'infoest', 'editar', 'nuevo', 'delete'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
            /* 'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

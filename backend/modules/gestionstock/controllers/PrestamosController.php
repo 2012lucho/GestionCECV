@@ -13,7 +13,7 @@ use app\models\datosuser;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\filters\AccessControl;
 use common\models\stock;
 
 use yii\helpers\BaseJson;
@@ -25,6 +25,16 @@ class PrestamosController extends Controller
     public function behaviors()
     {
         return [
+        		'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['nuevo', 'ingresadevol', 'apresta', 'adevol', 'lpresta'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -168,10 +178,4 @@ class PrestamosController extends Controller
 		$ResBusca['CantTot'] = $CantTot;
 		return BaseJson::encode($ResBusca);
     }
-  /*  public function actionNn(){
-		$m = new datosuser();		
-		$m = $m::findOne(2);
-		$c = $m->getPrestamos()->all();
-		return BaseJson::encode($c);    
-    }*/
 }

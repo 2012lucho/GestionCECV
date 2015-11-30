@@ -27,6 +27,16 @@ class UsersController extends Controller
     public function behaviors()
     {
         return [
+        		'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['eliminausr', 'infousr', 'editausr', 'index', 'create'],
+                        'allow' => true,
+                        //'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -89,9 +99,7 @@ class UsersController extends Controller
        $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
-                if (Yii::$app->getUser()->login($user)) {
-                    return $this->actionIndex();
-                }
+                return $this->actionIndex();
             }
         }
 

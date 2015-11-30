@@ -11,6 +11,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 use yii\helpers\BaseJson;
+use yii\filters\AccessControl;
 
 //cargamos el modelo de configuración
 use common\models\Config;
@@ -22,6 +23,16 @@ class StockController extends Controller
     public function behaviors()
     {
         return [
+        		'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['index', 'nuevolib', 'elilib', 'editalib', 'infolib'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

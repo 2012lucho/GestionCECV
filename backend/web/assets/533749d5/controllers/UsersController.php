@@ -7,6 +7,7 @@ use common\models\Config;
 
 use Yii;
 use common\models\User;
+use yii\filters\AccessControl;
 use common\models\LoginForm;
 use common\models\userb;
 
@@ -27,6 +28,16 @@ class UsersController extends Controller
     public function behaviors()
     {
         return [
+        		'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['eliminausr', 'infousr', 'editausr', 'index', 'create'],
+                        'allow' => true,
+                        //'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

@@ -9,7 +9,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 use yii\helpers\BaseJson;
-
+use yii\filters\AccessControl;
 //cargamos el modelo de configuración
 use common\models\Config;
 /**
@@ -20,6 +20,16 @@ class InfoController extends Controller
     public function behaviors()
     {
         return [
+        		'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['index', 'suspend', 'infoest', 'editar', 'nuevo', 'Delete'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
            /* 'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -68,8 +78,7 @@ class InfoController extends Controller
 
 	//"action" modificar datos estudiante
 	public function actionEditar(){
-		$id=$_REQUEST["id"];
-		$model = datosuser::findOne($id);
+		$model = datosuser::findOne($_REQUEST["id"]);
       $model->NombreyApellido=urldecode($_REQUEST["NombreyApellido"]);
       $model->DNI=urldecode($_REQUEST["DNI"]);
 		$model->Email=urldecode($_REQUEST["Email"]);
