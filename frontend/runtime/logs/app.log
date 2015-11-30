@@ -33817,3 +33817,106 @@ Additional Information:
     'REQUEST_TIME_FLOAT' => 1448556152.174
     'REQUEST_TIME' => 1448556152
 ]
+2015-11-30 07:52:33 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/GestionCECV/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/GestionCECV/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-30 07:52:33 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'df8lddt4r8jq89ha8sok3b8d94'
+    '_csrf' => 'c3ef73128c0d967cdace7f2443b53519f81496dcb0763cab83e8338a938ca1a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Rfn2rLjw-zFq46_Zli76Dgl4edTVLVVJ\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=df8lddt4r8jq89ha8sok3b8d94; _csrf=c3ef73128c0d967cdace7f2443b53519f81496dcb0763cab83e8338a938ca1a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Rfn2rLjw-zFq46_Zli76Dgl4edTVLVVJ%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/frontend/web/index.php'
+    'REMOTE_PORT' => '34877'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/frontend/web/index.php'
+    'SCRIPT_NAME' => '/GestionCECV/frontend/web/index.php'
+    'PHP_SELF' => '/GestionCECV/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448869953.561
+    'REQUEST_TIME' => 1448869953
+]
+2015-11-30 07:54:56 [::1][-][df8lddt4r8jq89ha8sok3b8d94][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Unknown bootstrapping component ID: debug' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php:306
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(63): yii\base\Application->bootstrap()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(267): yii\web\Application->bootstrap()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(206): yii\base\Object->__construct(Array)
+#4 /var/www/html/GestionCECV/frontend/web/index.php(17): yii\base\Application->__construct(Array)
+#5 {main}
+2015-11-30 07:54:56 [::1][-][df8lddt4r8jq89ha8sok3b8d94][info][application] $_COOKIE = [
+    '_csrf' => 'd247e5125be79963ddec452514884552b7543ab1ec3c97d45063e2af52295d4aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jajk2bZHb8camHStrK-G1_x29R1S0Itu\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+    'PHPSESSID' => 'df8lddt4r8jq89ha8sok3b8d94'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux) AppleWebKit/538.15+ Midori/0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ar;q=0.750'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=d247e5125be79963ddec452514884552b7543ab1ec3c97d45063e2af52295d4aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jajk2bZHb8camHStrK-G1_x29R1S0Itu%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D; PHPSESSID=df8lddt4r8jq89ha8sok3b8d94'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/frontend/web/index.php'
+    'REMOTE_PORT' => '34964'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/frontend/web/index.php'
+    'SCRIPT_NAME' => '/GestionCECV/frontend/web/index.php'
+    'PHP_SELF' => '/GestionCECV/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448870096.925
+    'REQUEST_TIME' => 1448870096
+]

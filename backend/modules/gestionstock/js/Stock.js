@@ -22,6 +22,7 @@ $(document).ready(function(){
 		$('#Descripcion').val("");
 		$('#Autor').val("");
 		$('#Cantidad').val("");
+		$('#CantidadAAgregar').val("0");
 	}	
 	
 	function CreaNuevo() {
@@ -65,23 +66,35 @@ $(document).ready(function(){
 					Nombre:$('#Nombre').val(),
 					Descripcion:$('#Descripcion').val(),
 					Autor:$('#Autor').val(),
-					Cantidad:$('#Cantidad').val()},
+					Cantidad:$('#Cantidad').val(),
+					CantidadAAgregar:$('#CantidadAAgregar').val(),					
+					},
 					function (data) {
 						if (data==1){
 							$('#Notific > .mensaje').html(MensEstAgre);
 							$('#Notific > .mensaje').css('background',ColorExit);
 							IniBusLib();
+						} else {
+							if(data==3){
+								$('#Notific > .mensaje').html("no se admiten cantidades negativas de libros");
+								$('#Notific > .mensaje').css('background',ColorAlerta);
+								IniBusLib();
+							}						
 						}
 					});
 			}		
 		}
 		InicForm();
 		$('#ingInf').css('display','none');
+		$('#cont-input-cantidad').css('display','none');
+		$('#cont-mod-cantidad').css('display','none');
 	});
 	//eventos botonera	
 	$('#Agregar').click(function () {
 		$('#ingInf').css('display','block');	
 		$('#ingInf').data('peticion',CreaLib);	
+		$('#cont-input-cantidad').css('display','block');
+		$('#cont-mod-cantidad').css('display','none');
 		InicForm();
 		IniBusLib();		
 	});
@@ -91,6 +104,10 @@ $(document).ready(function(){
 			$('#ingInf').css('display','block');	
 			$('#ingInf').data('peticion',ModiLib);	
 			Actualizar(ArLib[0]);
+			$('#cont-input-cantidad').css('display','none');
+			$('#cont-mod-cantidad').css('display','block');
+			//$('#Notific > .mensaje').html('Si se ingresa un número negativo en la casil');
+			//$('#Notific > .mensaje').css('background',ColorExito);
 			//
 			//IniBusEst();		
 		} else {
@@ -118,7 +135,9 @@ $(document).ready(function(){
 			$('#Notific > .mensaje').css('background',ColorAlerta);
 		}
 				
-	});	
+	});
+	
+	InicForm();	
 	
 	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
 	IniBusLib();

@@ -34,7 +34,8 @@
     	</div>
 		<div class="col-md-5">    		
 			<div><b>Autor: </b><input type="text" id="Autor"></div>
-			<div><b>Cantidad: </b><input type="text" id="Cantidad"></div>
+			<div id="cont-input-cantidad"><b>Cantidad: </b><input type="text" id="Cantidad"></div>
+			<div id="cont-mod-cantidad"><b>Ingresar cantidad a agregar: </b><input type="text" id="CantidadAAgregar"></div>
     	</div>
     	<div class="col-md-2">
     		<input id='Aceptar' class='btn btn-success btn-xs' value='Aceptar' type='button'>
