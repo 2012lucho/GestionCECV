@@ -104,8 +104,8 @@ return [
 						'route' => 'gestionuser/users/infousr',		
 					 ],
 					 [
-						'pattern' => 'useredit', //action para editar un usuario
-						'route' => 'gestionuser/users/index',		
+						'pattern' => 'editausr', //action para editar un usuario
+						'route' => 'gestionuser/users/editausr',		
 					 ],
 					 [
 						'pattern' => 'users',

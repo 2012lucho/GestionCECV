@@ -108,6 +108,10 @@ return [
 						'route' => 'gestionuser/users/editausr',		
 					 ],
 					 [
+						'pattern' => 'eliminausr', //action para eliminar un usuario
+						'route' => 'gestionuser/users/eliminausr',		
+					 ],
+					 [
 						'pattern' => 'users',
 						'route' => 'gestionuser/users/index',		
 					 ],
