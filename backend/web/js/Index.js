@@ -13,14 +13,14 @@ $(document).ready(function(){
 		InicBusca(['']);
 		$('#Notific > .mensaje').html(MensTodos);
 		$('#Notific > .mensaje').addClass('bg-success');
-		$('#Notific > .mensaje').removeClass('bg-warning bg-danger bg-primary');
+		$('#Notific > .mensaje').removeClass('bg-danger bg-primary');
 	});
 	
 	$('#Adeudados').click(function () {
 		InicBusca(['FechaDeb=0000-00-00']);
 		$('#Notific > .mensaje').html(MensPendiente);
-		$('#Notific > .mensaje').addClass('bg-warning');
-		$('#Notific > .mensaje').removeClass('bg-success bg-danger bg-primary');
+		$('#Notific > .mensaje').addClass('bg-primary');
+		$('#Notific > .mensaje').removeClass('bg-success bg-danger');
 	});
 	
 	$('#Vencidos').click(function () { //agregar comprobación de vencimiento
@@ -31,8 +31,8 @@ $(document).ready(function(){
 	});	
 	InicBusca(['FechaDeb=0000-00-00 && DATE(FechaDebT) < DATE("'+$('#parametros').attr('data-fecha')+'")']);
 	$('#Notific > .mensaje').html(MensVencido);
-	$('#Notific > .mensaje').addClass('bg-primary');
-	$('#Notific > .mensaje').removeClass('bg-success bg-warning bg-danger');
+	$('#Notific > .mensaje').addClass('bg-danger');
+	$('#Notific > .mensaje').removeClass('bg-success bg-primary');
 	
 	function InicBusca(Filtro) {
 		InicializarBuscador(

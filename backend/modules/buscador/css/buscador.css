@@ -4,12 +4,12 @@
 
 .bEncab, .bFoot{
 	padding: 5px;
-	background:#DDD;
 }
 
 .bEncab{
 	display:inline-block;
 	width: 100%;
+	border: 1px solid #cccccc;
 }
 
 .binfr{display:inline-block;
@@ -19,6 +19,7 @@
 	bottom: 0px;
 	display:inline-block;
 	width: 100%;
+	border-top: 1px solid #cccccc;
 }
 
 /* .cajares{overflow:scroll; overflow-x:hidden;} */
@@ -57,7 +58,6 @@
 }
 
 .buscalib{
-	border-left: 2px solid #DDD;
 	color: #eee;
 	font-weight: bold;
 }
@@ -68,4 +68,15 @@
 	display:inline-block;
 	height: 100%;
 	width:100%;
+	border: 1px solid #cccccc;
+}
+
+
+.RB:nth-child(odd){
+	background: #f8f8f8;
+}
+
+
+.item-prestamo{
+	font-size: 13px;
 }

@@ -38,7 +38,7 @@ function CreaVista(data,Elemento,n,CamposM,V,Cindice){
 			vista+='</div><div class="col-xs-1"><input id="C'+Elemento+n+data[item][Cindice]+'" type='+V['Control']+' class="BI" ></div>';	
 		}		
 		// creamos registro 
-		$('#'+Elemento+n).append('<div class="RB col-xs-12" id="'+Elemento+n+'-'+data[item][Cindice]+'"><div class="col-xs-11" id="'+Elemento+n+data[item][Cindice]+'">'+vista+'</div>');
+		$('#'+Elemento+n).append('<div class="RB col-xs-12" id="'+Elemento+n+'-'+data[item][Cindice]+'"><div class="item-prestamo col-xs-12" id="'+Elemento+n+data[item][Cindice]+'">'+vista+'</div>');
 		//pintamos el registro de acuerdo a la condición
 		if (V['Resaltar']['campo']!=''){
 			if (V['Resaltar']['condicion']=='='){
@@ -63,6 +63,7 @@ function CreaVista(data,Elemento,n,CamposM,V,Cindice){
 //esta función solo deb ser llamada de la función que arma la vista
 function CompartamientoControl(id){
 	$('#'+id).unbind();//eliminamos todos los eventos que pudieran estar asociados
+	
 	$('#'+id).bind('change',function() {//agregamos eventos para los checkbox
 		var Padre=$(this).data('data-padre');
 		var IdRegistro=$(this).data('idRegistro');
@@ -195,18 +196,12 @@ function InicializarBuscador(Config,CamposM,Vista){
 	//Armamos el encabezado del buscador	
 	$('#'+Elemento).html("<div class='bEncab"+n+" bEncab col-xs-12'><div class='Btit col-xs-12'>"+Titulo+"</div></div>");
 	//agregamos el control de buscqueda del encabezado
+	
 	crearFiltroBusquedaHTML('.bEncab'+n, parametros);
-	/*$('.bEncab'+n).append("<div class='buscalib col-xs-12'>"
-		+"<input type='text' id='ebusca"+n+"' class='ebusca form-control' value='"+Vista['TextoDef']+"'>"
-		+" <input id='BBusca"+n+"' class='btn btn-default btn-xs' type='button' value='Ir'>"
-		+" <input id='BOrdD"+n+"' class='btn btn-default btn-xs' type='button' value='&dArr;'>"	
-		+" <input id='BOrdA"+n+"' class='btn btn-default btn-xs' type='button' value='&uArr;'>"	
-		+"</div>");
-	*/
+	
 	//Definimos la caja donde mostrar la informacion sobre resultado de busqueda
-	$('#'+Elemento).append("<div class='binfr'>"
-		+"<p id='InfoResult"+n+"'></p>"
-		+"</div>");
+	$('#'+Elemento).append("<div class='binfr'><p id='InfoResult"+n+"'></p></div>");
+	
 	//Definimos lacaja donde mostrar los resultados y la caja donde mostrar el "boton mas resultados"
 	$('#'+Elemento).append("<div id='"+Elemento+n+"' class='cajares'></div>"
 		+"<div class='col-xs-12 bFoot'>"
@@ -229,29 +224,34 @@ function InicializarBuscador(Config,CamposM,Vista){
 		}   
  	});	
 	
-	$('#BBuscaMas'+n).on('click', function() { // si se apreta el boton de busqueda
+	$('body').off().on('click', '#BBuscaMas'+n, function() { // si se apreta el boton de busqueda
 		ActualizaResultados(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
 	});
 	
-	$('#BBusca'+n).on('click', function() { // si se apreta el boton de busqueda
+	$('body').on('click', '#BBusca'+n, function() { // si se apreta el boton de busqueda
+//	$('body').on('click', 'input.laion', function() { // si se apreta el boton de busqueda
+		alert($('#'+Elemento).data('Termino'));
 		ValoresDef(Elemento);$('#'+Elemento).data('Orden',NoOrdeanado);	
 		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));	
+		
 		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
 	});
 	
-	$('#BOrdA'+n).on('click', function() { // si se apreta el boton ordenar ascendente
+	$('body').off().on('click', '#BOrdA'+n, function() { // si se apreta el boton ordenar ascendente
 		ValoresDef(Elemento);$('#'+Elemento).data('Orden',Ascendente);
 		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
+		//console.log($('#'+Elemento).data('Termino'));
 		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);	
 	});
 	
-	$('#BOrdD'+n).on('click', function() { // si se apreta el boton ordenar descendente
+	$('body').on('click', '#BOrdD'+n, function() { // si se apreta el boton ordenar descendente
 		ValoresDef(Elemento);$('#'+Elemento).data('Orden',Descendente);
 		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
+		//console.log(encodeURIComponent($('#ebusca'+n).val()));
 		Busqueda(Elemento,n,Descendente,$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
 	});
 	
-	$('#ebusca'+n).on('click', function() { $('#ebusca'+n).val(''); }); //si se hace click
+	$('body').on('click', '#ebusca'+n, function() { $('#ebusca'+n).val(''); }); //si se hace click
 	
 	
 }
