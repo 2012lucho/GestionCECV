@@ -40,7 +40,7 @@ class StockController extends Controller
                 'actions' => [
                     'delete' => ['post'],
                     'infolib'=>['post'],
-                   // 'nuevolib'=>['post'],
+                    'nuevolib'=>['post'],
                 ],
             ],
         ];
@@ -62,15 +62,25 @@ class StockController extends Controller
     }
 	//"action" para crear un nuevo libro
 	public function actionNuevolib(){
-		$model = new stock();  
+		 
+		$No=urldecode($_REQUEST['Nombre']);
+		$Ds=urldecode($_REQUEST["Descripcion"]);
+		$Au=urldecode($_REQUEST["Autor"]);
+		$Ca=urldecode($_REQUEST["Cantidad"]);
+		//verificamos que se hayan completado todos los campos
+		if ($No!='' && $Ds!='' && $Au!='' && $Ca!=''){
+			$model = new stock(); 
+      	$model->Nombre=$No;
+      	$model->Descripcion=$Ds;
+			$model->Autor=$Au;
+			$model->Cantidad=$Ca;
+			$model->CantidadDisponible=$model->Cantidad;
+      	$model->save();
+      	return '1';
+		} else {
+			return '2';		
+		}
 		
-        $model->Nombre=urldecode($_REQUEST['Nombre']);
-        $model->Descripcion=urldecode($_REQUEST["Descripcion"]);
-		$model->Autor=urldecode($_REQUEST["Autor"]);
-		$model->Cantidad=urldecode($_REQUEST["Cantidad"]);
-		$model->CantidadDisponible=$model->Cantidad;
-        $model->save();
-        return '1';
 	}    
     
     //"action" para eliminar un libro
