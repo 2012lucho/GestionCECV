@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.13.1
+-- version 4.5.2
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Nov 30, 2015 at 02:51 AM
--- Server version: 5.5.44-0+deb8u1
--- PHP Version: 5.6.9-0+deb8u1
+-- Servidor: localhost
+-- Tiempo de generación: 01-12-2015 a las 12:23:00
+-- Versión del servidor: 5.5.46-0+deb8u1
+-- Versión de PHP: 5.6.14-0+deb8u1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,16 +17,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `yii-cecv`
+-- Base de datos: `yii-cecv`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `configuracion`
+-- Estructura de tabla para la tabla `configuracion`
 --
 
-CREATE TABLE IF NOT EXISTS `configuracion` (
+CREATE TABLE `configuracion` (
   `cod` varchar(25) NOT NULL,
   `valor` varchar(255) NOT NULL,
   `descripcion` varchar(250) NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `configuracion` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `configuracion`
+-- Volcado de datos para la tabla `configuracion`
 --
 
 INSERT INTO `configuracion` (`cod`, `valor`, `descripcion`, `control`, `unidad`, `categoria`) VALUES
@@ -47,20 +47,20 @@ INSERT INTO `configuracion` (`cod`, `valor`, `descripcion`, `control`, `unidad`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `DatosUser`
+-- Estructura de tabla para la tabla `DatosUser`
 --
 
-CREATE TABLE IF NOT EXISTS `DatosUser` (
+CREATE TABLE `DatosUser` (
   `IdUser` int(6) NOT NULL,
   `NombreyApellido` varchar(50) NOT NULL,
   `DNI` varchar(12) NOT NULL,
   `Email` varchar(50) NOT NULL,
   `Telefono` varchar(20) NOT NULL,
   `Suspendido` tinyint(1) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `DatosUser`
+-- Volcado de datos para la tabla `DatosUser`
 --
 
 INSERT INTO `DatosUser` (`IdUser`, `NombreyApellido`, `DNI`, `Email`, `Telefono`, `Suspendido`) VALUES
@@ -69,16 +69,16 @@ INSERT INTO `DatosUser` (`IdUser`, `NombreyApellido`, `DNI`, `Email`, `Telefono`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migration`
+-- Estructura de tabla para la tabla `migration`
 --
 
-CREATE TABLE IF NOT EXISTS `migration` (
+CREATE TABLE `migration` (
   `version` varchar(180) NOT NULL,
   `apply_time` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `migration`
+-- Volcado de datos para la tabla `migration`
 --
 
 INSERT INTO `migration` (`version`, `apply_time`) VALUES
@@ -88,20 +88,20 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Prestamos`
+-- Estructura de tabla para la tabla `Prestamos`
 --
 
-CREATE TABLE IF NOT EXISTS `Prestamos` (
+CREATE TABLE `Prestamos` (
   `idPresta` int(10) NOT NULL,
   `idUser` int(10) NOT NULL,
   `IdStock` int(10) NOT NULL,
   `FechaPresta` date NOT NULL,
   `FechaDebT` date NOT NULL,
   `FechaDeb` date NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `Prestamos`
+-- Volcado de datos para la tabla `Prestamos`
 --
 
 INSERT INTO `Prestamos` (`idPresta`, `idUser`, `IdStock`, `FechaPresta`, `FechaDebT`, `FechaDeb`) VALUES
@@ -117,10 +117,10 @@ INSERT INTO `Prestamos` (`idPresta`, `idUser`, `IdStock`, `FechaPresta`, `FechaD
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rangos`
+-- Estructura de tabla para la tabla `rangos`
 --
 
-CREATE TABLE IF NOT EXISTS `rangos` (
+CREATE TABLE `rangos` (
   `rango` int(2) NOT NULL,
   `nombrerango` varchar(12) NOT NULL,
   `editar user` tinyint(1) NOT NULL,
@@ -129,7 +129,7 @@ CREATE TABLE IF NOT EXISTS `rangos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `rangos`
+-- Volcado de datos para la tabla `rangos`
 --
 
 INSERT INTO `rangos` (`rango`, `nombrerango`, `editar user`, `agregar user`, `agregar catalogo`) VALUES
@@ -138,10 +138,10 @@ INSERT INTO `rangos` (`rango`, `nombrerango`, `editar user`, `agregar user`, `ag
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Stock`
+-- Estructura de tabla para la tabla `Stock`
 --
 
-CREATE TABLE IF NOT EXISTS `Stock` (
+CREATE TABLE `Stock` (
   `idStock` int(10) NOT NULL,
   `Codigo` varchar(11) NOT NULL,
   `Nombre` varchar(50) NOT NULL,
@@ -149,10 +149,10 @@ CREATE TABLE IF NOT EXISTS `Stock` (
   `Autor` varchar(50) NOT NULL,
   `Cantidad` int(10) NOT NULL,
   `CantidadDisponible` int(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `Stock`
+-- Volcado de datos para la tabla `Stock`
 --
 
 INSERT INTO `Stock` (`idStock`, `Codigo`, `Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES
@@ -172,10 +172,10 @@ INSERT INTO `Stock` (`idStock`, `Codigo`, `Nombre`, `Descripcion`, `Autor`, `Can
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Estructura de tabla para la tabla `user`
 --
 
-CREATE TABLE IF NOT EXISTS `user` (
+CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `auth_key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
@@ -186,10 +186,10 @@ CREATE TABLE IF NOT EXISTS `user` (
   `status` smallint(6) NOT NULL DEFAULT '10',
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `user`
+-- Volcado de datos para la tabla `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `rango`, `status`, `created_at`, `updated_at`) VALUES
@@ -197,29 +197,29 @@ INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_res
 (18, 'operador', 'fFhgzh7m5Il0mlzvKSZ3RES6vGiIrwOK', '$2y$13$hASy1x5Nngv36f1Z7h0G0uYGXNYlW.Hu73Q2l1TJRp5RkId76qmUO', NULL, 'aasasas@cbcb.m', 1, 10, 1448859825, 1448859825);
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `configuracion`
+-- Indices de la tabla `configuracion`
 --
 ALTER TABLE `configuracion`
   ADD PRIMARY KEY (`cod`);
 
 --
--- Indexes for table `DatosUser`
+-- Indices de la tabla `DatosUser`
 --
 ALTER TABLE `DatosUser`
   ADD PRIMARY KEY (`IdUser`);
 
 --
--- Indexes for table `migration`
+-- Indices de la tabla `migration`
 --
 ALTER TABLE `migration`
   ADD PRIMARY KEY (`version`);
 
 --
--- Indexes for table `Prestamos`
+-- Indices de la tabla `Prestamos`
 --
 ALTER TABLE `Prestamos`
   ADD PRIMARY KEY (`idPresta`),
@@ -227,19 +227,19 @@ ALTER TABLE `Prestamos`
   ADD KEY `IdStock` (`IdStock`);
 
 --
--- Indexes for table `rangos`
+-- Indices de la tabla `rangos`
 --
 ALTER TABLE `rangos`
   ADD PRIMARY KEY (`rango`);
 
 --
--- Indexes for table `Stock`
+-- Indices de la tabla `Stock`
 --
 ALTER TABLE `Stock`
   ADD PRIMARY KEY (`idStock`);
 
 --
--- Indexes for table `user`
+-- Indices de la tabla `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
@@ -248,35 +248,35 @@ ALTER TABLE `user`
   ADD UNIQUE KEY `password_reset_token` (`password_reset_token`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `DatosUser`
+-- AUTO_INCREMENT de la tabla `DatosUser`
 --
 ALTER TABLE `DatosUser`
-  MODIFY `IdUser` int(6) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `IdUser` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT for table `Prestamos`
+-- AUTO_INCREMENT de la tabla `Prestamos`
 --
 ALTER TABLE `Prestamos`
-  MODIFY `idPresta` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=39;
+  MODIFY `idPresta` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 --
--- AUTO_INCREMENT for table `Stock`
+-- AUTO_INCREMENT de la tabla `Stock`
 --
 ALTER TABLE `Stock`
-  MODIFY `idStock` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
+  MODIFY `idStock` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT de la tabla `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
--- Constraints for dumped tables
+-- Restricciones para tablas volcadas
 --
 
 --
--- Constraints for table `Prestamos`
+-- Filtros para la tabla `Prestamos`
 --
 ALTER TABLE `Prestamos`
   ADD CONSTRAINT `Prestamos_ibfk_4` FOREIGN KEY (`IdStock`) REFERENCES `Stock` (`idStock`) ON DELETE CASCADE ON UPDATE CASCADE,

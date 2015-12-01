@@ -29,7 +29,10 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <div class="col-xs-12" id="Encabezado"><h3>Catálogo Biblioteca del CECV</h3></div>
+    <div class="col-xs-12" id="Encabezado">
+    	<div id="cont-logo-enc"><img src="<?php echo Yii::$app->request->baseUrl; ?>/img/logo.png" alt=""></div>
+    	<div id="cont-tit">Catálogo Biblioteca del CECV</div>
+    </div>
 
     <div class="container">
         <?= Breadcrumbs::widget([

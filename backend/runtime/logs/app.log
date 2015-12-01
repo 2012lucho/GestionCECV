@@ -61299,3 +61299,65 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1448867056.24
     'REQUEST_TIME' => 1448867056
 ]
+2015-12-01 15:20:02 [::1][2][n4q8c7115jlssoj0rg9l4nnj82][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('logout', Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2015-12-01 15:20:02 [::1][2][n4q8c7115jlssoj0rg9l4nnj82][info][application] $_POST = [
+    '_csrf' => 'YmZJcllUbFAvASpADy5fEzMAfCA6ZhkTCDwiRBZiJRINEjEibmQZOg=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n4q8c7115jlssoj0rg9l4nnj82'
+    '_csrf' => '267367b78fa0e91f5d2b11eb7928e3bcd097c8c44dabbb242c74dabd9cfaf715a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hgzDwHddl1OYl0ceG8dqJlMUvXIvF0ns\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/GestionCECV/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=n4q8c7115jlssoj0rg9l4nnj82; _csrf=267367b78fa0e91f5d2b11eb7928e3bcd097c8c44dabbb242c74dabd9cfaf715a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hgzDwHddl1OYl0ceG8dqJlMUvXIvF0ns%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '66'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '60530'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/site/logout'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/site/logout'
+    'PATH_TRANSLATED' => '/var/www/html/site/logout'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/site/logout'
+    'REQUEST_TIME_FLOAT' => 1448983202.379
+    'REQUEST_TIME' => 1448983202
+]
