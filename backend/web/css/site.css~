@@ -91,23 +91,30 @@ a.desc:after {
 }
 .conf-block{border:1px solid #eee; padding:5px 2px;min-height:80px;}
 .conf-g{margin-top: 5px;}
+
 /* Oculto */
+
 .oculto{display:none;}
+
 /* Notificaciones, etc*/
+
 .Notific{border:1px solid #ddd;height: 50px;}
 .Notific p{margin:2px;background-color: #ddd;}
 .boto{margin-top: 2px;margin-bottom: 2px;width: 150px;}
 .botonera input{margin:1px;height: 48px;}
 .botonera{border:1px solid #eee;}
-/* Agregados*/
-.rojo{color:#F00;}
 
-.navbar-brand {height:35px;padding:9px;}
-.navbar{min-height:35px;}
-.navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 5px;
+
+/* Agregados */
+
+.main-menu{
+	font-size: 12px;
 }
-.wrap > .container {
-    padding: 40px 15px 20px;
+.cont-logo-enc img{
+	background: #FFF;
+	border-radius: 5px;
+	border: 1px solid #000;
+	width: 50px;
+	height: 50px;
+	padding: 2px;
 }

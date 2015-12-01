@@ -28,13 +28,13 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
-    <?php
+<div class="wrap"> 
+	<?php
     NavBar::begin([
-        'brandLabel' => 'Préstamos',
+        'brandLabel' =>  Html::img('@web/img/logo.png', ['alt'=>'Vino Para el Cambio']),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'cont-logo-enc navbar-inverse navbar-fixed-top ',
         ],
     ]);
     $menuItems = [];
