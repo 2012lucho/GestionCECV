@@ -1,7 +1,19 @@
+	
+
+
+function getLocalServerURL(){
+	return ((location.href.split('/'))[0])+'//'+((location.href.split('/'))[2]) + "/";
+}
+
+function getSiteURL(){
+	return getLocalServerURL() + 'GestionCECV/backend/';
+}
 
 const NoOrdeanado="n";
 const Ascendente="a";
 const Descendente="d";
+const JS_TEMPLATE_PATH = getSiteURL() + 'modules/buscador/js/templates/'; 
+
 
 function ValoresDef(Elemento){
 	$('#'+Elemento).data('Desplaza',0) 
@@ -125,6 +137,21 @@ function Busqueda(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,Rweb,Campos
 	});		
 }
 
+function crearFiltroBusquedaHTML(contenedor, parametros){
+	
+	$.ajax({
+		url: JS_TEMPLATE_PATH +'filtro_buscador.html',
+		success: function(template){
+			var result = Mustache.render(template, parametros);
+			$(contenedor).append(result);
+		},
+		error: function(){
+			alert('Se produjo un error al cargar la template del filtro de busqueda');
+		}
+	})
+}
+
+
 //n es el numero de buscador
 //camposM es el arreglo que se usa para definir los campos que se mostraran en la vista 
 function InicializarBuscador(Config,CamposM,Vista){
@@ -148,6 +175,12 @@ function InicializarBuscador(Config,CamposM,Vista){
 	var Rweb=Config['RWeb'];
 	var RegistrosPag=Config['CantR'];
 	var Cindice=Config['CampoId'];
+	
+	var parametros = {
+			'n': n,
+			'vista': Vista['TextoDef'],
+	}
+	
 	//Se aplican las configuraciones de estilo
 	var Alto=Vista['Alto'];
 	if (Alto!=''){
@@ -162,12 +195,14 @@ function InicializarBuscador(Config,CamposM,Vista){
 	//Armamos el encabezado del buscador	
 	$('#'+Elemento).html("<div class='bEncab"+n+" bEncab col-xs-12'><div class='Btit col-xs-12'>"+Titulo+"</div></div>");
 	//agregamos el control de buscqueda del encabezado
-	$('.bEncab'+n).append("<div class='buscalib col-xs-12'>"
-		+"<input type='text' id='ebusca"+n+"' class='ebusca' value='"+Vista['TextoDef']+"'>"
+	crearFiltroBusquedaHTML('.bEncab'+n, parametros);
+	/*$('.bEncab'+n).append("<div class='buscalib col-xs-12'>"
+		+"<input type='text' id='ebusca"+n+"' class='ebusca form-control' value='"+Vista['TextoDef']+"'>"
 		+" <input id='BBusca"+n+"' class='btn btn-default btn-xs' type='button' value='Ir'>"
 		+" <input id='BOrdD"+n+"' class='btn btn-default btn-xs' type='button' value='&dArr;'>"	
 		+" <input id='BOrdA"+n+"' class='btn btn-default btn-xs' type='button' value='&uArr;'>"	
 		+"</div>");
+	*/
 	//Definimos la caja donde mostrar la informacion sobre resultado de busqueda
 	$('#'+Elemento).append("<div class='binfr'>"
 		+"<p id='InfoResult"+n+"'></p>"

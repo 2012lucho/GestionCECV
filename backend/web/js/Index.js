@@ -12,23 +12,27 @@ $(document).ready(function(){
 	$('#Todos').click(function () {
 		InicBusca(['']);
 		$('#Notific > .mensaje').html(MensTodos);
-		$('#Notific > .mensaje').css('background',ColorExit);
+		$('#Notific > .mensaje').addClass('bg-success');
+		$('#Notific > .mensaje').removeClass('bg-warning bg-danger bg-primary');
 	});
 	
 	$('#Adeudados').click(function () {
 		InicBusca(['FechaDeb=0000-00-00']);
 		$('#Notific > .mensaje').html(MensPendiente);
-		$('#Notific > .mensaje').css('background',ColorDeuda);
+		$('#Notific > .mensaje').addClass('bg-warning');
+		$('#Notific > .mensaje').removeClass('bg-success bg-danger bg-primary');
 	});
 	
 	$('#Vencidos').click(function () { //agregar comprobación de vencimiento
 		InicBusca(['FechaDeb=0000-00-00 && DATE(FechaDebT) < DATE("'+$('#parametros').attr('data-fecha')+'")']);
 		$('#Notific > .mensaje').html(MensVencido);
-		$('#Notific > .mensaje').css('background',ColorAlerta);	
+		$('#Notific > .mensaje').addClass('bg-danger');
+		$('#Notific > .mensaje').removeClass('bg-success bg-warning bg-primary');
 	});	
 	InicBusca(['FechaDeb=0000-00-00 && DATE(FechaDebT) < DATE("'+$('#parametros').attr('data-fecha')+'")']);
 	$('#Notific > .mensaje').html(MensVencido);
-	$('#Notific > .mensaje').css('background',ColorAlerta);
+	$('#Notific > .mensaje').addClass('bg-primary');
+	$('#Notific > .mensaje').removeClass('bg-success bg-warning bg-danger');
 	
 	function InicBusca(Filtro) {
 		InicializarBuscador(
@@ -59,7 +63,7 @@ $(document).ready(function(){
 					valor:'', //valor con el que comparar el campo
 					mensaje:'',//mensaje a incluir si se resalta por ej "Suspendido"
 				}, 
-				TextoDef:'Número de préstamo', //texto por defecto del campo de busqueda
+				TextoDef:"Número de préstamo", //texto por defecto del campo de busqueda
 			}			
 		);
 	}

@@ -11,6 +11,7 @@ class buscadorAssets extends AssetBundle
     	'css/buscador.css',
     ];
     public $js = [
+    	'js/mustache.min.js',
 		'js/buscador.js',
 	];
     
