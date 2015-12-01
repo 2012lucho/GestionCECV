@@ -1,6 +1,7 @@
 const IdBusLibro='InfoStock';
 var r;
 
+const MensCamposRec="Se deben completar todos los campos";
 const MensSeleccionar="Tiene que seleccionar un libro";
 const MensEliExit="Libro eliminado correctamente";
 const MensEstAgre="Registro exitoso";
@@ -47,7 +48,8 @@ $(document).ready(function(){
 	
 	$('#Aceptar').click(function () {
 		if($('#ingInf').data('peticion')==CreaLib){
-			$.get(r+PeticionNus,{Nombre:$('#Nombre').val(),
+			$.post(r+PeticionNus,{
+				Nombre:$('#Nombre').val(),
 				Descripcion:$('#Descripcion').val(),
 				Autor:$('#Autor').val(),
 				Cantidad:$('#Cantidad').val()},
@@ -56,6 +58,11 @@ $(document).ready(function(){
 						$('#Notific > .mensaje').html(MensEstAgre);
 						$('#Notific > .mensaje').css('background',ColorExit);
 						IniBusLib();
+					}  else {
+						if (data==2){ //si no se completaron todos los campos
+							$('#Notific > .mensaje').html(MensCamposRec);
+							$('#Notific > .mensaje').css('background',ColorAlerta);
+						}					
 					}
 			});
 		} else {

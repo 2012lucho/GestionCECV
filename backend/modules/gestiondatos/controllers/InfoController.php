@@ -99,14 +99,23 @@ class InfoController extends Controller
      */
     public function actionNuevo()
     {
-        $model = new datosuser();
-
-        $model->NombreyApellido=urldecode($_REQUEST["NombreyApellido"]);
-        $model->DNI=urldecode($_REQUEST["DNI"]);
-		  $model->Email=urldecode($_REQUEST["Email"]);
-		  $model->Telefono=urldecode($_REQUEST["Telefono"]);
-        $model->save();
-        return '1';
+        $NA=urldecode($_REQUEST["NombreyApellido"]);
+		  $DU=urldecode($_REQUEST["DNI"]);
+		  $EM=urldecode($_REQUEST["Email"]);
+		  $TL=urldecode($_REQUEST["Telefono"]);
+        	  
+		  //verificamos que se hayan completado todos los campos
+		  if ($NA != '' && $DU !='' && $EM !='' && $TL !=''){
+				$model = new datosuser();				
+				$model->NombreyApellido=$NA;
+        		$model->DNI=$DU;
+		  		$model->Email=$EM;
+		  		$model->Telefono=$TL;		  			
+		  		$model->save(false);
+        		return '1';
+		  } else {
+		  		return '2';
+		  }
     }
 
     

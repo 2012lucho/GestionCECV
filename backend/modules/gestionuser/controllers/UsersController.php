@@ -50,8 +50,13 @@ class UsersController extends Controller
     }
 	//"action" para eliminar un usuario
     public function actionEliminausr(){
-		$model = User::findOne($_REQUEST["id"]);
-		$model->delete();return '1';   
+		$id=$_REQUEST["id"];   	
+    	if(Yii::$app->user->id!=$id){
+    		$model = User::findOne($id);
+			$model->delete();return '1'; 
+    	} else {
+    		return '2'; 
+    	}
     }
     	
 	//"action" para modificar un usuario

@@ -4,7 +4,7 @@
 use app\modules\buscador\buscadorAssets;buscadorAssets::register($this);
 
 //importamos los assets de la página
-use app\modules\gestionstock\PrestaAsset;PrestaAsset::register($this);
+use app\modules\gestionstock\DevuelveAsset;DevuelveAsset::register($this);
 
 $this->title = 'Área de administración - Ingresar devolución';
 ?>

@@ -1,6 +1,7 @@
 const IdBusUsr='InfoUser';
 var r;
 
+const MensEliminarUserActual="No se puede eliminar el usuario actual";
 const MensSeleccionar="Tiene que seleccionar un usuario";
 const MensEliExit="Usuario eliminado correctamente";
 const MensEstAgre="Registro exitoso";
@@ -97,6 +98,13 @@ $(document).ready(function(){
 					$('#Notific > .mensaje').css('background',ColorExit);
 					//reestablecemos los buscadores
 	    			IniBusLib();	
+				} else {
+					if (data == 2){
+						$('#Notific > .mensaje').html(MensEliminarUserActual);
+						$('#Notific > .mensaje').css('background',ColorAlerta);
+						//reestablecemos los buscadores
+	    				IniBusLib();	
+					}			
 				}
 			});
 		} else {

@@ -2,6 +2,8 @@ const MensSeleccionar="Tiene que seleccionar al menos un estudiante";
 const MensEliExit="Estudiante eliminado correctamente";
 const MensSusExit="Estudiante suspendido";
 const MensEstAgre="Registro exitoso";
+const MensCamposRec="Se deben completar todos los campos";
+
 const ColorAlerta='#fdd';
 const ColorExit='#dfd';
 
@@ -50,6 +52,7 @@ $(document).ready(function(){
 	
 	$('#Aceptar').click(function () {
 		if($('#ingInf').data('peticion')==CreaUser){
+			
 			$.post(r+PeticionNus,{
 				NombreyApellido:$('#NombreyApellido').val(),
 				DNI:$('#DNI').val(),
@@ -60,6 +63,11 @@ $(document).ready(function(){
 						$('#Notific > .mensaje').html(MensEstAgre);
 						$('#Notific > .mensaje').css('background',ColorExit);
 						IniBusEst();
+					} else {
+						if (data==2){ //si no se completaron todos los campos
+							$('#Notific > .mensaje').html(MensCamposRec);
+							$('#Notific > .mensaje').css('background',ColorAlerta);
+						}					
 					}
 			});
 		} else {

@@ -61361,3 +61361,1430 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1448983202.379
     'REQUEST_TIME' => 1448983202
 ]
+2015-12-01 17:37:16 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('asas', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:37:16 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_GET = [
+    'Nombre' => 'asas'
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'NjhrZ05VcF9bFV82BT5IL1taXAB2BEQqeEAACx8DKQ9vQVorJhJdLw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/stock'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33463'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'Nombre=asas&Descripcion=&Autor=&Cantidad='
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib?Nombre=asas&Descripcion=&Autor=&Cantidad='
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448991436.111
+    'REQUEST_TIME' => 1448991436
+]
+2015-12-01 17:37:29 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('assa', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:37:29 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_GET = [
+    'Nombre' => 'assa'
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SGQya0JvbHQlSQY6CQRUBCUGBQx6PlgBBhxZBxM5NSQRHQMnKihBBA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/stock'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33473'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'Nombre=assa&Descripcion=&Autor=&Cantidad='
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib?Nombre=assa&Descripcion=&Autor=&Cantidad='
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448991449.215
+    'REQUEST_TIME' => 1448991449
+]
+2015-12-01 17:37:41 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:37:41 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_GET = [
+    'Nombre' => ''
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SGQya0JvbHQlSQY6CQRUBCUGBQx6PlgBBhxZBxM5NSQRHQMnKihBBA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/stock'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33476'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'Nombre=&Descripcion=&Autor=&Cantidad='
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib?Nombre=&Descripcion=&Autor=&Cantidad='
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448991461.256
+    'REQUEST_TIME' => 1448991461
+]
+2015-12-01 17:37:50 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:37:50 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_GET = [
+    'Nombre' => ''
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33483'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'Nombre=&Descripcion=&Autor=&Cantidad='
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib?Nombre=&Descripcion=&Autor=&Cantidad='
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448991470.846
+    'REQUEST_TIME' => 1448991470
+]
+2015-12-01 17:38:59 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:38:59 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_GET = [
+    'Nombre' => ''
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33499'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'Nombre=&Descripcion=&Autor=&Cantidad='
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib?Nombre=&Descripcion=&Autor=&Cantidad='
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448991539.789
+    'REQUEST_TIME' => 1448991539
+]
+2015-12-01 17:39:13 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:39:13 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_GET = [
+    'Nombre' => ''
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SGQya0JvbHQlSQY6CQRUBCUGBQx6PlgBBhxZBxM5NSQRHQMnKihBBA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/stock'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33506'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'Nombre=&Descripcion=&Autor=&Cantidad='
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib?Nombre=&Descripcion=&Autor=&Cantidad='
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448991553.649
+    'REQUEST_TIME' => 1448991553
+]
+2015-12-01 17:39:31 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:39:31 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_GET = [
+    'Nombre' => ''
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33507'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'Nombre=&Descripcion=&Autor=&Cantidad='
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib?Nombre=&Descripcion=&Autor=&Cantidad='
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448991571.429
+    'REQUEST_TIME' => 1448991571
+]
+2015-12-01 17:42:33 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:42:33 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_GET = [
+    'Nombre' => ''
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'SGQya0JvbHQlSQY6CQRUBCUGBQx6PlgBBhxZBxM5NSQRHQMnKihBBA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/stock'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33515'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'Nombre=&Descripcion=&Autor=&Cantidad='
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib?Nombre=&Descripcion=&Autor=&Cantidad='
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448991753.467
+    'REQUEST_TIME' => 1448991753
+]
+2015-12-01 17:46:46 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:46:46 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_GET = [
+    'Nombre' => ''
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'UWM4UFhURHY8TgwBEz98BjwBDzdgBXADHxtTPAkCHSYIGgkcMBNpBg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/stock'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33541'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'Nombre=&Descripcion=&Autor=&Cantidad='
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib?Nombre=&Descripcion=&Autor=&Cantidad='
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448992006.585
+    'REQUEST_TIME' => 1448992006
+]
+2015-12-01 17:46:55 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:46:55 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_GET = [
+    'Nombre' => ''
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'Mk9KN0x4a3pfYn5mBxNTCl8tfVB0KV8PfDchWx0uMiprNnt7JD9GCg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/stock'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33544'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'Nombre=&Descripcion=&Autor=&Cantidad='
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib?Nombre=&Descripcion=&Autor=&Cantidad='
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448992015.001
+    'REQUEST_TIME' => 1448992015
+]
+2015-12-01 17:47:16 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:47:16 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_GET = [
+    'Nombre' => ''
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'Mk9KN0x4a3pfYn5mBxNTCl8tfVB0KV8PfDchWx0uMiprNnt7JD9GCg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/stock'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33555'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'Nombre=&Descripcion=&Autor=&Cantidad='
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib?Nombre=&Descripcion=&Autor=&Cantidad='
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448992036.058
+    'REQUEST_TIME' => 1448992036
+]
+2015-12-01 17:47:24 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:47:24 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_GET = [
+    'Nombre' => ''
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33556'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'Nombre=&Descripcion=&Autor=&Cantidad='
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib?Nombre=&Descripcion=&Autor=&Cantidad='
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448992044.284
+    'REQUEST_TIME' => 1448992044
+]
+2015-12-01 17:50:26 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:50:26 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_POST = [
+    'Nombre' => ''
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ekQyMnBKR0sXaQZjOyF/OxcmBVVIG3M.NDxZXiEcHhsjPQN.GA1qOw=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/stock'
+    'CONTENT_LENGTH' => '37'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33577'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448992226.936
+    'REQUEST_TIME' => 1448992226
+]
+2015-12-01 17:51:20 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Cantidad' cannot be null
+The SQL being executed was: INSERT INTO `Stock` (`Nombre`, `Descripcion`, `Autor`, `Cantidad`, `CantidadDisponible`) VALUES ('', '', '', NULL, NULL)' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `St...')
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/Schema.php(448): yii\db\Command->execute()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(454): yii\db\Schema->insert('Stock', Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/html/GestionCECV/backend/modules/gestionstock/controllers/StockController.php(72): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\modules\gestionstock\controllers\StockController->actionNuevolib()
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Cantidad' cannot be null
+)
+
+2015-12-01 17:51:20 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_POST = [
+    'Nombre' => ''
+    'Descripcion' => ''
+    'Autor' => ''
+    'Cantidad' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ekQyMnBKR0sXaQZjOyF/OxcmBVVIG3M.NDxZXiEcHhsjPQN.GA1qOw=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/GestionCECV/backend/web/index.php/stock'
+    'CONTENT_LENGTH' => '37'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33578'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448992280.584
+    'REQUEST_TIME' => 1448992280
+]
+2015-12-01 17:51:29 [::1][2][tbfksevli278ehfkd9c3cbva90][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevolib', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestionstock/st...', Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-12-01 17:51:29 [::1][2][tbfksevli278ehfkd9c3cbva90][info][application] $_COOKIE = [
+    'PHPSESSID' => 'tbfksevli278ehfkd9c3cbva90'
+    '_csrf' => '5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=tbfksevli278ehfkd9c3cbva90; _csrf=5b093b82a5b32c0fbf8f6b0e03064d255dff76f31bb6e673b82105fc7e4a7defa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m-4QKk8pmb7g8Q4uNxklQVYPYy1LhG-p%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '33579'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevolib'
+    'PATH_TRANSLATED' => '/var/www/html/nuevolib'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevolib'
+    'REQUEST_TIME_FLOAT' => 1448992289.534
+    'REQUEST_TIME' => 1448992289
+]

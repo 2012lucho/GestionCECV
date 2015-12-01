@@ -97,7 +97,7 @@ a.desc:after {
 .oculto{display:none;}
 
 /* Notificaciones, etc*/
-
+.mensaje, .Notific p{font-size:12px;}
 .Notific{border:1px solid #ddd;height: 50px;}
 .Notific p{margin:2px;background-color: #ddd;}
 .boto{margin-top: 2px;margin-bottom: 2px;width: 150px;}
@@ -107,24 +107,16 @@ a.desc:after {
 
 /* Agregados */
 
-.navbar-brand {
-	height:35px;
-	padding:9px;
-}
-
-.navbar{
-	min-height: 35px;
-}
-
-.navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-
-.wrap > .container {
-    padding: 40px 15px 20px;
-}
-
 .main-menu{
 	font-size: 12px;
+}
+
+.navbar-brand {padding: 0px;}
+.cont-logo-enc img{
+	background: #FFF;
+	border-radius: 5px;
+	border: 1px solid #000;
+	width: 50px;
+	height: 50px;
+	padding: 2px;
 }

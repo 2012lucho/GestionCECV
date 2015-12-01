@@ -100,13 +100,22 @@ class InfoController extends Controller
     public function actionNuevo()
     {
         $model = new datosuser();
-
-        $model->NombreyApellido=urldecode($_REQUEST["NombreyApellido"]);
-        $model->DNI=urldecode($_REQUEST["DNI"]);
-		  $model->Email=urldecode($_REQUEST["Email"]);
-		  $model->Telefono=urldecode($_REQUEST["Telefono"]);
-        $model->save();
-        return '1';
+		  $NA=urldecode($_REQUEST["NombreyApellido"]);
+		  $DU=urldecode($_REQUEST["DNI"]);
+		  $EM=urldecode($_REQUEST["Email"]);
+		  $TL=urldecode($_REQUEST["Telefono"]);
+        $model->NombreyApellido=$NA;
+        $model->DNI=$DU;
+		  $model->Email=$EM;
+		  $model->Telefono=$TL;
+		  
+		  //verificamos que se hayan completado todos los campos
+		  if ($NA != '' && $DU !='' && $EM !='' && $TL !=''){
+		  			$model->save(false);
+        			return '1';
+		  } else {
+		  		return '2';
+		  }
     }
 
     
@@ -119,8 +128,7 @@ class InfoController extends Controller
 		$m=datosuser::findOne($id)->getPrestamos()->where(['=','FechaDeb','0000-00-00']);   
 		//verificamos que no tenga prestamos adeudados
 		if ($m->count() == 0) {
-			if($m!=''){
-        	$m->delete();return '1';}else{return '0';}
+        	$m=datosuser::findOne($id)->delete();return '1';
 		}	else {return '4';}	
         
     }

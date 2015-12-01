@@ -28,13 +28,13 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
-    <?php
+<div class="wrap"> 
+	<?php
     NavBar::begin([
-        'brandLabel' => 'Préstamos',
+        'brandLabel' =>  Html::img('@web/img/logo.png', ['alt'=>'Vino Para el Cambio']),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'cont-logo-enc ',
         ],
     ]);
     $menuItems = [];
@@ -43,7 +43,7 @@ AppAsset::register($this);
     } else {
     	$menuItems[] = ['label' => 'Historial préstamos', 'url' => Yii::$app->homeUrl];
     	$menuItems[] = ['label' => 'Prestar', 'url' => ['/npresta']];
-    	$menuItems[] = ['label' => 'Ingresar devolución', 'url' => ['/npresta']];
+    	$menuItems[] = ['label' => 'Ingresar devolución', 'url' => ['/ingresadevol']];
     	$menuItems[] = ['label' => 'Estudiantes', 'url' => ['/datos']];
     	$menuItems[] = ['label' => 'Libros', 'url' => ['/stock']];
     	
