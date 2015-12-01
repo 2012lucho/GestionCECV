@@ -1,4 +1,3 @@
-const RutaWeb="/cecv/frontend/web/index.php";
 const PeticionB="/rbusca"; //parte ruta peticion elementos filtrados
 const RegistrosPag=5;
 

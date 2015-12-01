@@ -185,10 +185,11 @@ function InicializarBuscador(Config,CamposM,Vista){
 		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
 	});	
 
-	$('#ebusca'+n).keypress(function(event){  
+	$('#ebusca'+n).keypress(function(event){  //si se apreta la tecla enter
     	var keycode = (event.keyCode ? event.keyCode : event.which);  
-      	if(keycode == '13'){  
-          	ValoresDef(Elemento);$('#'+Elemento).data('Orden',NoOrdeanado);		
+      if(keycode == '13'){  
+        	ValoresDef(Elemento);$('#'+Elemento).data('Orden',NoOrdeanado);
+        	$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));			
 			Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
 		}   
  	});	
@@ -198,17 +199,20 @@ function InicializarBuscador(Config,CamposM,Vista){
 	});
 	
 	$('#BBusca'+n).on('click', function() { // si se apreta el boton de busqueda
-		ValoresDef(Elemento);$('#'+Elemento).data('Orden',NoOrdeanado);		
+		ValoresDef(Elemento);$('#'+Elemento).data('Orden',NoOrdeanado);	
+		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));	
 		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
 	});
 	
 	$('#BOrdA'+n).on('click', function() { // si se apreta el boton ordenar ascendente
 		ValoresDef(Elemento);$('#'+Elemento).data('Orden',Ascendente);
+		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
 		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);	
 	});
 	
 	$('#BOrdD'+n).on('click', function() { // si se apreta el boton ordenar descendente
 		ValoresDef(Elemento);$('#'+Elemento).data('Orden',Descendente);
+		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
 		Busqueda(Elemento,n,Descendente,$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
 	});
 	

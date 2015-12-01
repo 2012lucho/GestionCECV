@@ -92,29 +92,34 @@ function InicializarBuscador(Elemento,n,Titulo,Tabla){
 	});	
 	
 	$('#BBuscaMas'+n).on('click', function() { // si se apreta el boton de busqueda
+		Termino=encodeURIComponent($('#ebusca').val());
 		ActualizaResultados(Elemento,n,Orden,Termino,Tabla);
 	});
 	
 	$('#BBusca').on('click', function() { // si se apreta el boton de busqueda
 		ValoresDef();Orden=NoOrdeanado;		
+		Termino=encodeURIComponent($('#ebusca').val());
 		Busqueda(Elemento,n,Orden,Termino,Tabla);
 	});
 	
 	$('#ebusca').keypress(function(event){  
     	var keycode = (event.keyCode ? event.keyCode : event.which);  
-      	if(keycode == '13'){  
-          	ValoresDef();Orden=NoOrdeanado;		
+      if(keycode == '13'){  
+        	ValoresDef();Orden=NoOrdeanado;		
+         Termino=encodeURIComponent($('#ebusca').val());
 			Busqueda(Elemento,n,Orden,Termino,Tabla);  
     	}   
  	});  
 	
 	$('#BOrdA').on('click', function() { // si se apreta el boton ordenar ascendente
 		ValoresDef();Orden=Ascendente;
+		Termino=encodeURIComponent($('#ebusca').val());
 		Busqueda(Elemento,n,Orden,Termino,Tabla);	
 	});
 	
 	$('#BOrdD').on('click', function() { // si se apreta el boton ordenar descendente
 		ValoresDef();Orden=Descendente;
+		Termino=encodeURIComponent($('#ebusca').val());
 		Busqueda(Elemento,n,Descendente,Termino,Tabla);
 	});
 	
