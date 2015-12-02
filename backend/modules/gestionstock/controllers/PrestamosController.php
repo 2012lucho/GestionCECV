@@ -145,13 +145,14 @@ class PrestamosController extends Controller
 		$OrdenResu = urldecode($_REQUEST["O"]);
 		$Desplaza= urldecode($_REQUEST["D"]);
 		$CantReg= urldecode($_REQUEST["C"]);
+		$CampoBusqueda= urldecode($_REQUEST["CB"]);
 		$Condicion=BaseJson::decode(urldecode($_REQUEST["CO"]));//condiciones para el where
 
     	$Consulta = (new \yii\db\Query())
 			->select('idPresta,NombreyApellido,Nombre,FechaPresta,FechaDebT,FechaDeb')
 			->from('Prestamos')
 			->innerJoin('DatosUser','Prestamos.idUser=DatosUser.IdUser') //establecemos las relaciones
-			->where(['like','idPresta','%'.$TBusqueda.'%',false])
+			->where(['like',$CampoBusqueda,'%'.$TBusqueda.'%',false])
 			->innerJoin('Stock','Prestamos.IdStock=Stock.idStock');
 			
 			//->where(['FechaDeb'=>'0000-00-00']);		

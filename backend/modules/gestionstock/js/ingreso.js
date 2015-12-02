@@ -18,22 +18,7 @@ const MensSelecPresta="Se debe seleccionar un número de préstamo";
 const ColorAlerta='#fdd';
 const ColorExito='#dfd';
 
-//esta función se llama como un "callback" de la de busqueda al
-//apretar los checkbox del buscador de estudiantes
-function BuscaIdPresta(Id){
-	var IDUser=Id.data('Arreglo-Val')[0];
-	//Actualizamos el arreglo de filtros
-	//$('#'+IdSelecPrest).data('Condiciones',['FechaDeb=0000-00-00','idUser='+IDUser]);
-	InicBuscaPresta(['FechaDeb=0000-00-00 && Prestamos.idUser='+IDUser]);	
-}
-//esta función es llamada comon un "callback" de la busqueda al 
-//desabilitar el checkbox
-function BlancIdPresta(){
-	InicBuscaPresta(['FechaDeb=0000-00-00']);
-}
-
 function InicializarBuscadores() {
-		InicBuscaPresta(['FechaDeb=0000-00-00']);		
 		InicializarBuscador({
 							id:IdSelecLibro,n:1,Tit:'Catálogo de libros',Tabla:'Stock',
 							CampoB:'Nombre',CampoId:'idStock',RWeb:r,CantR:5,
@@ -68,8 +53,8 @@ function InicializarBuscadores() {
 							id:IdSelecEstud,n:2,Tit:'Estudiantes',Tabla:'DatosUser',
 							CampoB:'NombreyApellido',CampoId:'IdUser',RWeb:r,CantR:5,
 							Condiciones:'',							
-							FuncionControl:BuscaIdPresta,//FuncionControl:MostrarInfo,//función que se ejecuta al activar el checkbox
-							FuncionControlD:BlancIdPresta,//FuncionControlD:InicInfoEstu,//función que se ejecuta al desactivar el checkbox
+							FuncionControl:'',//FuncionControl:MostrarInfo,//función que se ejecuta al activar el checkbox
+							FuncionControlD:'',//FuncionControlD:InicInfoEstu,//función que se ejecuta al desactivar el checkbox
 							Action:"/rbusca",						
 						},						
 						[
@@ -93,38 +78,6 @@ function InicializarBuscadores() {
 						}			
 						);	
 	}
-	function InicBuscaPresta(Condicion){
-			InicializarBuscador({
-							id:IdSelecPrest,n:3,Tit:'Préstamos pendientes',Tabla:'Prestamos',
-							CampoB:'idPresta',CampoId:'idPresta',RWeb:r,CantR:5,
-							Condiciones:Condicion,							
-							FuncionControl:'', //función que se ejecuta al activar el checkbox
-							FuncionControlD:'',//función que se ejecuta al desactivar el checkbox
-							Action:"/lpresta",						
-						},
-						[
-							//campos, 1 Nombre campo, 2 Alias
-							["idPresta","Número de préstamo"],
-							["Nombre","Libro"],
-							["NombreyApellido","Estudiante"],
-							["FechaPresta","Fecha retiro"],
-							["FechaDebT","Plazo de devolución"],
-						],
-						{
-							Control:'',//control
-							MaxCantEleSele:'3',//maxima cantidad de elementos seleccionables
-							Alto:'300px', // definir altura fija de la caja
-							Resaltar:{ //Especificamos el campo, condicion y color para resaltar
-								campo:'',
-								cfondo:'',//color resaltado, fondo
-								condicion:'',
-								valor:'', //valor con el que comparar el campo
-								mensaje:'',//mensaje a incluir si se resalta por ej "Suspendido"
-							},
-							TextoDef:'Número de préstamo', //texto pr defecto del campo de busqueda					
-						}
-			);	
-		}
 
 $(document).ready(function(){
 	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";

@@ -138,18 +138,62 @@ function Busqueda(Elemento,n,Orden,Termino,Tabla,CampoB,RegistrosPag,Rweb,Campos
 	});		
 }
 
-function crearFiltroBusquedaHTML(contenedor, parametros){
+function crearFiltroBusquedaHTML(contenedor, parametros, callback){
 	
 	$.ajax({
 		url: JS_TEMPLATE_PATH +'filtro_buscador.html',
 		success: function(template){
 			var result = Mustache.render(template, parametros);
 			$(contenedor).append(result);
+			 callback();
 		},
 		error: function(){
 			alert('Se produjo un error al cargar la template del filtro de busqueda');
 		}
 	})
+}
+
+function AsignarEventos(n,Elemento,Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice){
+		//Definimos los eventos para los controles de busqueda
+	$('#ebusca'+n).on('input',function(){ //cuando se modifica el control de busqueda se cambian los terminos
+		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
+		
+	});	
+
+	$('#ebusca'+n).keypress(function(event){  //si se apreta la tecla enter
+    	var keycode = (event.keyCode ? event.keyCode : event.which);  
+      if(keycode == '13'){  
+        	ValoresDef(Elemento);$('#'+Elemento).data('Orden',NoOrdeanado);
+        	$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));			
+			Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
+		}   
+ 	});	
+	
+	$('#BBuscaMas'+n).off().on('click', function() { // si se apreta el boton de busqueda
+		ActualizaResultados(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
+	});
+	
+	$('#BBusca'+n).click(function() { // si se apreta el boton de busqueda
+		ValoresDef(Elemento);$('#'+Elemento).data('Orden',NoOrdeanado);	
+		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));	
+		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
+	});
+	
+	$('#BOrdA'+n).off().on('click', function() { // si se apreta el boton ordenar ascendente
+		ValoresDef(Elemento);$('#'+Elemento).data('Orden',Ascendente);
+		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
+		//console.log($('#'+Elemento).data('Termino'));
+		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);	
+	});
+	
+	$('#BOrdD'+n).off().on('click', function() { // si se apreta el boton ordenar descendente
+		ValoresDef(Elemento);$('#'+Elemento).data('Orden',Descendente);
+		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
+		//console.log(encodeURIComponent($('#ebusca'+n).val()));
+		Busqueda(Elemento,n,Descendente,$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
+	});
+
+	$('#ebusca'+n).off().on('click', function() { $('#ebusca'+n).val(''); }); //si se hace click
 }
 
 
@@ -197,7 +241,7 @@ function InicializarBuscador(Config,CamposM,Vista){
 	$('#'+Elemento).html("<div class='bEncab"+n+" bEncab col-xs-12'><div class='Btit col-xs-12'>"+Titulo+"</div></div>");
 	//agregamos el control de buscqueda del encabezado
 	
-	crearFiltroBusquedaHTML('.bEncab'+n, parametros);
+	crearFiltroBusquedaHTML('.bEncab'+n, parametros,function(){AsignarEventos(n,Elemento,Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice)});
 	
 	//Definimos la caja donde mostrar la informacion sobre resultado de busqueda
 	$('#'+Elemento).append("<div class='binfr'><p id='InfoResult"+n+"'></p></div>");
@@ -209,49 +253,5 @@ function InicializarBuscador(Config,CamposM,Vista){
 	//Pedimos todos los datos y armamos la vista
 	ValoresDef(Elemento);	
 	Busqueda(Elemento,n,NoOrdeanado,"",Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
-	
-	//Definimos los eventos para los controles de busqueda
-	$('#ebusca'+n).on('input',function(){ //cuando se modifica el control de busqueda se cambian los terminos
-		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
-	});	
-
-	$('#ebusca'+n).keypress(function(event){  //si se apreta la tecla enter
-    	var keycode = (event.keyCode ? event.keyCode : event.which);  
-      if(keycode == '13'){  
-        	ValoresDef(Elemento);$('#'+Elemento).data('Orden',NoOrdeanado);
-        	$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));			
-			Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
-		}   
- 	});	
-	
-	$('body').off().on('click', '#BBuscaMas'+n, function() { // si se apreta el boton de busqueda
-		ActualizaResultados(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
-	});
-	
-	$('body').on('click', '#BBusca'+n, function() { // si se apreta el boton de busqueda
-//	$('body').on('click', 'input.laion', function() { // si se apreta el boton de busqueda
-		alert($('#'+Elemento).data('Termino'));
-		ValoresDef(Elemento);$('#'+Elemento).data('Orden',NoOrdeanado);	
-		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));	
-		
-		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
-	});
-	
-	$('body').off().on('click', '#BOrdA'+n, function() { // si se apreta el boton ordenar ascendente
-		ValoresDef(Elemento);$('#'+Elemento).data('Orden',Ascendente);
-		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
-		//console.log($('#'+Elemento).data('Termino'));
-		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);	
-	});
-	
-	$('body').on('click', '#BOrdD'+n, function() { // si se apreta el boton ordenar descendente
-		ValoresDef(Elemento);$('#'+Elemento).data('Orden',Descendente);
-		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
-		//console.log(encodeURIComponent($('#ebusca'+n).val()));
-		Busqueda(Elemento,n,Descendente,$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
-	});
-	
-	$('body').on('click', '#ebusca'+n, function() { $('#ebusca'+n).val(''); }); //si se hace click
-	
-	
 }
+

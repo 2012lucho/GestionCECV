@@ -38,7 +38,7 @@ $(document).ready(function(){
 		InicializarBuscador(
 			{
 				id:IdHistPresta,n:2,Tit:'Historial de préstamos',Tabla:'Prestamos',
-				CampoB:'idPresta',CampoId:'idPresta',RWeb:r,CantR:5,
+				CampoB:'NombreyApellido',CampoId:'idPresta',RWeb:r,CantR:5,
 				Condiciones:Filtro,							
 				FuncionControl:'',//BuscaIdPresta,//función que se ejecuta al activar el checkbox
 				FuncionControlD:'',//BlancIdPresta,//función que se ejecuta al desactivar el checkbox
@@ -63,7 +63,7 @@ $(document).ready(function(){
 					valor:'', //valor con el que comparar el campo
 					mensaje:'',//mensaje a incluir si se resalta por ej "Suspendido"
 				}, 
-				TextoDef:"Número de préstamo", //texto por defecto del campo de busqueda
+				TextoDef:"Nombre del estudiante", //texto por defecto del campo de busqueda
 			}			
 		);
 	}

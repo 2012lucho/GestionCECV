@@ -1,7 +1,7 @@
 const IdHistPresta='HistorialPresta';
 const ColorAlerta='#fdd';
 const ColorExit='#dfd';
-const ColorDeuda="#dd0";
+const ColorDeuda="#ddb";
 const MensTodos="Mostrando todos los préstamos: Vencidos|Devueltos|Pendientes";
 const MensPendiente="Mostrando préstamos Pendientes";
 const MensVencido="Mostrando todos los préstamos Vencidos";
@@ -12,29 +12,33 @@ $(document).ready(function(){
 	$('#Todos').click(function () {
 		InicBusca(['']);
 		$('#Notific > .mensaje').html(MensTodos);
-		$('#Notific > .mensaje').css('background',ColorExit);
+		$('#Notific > .mensaje').addClass('bg-success');
+		$('#Notific > .mensaje').removeClass('bg-danger bg-primary');
 	});
 	
 	$('#Adeudados').click(function () {
 		InicBusca(['FechaDeb=0000-00-00']);
 		$('#Notific > .mensaje').html(MensPendiente);
-		$('#Notific > .mensaje').css('background',ColorDeuda);
+		$('#Notific > .mensaje').addClass('bg-primary');
+		$('#Notific > .mensaje').removeClass('bg-success bg-danger');
 	});
 	
 	$('#Vencidos').click(function () { //agregar comprobación de vencimiento
 		InicBusca(['FechaDeb=0000-00-00 && DATE(FechaDebT) < DATE("'+$('#parametros').attr('data-fecha')+'")']);
 		$('#Notific > .mensaje').html(MensVencido);
-		$('#Notific > .mensaje').css('background',ColorAlerta);	
+		$('#Notific > .mensaje').addClass('bg-danger');
+		$('#Notific > .mensaje').removeClass('bg-success bg-warning bg-primary');
 	});	
 	InicBusca(['FechaDeb=0000-00-00 && DATE(FechaDebT) < DATE("'+$('#parametros').attr('data-fecha')+'")']);
 	$('#Notific > .mensaje').html(MensVencido);
-	$('#Notific > .mensaje').css('background',ColorAlerta);
+	$('#Notific > .mensaje').addClass('bg-danger');
+	$('#Notific > .mensaje').removeClass('bg-success bg-primary');
 	
 	function InicBusca(Filtro) {
 		InicializarBuscador(
 			{
 				id:IdHistPresta,n:2,Tit:'Historial de préstamos',Tabla:'Prestamos',
-				CampoB:'idPresta',CampoId:'idPresta',RWeb:r,CantR:5,
+				CampoB:'NombreyApellido',CampoId:'idPresta',RWeb:r,CantR:5,
 				Condiciones:Filtro,							
 				FuncionControl:'',//BuscaIdPresta,//función que se ejecuta al activar el checkbox
 				FuncionControlD:'',//BlancIdPresta,//función que se ejecuta al desactivar el checkbox
@@ -59,7 +63,7 @@ $(document).ready(function(){
 					valor:'', //valor con el que comparar el campo
 					mensaje:'',//mensaje a incluir si se resalta por ej "Suspendido"
 				}, 
-				TextoDef:'Número de préstamo', //texto por defecto del campo de busqueda
+				TextoDef:"Número de préstamo", //texto por defecto del campo de busqueda
 			}			
 		);
 	}

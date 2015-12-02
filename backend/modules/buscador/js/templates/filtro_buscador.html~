@@ -3,7 +3,8 @@
 		<input type='text' id='ebusca{{n}}' class='ebusca form-control' placeholder="{{vista}}" value="">	
 	</div>
 	
-	<input id='BBusca{{n}}' class='btn btn-default btn-sm' type='button' value='Ir'>
+	
 	<input id='BOrdD{{n}}' class='btn btn-default btn-sm' type='button' value='&dArr;'>
 	<input id='BOrdA{{n}}' class='btn btn-default btn-sm' type='button' value='&uArr;'>	
+	<input id='BBusca{{n}}' class='btn btn-default btn-sm' type='button' value='Ir'>
 </div>

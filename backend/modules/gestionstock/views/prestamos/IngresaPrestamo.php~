@@ -20,13 +20,10 @@ $this->title = 'Área de administración - Ingresar nuevo préstamo';
 		</div>	
 	</div>
 	<div class="col-xs-12">
-		<div class="col-md-4 col-xs-12 pad">
+		<div class="col-md-6 col-xs-12 pad">
 			<div id="BuscaEstu" class="bus"></div>
 		</div>
-		<div class="col-md-4 col-xs-12 pad">
-			<div id="InfoEstud" class="bus"></div>
-		</div>
-		<div class="col-md-4 col-xs-12 pad">
+		<div class="col-md-6 col-xs-12 pad">
 			<div id="BuscaLib" class="bus"></div>
 		</div>
 	</div>
