@@ -169,31 +169,31 @@ function AsignarEventos(n,Elemento,Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,
 		}   
  	});	
 	
-	$('#BBuscaMas'+n).off().on('click', function() { // si se apreta el boton de busqueda
+	$('#BBuscaMas'+n).on('click', function() { // si se apreta el boton de busqueda
 		ActualizaResultados(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
 	});
 	
-	$('#BBusca'+n).click(function() { // si se apreta el boton de busqueda
+	$('#BBusca'+n).on('click', function() { // si se apreta el boton de busqueda
 		ValoresDef(Elemento);$('#'+Elemento).data('Orden',NoOrdeanado);	
 		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));	
 		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
 	});
 	
-	$('#BOrdA'+n).off().on('click', function() { // si se apreta el boton ordenar ascendente
+	$('#BOrdA'+n).on('click', function() { // si se apreta el boton ordenar ascendente
 		ValoresDef(Elemento);$('#'+Elemento).data('Orden',Ascendente);
 		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
 		//console.log($('#'+Elemento).data('Termino'));
 		Busqueda(Elemento,n,$('#'+Elemento).data('Orden'),$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);	
 	});
 	
-	$('#BOrdD'+n).off().on('click', function() { // si se apreta el boton ordenar descendente
+	$('#BOrdD'+n).on('click', function() { // si se apreta el boton ordenar descendente
 		ValoresDef(Elemento);$('#'+Elemento).data('Orden',Descendente);
 		$('#'+Elemento).data('Termino',encodeURIComponent($('#ebusca'+n).val()));
 		//console.log(encodeURIComponent($('#ebusca'+n).val()));
 		Busqueda(Elemento,n,Descendente,$('#'+Elemento).data('Termino'),Tabla,CampoB,RegistrosPag,Rweb,CamposM,Vista,Cindice);
 	});
 
-	$('#ebusca'+n).off().on('click', function() { $('#ebusca'+n).val(''); }); //si se hace click
+	$('#ebusca'+n).on('click', function() { $('#ebusca'+n).val(''); }); //si se hace click
 }
 
 
