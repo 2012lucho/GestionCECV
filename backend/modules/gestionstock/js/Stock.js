@@ -57,6 +57,7 @@ $(document).ready(function(){
 					if (data==1){
 						$('#Notific > .mensaje').html(MensEstAgre);
 						$('#Notific > .mensaje').css('background',ColorExit);
+						BorrayEscondeFormulario();
 						IniBusLib();
 					}  else {
 						if (data==2){ //si no se completaron todos los campos
@@ -80,22 +81,27 @@ $(document).ready(function(){
 						if (data==1){
 							$('#Notific > .mensaje').html(MensEstAgre);
 							$('#Notific > .mensaje').css('background',ColorExit);
+							BorrayEscondeFormulario();
 							IniBusLib();
 						} else {
 							if(data==3){
 								$('#Notific > .mensaje').html("no se admiten cantidades negativas de libros");
 								$('#Notific > .mensaje').css('background',ColorAlerta);
-								IniBusLib();
 							}						
 						}
 					});
 			}		
 		}
+		
+	});
+	
+	function BorrayEscondeFormulario(){
 		InicForm();
 		$('#ingInf').css('display','none');
 		$('#cont-input-cantidad').css('display','none');
 		$('#cont-mod-cantidad').css('display','none');
-	});
+	}	
+	
 	//eventos botonera	
 	$('#Agregar').click(function () {
 		$('#ingInf').css('display','block');	
