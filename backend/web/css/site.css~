@@ -97,12 +97,31 @@ a.desc:after {
 .oculto{display:none;}
 
 /* Notificaciones, etc*/
-.mensaje, .Notific p{font-size:12px;}
-.Notific{border:1px solid #ddd;height: 50px;}
-.Notific p{margin:2px;background-color: #ddd;}
-.boto{margin-top: 2px;margin-bottom: 2px;width: 150px;}
-.botonera input{margin:1px;height: 48px;}
-.botonera{border:1px solid #eee;}
+.mensaje, .Notific p{
+	font-size:14px;
+	margin:0 -15px;
+	line-height: 24px;
+	padding-left: 5px;
+}
+.Notific{
+	height: 50px;
+}
+.Notific p{
+	background-color:#101010;
+	color: #cccccc;
+}
+
+
+.boto{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	width: 150px;
+}
+.botonera input{
+	margin:1px;
+	height: 48px;
+}
+
 
 
 /* Agregados */
@@ -120,3 +139,4 @@ a.desc:after {
 	height: 50px;
 	padding: 2px;
 }
+

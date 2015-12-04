@@ -67,7 +67,7 @@ class StockController extends Controller
 		$Ds=urldecode($_REQUEST["Descripcion"]);
 		$Au=urldecode($_REQUEST["Autor"]);
 		$Ca=urldecode($_REQUEST["Cantidad"]);
-		
+		//verificamos que se hayan completado todos los campos
 		if ($No!='' && $Ds!='' && $Au!='' && $Ca!=''){
 			$model = new stock(); 
       	$model->Nombre=$No;
@@ -97,7 +97,7 @@ class StockController extends Controller
 		$model->Autor=urldecode($_REQUEST["Autor"]);
 		$model->Cantidad+=urldecode($_REQUEST["CantidadAAgregar"]);
 		$model->CantidadDisponible+=urldecode($_REQUEST["CantidadAAgregar"]);
-		if($model->Cantidad>0 && $model->CantidadDisponible>=0) {
+		if($model->Cantidad>=0 && $model->CantidadDisponible>=0) {
         $model->save(false);
         return '1';
       } else {return '3';} //no se admiten cantidades negativas de libros

@@ -97,7 +97,7 @@ class StockController extends Controller
 		$model->Autor=urldecode($_REQUEST["Autor"]);
 		$model->Cantidad+=urldecode($_REQUEST["CantidadAAgregar"]);
 		$model->CantidadDisponible+=urldecode($_REQUEST["CantidadAAgregar"]);
-		if($model->Cantidad>0 && $model->CantidadDisponible>=0) {
+		if($model->Cantidad>=0 && $model->CantidadDisponible>=0) {
         $model->save(false);
         return '1';
       } else {return '3';} //no se admiten cantidades negativas de libros

@@ -95,16 +95,16 @@ $(document).ready(function(){
 			ArEst=JSON.stringify(ArEst);
 			$.get(r+PeticionPre,{L:ArLib,E:ArEst},function (data) {		
 				//Se anuncia el resultado
-				//data = JSON.parse(data);
-				if (data == PetExitosa){
-					$('#Notific > .mensaje').html(MensPetExit);
-					$('#Notific > .mensaje').css('background',ColorExito);
+				data = JSON.parse(data);
+				if (data["codigo"] == PetExitosa){
+					$('#Notific > .mensaje').html(data["detalles"]);
+					$('#Notific > .mensaje').css('background',data["color"]);
 					//reestablecemos los buscadores
 	    			InicializarBuscadores();	
 				} else {
-					if (data == 2){
-						$('#Notific > .mensaje').html(MensUsrSusExit);
-						$('#Notific > .mensaje').css('background',ColorAlerta);
+					if (data["codigo"] == 2){
+						$('#Notific > .mensaje').html(data["detalles"]);
+						$('#Notific > .mensaje').css('background',data["color"]);
 						//reestablecemos los buscadores
 	    				InicializarBuscadores();
 					}

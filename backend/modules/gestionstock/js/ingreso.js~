@@ -19,7 +19,6 @@ const ColorAlerta='#fdd';
 const ColorExito='#dfd';
 
 function InicializarBuscadores() {
-		InicBuscaPresta(['FechaDeb=0000-00-00']);		
 		InicializarBuscador({
 							id:IdSelecLibro,n:1,Tit:'Catálogo de libros',Tabla:'Stock',
 							CampoB:'Nombre',CampoId:'idStock',RWeb:r,CantR:5,
@@ -96,16 +95,16 @@ $(document).ready(function(){
 			ArEst=JSON.stringify(ArEst);
 			$.get(r+PeticionPre,{L:ArLib,E:ArEst},function (data) {		
 				//Se anuncia el resultado
-				//data = JSON.parse(data);
-				if (data == PetExitosa){
+				data = JSON.parse(data);
+				if (data["codigo"] == PetExitosa){
 					$('#Notific > .mensaje').html(MensPetExit);
 					$('#Notific > .mensaje').css('background',ColorExito);
 					//reestablecemos los buscadores
 	    			InicializarBuscadores();	
 				} else {
-					if (data == 2){
-						$('#Notific > .mensaje').html(MensUsrSusExit);
-						$('#Notific > .mensaje').css('background',ColorAlerta);
+					if (data["codigo"] == 2){
+						$('#Notific > .mensaje').html(data["detalles"]);
+						$('#Notific > .mensaje').css('background',data["color"]);
 						//reestablecemos los buscadores
 	    				InicializarBuscadores();
 					}

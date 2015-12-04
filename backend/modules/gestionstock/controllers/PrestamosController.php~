@@ -73,7 +73,7 @@ class PrestamosController extends Controller
     public function actionApresta()
     {
     	//resultado de la petición
-    	$resultado=[];
+    	//$resultado=[];
     	//Buscamos en la configuracion la cantidad de dias de duraci{on del prestamo
     	$Config=new Config(['conf'=>'TPrestaLibro']);
 		$DiasPresta=$Config->Valor();
@@ -85,13 +85,17 @@ class PrestamosController extends Controller
 		$Suspen=$Me->Suspendido;
 		//comprobamos que el estudiante no este susendido
 		if ($Suspen==1){
-			return "2"; //no se puede cargar
+			$resultado["codigo"]="2";
+			$resultado["detalles"]="Estudiante suspendido, no se puede cargar el préstamo";
+			$resultado["color"]="#fdd";
+			return BaseJson::encode($resultado); //no se puede cargar "2"
 		} else {
 			//Obtenemos la fecha actual
 			$timezone = new \DateTimeZone('America/Argentina/Buenos_Aires');
     		$date = new \DateTime('now', $timezone); 
     		$FDebT = new \DateTime('now', $timezone); 
     		$FDebT->modify('+'.$DiasPresta.' day');
+    		$resultado["detalles"]="";
 			//Creamos un registro por cada libro prestado
 			for($c=0;$c<sizeof($Libros);$c++){
 				//buscamos en el stock  
@@ -110,9 +114,13 @@ class PrestamosController extends Controller
 					//actualizamos la cantidad en stock
 					$Stock->CantidadDisponible-=1;
 					$Stock->save();
-				}
+					$resultado["detalles"].="Préstamo de libro ".$Stock->Nombre." registrado correctamente <br>";
+				} else {
+					$resultado["detalles"].="El libro ".$Stock->Nombre." no se puede prestar, cantidad igual a cero <br>";}
 			}
-			return "1"; //aca se debe debolver un arreglo con el resultado del ingreso de datos
+			$resultado["codigo"]="1";
+			$resultado["color"]="#fdd";
+			return BaseJson::encode($resultado); //no se puede cargar "2"
 		}
     }
     
