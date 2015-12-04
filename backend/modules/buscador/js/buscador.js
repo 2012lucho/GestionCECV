@@ -35,10 +35,10 @@ function CreaVista(data,Elemento,n,CamposM,V,Cindice){
 		
 		if (V['Control']!=''){
 			//creamos el control			
-			vista+='</div><div class="col-xs-1"><input id="C'+Elemento+n+data[item][Cindice]+'" type='+V['Control']+' class="BI" ></div>';	
+			vista+='</div><div class="col-xs-1"><input id="C'+Elemento+n+data[item][Cindice]+'" type='+V['Control']+' class="BI Control'+Elemento+'" ></div>';	
 		}		
 		// creamos registro 
-		$('#'+Elemento+n).append('<div class="RB col-xs-12" id="'+Elemento+n+'-'+data[item][Cindice]+'"><div class="item-prestamo col-xs-12" id="'+Elemento+n+data[item][Cindice]+'">'+vista+'</div>');
+		$('#'+Elemento+n).append('<div class="RB col-xs-12" id="'+Elemento+n+'-'+data[item][Cindice]+'"><div class="Registro'+Elemento+' item-prestamo col-xs-12" id="'+Elemento+n+data[item][Cindice]+'">'+vista+'</div>');
 		//pintamos el registro de acuerdo a la condición
 		if (V['Resaltar']['campo']!=''){
 			if (V['Resaltar']['condicion']=='='){
@@ -70,7 +70,7 @@ function CompartamientoControl(id){
 		var IdControl='#'+$(this).data('Control');
     	if ( $(this).is(':checked') ) {
     		var ArregloVal=$(IdControl).data('Arreglo-Val');
-			//nos fijamos de no pasarno del límite    		
+			//nos fijamos de no pasarnos del límite    		
     		if (ArregloVal.length<$(IdControl).data('CantMaxSelec')){
 				// si es "cheked" pintamos en colorcito verde
     			$("#"+Padre).css('background','#dfd');
@@ -81,8 +81,27 @@ function CompartamientoControl(id){
     			var funcion=$(IdControl).data('Fcontrol');
     			if(funcion!=''){funcion($(IdControl));}
     		} else {
-    			//sino se pueden seleccionar mas, sacamos el "cheked" del control
-    			$(this).prop('checked',false);
+    			//Si la cantidad máxima a seleccionar es "1" entonces no quitamos el checked y
+    			//destildamos el tildado anteriormente
+    			if ($(IdControl).data('CantMaxSelec')==1){
+    				// agregamos el id del registro al arreglo
+    				ArregloVal=[];
+    				ArregloVal.push(IdRegistro);
+    				$(IdControl).data('Arreglo-Val',ArregloVal);
+    				//llamamos a la función asociada al presionar el boton    			
+    				var funcion=$(IdControl).data('Fcontrol');
+    				if(funcion!=''){funcion($(IdControl));}
+    				//destiladmos los anteriores
+    				$('.Control'+$(this).data('Control')).prop('checked',false);
+    				$('.Registro'+$(this).data('Control')).css('background','#fff');
+    				//pintamos en colorcito verde
+    				$("#"+Padre).css('background','#dfd');
+    				//tildamos este
+    				$(this).prop('checked',true);
+    			} else {
+    				//sino se pueden seleccionar mas, sacamos el "cheked" del control
+    				$(this).prop('checked',false);
+    			}
     		}
   		} else {
 			// si no es "cheked" pintamos en colorcito blanco o el de resaltado
