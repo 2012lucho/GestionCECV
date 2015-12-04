@@ -132,7 +132,7 @@ $(document).ready(function(){
 				//data = JSON.parse(data);
 				if (data == 1){
 					$('#Notific > .mensaje').html(MensEliExit);
-					$('#Notific > .mensaje').css('background',ColorExito);
+					$('#Notific > .mensaje').css('background',ColorExit);
 					//reestablecemos los buscadores
 	    			IniBusLib();	
 				}
