@@ -1,7 +1,7 @@
 <?php
 
 namespace common\models;
-
+use common\models\Validacion;
 use Yii;
 
 /**
@@ -17,7 +17,7 @@ use Yii;
  *
  * @property Prestamos[] $prestamos
  */
-class stock extends \yii\db\ActiveRecord
+class stock extends Validacion
 {
     /**
      * @inheritdoc

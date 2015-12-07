@@ -2,6 +2,7 @@
 
 namespace app\models;
 use common\models\prestamos;
+use common\models\Validacion;
 use Yii;
 
 /**
@@ -15,7 +16,7 @@ use Yii;
  *
  * @property Prestamos[] $prestamos
  */
-class datosuser extends \yii\db\ActiveRecord
+class datosuser extends Validacion
 {
     /**
      * @inheritdoc

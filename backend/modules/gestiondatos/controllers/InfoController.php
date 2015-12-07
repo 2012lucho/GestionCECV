@@ -99,23 +99,12 @@ class InfoController extends Controller
 		  	return BaseJson::encode($resultado);
       } else {   //si no se pudo guardar
       	$resultado["codigo"]="3";
-      	$resultado["detalles"]=$this->StringListaErrores($model,"Revise el campo ","<br>");
+      	$resultado["detalles"]=$model->StringListaErrores("Revise el campo ","<br>");
       	return BaseJson::encode($resultado);
       }
 	}
 
-	//función para retornar errores en la carga de información de los modelos
-	private function StringListaErrores($model,$mensaje,$separador){
-		$errores=$model->getErrors();
-		$salida='';
-		//armamos la salida de acuerdo a los errores encontrados
-		$claves=array_keys($errores);					
-		for($c=0;$c<sizeof($claves);$c++) {
-			$salida.=$mensaje.$model->attributeLabels()[$claves[$c]].$separador;
-		}  	
-		return $salida;		
-	}
-    /**
+   /**
     crear un estudiante nuevo
      */
     public function actionNuevo()
@@ -139,7 +128,7 @@ class InfoController extends Controller
 		  			return BaseJson::encode($resultado);
 		  		} else {  //si hubo errores
 		  			$resultado["codigo"]="3";
-      			$resultado["detalles"]=$this->StringListaErrores($model,"Revise el campo ","<br>");
+      			$resultado["detalles"]=$model->StringListaErrores("Revise el campo ","<br>");
       			return BaseJson::encode($resultado);
 		  		}
 		  } else {

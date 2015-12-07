@@ -75,10 +75,20 @@ class StockController extends Controller
 			$model->Autor=$Au;
 			$model->Cantidad=$Ca;
 			$model->CantidadDisponible=$model->Cantidad;
-      	$model->save();
-      	return '1';
-		} else {
-			return '2';		
+      	if($model->save()){ //si se puede guardar el registro 
+      		$resultado["codigo"]="1";	
+				$resultado["detalles"]="Registro exitoso";	  			
+		  		return BaseJson::encode($resultado);
+      	} else { // si el registro no se puede guardar
+      		$resultado["codigo"]="3";
+      		$resultado["detalles"]=$model->StringListaErrores("Revise el campo ","<br>");
+      		return BaseJson::encode($resultado);
+      	}
+		} else { //si faltan datos
+			$resultado["codigo"]="2";		
+			$resultado["detalles"]="Se deben completar todos los campos";  		
+		  	return BaseJson::encode($resultado); // si no se completaron todos los campos
+		 		
 		}
 		
 	}    
@@ -92,15 +102,26 @@ class StockController extends Controller
 	//"action" para modificar un libro
 	public function actionEditalib(){
 		$model = stock::findOne($_REQUEST["id"]);
-        $model->Nombre=urldecode($_REQUEST["Nombre"]);
-        $model->Descripcion=urldecode($_REQUEST["Descripcion"]);
+      $model->Nombre=urldecode($_REQUEST["Nombre"]);
+      $model->Descripcion=urldecode($_REQUEST["Descripcion"]);
 		$model->Autor=urldecode($_REQUEST["Autor"]);
 		$model->Cantidad+=urldecode($_REQUEST["CantidadAAgregar"]);
 		$model->CantidadDisponible+=urldecode($_REQUEST["CantidadAAgregar"]);
 		if($model->Cantidad>=0 && $model->CantidadDisponible>=0) {
-        $model->save(false);
-        return '1';
-      } else {return '3';} //no se admiten cantidades negativas de libros
+       	if($model->save()){ //si se puede guardar el registro 
+      		$resultado["codigo"]="1";	
+				$resultado["detalles"]="Registro exitoso";	  			
+		  		return BaseJson::encode($resultado);
+      	} else { // si el registro no se puede guardar
+      		$resultado["codigo"]="3";
+      		$resultado["detalles"]=$model->StringListaErrores("Revise el campo ","<br>");
+      		return BaseJson::encode($resultado);
+      	}
+      } else {
+			$resultado["codigo"]="3";	
+			$resultado["detalles"]="La cantidad de libros disponibles no puede ser menor a cero";	  			
+		  	return BaseJson::encode($resultado);      
+      } //no se admiten cantidades negativas de libros
 	}   
     
     //"action" para devolver informacion sobre un libro determinado

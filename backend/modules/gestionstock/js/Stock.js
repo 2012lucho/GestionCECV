@@ -54,16 +54,23 @@ $(document).ready(function(){
 				Autor:$('#Autor').val(),
 				Cantidad:$('#Cantidad').val()},
 				function (data) {
-					if (data==1){
-						$('#Notific > .mensaje').html(MensEstAgre);
-						$('#Notific > .mensaje').css('background',ColorExit);
-						BorrayEscondeFormulario();
-						IniBusLib();
-					}  else {
-						if (data==2){ //si no se completaron todos los campos
-							$('#Notific > .mensaje').html(MensCamposRec);
+					//Se anuncia el resultado de la petición
+					data = JSON.parse(data);
+					switch(data["codigo"]) {	
+						case "1": //si la carga fue exitosa
+							$('#Notific > .mensaje').html(data["detalles"]);
+							$('#Notific > .mensaje').css('background',ColorExit);
+							BorrayEscondeFormulario();
+							IniBusLib();
+							break;
+						case "2": //si no se completaron todos los campos
+							$('#Notific > .mensaje').html(data["detalles"]); 
 							$('#Notific > .mensaje').css('background',ColorAlerta);
-						}					
+							break;
+						case "3": //si hubo un error al guardar
+							$('#Notific > .mensaje').html(data["detalles"]); 
+							$('#Notific > .mensaje').css('background',ColorAlerta);
+							break;				
 					}
 			});
 		} else {
@@ -78,16 +85,19 @@ $(document).ready(function(){
 					CantidadAAgregar:$('#CantidadAAgregar').val(),					
 					},
 					function (data) {
-						if (data==1){
-							$('#Notific > .mensaje').html(MensEstAgre);
-							$('#Notific > .mensaje').css('background',ColorExit);
-							BorrayEscondeFormulario();
-							IniBusLib();
-						} else {
-							if(data==3){
-								$('#Notific > .mensaje').html("no se admiten cantidades negativas de libros");
+						//Se anuncia el resultado de la petición
+						data = JSON.parse(data);
+						switch(data["codigo"]) {	
+							case "1": //si la carga fue exitosa
+								$('#Notific > .mensaje').html(data["detalles"]);
+								$('#Notific > .mensaje').css('background',ColorExit);
+								BorrayEscondeFormulario();
+								IniBusLib();
+								break;
+							case "3": //si hubo un error al guardar
+								$('#Notific > .mensaje').html(data["detalles"]); 
 								$('#Notific > .mensaje').css('background',ColorAlerta);
-							}						
+								break;				
 						}
 					});
 			}		
