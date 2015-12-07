@@ -64472,3 +64472,1484 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1449209475.527
     'REQUEST_TIME' => 1449209475
 ]
+2015-12-07 16:33:16 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: NombreyApellido' in /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php:102
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(102): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/G...', 102, Array)
+#1 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-07 16:33:16 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '37938'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449505996.109
+    'REQUEST_TIME' => 1449505996
+]
+2015-12-07 16:35:46 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: NombreyApellido' in /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php:102
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(102): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/G...', 102, Array)
+#1 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-07 16:35:46 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '37956'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449506146.278
+    'REQUEST_TIME' => 1449506146
+]
+2015-12-07 16:36:06 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: NombreyApellido' in /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php:102
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(102): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/G...', 102, Array)
+#1 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-07 16:36:06 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '37963'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449506166.64
+    'REQUEST_TIME' => 1449506166
+]
+2015-12-07 16:38:48 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: NombreyApellido' in /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php:102
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(102): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/G...', 102, Array)
+#1 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-07 16:38:48 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '37975'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449506328.775
+    'REQUEST_TIME' => 1449506328
+]
+2015-12-07 16:38:48 [::1][2][n9h2ipoiq97bq0tbalg10bef06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2015-12-07 16:38:48 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '37975'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449506328.775
+    'REQUEST_TIME' => 1449506328
+]
+2015-12-07 16:39:14 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: DNI' in /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php:103
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(103): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/G...', 103, Array)
+#1 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-07 16:39:14 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '37978'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449506354.9
+    'REQUEST_TIME' => 1449506354
+]
+2015-12-07 16:39:15 [::1][2][n9h2ipoiq97bq0tbalg10bef06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2015-12-07 16:39:14 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '37978'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449506354.9
+    'REQUEST_TIME' => 1449506354
+]
+2015-12-07 16:41:20 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: errores' in /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php:121
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(121): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/G...', 121, Array)
+#1 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-07 16:41:20 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'google@gmail.com'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '37991'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=google@gmail.com&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=google@gmail.com&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449506480.069
+    'REQUEST_TIME' => 1449506480
+]
+2015-12-07 16:41:20 [::1][2][n9h2ipoiq97bq0tbalg10bef06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2015-12-07 16:41:20 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'google@gmail.com'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '37991'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=google@gmail.com&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=google@gmail.com&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449506480.069
+    'REQUEST_TIME' => 1449506480
+]
+2015-12-07 17:03:46 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\validators\EmailValidator::max' in /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /var/www/html/GestionCECV/vendor/yiisoft/yii2/BaseYii.php(518): yii\base\Component->__set('max', 50)
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\validators\EmailValidator), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\validators\\...', Array, Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\validators\\...', Array, Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/validators/Validator.php(206): yii\BaseYii::createObject(Array)
+#7 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Model.php(441): yii\validators\Validator::createValidator('email', Object(app\models\datosuser), Array, Array)
+#8 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Model.php(405): yii\base\Model->createValidators()
+#9 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Model.php(185): yii\base\Model->getValidators()
+#10 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Model.php(341): yii\base\Model->scenarios()
+#11 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/ActiveRecord.php(418): yii\base\Model->validate(NULL)
+#12 /var/www/html/GestionCECV/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#13 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(115): yii\db\BaseActiveRecord->save()
+#14 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#15 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#18 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#19 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#21 {main}
+2015-12-07 17:03:46 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'google@gmail.com'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38082'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=google@gmail.com&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=google@gmail.com&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449507826.454
+    'REQUEST_TIME' => 1449507826
+]
+2015-12-07 17:03:46 [::1][2][n9h2ipoiq97bq0tbalg10bef06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#7 {main}
+2015-12-07 17:03:46 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'google@gmail.com'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38082'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=google@gmail.com&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=google@gmail.com&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449507826.454
+    'REQUEST_TIME' => 1449507826
+]
+2015-12-07 17:09:19 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant lenght - assumed 'lenght'' in /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php:124
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(124): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/var/www/html/G...', 124, Array)
+#1 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-07 17:09:19 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'googl'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38113'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449508159.259
+    'REQUEST_TIME' => 1449508159
+]
+2015-12-07 17:09:19 [::1][2][n9h2ipoiq97bq0tbalg10bef06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2015-12-07 17:09:19 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'googl'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38113'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449508159.259
+    'REQUEST_TIME' => 1449508159
+]
+2015-12-07 17:20:04 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php:126
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(126): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/var/www/html/G...', 126, Array)
+#1 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-07 17:20:04 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'googl'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38393'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449508804.806
+    'REQUEST_TIME' => 1449508804
+]
+2015-12-07 17:20:04 [::1][2][n9h2ipoiq97bq0tbalg10bef06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2015-12-07 17:20:04 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'googl'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38393'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449508804.806
+    'REQUEST_TIME' => 1449508804
+]
+2015-12-07 17:20:27 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 1' in /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php:126
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(126): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/var/www/html/G...', 126, Array)
+#1 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-07 17:20:27 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'googl'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38394'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449508827.539
+    'REQUEST_TIME' => 1449508827
+]
+2015-12-07 17:20:27 [::1][2][n9h2ipoiq97bq0tbalg10bef06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2015-12-07 17:20:27 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'googl'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38394'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449508827.539
+    'REQUEST_TIME' => 1449508827
+]
+2015-12-07 17:20:50 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal offset type' in /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php:126
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(126): yii\base\ErrorHandler->handleError(2, 'Illegal offset ...', '/var/www/html/G...', 126, Array)
+#1 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-07 17:20:50 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'googl'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38395'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449508850.302
+    'REQUEST_TIME' => 1449508850
+]
+2015-12-07 17:20:50 [::1][2][n9h2ipoiq97bq0tbalg10bef06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2015-12-07 17:20:50 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'googl'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38395'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449508850.302
+    'REQUEST_TIME' => 1449508850
+]
+2015-12-07 17:31:16 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php:126
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(126): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/var/www/html/G...', 126, Array)
+#1 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-07 17:31:16 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'googl'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38504'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449509476.66
+    'REQUEST_TIME' => 1449509476
+]
+2015-12-07 17:31:16 [::1][2][n9h2ipoiq97bq0tbalg10bef06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2015-12-07 17:31:16 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'googl'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38504'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449509476.66
+    'REQUEST_TIME' => 1449509476
+]
+2015-12-07 17:38:20 [::1][2][n9h2ipoiq97bq0tbalg10bef06][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php:126
+Stack trace:
+#0 /var/www/html/GestionCECV/backend/modules/gestiondatos/controllers/InfoController.php(126): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/var/www/html/G...', 126, Array)
+#1 [internal function]: app\modules\gestiondatos\controllers\InfoController->actionNuevo()
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('nuevo', Array)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gestiondatos/in...', Array)
+#6 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/GestionCECV/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-07 17:38:20 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'googl'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38519'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449509900.086
+    'REQUEST_TIME' => 1449509900
+]
+2015-12-07 17:38:20 [::1][2][n9h2ipoiq97bq0tbalg10bef06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#2 /var/www/html/GestionCECV/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 /var/www/html/GestionCECV/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 /var/www/html/GestionCECV/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2015-12-07 17:38:20 [::1][2][n9h2ipoiq97bq0tbalg10bef06][info][application] $_GET = [
+    'NombreyApellido' => 'shjgsgs'
+    'DNI' => 'jhgjhgjh'
+    'Email' => 'googl'
+    'Telefono' => 'nmbmbm'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'n9h2ipoiq97bq0tbalg10bef06'
+    '_csrf' => 'a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue\";}'
+    '_identity' => 'e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=n9h2ipoiq97bq0tbalg10bef06; _csrf=a3c97863b2d7af82ce5fffbca91a1ae8695eb4e31605f41aac7ea9be4e4c5150a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IMe36MBSRiNxgJ56ExNHF5Eh1XwRwZue%22%3B%7D; _identity=e483d6390844da2e3488a13ab707320ea698ba479ae0d4f3ba87ff0244891442a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22o7m2YowYjj-1MYv_Kl0YdNE5J_UsGu0p%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/GestionCECV/backend/web/index.php'
+    'REMOTE_PORT' => '38519'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'REQUEST_URI' => '/GestionCECV/backend/web/index.php/nuevoest?&NombreyApellido=shjgsgs&DNI=jhgjhgjh&Email=googl&Telefono=nmbmbm'
+    'SCRIPT_NAME' => '/GestionCECV/backend/web/index.php'
+    'PATH_INFO' => '/nuevoest'
+    'PATH_TRANSLATED' => '/var/www/html/nuevoest'
+    'PHP_SELF' => '/GestionCECV/backend/web/index.php/nuevoest'
+    'REQUEST_TIME_FLOAT' => 1449509900.086
+    'REQUEST_TIME' => 1449509900
+]

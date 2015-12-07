@@ -82,9 +82,8 @@ function InicializarBuscadores() {
 $(document).ready(function(){
 	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
 	CanSelLib=$("#parametros").attr('data-CantLibSel');
-	//Inicializamos control donde se muestra info delos estudiantes
-	//InicInfoEstu();
-	//Inicializamos controles de carga de información
+	
+	//Evento del botón nuevo préstamo
 	$('#NuevoPrestamo').click(function () {
 		var ArLib=$('#'+IdSelecLibro).data('Arreglo-Val');
 		var ArEst=$('#'+IdSelecEstud).data('Arreglo-Val');

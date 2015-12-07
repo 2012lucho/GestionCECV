@@ -82,8 +82,7 @@ function InicializarBuscadores() {
 $(document).ready(function(){
 	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
 	CanSelLib=$("#parametros").attr('data-CantLibSel');
-	//Inicializamos control donde se muestra info delos estudiantes
-	//InicInfoEstu();
+	
 	//Inicializamos controles de carga de información
 	$('#NuevoPrestamo').click(function () {
 		var ArLib=$('#'+IdSelecLibro).data('Arreglo-Val');
@@ -97,8 +96,8 @@ $(document).ready(function(){
 				//Se anuncia el resultado
 				data = JSON.parse(data);
 				if (data["codigo"] == PetExitosa){
-					$('#Notific > .mensaje').html(MensPetExit);
-					$('#Notific > .mensaje').css('background',ColorExito);
+					$('#Notific > .mensaje').html(data["detalles"]);
+					$('#Notific > .mensaje').css('background',data["color"]);
 					//reestablecemos los buscadores
 	    			InicializarBuscadores();	
 				} else {

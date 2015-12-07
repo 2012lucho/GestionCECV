@@ -110,12 +110,30 @@ class InfoController extends Controller
 				$model->NombreyApellido=$NA;
         		$model->DNI=$DU;
 		  		$model->Email=$EM;
-		  		$model->Telefono=$TL;		  			
-		  		$model->save(false);
-        		return '1';
+		  		$model->Telefono=$TL;
+		  			  			
+		  		if($model->save()==1) { // si se guardó correctamente
+					$resultado["codigo"]="1";	
+					$resultado["detalles"]="Registro exitoso";	  			
+		  			return BaseJson::encode($resultado);
+		  		} else {  //si hubo errores
+		  			$errores=$model->getErrors();
+		  			$resultado["codigo"]="3";	
+		  			$resultado["detalles"]='';
+		  			// la salida seria algo asi {"codigo":"3","detalles":{"Email":["Email is not a valid email address."]}}
+		  			//armamos la salida de acuerdo a los errores encontrados
+					$claves=array_keys($errores);					
+					for($c=0;$c<sizeof($claves);$c++) {
+						$resultado["detalles"].="Revise el campo ".$model->attributeLabels()[$claves[$c]]."<br>";
+					}  			
+		  			return BaseJson::encode($resultado);
+		  		}
 		  } else {
-		  		return '2';
+				$resultado["codigo"]="2";		
+				$resultado["detalles"]="Se deben completar todos los campos";  		
+		  		return BaseJson::encode($resultado); // si no se completaron todos los campos
 		  }
+		  return "nada!";
     }
 
     
