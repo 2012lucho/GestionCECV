@@ -63,6 +63,11 @@ $(document).ready(function(){
 						$('#Notific > .mensaje').html(MensEstAgre);
 						$('#Notific > .mensaje').css('background',ColorExit);
 						IniBusEst();
+					} else {
+						if (data==2){ //si no se completaron todos los campos
+							$('#Notific > .mensaje').html(MensCamposRec);
+							$('#Notific > .mensaje').css('background',ColorAlerta);
+						}					
 					}
 			});
 		} else {

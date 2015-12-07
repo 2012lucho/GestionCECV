@@ -63,6 +63,8 @@ $(document).ready(function(){
 						$('#Notific > .mensaje').html(MensEstAgre);
 						$('#Notific > .mensaje').css('background',ColorExit);
 						IniBusEst();
+						InicForm();
+						$('#ingInf').css('display','none');
 					} else {
 						if (data==2){ //si no se completaron todos los campos
 							$('#Notific > .mensaje').html(MensCamposRec);
@@ -84,12 +86,12 @@ $(document).ready(function(){
 							$('#Notific > .mensaje').html(MensEstAgre);
 							$('#Notific > .mensaje').css('background',ColorExit);
 							IniBusEst();
+							InicForm();
+							$('#ingInf').css('display','none');
 						}
 					});
 			}		
 		}
-		InicForm();
-		$('#ingInf').css('display','none');
 	});
 	//eventos botonera	
 	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
