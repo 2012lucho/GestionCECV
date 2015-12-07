@@ -22,17 +22,33 @@
 	</div>
 	
 	<div class="col-xs-12 ingresoInfo" id="ingInf">
-		<div class="col-md-5">
-			<div><b>Código de usuario: </b><input type="text" id="id" disabled="disabled"></div>
-			<div><b>Nombre: </b><input type="text" id="username"></div>
+		<div class="col-md-1"></div>		
+		<div class="col-md-3">
+			<div><p><b>Código de usuario: </b></p>
+				<input type="text" id="id" disabled="disabled">
+			</div>
+			<div><p><b>Nombre: </b></p>
+				<input type="text" id="username">
+			</div>
     	</div>
-		<div class="col-md-5">    		
-			<div><b>Correo electrónico: </b><input type="text" id="email"></div>
-			<div><b>Rango: </b>
-			<SELECT id="rango" SIZE="1">
-   			<OPTION VALUE="0">Administrador</OPTION>
-   			<OPTION VALUE="1">Operador</OPTION>
-			</SELECT> 	</div>		
+		<div class="col-md-3">    		
+			<div><p><b>Correo electrónico: </b></p>
+				<input type="text" id="email">
+			</div>
+			<div><p><b>Rango: </b></p>
+				<SELECT id="rango" SIZE="1">
+   				<OPTION VALUE="0">Administrador</OPTION>
+   				<OPTION VALUE="1">Operador</OPTION>
+				</SELECT>
+			</div>		
+    	</div>
+    	<div class="col-md-3">
+    		<div><p><b>Contraseña:</b></p>
+				<input type="password" id="contrasenia">	
+    		</div>
+    		<div><p><b>Confirmar contraseña:</b></p>
+				<input type="password" id="contrasenia-conf">	
+    		</div>
     	</div>
     	<div class="col-md-2">
     		<input id='Aceptar' class='btn btn-success btn-xs' value='Aceptar' type='button'>

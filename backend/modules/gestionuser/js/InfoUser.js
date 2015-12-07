@@ -5,8 +5,12 @@ const MensEliminarUserActual="No se puede eliminar el usuario actual";
 const MensSeleccionar="Tiene que seleccionar un usuario";
 const MensEliExit="Usuario eliminado correctamente";
 const MensEstAgre="Registro exitoso";
+const MensContrasNoIgual="Las contraseñas no coinciden";
+const MensUserSeleccion="Editando el usuario ";
+
 const ColorAlerta='#fdd';
 const ColorExit='#dfd';
+const ColorInfo='#ddf';
 
 const PeticionEli='/eliminausr';
 const PeticionInf='/infousr';
@@ -22,6 +26,8 @@ $(document).ready(function(){
 		$('#username').val("");
 		$('#email').val("");
 		$('#rango').val("");
+		$('#contrasenia').val("");
+		$('#contrasenia-conf').val("");
 	}	
 	//id	username 	email 	rango 	 	
 	function CreaNuevo() {
@@ -31,6 +37,8 @@ $(document).ready(function(){
 			$('#username').val(data['username']);
 			$('#email').val(data['email']);
 			$('#rango').val(data['rango']);
+			$('#contrasenia').val("");
+			$('#contrasenia-conf').val("");
 		});
 	}
 	
@@ -41,34 +49,40 @@ $(document).ready(function(){
 			$('#username').val(data['username']);
 			$('#email').val(data['email']);
 			$('#rango').val(data['rango']);
+			$('#contrasenia').val("");
+			$('#contrasenia-conf').val("");
 		});
 	}	
 	
 	$('#Aceptar').click(function () {
 		if($('#ingInf').data('peticion')==ModiLib){
 			var ArLib=$('#'+IdBusUsr).data('Arreglo-Val');
-			$.post(r+PeticionEdi,{
-				id:ArLib[0],
-				username:$('#username').val(),
-				email:$('#email').val(),
-				rango:$('#rango').val()},
-				function (data) {
-					if (data==1){
-						$('#Notific > .mensaje').html(MensEstAgre);
-						$('#Notific > .mensaje').css('background',ColorExit);
-						IniBusLib();
-					} else {
-						if (data==3){
-							$('#Notific > .mensaje').html('El rango solo puede ser 0 (Administrador) o 1 (Operador)');
+			if ($('#contrasenia').val()==$('#contrasenia-conf').val()) {
+				$.post(r+PeticionEdi,{
+					id:ArLib[0],
+					username:$('#username').val(),
+					email:$('#email').val(),
+					rango:$('#rango').val(),
+					contrasenia:$('#contrasenia').val(),},
+					function (data) {
+						if (data==1){
+							$('#Notific > .mensaje').html(MensEstAgre);
 							$('#Notific > .mensaje').css('background',ColorExit);
-							IniBusLib();
+							InicForm();
+							$('#ingInf').css('display','none');
+						} else {
+							if (data==3){
+								$('#Notific > .mensaje').html('El rango solo puede ser 0 (Administrador) o 1 (Operador)');
+								$('#Notific > .mensaje').css('background',ColorExit);
+								IniBusLib();
+							}
 						}
-					}
-				});
+					});
+			} else {
+				$('#Notific > .mensaje').html(MensContrasNoIgual);
+				$('#Notific > .mensaje').css('background',ColorAlerta);
+			}
 		}		
-		
-		InicForm();
-		$('#ingInf').css('display','none');
 	});
 	//eventos botonera	
 	$('#Modificar').click(function () {
@@ -76,7 +90,8 @@ $(document).ready(function(){
 		if (ArLib.length>0){		
 			$('#ingInf').css('display','block');	
 			$('#ingInf').data('peticion',ModiLib);	
-			
+			$('#Notific > .mensaje').html(MensUserSeleccion+ArLib[0]);
+			$('#Notific > .mensaje').css('background',ColorInfo);
 			Actualizar(ArLib[0]);
 			//
 			//IniBusEst();		
