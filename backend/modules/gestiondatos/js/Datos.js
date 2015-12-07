@@ -63,14 +63,14 @@ $(document).ready(function(){
 					data = JSON.parse(data);
 					switch(data["codigo"]) {	
 						case "1": //si la carga fue exitosa
-							$('#Notific > .mensaje').html(MensEstAgre);
+							$('#Notific > .mensaje').html(data["detalles"]);
 							$('#Notific > .mensaje').css('background',ColorExit);
 							IniBusEst();
 							InicForm();
 							$('#ingInf').css('display','none');
 							break;
 						case "2": //si no se completaron todos los campos
-							$('#Notific > .mensaje').html(MensCamposRec); 
+							$('#Notific > .mensaje').html(data["detalles"]); 
 							$('#Notific > .mensaje').css('background',ColorAlerta);
 							break;
 						case "3": //si hubo un error al guardar
@@ -89,12 +89,20 @@ $(document).ready(function(){
 					Email:$('#Email').val(),
 					Telefono:$('#Telefono').val()},
 					function (data) {
-						if (data==1){
-							$('#Notific > .mensaje').html(MensEstAgre);
-							$('#Notific > .mensaje').css('background',ColorExit);
-							IniBusEst();
-							InicForm();
-							$('#ingInf').css('display','none');
+						//Se anuncia el resultado de la petición
+						data = JSON.parse(data);
+						switch(data["codigo"]) {	
+							case "1": //si la carga fue exitosa
+								$('#Notific > .mensaje').html(data["detalles"]);
+								$('#Notific > .mensaje').css('background',ColorExit);
+								IniBusEst();
+								InicForm();
+								$('#ingInf').css('display','none');
+								break;
+							case "3": //si hubo un error al guardar
+								$('#Notific > .mensaje').html(data["detalles"]); 
+								$('#Notific > .mensaje').css('background',ColorAlerta);
+								break;				
 						}
 					});
 			}		

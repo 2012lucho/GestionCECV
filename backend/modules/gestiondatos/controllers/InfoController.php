@@ -38,7 +38,10 @@ class InfoController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                  //  'delete' => ['post'],
+                   'delete' => ['post'],
+                   'nuevo' => ['post'],
+                   'suspend' => ['post'],
+                   'infoest' => ['post'],
                 ],
             ],
         ];
@@ -90,10 +93,28 @@ class InfoController extends Controller
       $model->DNI=urldecode($_REQUEST["DNI"]);
 		$model->Email=urldecode($_REQUEST["Email"]);
 		$model->Telefono=urldecode($_REQUEST["Telefono"]);
-      $model->save(false);
-      return '1';
+      if($model->save()==1) { //si se pudo guardar correctamente
+	      $resultado["codigo"]="1";	
+			$resultado["detalles"]="Registro exitoso";	  			
+		  	return BaseJson::encode($resultado);
+      } else {   //si no se pudo guardar
+      	$resultado["codigo"]="3";
+      	$resultado["detalles"]=$this->StringListaErrores($model,"Revise el campo ","<br>");
+      	return BaseJson::encode($resultado);
+      }
 	}
 
+	//función para retornar errores en la carga de información de los modelos
+	private function StringListaErrores($model,$mensaje,$separador){
+		$errores=$model->getErrors();
+		$salida='';
+		//armamos la salida de acuerdo a los errores encontrados
+		$claves=array_keys($errores);					
+		for($c=0;$c<sizeof($claves);$c++) {
+			$salida.=$mensaje.$model->attributeLabels()[$claves[$c]].$separador;
+		}  	
+		return $salida;		
+	}
     /**
     crear un estudiante nuevo
      */
@@ -117,16 +138,9 @@ class InfoController extends Controller
 					$resultado["detalles"]="Registro exitoso";	  			
 		  			return BaseJson::encode($resultado);
 		  		} else {  //si hubo errores
-		  			$errores=$model->getErrors();
-		  			$resultado["codigo"]="3";	
-		  			$resultado["detalles"]='';
-		  			// la salida seria algo asi {"codigo":"3","detalles":{"Email":["Email is not a valid email address."]}}
-		  			//armamos la salida de acuerdo a los errores encontrados
-					$claves=array_keys($errores);					
-					for($c=0;$c<sizeof($claves);$c++) {
-						$resultado["detalles"].="Revise el campo ".$model->attributeLabels()[$claves[$c]]."<br>";
-					}  			
-		  			return BaseJson::encode($resultado);
+		  			$resultado["codigo"]="3";
+      			$resultado["detalles"]=$this->StringListaErrores($model,"Revise el campo ","<br>");
+      			return BaseJson::encode($resultado);
 		  		}
 		  } else {
 				$resultado["codigo"]="2";		

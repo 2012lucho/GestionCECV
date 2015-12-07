@@ -36,7 +36,7 @@ class datosuser extends \yii\db\ActiveRecord
             [['DNI'], 'string', 'max' => 12],
             [['Telefono'], 'string', 'max' => 20],
             [['Email'], 'email'],
-            ['Suspendido','string','max'=>1]
+            //['Suspendido','string','max'=>1]
         ];
     }
 
@@ -51,6 +51,7 @@ class datosuser extends \yii\db\ActiveRecord
             'DNI' => 'Dni',
             'Email' => 'Email',
             'Telefono' => 'Telefono',
+            'Suspendido'=>'Suspendido',
         ];
     }
 
