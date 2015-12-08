@@ -65,18 +65,21 @@ $(document).ready(function(){
 					rango:$('#rango').val(),
 					contrasenia:$('#contrasenia').val(),},
 					function (data) {
-						if (data==1){
-							$('#Notific > .mensaje').html(MensEstAgre);
-							$('#Notific > .mensaje').css('background',ColorExit);
-							InicForm();
-							$('#ingInf').css('display','none');
-						} else {
-							if (data==3){
-								$('#Notific > .mensaje').html('El rango solo puede ser 0 (Administrador) o 1 (Operador)');
+						//Se anuncia el resultado de la petición
+						data = JSON.parse(data);
+						switch(data["codigo"]) {	
+							case "1": //si la carga fue exitosa
+								$('#Notific > .mensaje').html(data["detalles"]);
 								$('#Notific > .mensaje').css('background',ColorExit);
+								InicForm();
+								$('#ingInf').css('display','none');
 								IniBusLib();
-							}
-						}
+								break;
+							case "3": //si hubo un error al guardar
+								$('#Notific > .mensaje').html(data["detalles"]); 
+								$('#Notific > .mensaje').css('background',ColorAlerta);
+								break;				
+						}						
 					});
 			} else {
 				$('#Notific > .mensaje').html(MensContrasNoIgual);
@@ -106,21 +109,20 @@ $(document).ready(function(){
 		var ArLib=$('#'+IdBusUsr).data('Arreglo-Val');
 		if (ArLib.length>0){
 			$.post(r+PeticionEli,{id:ArLib[0]},function (data) {		
-				//Se anuncia el resultado
-				//data = JSON.parse(data);
-				if (data == 1){
-					$('#Notific > .mensaje').html(MensEliExit);
-					$('#Notific > .mensaje').css('background',ColorExit);
-					//reestablecemos los buscadores
-	    			IniBusLib();	
-				} else {
-					if (data == 2){
-						$('#Notific > .mensaje').html(MensEliminarUserActual);
+				//Se anuncia el resultado de la petición
+				data = JSON.parse(data);
+				switch(data["codigo"]) {	
+					case "1": //si la carga fue exitosa
+						$('#Notific > .mensaje').html(data["detalles"]);
+						$('#Notific > .mensaje').css('background',ColorExit);
+						IniBusLib();
+						break;
+					case "2": //si hubo un error al guardar
+						$('#Notific > .mensaje').html(data["detalles"]); 
 						$('#Notific > .mensaje').css('background',ColorAlerta);
-						//reestablecemos los buscadores
-	    				IniBusLib();	
-					}			
-				}
+						IniBusLib();
+						break;				
+				}		
 			});
 		} else {
 			$('#Notific > .mensaje').html(MensSeleccionar);

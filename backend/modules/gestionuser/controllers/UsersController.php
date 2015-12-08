@@ -53,9 +53,14 @@ class UsersController extends Controller
 		$id=$_REQUEST["id"];   	
     	if(Yii::$app->user->id!=$id){
     		$model = User::findOne($id);
-			$model->delete();return '1'; 
+			$model->delete();
+			$resultado["codigo"]="1";	
+			$resultado["detalles"]="Usuario eliminado exitosamente";	  			
+		  	return BaseJson::encode($resultado);
     	} else {
-    		return '2'; 
+    		$resultado["codigo"]="2";	
+			$resultado["detalles"]="No se puede eliminar el usuario actual";	  			
+		  	return BaseJson::encode($resultado);
     	}
     }
     	
@@ -67,11 +72,20 @@ class UsersController extends Controller
       $model->setPassword(urldecode($_REQUEST["contrasenia"]));
       $rango=urldecode($_REQUEST["rango"]);
 		if ($rango !=0 && $rango != 1) {
-			return '3'; //valor de rango no permitido		
+			$resultado["codigo"]="3";
+			$resultado["detalles"]="Rango no permitido";
+			return BaseJson::encode($resultado); //valor de rango no permitido		
 		}	else {
 			$model->rango=$rango;
-      	$model->save(false);
-      	return '1';
+      	if($model->save()){ //si se puede guardar el registro 
+      		$resultado["codigo"]="1";	
+				$resultado["detalles"]="Registro exitoso";	  			
+		  		return BaseJson::encode($resultado);
+      	} else { // si el registro no se puede guardar
+      		$resultado["codigo"]="3";
+      		$resultado["detalles"]=$model->StringListaErrores("Revise el campo ","<br>");
+      		return BaseJson::encode($resultado);
+      	}
 		}	
 	}   
     

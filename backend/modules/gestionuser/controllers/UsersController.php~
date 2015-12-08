@@ -64,14 +64,23 @@ class UsersController extends Controller
 		$model = User::findOne($_REQUEST["id"]);
       $model->username=urldecode($_REQUEST["username"]);
       $model->email=urldecode($_REQUEST["email"]);
-      $model->email=urldecode($_REQUEST["contrasenia"]);
+      $model->setPassword(urldecode($_REQUEST["contrasenia"]));
       $rango=urldecode($_REQUEST["rango"]);
 		if ($rango !=0 && $rango != 1) {
-			return '3'; //valor de rango no permitido		
+			$resultado["codigo"]="3";
+			$resultado["detalles"]="Rango no permitido";
+			return BaseJson::encode($resultado); //valor de rango no permitido		
 		}	else {
 			$model->rango=$rango;
-      	$model->save(false);
-      	return '1';
+      	if($model->save()){ //si se puede guardar el registro 
+      		$resultado["codigo"]="1";	
+				$resultado["detalles"]="Registro exitoso";	  			
+		  		return BaseJson::encode($resultado);
+      	} else { // si el registro no se puede guardar
+      		$resultado["codigo"]="3";
+      		$resultado["detalles"]=$model->StringListaErrores("Revise el campo ","<br>");
+      		return BaseJson::encode($resultado);
+      	}
 		}	
 	}   
     
