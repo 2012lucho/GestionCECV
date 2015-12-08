@@ -55,11 +55,11 @@ class UsersController extends Controller
     		$model = User::findOne($id);
 			$model->delete();
 			$resultado["codigo"]="1";	
-			$resultado["detalles"]="Usuario eliminado exitosamente";	  			
+			$resultado["detalles"]="Usuario eliminado correctamente";	  			
 		  	return BaseJson::encode($resultado);
     	} else {
     		$resultado["codigo"]="2";	
-			$resultado["detalles"]="No se puede eliminar el usuario actual";	  			
+			$resultado["detalles"]="El usuario actual no puede ser eliminado";	  			
 		  	return BaseJson::encode($resultado);
     	}
     }

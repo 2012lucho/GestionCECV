@@ -53,9 +53,14 @@ class UsersController extends Controller
 		$id=$_REQUEST["id"];   	
     	if(Yii::$app->user->id!=$id){
     		$model = User::findOne($id);
-			$model->delete();return '1'; 
+			$model->delete();
+			$resultado["codigo"]="1";	
+			$resultado["detalles"]="Usuario eliminado exitosamente";	  			
+		  	return BaseJson::encode($resultado);
     	} else {
-    		return '2'; 
+    		$resultado["codigo"]="2";	
+			$resultado["detalles"]="El usuario actual no puede ser eliminado";	  			
+		  	return BaseJson::encode($resultado);
     	}
     }
     	

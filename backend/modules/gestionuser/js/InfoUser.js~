@@ -78,7 +78,6 @@ $(document).ready(function(){
 							case "3": //si hubo un error al guardar
 								$('#Notific > .mensaje').html(data["detalles"]); 
 								$('#Notific > .mensaje').css('background',ColorAlerta);
-								IniBusLib();
 								break;				
 						}						
 					});

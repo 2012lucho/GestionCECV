@@ -1,9 +1,7 @@
 const IdBusUsr='InfoUser';
 var r;
 
-const MensEliminarUserActual="No se puede eliminar el usuario actual";
 const MensSeleccionar="Tiene que seleccionar un usuario";
-const MensEliExit="Usuario eliminado correctamente";
 const MensEstAgre="Registro exitoso";
 const MensContrasNoIgual="Las contraseñas no coinciden";
 const MensUserSeleccion="Editando el usuario ";
