@@ -104,7 +104,7 @@ a.desc:after {
 	padding-left: 5px;
 }
 .Notific{
-	height: 50px;
+	min-height: 50px;
 }
 .Notific p{
 	background-color:#101010;
@@ -140,3 +140,6 @@ a.desc:after {
 	padding: 2px;
 }
 
+.form-control{
+	resize="none";
+}

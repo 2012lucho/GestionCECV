@@ -30,12 +30,12 @@
 	
 	<div class="col-xs-12 ingresoInfo" id="ingInf">
 		<div class="col-md-5">
-			<div><b>Nombre y apellido: </b><input type="text" id="NombreyApellido"></div>
-			<div><b>DNI: </b><input type="text" id="DNI"></div>
+			<div><b>Nombre y apellido: </b><input type="text" id="NombreyApellido" class="form-control"></div>
+			<div><b>DNI: </b><input type="text" id="DNI" class="form-control"></div>
     	</div>
 		<div class="col-md-5">    		
-			<div><b>Correo electrónico: </b><input type="text" id="Email"></div>
-			<div><b>Número de teléfono: </b><input type="text" id="Telefono"></div>
+			<div><b>Correo electrónico: </b><input type="text" id="Email" class="form-control"></div>
+			<div><b>Número de teléfono: </b><input type="text" id="Telefono" class="form-control"></div>
     	</div>
     	<div class="col-md-2">
     		<input id='Aceptar' class='btn btn-success btn-xs' value='Aceptar' type='button'>

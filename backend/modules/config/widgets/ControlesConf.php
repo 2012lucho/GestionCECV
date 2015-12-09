@@ -19,7 +19,7 @@ class ControlesConf extends Widget
 	
 	private function NuevoControl($conf)
 	{
-		$htmlCont='<input class="conf-C" type="'.$conf['control'].'" id="'.$conf['cod'].'" min="1" max="999" value="'.$conf['valor'].'">';
+		$htmlCont='<input class="conf-C form-control" type="'.$conf['control'].'" id="'.$conf['cod'].'" min="1" max="999" value="'.$conf['valor'].'">';
 		
 		$salida='<div class="col-md-4 col-xs-12 conf-block">
 					<div class="conf-descrip col-xs-12">'.$conf['descripcion'].'</div>

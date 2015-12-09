@@ -77,6 +77,7 @@ class User extends Validacion implements IdentityInterface
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
             [["email"], 'email'],
+            ['email', 'unique'],
             [["rango"], 'string', 'max' => 2],
         ];
     }

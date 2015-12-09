@@ -55,7 +55,7 @@ class UsersController extends Controller
     		$model = User::findOne($id);
 			$model->delete();
 			$resultado["codigo"]="1";	
-			$resultado["detalles"]="Usuario eliminado exitosamente";	  			
+			$resultado["detalles"]="Usuario eliminado correctamente";	  			
 		  	return BaseJson::encode($resultado);
     	} else {
     		$resultado["codigo"]="2";	
@@ -69,7 +69,11 @@ class UsersController extends Controller
 		$model = User::findOne($_REQUEST["id"]);
       $model->username=urldecode($_REQUEST["username"]);
       $model->email=urldecode($_REQUEST["email"]);
-      $model->setPassword(urldecode($_REQUEST["contrasenia"]));
+      if (urldecode($_REQUEST["contrasenia"])!=""){
+      	$model->setPassword(urldecode($_REQUEST["contrasenia"]));
+      } else {
+      
+      }
       $rango=urldecode($_REQUEST["rango"]);
 		if ($rango !=0 && $rango != 1) {
 			$resultado["codigo"]="3";

@@ -140,3 +140,6 @@ a.desc:after {
 	padding: 2px;
 }
 
+.form-control{
+	resize: none;
+}

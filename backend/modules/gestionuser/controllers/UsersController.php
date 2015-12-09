@@ -69,7 +69,9 @@ class UsersController extends Controller
 		$model = User::findOne($_REQUEST["id"]);
       $model->username=urldecode($_REQUEST["username"]);
       $model->email=urldecode($_REQUEST["email"]);
-      $model->setPassword(urldecode($_REQUEST["contrasenia"]));
+      if (urldecode($_REQUEST["contrasenia"])!=""){
+      	$model->setPassword(urldecode($_REQUEST["contrasenia"]));
+      } 
       $rango=urldecode($_REQUEST["rango"]);
 		if ($rango !=0 && $rango != 1) {
 			$resultado["codigo"]="3";
