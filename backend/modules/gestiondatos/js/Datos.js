@@ -137,7 +137,7 @@ $(document).ready(function(){
 			Val=0;
 		} 
 		if (ArEst.length>0){
-			$.get(r+PeticionSus,{id:ArEst[0], v:Val},function (data) {		
+			$.post(r+PeticionSus,{id:ArEst[0], v:Val},function (data) {		
 				//Se anuncia el resultado
 				//data = JSON.parse(data);
 				if (data == 1){
