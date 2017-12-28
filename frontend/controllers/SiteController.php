@@ -21,14 +21,14 @@ class SiteController extends Controller
      * @inheritdoc
      */
     public $defaultAction = 'catalogo';
-     
+
     public function behaviors()
     {
         return [
         	/*'corsFilter' => [
             	'class' => \yii\filters\Cors::className(),
             	'cors' => [
-					//'Origin'=>['http://localhost'],            	
+					//'Origin'=>['http://localhost'],
             	],
         	],*/
             'access' => [
@@ -77,8 +77,6 @@ class SiteController extends Controller
      */
     public function actionCatalogo()
     {
-    	$Config=new Config(['conf'=>'DirWeb']);
-		$Rweb=$Config->Valor();
-    	return $this->render('catalogo',['Rweb'=>$Rweb]);
+    		return $this->render('catalogo');
     }
 }

@@ -22,10 +22,10 @@ function InicializarBuscadores() {
 		InicializarBuscador({
 							id:IdSelecLibro,n:1,Tit:'Catálogo de libros',Tabla:'Stock',
 							CampoB:'Nombre',CampoId:'idStock',RWeb:r,CantR:5,
-							Condiciones:'',							
+							Condiciones:'',
 							FuncionControl:'', //función que se ejecuta al activar el checkbox
 							FuncionControlD:'',//función que se ejecuta al desactivar el checkbox
-							Action:"/rbusca",						
+							Action:"/rbusca",
 						},
 						[
 							//campos, 1 Nombre campo, 2 Alias
@@ -44,19 +44,19 @@ function InicializarBuscadores() {
 								condicion:'',
 								valor:'', //valor con el que comparar el campo
 								mensaje:'',//mensaje a incluir si se resalta por ej "Suspendido"
-							}, 
+							},
 							TextoDef:'Nombre', //texto por defecto del campo de busqueda
 						}
-						);	
+						);
 		InicializarBuscador(
 						{
 							id:IdSelecEstud,n:2,Tit:'Estudiantes',Tabla:'DatosUser',
 							CampoB:'NombreyApellido',CampoId:'IdUser',RWeb:r,CantR:5,
-							Condiciones:'',							
+							Condiciones:'',
 							FuncionControl:'',//FuncionControl:MostrarInfo,//función que se ejecuta al activar el checkbox
 							FuncionControlD:'',//FuncionControlD:InicInfoEstu,//función que se ejecuta al desactivar el checkbox
-							Action:"/rbusca",						
-						},						
+							Action:"/rbusca",
+						},
 						[
 							["NombreyApellido","Nombre"], //campos, 1 Nombre campo, 2 Alias
 							["DNI","DNI"],
@@ -73,16 +73,16 @@ function InicializarBuscadores() {
 								condicion:'=',
 								valor:'1', //valor con el que comparar el campo
 								mensaje:'<b class="rojo">Suspendido</b>',//mensaje a incluir si se resalta por ej "Suspendido"
-							}, 
+							},
 							TextoDef:'Nombre', //texto por defecto del campo de busqueda
-						}			
-						);	
+						}
+						);
 	}
 
 $(document).ready(function(){
-	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
+	r="../index.php";
 	CanSelLib=$("#parametros").attr('data-CantLibSel');
-	
+
 	//Evento del botón nuevo préstamo
 	$('#NuevoPrestamo').click(function () {
 		var ArLib=$('#'+IdSelecLibro).data('Arreglo-Val');
@@ -92,14 +92,14 @@ $(document).ready(function(){
 			//se hace la peticion
 			ArLib=JSON.stringify(ArLib);
 			ArEst=JSON.stringify(ArEst);
-			$.get(r+PeticionPre,{L:ArLib,E:ArEst},function (data) {		
+			$.get(r+PeticionPre,{L:ArLib,E:ArEst},function (data) {
 				//Se anuncia el resultado
 				data = JSON.parse(data);
 				if (data["codigo"] == PetExitosa){
 					$('#Notific > .mensaje').html(data["detalles"]);
 					$('#Notific > .mensaje').css('background',data["color"]);
 					//reestablecemos los buscadores
-	    			InicializarBuscadores();	
+	    			InicializarBuscadores();
 				} else {
 					if (data["codigo"] == 2){
 						$('#Notific > .mensaje').html(data["detalles"]);
@@ -108,13 +108,13 @@ $(document).ready(function(){
 	    				InicializarBuscadores();
 					}
 				}
-			});	
+			});
 		} else {
 			$('#Notific > .mensaje').html(MensSeleccionar);
 			$('#Notific > .mensaje').css('background',ColorAlerta);
 		}
 	});
-	
+
 	//Inicializamos controles de búsqueda
-	InicializarBuscadores();	
+	InicializarBuscadores();
 });

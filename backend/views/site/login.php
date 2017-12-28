@@ -28,5 +28,15 @@ $this->title = 'Ingresar';
 
             <?php ActiveForm::end(); ?>
         </div>
+        <div class="col-xs-12">
+          <h4>Datos para realizar prueba como usuario administrador</h4>
+          <p>Usuario: "admin"</p>
+          <p>Contraseña: "admin123" </p>
+          <h4>Datos para realizar prueba como usuario operador</h4>
+          <p>Usuario: "operador"</p>
+          <p>Contraseña: "operador123" </p>
+          <h4>Ir a vista de inventario público</h4>
+          <a href="../../../../frontend/web">Sección pública</a>
+        </div>
     </div>
 </div>

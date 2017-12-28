@@ -26,8 +26,8 @@ $(document).ready(function(){
 		$('#rango').val("");
 		$('#contrasenia').val("");
 		$('#contrasenia-conf').val("");
-	}	
-	//id	username 	email 	rango 	 	
+	}
+	//id	username 	email 	rango
 	function CreaNuevo() {
 		$.post(r+PeticionInf,{id:ID},function (data) {
 			data = JSON.parse(data);
@@ -39,7 +39,7 @@ $(document).ready(function(){
 			$('#contrasenia-conf').val("");
 		});
 	}
-	
+
 	function Actualizar(ID) {
 		$.post(r+PeticionInf,{id:ID},function (data) {
 			data = JSON.parse(data);
@@ -50,8 +50,8 @@ $(document).ready(function(){
 			$('#contrasenia').val("");
 			$('#contrasenia-conf').val("");
 		});
-	}	
-	
+	}
+
 	$('#Aceptar').click(function () {
 		if($('#ingInf').data('peticion')==ModiLib){
 			var ArLib=$('#'+IdBusUsr).data('Arreglo-Val');
@@ -65,7 +65,7 @@ $(document).ready(function(){
 					function (data) {
 						//Se anuncia el resultado de la petición
 						data = JSON.parse(data);
-						switch(data["codigo"]) {	
+						switch(data["codigo"]) {
 							case "1": //si la carga fue exitosa
 								$('#Notific > .mensaje').html(data["detalles"]);
 								$('#Notific > .mensaje').css('background',ColorExit);
@@ -74,74 +74,74 @@ $(document).ready(function(){
 								IniBusLib();
 								break;
 							case "3": //si hubo un error al guardar
-								$('#Notific > .mensaje').html(data["detalles"]); 
+								$('#Notific > .mensaje').html(data["detalles"]);
 								$('#Notific > .mensaje').css('background',ColorAlerta);
-								break;				
-						}						
+								break;
+						}
 					});
 			} else {
 				$('#Notific > .mensaje').html(MensContrasNoIgual);
 				$('#Notific > .mensaje').css('background',ColorAlerta);
 			}
-		}		
+		}
 	});
-	//eventos botonera	
+	//eventos botonera
 	$('#Modificar').click(function () {
 		var ArLib=$('#'+IdBusUsr).data('Arreglo-Val');
-		if (ArLib.length>0){		
-			$('#ingInf').css('display','block');	
-			$('#ingInf').data('peticion',ModiLib);	
+		if (ArLib.length>0){
+			$('#ingInf').css('display','block');
+			$('#ingInf').data('peticion',ModiLib);
 			$('#Notific > .mensaje').html(MensUserSeleccion+ArLib[0]);
 			$('#Notific > .mensaje').css('background',ColorInfo);
 			Actualizar(ArLib[0]);
 			//
-			//IniBusEst();		
+			//IniBusEst();
 		} else {
 			$('#Notific > .mensaje').html(MensSeleccionar);
 			$('#Notific > .mensaje').css('background',ColorAlerta);
-		}		
-				
+		}
+
 	});
-	
+
 	$('#Eliminar').click(function () {
 		var ArLib=$('#'+IdBusUsr).data('Arreglo-Val');
 		if (ArLib.length>0){
-			$.post(r+PeticionEli,{id:ArLib[0]},function (data) {		
+			$.post(r+PeticionEli,{id:ArLib[0]},function (data) {
 				//Se anuncia el resultado de la petición
 				data = JSON.parse(data);
-				switch(data["codigo"]) {	
+				switch(data["codigo"]) {
 					case "1": //si la carga fue exitosa
 						$('#Notific > .mensaje').html(data["detalles"]);
 						$('#Notific > .mensaje').css('background',ColorExit);
 						IniBusLib();
 						break;
 					case "2": //si hubo un error al guardar
-						$('#Notific > .mensaje').html(data["detalles"]); 
+						$('#Notific > .mensaje').html(data["detalles"]);
 						$('#Notific > .mensaje').css('background',ColorAlerta);
 						IniBusLib();
-						break;				
-				}		
+						break;
+				}
 			});
 		} else {
 			$('#Notific > .mensaje').html(MensSeleccionar);
 			$('#Notific > .mensaje').css('background',ColorAlerta);
 		}
-				
-	});	
-	
-	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
+
+	});
+
+	r="../index.php";
 	IniBusLib();
-	function IniBusLib(){	
+	function IniBusLib(){
 		InicializarBuscador(
 			{
 				id:IdBusUsr,n:2,Tit:'Usuarios registrados',Tabla:'user',
 				CampoB:'username',CampoId:'id',RWeb:r,CantR:5,
-				Condiciones:'',							
+				Condiciones:'',
 				FuncionControl:'',//BuscaIdPresta,//función que se ejecuta al activar el checkbox
 				FuncionControlD:'',//BlancIdPresta,//función que se ejecuta al desactivar el checkbox
-				Action:"/rbusca",						
-			},						
-			[ 	 	  	 	 	 //id	username 	email 	rango 	 	
+				Action:"/rbusca",
+			},
+			[ 	 	  	 	 	 //id	username 	email 	rango
 				["id","Número de usuario"], //campos, 1 Nombre campo, 2 Alias
 				["username","Nombre"],
 				["email","Correo electrónico"],
@@ -159,7 +159,7 @@ $(document).ready(function(){
 					mensaje:'<b class="verde">Administrador</b>',//mensaje a incluir si se resalta por ej "Suspendido"
 				},
 				TextoDef:'Nombre', //texto por defecto del campo de busqueda
-			}			
+			}
 		);
 	}
 });

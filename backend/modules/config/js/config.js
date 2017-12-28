@@ -4,7 +4,7 @@ const ColorExito='#dfd';
 const MensExit="Configuración guardada correctamente";
 const Peticion='/guardaop';
 $(document).ready(function(){
-	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
+	r="../web/index.php"
 	$('#GuardaOpcio').click(function () {
 		//creamos JSON con los valores de configuración
 		var Opcio={cod:[],val:[]};
@@ -12,14 +12,14 @@ $(document).ready(function(){
 			Opcio['cod'].push($(this).attr('id'));
 			Opcio['val'].push($(this).val());
 		});
-		//hacemos petición carga de datos	
-		$.post(r+Peticion,{OPC:JSON.stringify(Opcio['cod']),OPV:JSON.stringify(Opcio['val'])},function (data) {		
+		//hacemos petición carga de datos
+		$.post(r+Peticion,{OPC:JSON.stringify(Opcio['cod']),OPV:JSON.stringify(Opcio['val'])},function (data) {
 			//Se anuncia el resultado
 			//data = JSON.parse(data);
 			if (data == 1){
 				$('#Notific > .mensaje').html(MensExit);
-				$('#Notific > .mensaje').css('background',ColorExito);	
+				$('#Notific > .mensaje').css('background',ColorExito);
 			}
-		});	
+		});
 	});
 });

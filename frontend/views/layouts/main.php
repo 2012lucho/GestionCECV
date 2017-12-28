@@ -12,7 +12,6 @@ use common\widgets\Alert;
 
 AppAsset::register($this);
 
-//Yii::$app->homeUrl="index.php/catalogo";
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -31,7 +30,7 @@ AppAsset::register($this);
 <div class="wrap">
     <div class="col-xs-12" id="Encabezado">
     	<div id="cont-logo-enc"><img src="<?php echo Yii::$app->request->baseUrl; ?>/img/logo.png" alt=""></div>
-    	<div id="cont-tit">Catálogo Biblioteca del CECV</div>
+    	<div id="cont-tit">Catálogo de libros disponibles</div>
     </div>
 
     <div class="container">

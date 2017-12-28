@@ -24,8 +24,8 @@ $(document).ready(function(){
 		$('#Autor').val("");
 		$('#Cantidad').val("");
 		$('#CantidadAAgregar').val("0");
-	}	
-	
+	}
+
 	function CreaNuevo() {
 		$.post(r+PeticionInf,{id:ID},function (data) {
 			data = JSON.parse(data);
@@ -35,7 +35,7 @@ $(document).ready(function(){
 			$('#Cantidad').val(data['Cantidad']);
 		});
 	}
-	
+
 	function Actualizar(ID) {
 		$.post(r+PeticionInf,{id:ID},function (data) {
 			data = JSON.parse(data);
@@ -44,8 +44,8 @@ $(document).ready(function(){
 			$('#Autor').val(data['Autor']);
 			$('#Cantidad').val(data['Cantidad']);
 		});
-	}	
-	
+	}
+
 	$('#Aceptar').click(function () {
 		if($('#ingInf').data('peticion')==CreaLib){
 			$.post(r+PeticionNus,{
@@ -56,7 +56,7 @@ $(document).ready(function(){
 				function (data) {
 					//Se anuncia el resultado de la petición
 					data = JSON.parse(data);
-					switch(data["codigo"]) {	
+					switch(data["codigo"]) {
 						case "1": //si la carga fue exitosa
 							$('#Notific > .mensaje').html(data["detalles"]);
 							$('#Notific > .mensaje').css('background',ColorExit);
@@ -64,13 +64,13 @@ $(document).ready(function(){
 							IniBusLib();
 							break;
 						case "2": //si no se completaron todos los campos
-							$('#Notific > .mensaje').html(data["detalles"]); 
+							$('#Notific > .mensaje').html(data["detalles"]);
 							$('#Notific > .mensaje').css('background',ColorAlerta);
 							break;
 						case "3": //si hubo un error al guardar
-							$('#Notific > .mensaje').html(data["detalles"]); 
+							$('#Notific > .mensaje').html(data["detalles"]);
 							$('#Notific > .mensaje').css('background',ColorAlerta);
-							break;				
+							break;
 					}
 			});
 		} else {
@@ -82,12 +82,12 @@ $(document).ready(function(){
 					Descripcion:$('#Descripcion').val(),
 					Autor:$('#Autor').val(),
 					Cantidad:$('#Cantidad').val(),
-					CantidadAAgregar:$('#CantidadAAgregar').val(),					
+					CantidadAAgregar:$('#CantidadAAgregar').val(),
 					},
 					function (data) {
 						//Se anuncia el resultado de la petición
 						data = JSON.parse(data);
-						switch(data["codigo"]) {	
+						switch(data["codigo"]) {
 							case "1": //si la carga fue exitosa
 								$('#Notific > .mensaje').html(data["detalles"]);
 								$('#Notific > .mensaje').css('background',ColorExit);
@@ -95,86 +95,86 @@ $(document).ready(function(){
 								IniBusLib();
 								break;
 							case "3": //si hubo un error al guardar
-								$('#Notific > .mensaje').html(data["detalles"]); 
+								$('#Notific > .mensaje').html(data["detalles"]);
 								$('#Notific > .mensaje').css('background',ColorAlerta);
-								break;				
+								break;
 						}
 					});
-			}		
+			}
 		}
-		
+
 	});
-	
+
 	function BorrayEscondeFormulario(){
 		InicForm();
 		$('#ingInf').css('display','none');
 		$('#cont-input-cantidad').css('display','none');
 		$('#cont-mod-cantidad').css('display','none');
-	}	
-	
-	//eventos botonera	
+	}
+
+	//eventos botonera
 	$('#Agregar').click(function () {
-		$('#ingInf').css('display','block');	
-		$('#ingInf').data('peticion',CreaLib);	
+		$('#ingInf').css('display','block');
+		$('#ingInf').data('peticion',CreaLib);
 		$('#cont-input-cantidad').css('display','block');
 		$('#cont-mod-cantidad').css('display','none');
 		InicForm();
-		IniBusLib();		
+		IniBusLib();
 	});
 	$('#Modificar').click(function () {
 		var ArLib=$('#'+IdBusLibro).data('Arreglo-Val');
-		if (ArLib.length>0){		
-			$('#ingInf').css('display','block');	
-			$('#ingInf').data('peticion',ModiLib);	
+		if (ArLib.length>0){
+			$('#ingInf').css('display','block');
+			$('#ingInf').data('peticion',ModiLib);
 			Actualizar(ArLib[0]);
 			$('#cont-input-cantidad').css('display','none');
 			$('#cont-mod-cantidad').css('display','block');
 			//$('#Notific > .mensaje').html('Si se ingresa un número negativo en la casil');
 			//$('#Notific > .mensaje').css('background',ColorExito);
 			//
-			//IniBusEst();		
+			//IniBusEst();
 		} else {
 			$('#Notific > .mensaje').html(MensSeleccionar);
 			$('#Notific > .mensaje').css('background',ColorAlerta);
-		}		
-				
+		}
+
 	});
-	
+
 	$('#Eliminar').click(function () {
 		var ArLib=$('#'+IdBusLibro).data('Arreglo-Val');
 		if (ArLib.length>0){
-			$.get(r+PeticionEli,{id:ArLib[0]},function (data) {		
+			$.get(r+PeticionEli,{id:ArLib[0]},function (data) {
 				//Se anuncia el resultado
 				//data = JSON.parse(data);
 				if (data == 1){
 					$('#Notific > .mensaje').html(MensEliExit);
 					$('#Notific > .mensaje').css('background',ColorExit);
 					//reestablecemos los buscadores
-	    			IniBusLib();	
+	    			IniBusLib();
 				}
 			});
 		} else {
 			$('#Notific > .mensaje').html(MensSeleccionar);
 			$('#Notific > .mensaje').css('background',ColorAlerta);
 		}
-				
+
 	});
-	
-	InicForm();	
-	
-	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
+
+	InicForm();
+
+	r="../index.php";
 	IniBusLib();
-	function IniBusLib(){	
+	function IniBusLib(){
 		InicializarBuscador(
 			{
 				id:IdBusLibro,n:2,Tit:'Catálogo',Tabla:'Stock',
 				CampoB:'Nombre',CampoId:'idStock',RWeb:r,CantR:5,
-				Condiciones:'',							
+				Condiciones:'',
 				FuncionControl:'',//BuscaIdPresta,//función que se ejecuta al activar el checkbox
 				FuncionControlD:'',//BlancIdPresta,//función que se ejecuta al desactivar el checkbox
-				Action:"/rbusca",						
-			},						
-			[ 	 	  	 	 	 	 	
+				Action:"/rbusca",
+			},
+			[
 				["idStock","Número de libro"], //campos, 1 Nombre campo, 2 Alias
 				["Nombre","Nombre"],
 				["Autor","Autor"],
@@ -193,7 +193,7 @@ $(document).ready(function(){
 					mensaje:'',//mensaje a incluir si se resalta por ej "Suspendido"
 				},
 				TextoDef:'Nombre', //texto por defecto del campo de busqueda
-			}			
+			}
 		);
 	}
 });

@@ -28,7 +28,7 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap"> 
+<div class="wrap">
 	<?php
     NavBar::begin([
         'brandLabel' =>  Html::img('@web/img/logo.png', ['alt'=>'Vino Para el Cambio']),
@@ -41,17 +41,17 @@ AppAsset::register($this);
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Ingresar', 'url' => ['/site/login']];
     } else {
-    	$menuItems[] = ['label' => 'Historial préstamos', 'url' => Yii::$app->homeUrl];
+    	$menuItems[] = ['label' => 'Historial préstamos', 'url' => 'historial'];
     	$menuItems[] = ['label' => 'Prestar', 'url' => ['/npresta']];
     	$menuItems[] = ['label' => 'Ingresar devolución', 'url' => ['/ingresadevol']];
     	$menuItems[] = ['label' => 'Estudiantes', 'url' => ['/datos']];
     	$menuItems[] = ['label' => 'Libros', 'url' => ['/stock']];
-    	
-    	if (User::findOne(Yii::$app->user->id)->Rango(['0'])){   //el rango cero es el admin 	
+
+    	if (User::findOne(Yii::$app->user->id)->Rango(['0'])){   //el rango cero es el admin
     		$menuItems[] = ['label' => 'Cuentas de Usuario', 'url' => ['/users']];
     		$menuItems[] = ['label' => 'Configuración', 'url' => ['/conf']];
 		}
-    	$menuItems[] = ['label' => 'Salir (' . Yii::$app->user->identity->username . ')','url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]; 
+    	$menuItems[] = ['label' => 'Salir (' . Yii::$app->user->identity->username . ')','url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']];
     }
     echo Nav::widget([
         'options' => ['class' => 'main-menu navbar-nav navbar-right'],

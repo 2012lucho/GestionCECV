@@ -29,7 +29,7 @@ class PrestamosController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['nuevo', 'ingresadevol', 'apresta', 'adevol', 'lpresta'],
+                        'actions' => ['nuevo', 'ingresadevol', 'apresta', 'adevol', 'lpresta', 'historial'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -43,32 +43,26 @@ class PrestamosController extends Controller
             ],
         ];
     }
-	//"Action" que se encarga de mostrar la página de carga de prestamos 
-    public function actionNuevo() 
+	//"Action" que se encarga de mostrar la página de carga de prestamos
+    public function actionNuevo()
     {
-    	$Config=new Config(['conf'=>'DirWeb']);
-		$Rweb=$Config->Valor();
-		$Config=new Config(['conf'=>'CantLibSel']);
-		$CantLib=$Config->Valor();
+		    $Config=new Config(['conf'=>'CantLibSel']);
+		    $CantLib=$Config->Valor();
         return $this->render('IngresaPrestamo', [
-            'Rweb'=>$Rweb,
             'CantLib'=>$CantLib,
         ]);
     }
-    
+
     //"Action" que se encarga de mostrar la página de carga de devoluciones
-    public function actionIngresadevol() 
+    public function actionIngresadevol()
     {
-    	$Config=new Config(['conf'=>'DirWeb']);
-		$Rweb=$Config->Valor();
-		$Config=new Config(['conf'=>'CantLibSel']);
-		$CantLib=$Config->Valor();
+    	 $Config=new Config(['conf'=>'CantLibSel']);
+		    $CantLib=$Config->Valor();
         return $this->render('IngresaDevolucion', [
-            'Rweb'=>$Rweb,
             'CantLib'=>$CantLib,
         ]);
     }
-    
+
     //"Action" que se utiliza para agregar un nuevo préstamo a la base de datos
     public function actionApresta()
     {
@@ -77,9 +71,9 @@ class PrestamosController extends Controller
     	//Buscamos en la configuracion la cantidad de dias de duraci{on del prestamo
     	$Config=new Config(['conf'=>'TPrestaLibro']);
 		$DiasPresta=$Config->Valor();
-		//Leemos los parametros		
+		//Leemos los parametros
 		$Libros=BaseJson::decode(urldecode($_REQUEST["L"]));
-		$Estud=BaseJson::decode(urldecode($_REQUEST["E"])); 
+		$Estud=BaseJson::decode(urldecode($_REQUEST["E"]));
 		//buscamos el estudiante
 		$Me=datosuser::findOne($Estud[0]);
 		$Suspen=$Me->Suspendido;
@@ -92,28 +86,28 @@ class PrestamosController extends Controller
 		} else {
 			//Obtenemos la fecha actual
 			$timezone = new \DateTimeZone('America/Argentina/Buenos_Aires');
-    		$date = new \DateTime('now', $timezone); 
-    		$FDebT = new \DateTime('now', $timezone); 
+    		$date = new \DateTime('now', $timezone);
+    		$FDebT = new \DateTime('now', $timezone);
     		$FDebT->modify('+'.$DiasPresta.' day');
     		$resultado["detalles"]="";
 			//Creamos un registro por cada libro prestado
 			for($c=0;$c<sizeof($Libros);$c++){
-				//buscamos en el stock  
+				//buscamos en el stock
 				$Stock=stock::findOne($Libros[$c]);
 				$Cant=$Stock->CantidadDisponible;
 				if($Cant>0){ // comprobamos la cantidad disponible
 					//modelo de la tabla de prestamos
 					$Presta=new prestamos();
 					//Creacion del registro para la tabla de prestamos
-					$Presta->idUser=$Estud[0];	
-					$Presta->IdStock=$Libros[$c];	
+					$Presta->idUser=$Estud[0];
+					$Presta->IdStock=$Libros[$c];
 					$Presta->FechaDebT=$FDebT->format('Y-m-d');
-					$Presta->FechaDeb='0000-00-00';
-					$Presta->FechaPresta=$date->format('Y-m-d');	 
-					$Presta->save();
+					$Presta->FechaDeb=null;
+					$Presta->FechaPresta=$date->format('Y-m-d');
+					$Presta->save(false);
 					//actualizamos la cantidad en stock
 					$Stock->CantidadDisponible-=1;
-					$Stock->save();
+					$Stock->save(false);
 					$resultado["detalles"].="Préstamo de libro ".$Stock->Nombre." registrado correctamente <br>";
 				} else {
 					$resultado["detalles"].="El libro ".$Stock->Nombre." no se puede prestar, cantidad igual a cero <br>";}
@@ -123,13 +117,13 @@ class PrestamosController extends Controller
 			return BaseJson::encode($resultado); //no se puede cargar "2"
 		}
     }
-    
+
     //"Action" que se utiliza para ingresar la devolución del prestamo
     public function actionAdevol(){
     	//Obtenemos la fecha actual
 		$timezone = new \DateTimeZone('America/Argentina/Buenos_Aires');
-    	$fecha = new \DateTime('now', $timezone); 
-    	//Leemos los parametros		
+    	$fecha = new \DateTime('now', $timezone);
+    	//Leemos los parametros
 		$Presta=BaseJson::decode(urldecode($_REQUEST["P"]));
 		//ingresamos cada uno de los libros en la base de datos
 		for($c=0;$c<sizeof($Presta);$c++){
@@ -145,10 +139,25 @@ class PrestamosController extends Controller
 		}
 		return '1';
     }
+    //action que muestra la vista de historial de Prestamos
+    public function actionHistorial(){
+      //Obtenemos la configuración
+      //Buscamos en la configuracion la cantidad de dias de duraci{on del prestamo
+      $Config=new Config(['conf'=>'TPrestaLibro']);
+      $DiasPresta=$Config->Valor();
+
+      //Obtenemos la fecha actual
+      $timezone = new \DateTimeZone('America/Argentina/Buenos_Aires');
+      $Fecha = new \DateTime('now', $timezone);
+      $FDebT = new \DateTime('now', $timezone);
+      $FDebT->modify('+'.$DiasPresta.' day');
+        return $this->render('presta',['fecha'=>$Fecha->format('Y-m-d')]);
+    }
+
     //Action que devuelve la lista de prestamos
     public function actionLpresta(){
     	$ResBusca =[];
-    	
+
     	$TBusqueda = urldecode($_REQUEST["TB"]);
 		$OrdenResu = urldecode($_REQUEST["O"]);
 		$Desplaza= urldecode($_REQUEST["D"]);
@@ -162,27 +171,27 @@ class PrestamosController extends Controller
 			->innerJoin('DatosUser','Prestamos.idUser=DatosUser.IdUser') //establecemos las relaciones
 			->where(['like',$CampoBusqueda,'%'.$TBusqueda.'%',false])
 			->innerJoin('Stock','Prestamos.IdStock=Stock.idStock');
-			
-			//->where(['FechaDeb'=>'0000-00-00']);		
-			
+
+			//->where(['FechaDeb'=>'0000-00-00']);
+
 		//aplicamos todos los where necesarios a la consulta
 		//for($c=0;$c<sizeof($Condicion);$c++){
 			$Consulta->andWhere($Condicion[0]);
-		//}				
-		
+		//}
+
 		if ($OrdenResu != "n"){ //se ordena
-	 		if ($OrdenResu == "d"){ 
+	 		if ($OrdenResu == "d"){
 	 			$Consulta = $Consulta->orderBy(['idPresta'=>SORT_DESC]);
 	 		} else {
-	 			if ($OrdenResu == "a"){ 
+	 			if ($OrdenResu == "a"){
 	 				$Consulta = $Consulta->orderBy(['idPresta'=>SORT_ASC]);
 	 			}
-	 		}		 
-	 	}				
-		
+	 		}
+	 	}
+
 		$CantTot=$Consulta->count();
 		$Consulta = $Consulta->offset($Desplaza)->limit($CantReg)->all();
-		 	
+
 		$ResBusca['ResBusca'] = $Consulta;
 		$ResBusca['CantTot'] = $CantTot;
 		return BaseJson::encode($ResBusca);

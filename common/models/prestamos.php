@@ -35,7 +35,7 @@ class prestamos extends \yii\db\ActiveRecord
         return [
             //[['idUser', 'IdStock', 'FechaPresta', 'FechaDebT', 'FechaDeb'],],//, 'required'],
             [['idUser', 'IdStock'], 'integer'],
-            [['FechaPresta', 'FechaDebT', 'FechaDeb'], 'safe']
+            [['FechaPresta', 'FechaDebT', 'FechaDeb'], 'date'],
         ];
     }
 

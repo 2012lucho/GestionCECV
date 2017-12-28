@@ -48,16 +48,14 @@ class InfoController extends Controller
     }
 
     /**
- 
+
      */
     public function actionIndex()
     {
-        $Config=new Config(['conf'=>'DirWeb']);
-		$Rweb=$Config->Valor();
-		$model=new datosuser();
-		$rango=User::findOne(Yii::$app->user->id)->Rango(['0']);
+
+		    $model=new datosuser();
+		    $rango=User::findOne(Yii::$app->user->id)->Rango(['0']);
         return $this->render('index', [
-            'Rweb'=>$Rweb,
             'model'=>$model,
             'rango'=>$rango,
         ]);
@@ -67,20 +65,20 @@ class InfoController extends Controller
 	public function actionSuspend()
 	{
 		//carga de parametros
-		$Estud=urldecode($_REQUEST["id"]); 
+		$Estud=urldecode($_REQUEST["id"]);
 		//buscamos el estudiante y definimos suspensión en "1", más adelante se podria establecer la suspensión de más de un usuario
 		$model=datosuser::findOne($Estud);
 		$model->Suspendido=urldecode($_REQUEST["v"]);
-		if ($model->Suspendido==1){$s=1;}else{$s=3;}		
+		if ($model->Suspendido==1){$s=1;}else{$s=3;}
 		$model->save(false);
 		//terminamos
 		return $s;
 	}
-	
+
 	//devolver información de un estudiante
 	public function actionInfoest(){
 		//carga de parametros
-		$Estud=urldecode($_REQUEST["id"]); 
+		$Estud=urldecode($_REQUEST["id"]);
 		$model=datosuser::findOne($Estud);
 		//terminamos
 		return BaseJson::encode($model);
@@ -94,8 +92,8 @@ class InfoController extends Controller
 		$model->Email=urldecode($_REQUEST["Email"]);
 		$model->Telefono=urldecode($_REQUEST["Telefono"]);
       if($model->save()==1) { //si se pudo guardar correctamente
-	      $resultado["codigo"]="1";	
-			$resultado["detalles"]="Registro exitoso";	  			
+	      $resultado["codigo"]="1";
+			$resultado["detalles"]="Registro exitoso";
 		  	return BaseJson::encode($resultado);
       } else {   //si no se pudo guardar
       	$resultado["codigo"]="3";
@@ -113,18 +111,18 @@ class InfoController extends Controller
 		  $DU=urldecode($_REQUEST["DNI"]);
 		  $EM=urldecode($_REQUEST["Email"]);
 		  $TL=urldecode($_REQUEST["Telefono"]);
-        	  
+
 		  //verificamos que se hayan completado todos los campos
 		  if ($NA != '' && $DU !='' && $EM !='' && $TL !=''){
-				$model = new datosuser();				
+				$model = new datosuser();
 				$model->NombreyApellido=$NA;
         		$model->DNI=$DU;
 		  		$model->Email=$EM;
 		  		$model->Telefono=$TL;
-		  			  			
+
 		  		if($model->save()==1) { // si se guardó correctamente
-					$resultado["codigo"]="1";	
-					$resultado["detalles"]="Registro exitoso";	  			
+					$resultado["codigo"]="1";
+					$resultado["detalles"]="Registro exitoso";
 		  			return BaseJson::encode($resultado);
 		  		} else {  //si hubo errores
 		  			$resultado["codigo"]="3";
@@ -132,25 +130,25 @@ class InfoController extends Controller
       			return BaseJson::encode($resultado);
 		  		}
 		  } else {
-				$resultado["codigo"]="2";		
-				$resultado["detalles"]="Se deben completar todos los campos";  		
+				$resultado["codigo"]="2";
+				$resultado["detalles"]="Se deben completar todos los campos";
 		  		return BaseJson::encode($resultado); // si no se completaron todos los campos
 		  }
 		  return "nada!";
     }
 
-    
+
     /**
      "Action" para borrar un estudiante
      */
     public function actionDelete()
     {
     	$id=urldecode($_POST['id']);
-		$m=datosuser::findOne($id)->getPrestamos()->where(['=','FechaDeb','0000-00-00']);   
+		$m=datosuser::findOne($id)->getPrestamos()->where(['=','FechaDeb','0000-00-00']);
 		//verificamos que no tenga prestamos adeudados
 		if ($m->count() == 0) {
         	$m=datosuser::findOne($id)->delete();return '1';
-		}	else {return '4';}	
-        
+		}	else {return '4';}
+
     }
 }

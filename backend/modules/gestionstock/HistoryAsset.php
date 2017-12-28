@@ -1,17 +1,17 @@
 <?php
 
-namespace app\modules\gestionuser;
+namespace app\modules\gestionstock;
 
 use yii\web\AssetBundle;
 
-class UserAsset extends AssetBundle
+class HistoryAsset extends AssetBundle
 {
     public $sourcePath = '@app/modules/gestionstock';
     public $css = [
-    	'css/User.css',
+        'css/stock.css',
     ];
     public $js = [
-    	'js/User.js',
+    	'js/historial.js',
     ];
     public $depends = [
        'backend\assets\AppAsset',

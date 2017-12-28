@@ -40,14 +40,10 @@ class ConfigController extends Controller
     }
 
     public function actionIndex(){
-    	$Config=new Config(['conf'=>'DirWeb']);
-		$Rweb=$Config->Valor();
-		return $this->render('index.php',[
-			'Rweb'=>$Rweb,		
-		]);    
+    	return $this->render('index.php');    
     }
-    
-	// "Action" quepermite guardar las opciones de configuración     
+
+	// "Action" quepermite guardar las opciones de configuración
 	public function actionGuardaop(){
 		$Datos=BaseJson::decode($_REQUEST["OPC"]);
 		$Valores=BaseJson::decode($_REQUEST["OPV"]);
@@ -57,6 +53,6 @@ class ConfigController extends Controller
 			$modelo->valor=$Valores[$c];
 			$modelo->save(false); //hay que arreglar el temita de la validación
 		}
-		return '1';	
-	}    
+		return '1';
+	}
 }

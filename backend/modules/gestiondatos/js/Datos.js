@@ -28,8 +28,8 @@ $(document).ready(function(){
 		$('#DNI').val("");
 		$('#Email').val("");
 		$('#Telefono').val("");
-	}	
-	
+	}
+
 	function CreaNuevo() {
 		$.post(r+PeticionInf,{id:ID},function (data) {
 			data = JSON.parse(data);
@@ -39,7 +39,7 @@ $(document).ready(function(){
 			$('#Telefono').val(data['Telefono']);
 		});
 	}
-	
+
 	function Actualizar(ID) {
 		$.post(r+PeticionInf,{id:ID},function (data) {
 			data = JSON.parse(data);
@@ -48,11 +48,11 @@ $(document).ready(function(){
 			$('#Email').val(data['Email']);
 			$('#Telefono').val(data['Telefono']);
 		});
-	}	
-	
+	}
+
 	$('#Aceptar').click(function () {
 		if($('#ingInf').data('peticion')==CreaUser){
-			
+
 			$.post(r+PeticionNus,{
 				NombreyApellido:$('#NombreyApellido').val(),
 				DNI:$('#DNI').val(),
@@ -61,7 +61,7 @@ $(document).ready(function(){
 				function (data) {
 					//Se anuncia el resultado de la petición
 					data = JSON.parse(data);
-					switch(data["codigo"]) {	
+					switch(data["codigo"]) {
 						case "1": //si la carga fue exitosa
 							$('#Notific > .mensaje').html(data["detalles"]);
 							$('#Notific > .mensaje').css('background',ColorExit);
@@ -70,13 +70,13 @@ $(document).ready(function(){
 							$('#ingInf').css('display','none');
 							break;
 						case "2": //si no se completaron todos los campos
-							$('#Notific > .mensaje').html(data["detalles"]); 
+							$('#Notific > .mensaje').html(data["detalles"]);
 							$('#Notific > .mensaje').css('background',ColorAlerta);
 							break;
 						case "3": //si hubo un error al guardar
-							$('#Notific > .mensaje').html(data["detalles"]); 
+							$('#Notific > .mensaje').html(data["detalles"]);
 							$('#Notific > .mensaje').css('background',ColorAlerta);
-							break;				
+							break;
 					}
 			});
 		} else {
@@ -91,7 +91,7 @@ $(document).ready(function(){
 					function (data) {
 						//Se anuncia el resultado de la petición
 						data = JSON.parse(data);
-						switch(data["codigo"]) {	
+						switch(data["codigo"]) {
 							case "1": //si la carga fue exitosa
 								$('#Notific > .mensaje').html(data["detalles"]);
 								$('#Notific > .mensaje').css('background',ColorExit);
@@ -100,90 +100,90 @@ $(document).ready(function(){
 								$('#ingInf').css('display','none');
 								break;
 							case "3": //si hubo un error al guardar
-								$('#Notific > .mensaje').html(data["detalles"]); 
+								$('#Notific > .mensaje').html(data["detalles"]);
 								$('#Notific > .mensaje').css('background',ColorAlerta);
-								break;				
+								break;
 						}
 					});
-			}		
+			}
 		}
 	});
-	//eventos botonera	
-	r=$("#parametros").attr('data-rweb')+"/backend/web/index.php";
+	//eventos botonera
+	r="../index.php";
 	$('#Agregar').click(function () {
-		$('#ingInf').css('display','block');	
-		$('#ingInf').data('peticion',CreaUser);	
+		$('#ingInf').css('display','block');
+		$('#ingInf').data('peticion',CreaUser);
 		InicForm();
-		IniBusEst();		
+		IniBusEst();
 	});
 	$('#Modificar').click(function () {
 		var ArEst=$('#'+IdSelEstud).data('Arreglo-Val');
-		if (ArEst.length>0){		
-			$('#ingInf').css('display','block');	
-			$('#ingInf').data('peticion',ModiUser);	
+		if (ArEst.length>0){
+			$('#ingInf').css('display','block');
+			$('#ingInf').data('peticion',ModiUser);
 			Actualizar(ArEst[0]);
 			//
-			//IniBusEst();		
+			//IniBusEst();
 		} else {
 			$('#Notific > .mensaje').html(MensSeleccionar);
 			$('#Notific > .mensaje').css('background',ColorAlerta);
-		}		
-				
+		}
+
 	});
 	$('#Suspender').click(function () {
 		var ArEst=$('#'+IdSelEstud).data('Arreglo-Val');
-		var Val=1;		
+		var Val=1;
 		if ($('#Suspender').val()=='Quitar suspensión'){
 			Val=0;
-		} 
+		}
 		if (ArEst.length>0){
-			$.post(r+PeticionSus,{id:ArEst[0], v:Val},function (data) {		
+			$.post(r+PeticionSus,{id:ArEst[0], v:Val},function (data) {
 				//Se anuncia el resultado
 				//data = JSON.parse(data);
 				if (data == 1){
 					$('#Notific > .mensaje').html(MensSusExit);
 					$('#Notific > .mensaje').css('background',ColorExit);
 					//reestablecemos los buscadores
-	    			IniBusEst();	
+	    			IniBusEst();
 				} else {
 					if (data == 3){
 						$('#Notific > .mensaje').html("Sanción quitada");
 						$('#Notific > .mensaje').css('background',ColorExit);
 						//reestablecemos los buscadores
-	    				IniBusEst();	
+	    				IniBusEst();
 					}
 				}
 			});
 		} else {
 			$('#Notific > .mensaje').html(MensSeleccionar);
 			$('#Notific > .mensaje').css('background',ColorAlerta);
-		}		
+		}
 	});
 	$('#Eliminar').click(function () {
 		var ArEst=$('#'+IdSelEstud).data('Arreglo-Val');
 		if (ArEst.length>0){
-			$.post(r+PeticionEli,{id:ArEst[0]},function (data) {		
+			$.post(r+PeticionEli,{id:ArEst[0]},function (data) {
 				//Se anuncia el resultado
 				//data = JSON.parse(data);
 				if (data == PetExitosa){
 					$('#Notific > .mensaje').html(MensEliExit);
 					$('#Notific > .mensaje').css('background',ColorExit);
 					//reestablecemos los buscadores
-	    			IniBusEst();	
+	    			IniBusEst();
 				} else {
 					if (data == 4){ //no se puede borrar por que todavia adeuda prestamos
 						$('#Notific > .mensaje').html("El estudiante aun adeuda préstamos, no se puede eliminar");
-						$('#Notific > .mensaje').css('background',ColorAlerta);	
-					}			
+						$('#Notific > .mensaje').css('background',ColorAlerta);
+					}
 				}
 			});
 		} else {
 			$('#Notific > .mensaje').html(MensSeleccionar);
 			$('#Notific > .mensaje').css('background',ColorAlerta);
 		}
-				
+
 	});
-	
+
 	function EstudS(){
 		var ArEst=$('#'+IdSelEstud).data('Arreglo-Val');
 		//averiguamos si esta suspendido para quitarle la suspensión
@@ -192,11 +192,11 @@ $(document).ready(function(){
 			if (data['Suspendido']=="1"){
 				$('#Suspender').val('Quitar suspensión');
 			}
-		});		
-		
+		});
+
 	}
 	function EstudDS(){$('#Suspender').val('Suspender');}
-	
+
 	IniBusEst();
 	function IniBusEst(){
 		EstudDS();
@@ -204,12 +204,12 @@ $(document).ready(function(){
 			{
 				id:IdSelEstud,n:2,Tit:'Estudiantes',Tabla:'DatosUser',
 				CampoB:'NombreyApellido',CampoId:'IdUser',RWeb:r,CantR:5,
-				Condiciones:'',							
+				Condiciones:'',
 				FuncionControl:EstudS,//BuscaIdPresta,//función que se ejecuta al activar el checkbox
 				FuncionControlD:EstudDS,//BlancIdPresta,//función que se ejecuta al desactivar el checkbox
-				Action:"/rbusca",						
-			},						
-			[ 	 	 	
+				Action:"/rbusca",
+			},
+			[
 				["IdUser","Número de estudiante"], //campos, 1 Nombre campo, 2 Alias
 				["NombreyApellido","Nombre y apellido"],
 				["DNI","DNI"],
@@ -226,9 +226,9 @@ $(document).ready(function(){
 					condicion:'=',
 					valor:'1', //valor con el que comparar el campo
 					mensaje:'<b class="rojo">Suspendido</b>',//mensaje a incluir si se resalta por ej "Suspendido"
-				}, 
+				},
 				TextoDef:'Nombre', //texto por defecto del campo de busqueda
-			}			
+			}
 		);
 	}
 });
